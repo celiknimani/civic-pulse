@@ -132,11 +132,11 @@ const ProgramExplorer: React.FC<{ onBack: () => void }> = ({ onBack }) => {
     }
   }, []);
 
-  const filteredPromises = PROGRAM_DATA.filter(p => {
+  const filteredPromises = React.useMemo(() => PROGRAM_DATA.filter(p => {
     const catMatch = activeCategory === 'all' || p.category === activeCategory;
     const partyMatch = activeParty === 'all' || p.partyId === activeParty;
     return catMatch && partyMatch;
-  });
+  }), [activeCategory, activeParty]);
 
   const generateComparison = (basePromise: PromiseItem): ComparisonPoint[] => {
     // Generate comparison points for this category
@@ -324,7 +324,12 @@ const ProgramExplorer: React.FC<{ onBack: () => void }> = ({ onBack }) => {
                 <div className="flex items-center justify-between mb-8">
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 rounded-xl bg-slate-50 p-2 flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform">
-                      <img src={party.logo} alt={party.name} className="w-full h-full object-contain" />
+                      <img 
+                        src={party.logo} 
+                        alt={party.name} 
+                        className="w-full h-full object-contain" 
+                        loading="lazy"
+                      />
                     </div>
                     <div>
                       <span className="text-[10px] font-black text-slate-900 uppercase tracking-[0.2em]">{party.id}</span>

@@ -225,7 +225,7 @@ const App: React.FC = () => {
                         <div className="space-y-3">
                           <h3 className="text-2xl font-black tracking-tight">Si funksionon zotimi.com?</h3>
                           <p className="text-slate-300 font-medium text-base leading-relaxed">
-                            Platforma është ndërtuar me <span className="text-white font-black">indeksim me AI</span>, duke analizuar mbi 800 faqe material zyrtar për të nxjerrë çdo zotim pa asnjë ndryshim manual.
+                            Platforma është ndërtuar me <span className="text-white font-black">Gemini AI</span>, duke analizuar mbi 800 faqe material zyrtar për të nxjerrë çdo zotim pa asnjë ndryshim manual.
                           </p>
                         </div>
                         <div className="flex flex-wrap gap-3">

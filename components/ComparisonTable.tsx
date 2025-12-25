@@ -53,6 +53,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ points, activePartyId
                           alt={party?.name} 
                           className="w-full h-full object-contain transition-transform hover:scale-110" 
                           onError={(e) => defaultImageError(e, pid)}
+                          loading="lazy"
                         />
                       </div>
                       <span className="text-[8px] md:text-[10px] font-black text-slate-800 uppercase tracking-widest leading-tight text-center">
