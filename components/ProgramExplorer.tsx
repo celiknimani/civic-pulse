@@ -15,111 +15,63 @@ const PROGRAM_DATA: PromiseItem[] = [
   // LVV
   { partyId: PartyID.LVV, category: 'security', text: '1 Miliard Euro investime në ushtri', details: 'Blerje e armatimit modern, ndërtimi i fabrikave të municionit dhe dronëve.' },
   { partyId: PartyID.LVV, category: 'economy', text: '500,000 të punësuar deri në fund të mandatit', details: 'Fokus në punësimin e rinisë dhe grave përmes masave mbështetëse.' },
-  { partyId: PartyID.LVV, category: 'social', text: 'Dyfishimi i shtesave për fëmijë', details: 'Shtesat rriten nga 45€ në 90€ për muaj.' },
-  { partyId: PartyID.LVV, category: 'energy', text: 'Modernizimi i Kosovës B me filtra të rinj', details: 'Reduktimi i ndotjes dhe rritja e efikasitetit.' },
-  { partyId: PartyID.LVV, category: 'edu', text: 'Bursa shtesë për mobilitet', details: 'Përkrahje për studentët që studiojnë jashtë vendit.' },
-  
+  { partyId: PartyID.LVV, category: 'social', text: 'Shtesat për fëmijë deri në 90€', details: 'Dyfishimi i shtesave aktuale nga 45€ në 90€ për muaj.' },
+  { partyId: PartyID.LVV, category: 'energy', text: '170MW Bateri Akumuluese', details: 'Investim në sistemin e baterive për stabilizimin e rrjetit (MCC).' },
+  { partyId: PartyID.LVV, category: 'edu', text: 'Bursa për 5,000 studentë në STEM', details: 'Fokus në shkencë, teknologji, inxhinieri dhe matematikë.' },
+  { partyId: PartyID.LVV, category: 'justice', text: 'Vetingu në Drejtësi', details: 'Procesi i vetingu për gjyqtarë dhe prokurorë për pastrimin e sistemit.' },
+  { partyId: PartyID.LVV, category: 'health', text: 'Sistemi Informativ Shëndetësor (SISH)', details: 'Digjitalizimi i plotë i kartelave dhe shërbimeve shëndetësore.' },
+  { partyId: PartyID.LVV, category: 'agri', text: 'Banka Zhvillimore për Bujqësi', details: 'Kredi me interes të ulët dhe mbështetje për prodhuesit vendorë.' },
+  { partyId: PartyID.LVV, category: 'env', text: 'Hekurudha Prishtinë-Durrës', details: 'Projekti strategjik për lidhjen hekurudhore me Shqipërinë.' },
+  { partyId: PartyID.LVV, category: 'diaspora', text: 'Zotimi për Mërgatën', details: 'Lehtësimi i votimit dhe dritarja për investime nga diaspora.' },
+  { partyId: PartyID.LVV, category: 'economy', text: 'Porti i Thatë në Prishtinë', details: 'Transformimi i Kosovës në një qendër logjistike rajonale.' },
+
   // PDK
-  { partyId: PartyID.PDK, category: 'economy', text: 'Rritje 50% e pagave në sektorin publik', details: 'Përfshin mësuesit, mjekët dhe policët.' },
-  { partyId: PartyID.PDK, category: 'economy', text: 'Pagat deri në 400€ lirohen nga tatimi', details: 'Mbrojtje për shtresat me të ardhura të ulëta.' },
-  { partyId: PartyID.PDK, category: 'health', text: 'Sigurime shëndetësore brenda 24 muajve', details: 'Zbatimi i plotë i sistemit të sigurimeve.' },
-  { partyId: PartyID.PDK, category: 'energy', text: 'Ndërtimi i termocentralit "Kosova e Re" (500MW)', details: 'Stabilitet energjetik afatgjatë.' },
-  { partyId: PartyID.PDK, category: 'edu', text: 'Psikolog dhe zyrtar sigurie në çdo shkollë', details: 'Mbrojtja e shëndetit mendor dhe sigurisë.' },
+  { partyId: PartyID.PDK, category: 'economy', text: 'Rritje 50% e pagave në sektorin publik', details: 'Përfshin mësuesit, mjekët, policët dhe administratën.' },
+  { partyId: PartyID.PDK, category: 'economy', text: 'Lirimi nga tatimi deri në 400€', details: '0% tatim për rrogat deri në 400€, 8% për 400-800€.' },
+  { partyId: PartyID.PDK, category: 'social', text: '50€ Shtesa për çdo fëmijë', details: 'Mbështetje universale mujore për çdo fëmijë deri në 16 vjeç.' },
+  { partyId: PartyID.PDK, category: 'social', text: 'Pensioni minimal 250€', details: 'Pensione dhe ndihma sociale rriten për 50%.' },
+  { partyId: PartyID.PDK, category: 'energy', text: 'Termocentrali "Kosova e Re" (500MW)', details: 'Ndërtimi i kapaciteteve të reja bazuar në qymyr modern.' },
+  { partyId: PartyID.PDK, category: 'energy', text: '0% TVSH për Energji Elektrike', details: 'Heqja e TVSH-së në faturat e dritave për të gjitha familjet.' },
+  { partyId: PartyID.PDK, category: 'health', text: 'Sigurime shëndetësore brenda 24 muajve', details: 'Zbatimi i plotë i sistemit të sigurimeve shëndetësore.' },
+  { partyId: PartyID.PDK, category: 'edu', text: '30M Euro Buxhet për Bursa', details: 'Fondi vjetor për studentët ekselentë në Kosovë dhe jashtë.' },
+  { partyId: PartyID.PDK, category: 'edu', text: 'Psikolog në çdo shkollë', details: 'Punësimi i psikologëve dhe zyrtarëve të sigurisë në çdo objekt shkollor.' },
+  { partyId: PartyID.PDK, category: 'agri', text: '0% Akcizë në Naftë për Bujqësi', details: 'Heqja e barrenës financiare për makineritë bujqësore.' },
+  { partyId: PartyID.PDK, category: 'justice', text: 'Gjykata e Punës', details: 'Themelimi i gjykatës së specializuar për kontestet e punës.' },
+  { partyId: PartyID.PDK, category: 'env', text: 'Stadiumi Olimpik Kombëtar', details: 'Ndërtimi i stadiumit modern si projekt strategjik kombëtar.' },
+  { partyId: PartyID.PDK, category: 'security', text: 'Njësia e Helikopterëve', details: 'Krijimi i njësisë për emergjenca, shpëtim dhe mbështetje policore.' },
+  { partyId: PartyID.PDK, category: 'security', text: 'Garda Kombëtare e Kosovës', details: 'Strukturë e re reaguese për situata emergjente dhe kriza.' },
 
   // LDK
-  { partyId: PartyID.LDK, category: 'economy', text: 'Buxhet shtetëror 5 miliardë euro', details: 'Rritje e hyrjeve buxhetore përmes zhvillimit.' },
-  { partyId: PartyID.LDK, category: 'economy', text: 'Koeficienti i pagave në 150', details: 'Rritje e menjëhershme e pagave në sektorin publik.' },
-  { partyId: PartyID.LDK, category: 'energy', text: 'Termocentrali me Gaz 500MW', details: 'Gazifikimi i plotë i Kosovës via Maqedonia e Veriut.' },
-  { partyId: PartyID.LDK, category: 'edu', text: 'Programi Nacional për AI (15M Euro)', details: 'Kosova si qendër rajonale e teknologjisë.' },
-  { partyId: PartyID.LDK, category: 'social', text: '5000 EUR për fëmijën e tretë', details: 'Stimulim i natalitetit përmes mbështetjes direkte.' },
+  { partyId: PartyID.LDK, category: 'economy', text: 'Buxhet 4.5 Miliardë Euro', details: 'Arritja e këtij buxheti përmes rritjes ekonomike prej 5%.' },
+  { partyId: PartyID.LDK, category: 'economy', text: 'Koeficienti i pagave 125-135', details: 'Rritje e menjëhershme e rrogave në vitin e parë të mandatit.' },
+  { partyId: PartyID.LDK, category: 'energy', text: 'Termocentral me Gaz 500MW', details: 'Ndërtimi i rrjetit të gazit dhe centralit të parë me gaz në Kosovë.' },
+  { partyId: PartyID.LDK, category: 'social', text: '5000€ për fëmijën e tretë', details: 'Mbështetje e fuqishme për rritjen e natalitetit.' },
+  { partyId: PartyID.LDK, category: 'edu', text: 'Kodinimi si lëndë obligative', details: 'Futja e kodimit në shkolla fillore për zhvillim teknologjik.' },
+  { partyId: PartyID.LDK, category: 'env', text: 'Unaza e Jashtme e Prishtinës', details: 'Projekti 250M Euro për zgjidhjen e trafikut në kryeqytet.' },
+  { partyId: PartyID.LDK, category: 'security', text: 'Buxheti i Mbrojtjes 2% e BPV', details: 'Arritja e standardit të NATO-s për shpenzime ushtarake.' },
+  { partyId: PartyID.LDK, category: 'health', text: 'Fondi i Sigurimeve Shëndetësore', details: 'Autonomia financiare e spitaleve përmes fondit të pavarur.' },
+  { partyId: PartyID.LDK, category: 'agri', text: 'Sistemi Modern i Ujitjes', details: 'Mbulimi i tokave pjellore me rrjet modern të ujitjes.' },
+  { partyId: PartyID.LDK, category: 'diaspora', text: 'Ministria e Diasporës', details: 'Rikthimi i ministrisë për fuqizimin e lidhjes me mërgatën.' },
+  { partyId: PartyID.LDK, category: 'economy', text: 'Aviokompani Kombëtare', details: 'Themelimi i kompanisë ajrore me flotë prej 4-8 avionësh.' },
+  { partyId: PartyID.LDK, category: 'edu', text: 'Trajnimi i 40,000 të rinjve në TIK', details: 'Investim 80M Euro për aftësimin e rinisë në teknologji.' },
+  { partyId: PartyID.LDK, category: 'economy', text: 'Tech Fondi 120 Milion Euro', details: 'Mbështetje kapitale për startup-et dhe SME-të teknologjike.' },
+  { partyId: PartyID.LDK, category: 'energy', text: 'Gazifikimi i 7 Qendrave', details: 'Shtrirja e rrjetit të gazit nga Hani i Elezit deri në Mitrovicë.' },
 
   // AAK
-  { partyId: PartyID.AAK, category: 'security', text: 'Anëtarësim direkt në NATO', details: 'Dialog i dizajnuar me NATO-n për anëtarësim pa vonesa.' },
-  { partyId: PartyID.AAK, category: 'economy', text: 'Paga minimale 500€, Mesatare 1000€', details: 'Rritje e fuqisë blerëse për qytetarët.' },
-  { partyId: PartyID.AAK, category: 'economy', text: 'Pagat e 13-ta për sektorin publik', details: 'Bonus vjetor për shërbimin ndaj qytetarëve.' },
-  { partyId: PartyID.AAK, category: 'env', text: '5 diga të reja për ujitje', details: 'Sigurimi i ujit për bujqësinë dhe industrinë.' },
-  { partyId: PartyID.AAK, category: 'social', text: '300€ për familjet pa të punësuar', details: 'Mbështetje direkte për mirëqenien sociale.' },
-
-  // SHTIME TË REJA - PER T'U PËRPUTHUR ME QASJEN 'PDF'
-  // LVV
-  { partyId: PartyID.LVV, category: 'energy', text: 'Bateri akumuluese 170MW MCC', details: 'Rezerva strategjike energjetike (Compact Program).' },
-  { partyId: PartyID.LVV, category: 'env', text: 'Autostrada Prishtinë-Gjilan-Prizren', details: 'Përfundimi i lidhjeve kryesore infrastrukturore.' },
-  { partyId: PartyID.LVV, category: 'health', text: 'Spitali i Prishtinës', details: 'Fillimi i procedurave dhe ndërtimit.' },
-
-  // PDK
-  { partyId: PartyID.PDK, category: 'economy', text: '4 Miliardë Euro Fondi Investiv', details: 'Për projekte madhore strategjike zhvillimore.' },
-  { partyId: PartyID.PDK, category: 'social', text: '50€ Shtesa për çdo fëmijë', details: 'Skemë universale për mbështetjen e fëmijëve.' },
-  { partyId: PartyID.PDK, category: 'env', text: 'Hekurudha Prishtinë-Durrës', details: 'Lidhja strategjike me portin e Durrësit.' },
-
-  // LDK
-  { partyId: PartyID.LDK, category: 'edu', text: 'Ministri e Teknologjisë dhe Inovacionit', details: 'Fond 120M EUR për startup-e dhe inovacion.' },
-  { partyId: PartyID.LDK, category: 'env', text: 'Unaza e Jashtme e Prishtinës', details: 'Investim 250M EUR për trafikun në kryeqytet.' },
-  { partyId: PartyID.LDK, category: 'health', text: 'Spital i Ri i Qytetit', details: 'Zgjidhja përfundimtare për shëndetësinë në kryeqytet.' },
-
-  // SHTIME TË TJERA NGA PDF (VOL 2)
-  // AAK
-  { partyId: PartyID.AAK, category: 'security', text: 'Industria e Mbrojtjes', details: 'Prodhimi i municionit dhe pajisjeve ushtarake në Kosovë.' },
-  { partyId: PartyID.AAK, category: 'social', text: 'Veteranët në punë', details: 'E drejta për punë pa humbur pensionin e veteranit.' },
-  { partyId: PartyID.AAK, category: 'economy', text: 'Brendimi i Shtetit', details: 'Strategji nacionale për imazhin e Kosovës në 6 muajt e parë.' },
-
-  // LDK
-  { partyId: PartyID.LDK, category: 'energy', text: 'TVSH 0% për Energji', details: 'Heqja e TVSH-së në faturat e energjisë për qytetarët.' },
-  { partyId: PartyID.LDK, category: 'env', text: 'Hekurudha Xërxe-Prizren', details: 'Lidhja hekurudhore për zonën e Dukagjinit.' },
-  { partyId: PartyID.LDK, category: 'social', text: 'Vetting në Drejtësi', details: 'Pastrimi i sistemit gjyqësor dhe prokurorial.' },
-
-  // LVV
-  { partyId: PartyID.LVV, category: 'economy', text: 'Banka Zhvillimore', details: 'Krijimi i bankës shtetërore për projekte strategjike.' },
-  { partyId: PartyID.LVV, category: 'social', text: '10€ Bileta Mujore', details: 'Transport publik i integruar me kosto minimale.' },
-  { partyId: PartyID.LVV, category: 'env', text: '20 Stadiume Futbolli', details: 'Investim masiv në infrastrukturën sportive.' },
-
-  // PDK
-  { partyId: PartyID.PDK, category: 'social', text: 'Pensione +50%', details: 'Rritje e menjëhershme për të gjitha kategoritë pensionale.' },
-  { partyId: PartyID.PDK, category: 'energy', text: 'Ngrohje Qendrore në 5 Qytete', details: 'Zgjerimi i rrjetit të ngrohjes në qendrat kryesore.' },
-  { partyId: PartyID.PDK, category: 'economy', text: 'TVSH 0% Produkte Bazë', details: 'Heqja e taksave për shportën e konsumatorit.' },
-
-  // SHTIME FINALE (VOL 3) - PLOTËSIMI I KAPITUJVE
-  // LDK
-  { partyId: PartyID.LDK, category: 'edu', text: 'Digjitalizim i Shërbimeve', details: 'Transformimi i plotë digjital i administratës publike.' },
-  { partyId: PartyID.LDK, category: 'energy', text: '500MW Energji Solare+Erë', details: 'Investime ne energji te ripertritshme.' },
-  { partyId: PartyID.LDK, category: 'security', text: 'Qendra Speciale Hetimore', details: 'Themelimi i njësisë elitare kundër korrupsionit.' },
-
-  // AAK
-  { partyId: PartyID.AAK, category: 'energy', text: 'Gazsjellësi Amerikan', details: 'Lidhja strategjike me infrastrukturën e gazit.' },
-  { partyId: PartyID.AAK, category: 'edu', text: 'Arsim Profesional Dual', details: 'Lidhja direkte e shkollave me tregun e punës.' },
-  { partyId: PartyID.AAK, category: 'health', text: 'Fond për Sëmundje të Rënda', details: 'Mbulim 100% për trajtimet jashtë vendit.' },
-
-  // LVV
-  { partyId: PartyID.LVV, category: 'security', text: 'Shërbimi Ushtarak Rezervë', details: 'Krijimi i forcës rezervë për FSK-në.' },
-  { partyId: PartyID.LVV, category: 'env', text: 'Kompleksi "Brezovica"', details: 'Investim 500M EUR në turizmin malor.' },
-  { partyId: PartyID.LVV, category: 'health', text: 'Sistemi Informativ Shëndetësor', details: 'Funksionalizimi i plotë i SISH.' },
-
-  // PDK
-  { partyId: PartyID.PDK, category: 'edu', text: '30M EUR Buxhet për Bursa', details: 'Fondi vjetor për studentët ekselentë.' },
-  { partyId: PartyID.PDK, category: 'energy', text: 'Minierë e Re e Linjitit', details: 'Hapja e minierës për furnizim të qëndrueshëm.' },
-  { partyId: PartyID.PDK, category: 'health', text: 'Qendra Klinike Urgjente', details: 'Ndërtimi i qendrës nacionale të traumës.' },
-
-  { partyId: PartyID.LVV, category: 'economy', text: 'BPV 12 Miliardë Euro', details: 'Targeti për Bruto Produktin Vendor në fund të mandatit.' },
-
-  // CATEGORY UPDATES (Matching App.tsx)
-  // Justice
-  { partyId: PartyID.LVV, category: 'justice', text: 'Vetingu në Sistemin e Drejtësisë', details: 'Procesi i vetingut për gjyqtarët dhe prokurorët.' },
-  { partyId: PartyID.LDK, category: 'justice', text: 'Gjykata Komerciale', details: 'Fuqizimi i drejtësisë për bizneset.' },
-  { partyId: PartyID.PDK, category: 'justice', text: 'Lufta kundër Korrupsionit', details: 'Përgjegjësi dhe llogaridhënie në administratë.' },
-
-  // Agriculture
-  { partyId: PartyID.AAK, category: 'agri', text: 'Subvencione për Fermerët', details: 'Rritje e mbështetjes direkte për prodhimin vendor.' },
-  { partyId: PartyID.LDK, category: 'agri', text: 'Sisteme Ujitjeje Moderne', details: 'Investim në infrastrukturën bujqësore.' },
-
-  // Youth & Sport
-  { partyId: PartyID.LVV, category: 'youth', text: 'Stadiumi Nacional', details: 'Ndërtimi i stadiumit sipas standardeve të UEFA.' },
-  { partyId: PartyID.PDK, category: 'youth', text: 'Përkrahje për Startup-et e të rinjve', details: 'Grante për inovacion dhe teknologji.' },
-
-  // Diaspora
-  { partyId: PartyID.LDK, category: 'diaspora', text: 'Ministria e Diasporës', details: 'Rritja e rolit të mërgatës në zhvillimin e vendit.' },
-  { partyId: PartyID.AAK, category: 'diaspora', text: 'Lehtësime për Investime', details: 'Zonë e veçantë ekonomike për mërgatën.' },
-
-  // Culture
-  { partyId: PartyID.PDK, category: 'culture', text: 'Muzeu i Historisë Moderne', details: 'Ruajtja e trashëgimisë kulturore dhe historike.' },
+  { partyId: PartyID.AAK, category: 'economy', text: 'Paga Minimale 500€', details: 'Nuk do të ketë pagë nën 500 euro në asnjë sektor.' },
+  { partyId: PartyID.AAK, category: 'economy', text: 'Paga Mesatare 1,000€', details: 'Synimi për nivelin e pagës mesatare brenda mandatit.' },
+  { partyId: PartyID.AAK, category: 'social', text: 'Pensionet baraz me Pagën Minimale', details: 'Asnjë pensionist nuk do të ketë më pak se 500€.' },
+  { partyId: PartyID.AAK, category: 'social', text: '300€ për familjet pa të punësuar', details: 'Asnjë familje nuk do të mbetet pa të ardhura bazë.' },
+  { partyId: PartyID.AAK, category: 'security', text: 'Anëtarësim direkt në NATO', details: 'Plani i dakorduar me SHBA për anëtarësim të shpejtë.' },
+  { partyId: PartyID.AAK, category: 'health', text: 'Rritje 50% e pagave për Mjekë', details: 'Rritje e menjëhershme për të ndalur ikjen e stafit mjekësor.' },
+  { partyId: PartyID.AAK, category: 'energy', text: '6% TVSH për Energji Elektrike', details: 'Ulje e TVSH-së në faturat e dritave për familjet.' },
+  { partyId: PartyID.AAK, category: 'agri', text: '100 Milion Euro për Ujitje', details: 'Ndërtimi i 5 digave të reja për ujitjen e tokave bujqësore.' },
+  { partyId: PartyID.AAK, category: 'youth', text: '20 Fshatra Turistike', details: 'Investime në infrastrukturën e fshatrave me potencial turistik.' },
+  { partyId: PartyID.AAK, category: 'security', text: 'Fabrika e Municionit', details: 'Zhvillimi i industrisë vendore të mbrojtjes dhe sigurisë.' },
+  { partyId: PartyID.AAK, category: 'env', text: 'Hekurudha Kosovë-Shqipëri', details: 'Lidhja strategjike hekurudhore për qasje në portet shqiptare.' },
+  { partyId: PartyID.AAK, category: 'agri', text: 'Diga e Lepencit (Firajë)', details: 'Zgjidhje afatgjatë për ujë për 150,000 banorë në Jug.' },
+  { partyId: PartyID.AAK, category: 'health', text: 'Mjeku i Familjes për çdo shtëpi', details: 'Reforma që garanton kujdes parësor për secilën familje.' },
+  { partyId: PartyID.AAK, category: 'edu', text: 'Kampusi Madhështor për IT', details: 'Qendra më e madhe në Ballkan për inovacion dhe edukim TIK.' },
 ];
 
 const CATEGORIES = [

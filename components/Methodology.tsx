@@ -67,6 +67,37 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
           </div>
         </div>
 
+        <div className="space-y-8">
+          <div className="flex items-center space-x-6">
+            <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 whitespace-nowrap">BURIMET ZYRTARE TË PROGRAMEVE</h3>
+            <div className="h-px w-full bg-slate-100"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'PDK', url: 'https://pdk.info/', color: 'border-blue-100', text: 'Partia Demokratike' },
+              { name: 'LDK', url: 'https://lidhjademokratike.org/', color: 'border-blue-100', text: 'Lidhja Demokratike' },
+              { name: 'Vetëvendosje!', url: 'https://www.vetevendosje.org/', color: 'border-red-100', text: 'Lëvizja Vetëvendosje' },
+              { name: 'AAK', url: 'https://www.aak-ks.com/', color: 'border-slate-800', text: 'Aleanca për Ardhmërinë' }
+            ].map(party => (
+              <a 
+                key={party.name}
+                href={party.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white p-6 rounded-[2rem] border border-slate-100 hover:border-blue-600/20 hover:shadow-xl transition-all duration-500 text-center space-y-3"
+              >
+                <div className="text-xs font-black text-slate-900 group-hover:text-blue-600 transition-colors uppercase tracking-widest">{party.name}</div>
+                <div className="text-[9px] font-medium text-slate-400">{party.text}</div>
+                <div className="pt-2 flex items-center justify-center text-blue-500">
+                  <span className="text-[9px] font-black uppercase tracking-widest">Vizito Faqen</span>
+                  <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[8px]"></i>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
         <section className="bg-blue-600 rounded-[2.5rem] p-8 md:p-12 text-white space-y-6 shadow-2xl shadow-blue-500/20">
           <h3 className="text-2xl font-black uppercase tracking-tight">Vërejtje e rëndësishme</h3>
           <p className="text-blue-100 font-medium leading-relaxed opacity-90">

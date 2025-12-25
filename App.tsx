@@ -55,7 +55,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     setShuffledCategories([...CATEGORIES].sort(() => Math.random() - 0.5));
-    const savedTrends = localStorage.getItem('zotimi_trends');
+    const savedTrends = localStorage.getItem('zotimi_trends_v2');
     if (savedTrends) {
       try {
         const parsed = JSON.parse(savedTrends);
@@ -64,9 +64,15 @@ const App: React.FC = () => {
         console.error("Failed to parse trends", e);
       }
     } else {
-      const initial = { 'Ekonomia': 142, 'Siguria': 89, 'Sociale': 67, 'Energjia': 45 };
+      const initial = { 
+        'Siguria': 510, 
+        'Ekonomia': 413, 
+        'Energjia': 202, 
+        'Arsimi': 177, 
+        'Bujqësia': 153
+      };
       setTrends(initial);
-      localStorage.setItem('zotimi_trends', JSON.stringify(initial));
+      localStorage.setItem('zotimi_trends_v2', JSON.stringify(initial));
     }
   }, []);
 
@@ -80,7 +86,7 @@ const App: React.FC = () => {
     setTrends(prev => {
       const currentCount = Number(prev[category] || 0);
       const updated = { ...prev, [category]: currentCount + 1 };
-      localStorage.setItem('zotimi_trends', JSON.stringify(updated));
+      localStorage.setItem('zotimi_trends_v2', JSON.stringify(updated));
       return updated;
     });
   };
@@ -130,7 +136,7 @@ const App: React.FC = () => {
 
   const sortedTrends = Object.entries(trends)
     .sort((a, b) => Number(b[1]) - Number(a[1]))
-    .slice(0, 4);
+    .slice(0, 5);
 
   return (
     <div className="flex flex-col min-h-screen bg-transparent text-slate-900 overflow-x-hidden selection:bg-blue-100 relative">
@@ -182,41 +188,54 @@ const App: React.FC = () => {
               <section className="w-full bg-slate-900 text-white relative overflow-hidden py-16 md:py-32 px-4 md:px-6">
                 <div className="absolute top-0 right-0 w-[80%] h-full bg-gradient-to-l from-blue-600/20 to-transparent pointer-events-none"></div>
                 <div className="absolute bottom-[-10%] left-[-5%] w-96 h-96 bg-amber-500/10 blur-[100px] rounded-full pointer-events-none"></div>
-                
-                <div className="max-w-7xl mx-auto text-center space-y-12 relative z-10 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-                  <div className="inline-flex items-center px-5 py-2.5 rounded-full border border-white/10 bg-white/5 text-blue-400 text-[11px] font-black uppercase tracking-[0.25em] shadow-2xl backdrop-blur-sm">
-                    INDEKSI ZYRTAR I PROGRAMEVE 2025
-                  </div>
-                  
-                  <h2 className="text-5xl sm:text-7xl md:text-9xl font-black text-white leading-[0.95] tracking-tighter max-w-6xl mx-auto">
-                    Të Dhëna <span className="text-blue-500">Reale</span>. <br />
-                    <span className="text-slate-500">Jo Interpretim Robotik.</span>
-                  </h2>
-
-                  <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-xl rounded-[3.5rem] p-10 md:p-14 text-white relative overflow-hidden shadow-2xl shadow-black/50 mt-12 border border-white/10 group">
-                    <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-blue-600/10 via-transparent to-amber-500/5 opacity-50"></div>
-                    <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 text-left">
-                      <div className="shrink-0 w-24 h-24 bg-blue-600 rounded-[2.5rem] flex items-center justify-center text-white shadow-2xl shadow-blue-500/40 group-hover:scale-110 transition-transform duration-500">
-                        <i className="fa-solid fa-database text-4xl"></i>
+                <div className="max-w-7xl mx-auto relative z-10">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full text-left">
+                    <div className="space-y-8 animate-in fade-in slide-in-from-left-8 duration-1000">
+                      <div className="inline-flex items-center px-5 py-2.5 rounded-full border border-white/10 bg-white/5 text-blue-400 text-[11px] font-black uppercase tracking-[0.25em] shadow-2xl backdrop-blur-sm">
+                        INDEKSI ZYRTAR I PROGRAMEVE 2025
                       </div>
-                      <div className="space-y-5">
-                        <div className="inline-flex items-center space-x-2 px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 text-[10px] font-black uppercase tracking-widest">
-                          <i className="fa-solid fa-shield-halved"></i>
-                          <span>Databaza e Verifikuar</span>
+                      
+                      <h2 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter">
+                        Zotimet e <span className="text-blue-500">Partive</span>. <br />
+                        <span className="text-slate-500">Pa Filtër, Pa Interpretim.</span>
+                      </h2>
+                      
+                      <div className="flex items-center space-x-6">
+                        <div className="flex -space-x-3">
+                          {Object.values(PARTIES)
+                            .filter(p => p.id !== PartyID.LISTA_GUXO && p.id !== PartyID.NISMA)
+                            .map((p, i) => (
+                              <div key={i} className="w-10 h-10 rounded-full border-2 border-slate-900 bg-white p-1.5 shadow-xl">
+                                <img src={p.logo} alt={p.name} className="w-full h-full object-contain" />
+                              </div>
+                            ))}
                         </div>
-                        <h3 className="text-2xl md:text-3xl font-black tracking-tight">Si funksionon zotimi.com?</h3>
-                        <p className="text-slate-300 font-medium text-lg leading-relaxed">
-                          Kjo platformë është ndërtuar tërësisht me <span className="text-white font-black underline decoration-purple-500 decoration-2">Inteligjencë Artificiale</span>, e cila ka analizuar dhe indeksuar mbi 800 faqe material zyrtar për të nxjerrë çdo zotim.
+                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                          Analizë e sinkronizuar për <br /> të gjitha subjektet kryesore
                         </p>
-                        <div className="flex flex-wrap gap-4 pt-2">
+                      </div>
+                    </div>
+
+                    <div className="bg-white/5 backdrop-blur-xl rounded-[3.5rem] p-8 md:p-12 text-white relative overflow-hidden shadow-2xl shadow-black/50 border border-white/10 group animate-in fade-in slide-in-from-right-8 duration-1000">
+                      <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-blue-600/10 via-transparent to-amber-500/5 opacity-50"></div>
+                      <div className="relative z-10 space-y-6">
+                        <div className="w-16 h-16 bg-blue-600 rounded-[2rem] flex items-center justify-center text-white shadow-2xl shadow-blue-500/40 group-hover:scale-110 transition-transform duration-500">
+                          <i className="fa-solid fa-database text-2xl"></i>
+                        </div>
+                        <div className="space-y-3">
+                          <h3 className="text-2xl font-black tracking-tight">Si funksionon zotimi.com?</h3>
+                          <p className="text-slate-300 font-medium text-base leading-relaxed">
+                            Platforma është ndërtuar me <span className="text-white font-black">AI Moderne</span>, duke analizuar mbi 800 faqe material zyrtar për të nxjerrë çdo zotim pa asnjë ndryshim manual.
+                          </p>
+                        </div>
+                        <div className="flex flex-wrap gap-3">
                            {[
-                             { label: 'E ndërtuar me AI', icon: 'fa-robot', color: 'text-purple-400', bg: 'bg-purple-500/10' },
-                             { label: 'Analizë Automatike', icon: 'fa-microchip', color: 'text-blue-400', bg: 'bg-blue-500/10' },
-                             { label: 'Verifikim i Zotimeve', icon: 'fa-check-double', color: 'text-emerald-400', bg: 'bg-emerald-500/10' }
+                             { label: 'Analizë AI', icon: 'fa-robot', color: 'text-purple-400' },
+                             { label: 'Verifikim i Zotimeve', icon: 'fa-check-double', color: 'text-emerald-400' }
                            ].map((tag, t) => (
-                             <div key={t} className={`flex items-center space-x-2 px-4 py-2 ${tag.bg} rounded-xl border border-white/5 hover:border-white/20 transition-all`}>
-                                <i className={`fa-solid ${tag.icon} ${tag.color} text-xs`}></i>
-                                <span className={`text-[10px] font-black uppercase tracking-widest ${tag.color}`}>{tag.label}</span>
+                             <div key={t} className="flex items-center space-x-2 px-3 py-1.5 bg-white/5 rounded-xl border border-white/5">
+                                <i className={`fa-solid ${tag.icon} ${tag.color} text-[10px]`}></i>
+                                <span className="text-[9px] font-black uppercase tracking-widest text-slate-300">{tag.label}</span>
                              </div>
                            ))}
                         </div>
@@ -224,53 +243,48 @@ const App: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-8 mt-16 max-w-3xl mx-auto">
+                  <div className="space-y-8 mt-24 w-full flex flex-col items-center animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
                     <form 
                       onSubmit={(e) => {
                         e.preventDefault();
                         if (input.trim()) performAnalysis(input);
                       }} 
-                      className="relative group w-full px-2"
+                      className="relative group w-full max-w-5xl px-2"
                     >
-                      <div className="relative flex flex-col md:flex-row items-center bg-white/95 rounded-3xl md:rounded-full p-2.5 border-2 border-white/10 group-focus-within:border-blue-500 transition-all duration-500 shadow-2xl shadow-blue-500/20">
-                        <input 
-                          type="text"
-                          value={input}
-                          onChange={(e) => setInput(e.target.value)}
-                          placeholder="Kërko n.sh: 'rritja e pagave', 'nato', 'shtesat'..."
-                          className="flex-1 w-full py-4 md:py-5 px-6 md:px-8 outline-none text-slate-900 font-bold text-lg md:text-xl placeholder:text-slate-400 bg-transparent border-none focus:ring-0"
-                          autoComplete="off"
-                        />
+                      <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-[3rem] blur opacity-25 group-focus-within:opacity-75 transition duration-1000"></div>
+                      <div className="relative flex flex-col md:flex-row items-center bg-white rounded-[3rem] p-3 shadow-2xl">
+                        <div className="flex-1 flex items-center w-full px-6">
+                          <i className="fa-solid fa-magnifying-glass text-slate-300 text-xl md:text-2xl"></i>
+                          <input 
+                            type="text"
+                            value={input}
+                            onChange={(e) => setInput(e.target.value)}
+                            placeholder="Kërko zotimin n.sh: 'rritja e pagave', 'anëtarësimi në NATO'..."
+                            className="flex-1 py-5 md:py-6 px-4 md:px-6 outline-none text-slate-900 font-bold text-xl md:text-3xl placeholder:text-slate-300 bg-transparent"
+                            autoComplete="off"
+                          />
+                        </div>
                         <button 
                           disabled={!input.trim() || isLoading}
-                          className="w-full md:w-auto bg-blue-600 text-white px-8 md:px-12 py-4 md:py-5 rounded-2xl md:rounded-full font-black uppercase tracking-widest text-xs hover:bg-black transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-50 shadow-xl shadow-blue-500/20"
+                          className="w-full md:w-auto bg-blue-600 text-white px-10 md:px-16 py-5 md:py-6 rounded-[2.5rem] font-black uppercase tracking-widest text-sm hover:bg-black transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-50"
                         >
-                          {isLoading ? <i className="fa-solid fa-spinner animate-spin"></i> : <span>KËRKO ZOTIMIN</span>}
+                          {isLoading ? <i className="fa-solid fa-spinner animate-spin"></i> : <span>KËRKO TANI</span>}
                         </button>
                       </div>
                     </form>
 
                     <div className="flex flex-wrap justify-center gap-3">
-                      <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest mr-2 py-2">Trending:</span>
-                      {sortedTrends.map(([cat]) => (
+                      <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest mr-2 py-3">MË TË PËRMENDURAT NË PROGRAME:</span>
+                      {sortedTrends.map(([cat, count]) => (
                         <button 
                           key={cat}
                           onClick={() => performAnalysis(`Krahaso zotimet e partive për ${cat}`)}
-                          className="px-4 py-2 bg-white/5 hover:bg-blue-600 text-white rounded-full text-[9px] font-black uppercase tracking-widest border border-white/10 transition-all flex items-center gap-2 active:scale-95 backdrop-blur-sm"
+                          className="px-5 py-3 bg-white/5 hover:bg-blue-600 text-white rounded-full text-[10px] font-black uppercase tracking-widest border border-white/10 transition-all flex items-center gap-3 active:scale-95 backdrop-blur-sm group/tag"
                         >
-                          {cat}
+                          <span>{cat}</span>
+                          <span className="bg-white/10 px-2 py-0.5 rounded text-[9px] text-slate-400 group-hover/tag:text-white group-hover/tag:bg-white/20 transition-all">{count}</span>
                         </button>
                       ))}
-                    </div>
-
-                    <div className="pt-4">
-                      <Link 
-                        href="/explorer"
-                        className="group inline-flex items-center space-x-3 text-slate-500 hover:text-blue-400 transition-all text-[10px] font-black uppercase tracking-[0.3em]"
-                      >
-                        <span>Ose shfleto të gjitha programet direkt</span>
-                        <i className="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
-                      </Link>
                     </div>
                   </div>
                 </div>
@@ -430,7 +444,7 @@ const App: React.FC = () => {
             <Link href="/methodology" className="hover:text-blue-600 transition-colors">METODOLOGJIA</Link>
             <span className="flex items-center"><i className="fa-solid fa-shield-halved mr-2 text-blue-500/50"></i> NEUTRALITET POLITIK</span>
           </div>
-          <span className="text-blue-600 font-black tracking-widest bg-blue-50 px-4 py-2 rounded-full border border-blue-100/50">INDEKSI ZYRTAR I PROGRAMEVE 2025</span>
+          <span className="text-blue-600 font-black tracking-widest bg-blue-50 px-4 py-2 rounded-full border border-blue-100/50">INDEKSI I PROGRAMEVE 2025</span>
         </div>
       </footer>
     </div>
