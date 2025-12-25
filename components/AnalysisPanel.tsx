@@ -16,7 +16,7 @@ const AnalysisPanel: React.FC<AnalysisPanelProps> = ({ content, links }) => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'zotimi.com - Analiza AI 2025',
+          title: 'zotimi.com - Analiza 2025',
           text: shareText,
           url: shareUrl,
         });
