@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PartyID, PartyInfo, ComparisonPoint } from '../types';
 import { PARTIES } from '../constants';
 import ComparisonTable from './ComparisonTable';
@@ -98,9 +98,28 @@ const PROGRAM_DATA: PromiseItem[] = [
   { partyId: PartyID.PDK, category: 'energy', text: 'Minierë e Re e Linjitit', details: 'Hapja e minierës për furnizim të qëndrueshëm.' },
   { partyId: PartyID.PDK, category: 'health', text: 'Qendra Klinike Urgjente', details: 'Ndërtimi i qendrës nacionale të traumës.' },
 
-  // SHTIME PËRFUNDIMTARE (EXTRA)
-  { partyId: PartyID.LDK, category: 'economy', text: 'Ligji për Engjëjt Investitorë', details: 'Korniza ligjore për tërheqjen e investimeve në startup.' },
   { partyId: PartyID.LVV, category: 'economy', text: 'BPV 12 Miliardë Euro', details: 'Targeti për Bruto Produktin Vendor në fund të mandatit.' },
+
+  // CATEGORY UPDATES (Matching App.tsx)
+  // Justice
+  { partyId: PartyID.LVV, category: 'justice', text: 'Vetingu në Sistemin e Drejtësisë', details: 'Procesi i vetingut për gjyqtarët dhe prokurorët.' },
+  { partyId: PartyID.LDK, category: 'justice', text: 'Gjykata Komerciale', details: 'Fuqizimi i drejtësisë për bizneset.' },
+  { partyId: PartyID.PDK, category: 'justice', text: 'Lufta kundër Korrupsionit', details: 'Përgjegjësi dhe llogaridhënie në administratë.' },
+
+  // Agriculture
+  { partyId: PartyID.AAK, category: 'agri', text: 'Subvencione për Fermerët', details: 'Rritje e mbështetjes direkte për prodhimin vendor.' },
+  { partyId: PartyID.LDK, category: 'agri', text: 'Sisteme Ujitjeje Moderne', details: 'Investim në infrastrukturën bujqësore.' },
+
+  // Youth & Sport
+  { partyId: PartyID.LVV, category: 'youth', text: 'Stadiumi Nacional', details: 'Ndërtimi i stadiumit sipas standardeve të UEFA.' },
+  { partyId: PartyID.PDK, category: 'youth', text: 'Përkrahje për Startup-et e të rinjve', details: 'Grante për inovacion dhe teknologji.' },
+
+  // Diaspora
+  { partyId: PartyID.LDK, category: 'diaspora', text: 'Ministria e Diasporës', details: 'Rritja e rolit të mërgatës në zhvillimin e vendit.' },
+  { partyId: PartyID.AAK, category: 'diaspora', text: 'Lehtësime për Investime', details: 'Zonë e veçantë ekonomike për mërgatën.' },
+
+  // Culture
+  { partyId: PartyID.PDK, category: 'culture', text: 'Muzeu i Historisë Moderne', details: 'Ruajtja e trashëgimisë kulturore dhe historike.' },
 ];
 
 const CATEGORIES = [
@@ -112,12 +131,25 @@ const CATEGORIES = [
   { id: 'health', label: 'Shëndetësia', icon: 'fa-heart-pulse' },
   { id: 'edu', label: 'Arsimi & Inovacioni', icon: 'fa-graduation-cap' },
   { id: 'env', label: 'Infrastruktura', icon: 'fa-road' },
+  { id: 'justice', label: 'Drejtësia', icon: 'fa-scale-unbalanced' },
+  { id: 'agri', label: 'Bujqësia', icon: 'fa-wheat-awn' },
+  { id: 'youth', label: 'Rinia & Sporti', icon: 'fa-volleyball' },
+  { id: 'diaspora', label: 'Diaspora', icon: 'fa-earth-europe' },
+  { id: 'culture', label: 'Kultura', icon: 'fa-masks-theater' },
 ];
 
 const ProgramExplorer: React.FC<{ onBack: () => void }> = ({ onBack }) => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [activeParty, setActiveParty] = useState<PartyID | 'all'>('all');
   const [selectedPromise, setSelectedPromise] = useState<PromiseItem | null>(null);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const initialCat = params.get('category');
+    if (initialCat && CATEGORIES.find(c => c.id === initialCat)) {
+       setActiveCategory(initialCat);
+    }
+  }, []);
 
   const filteredPromises = PROGRAM_DATA.filter(p => {
     const catMatch = activeCategory === 'all' || p.category === activeCategory;

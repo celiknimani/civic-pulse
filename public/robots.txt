@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zotimi.com/sitemap.xml
