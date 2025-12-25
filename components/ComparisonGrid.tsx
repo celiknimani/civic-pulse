@@ -8,8 +8,11 @@ interface ComparisonGridProps {
 }
 
 const ComparisonGrid: React.FC<ComparisonGridProps> = ({ scores }) => {
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>, partyName: string) => {
-    (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(partyName)}&background=f1f5f9&color=3b82f6&bold=true&size=128&font-size=0.4`;
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>, pid: string) => {
+    const party = PARTIES[pid as PartyID];
+    const partyName = party?.name || pid;
+    const cleanColor = (party?.color || '#3b82f6').replace('#', '');
+    (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(partyName)}&background=${cleanColor}&color=fff&bold=true&size=128&font-size=0.4`;
   };
 
   return (
@@ -34,12 +37,12 @@ const ComparisonGrid: React.FC<ComparisonGridProps> = ({ scores }) => {
                     src={party.logo} 
                     alt={party.name} 
                     className="w-full h-full object-contain"
-                    onError={(e) => handleImageError(e, party.name)}
+                    onError={(e) => handleImageError(e, party.id)}
                   />
                 </div>
                 <div className="min-w-0">
                   <h4 className="font-black text-slate-900 leading-none text-base md:text-lg uppercase tracking-tight truncate">
-                    {party.name.split(' ').slice(-1)}
+                    {party.id}
                   </h4>
                   <p className="text-[9px] md:text-[10px] text-slate-400 font-black mt-1.5 uppercase tracking-widest truncate">{party.leader}</p>
                 </div>

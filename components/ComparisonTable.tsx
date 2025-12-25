@@ -12,6 +12,17 @@ interface ComparisonTableProps {
 const ComparisonTable: React.FC<ComparisonTableProps> = ({ points, activePartyIds, onImageError }) => {
   if (points.length === 0) return null;
 
+  const defaultImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>, pid: string) => {
+    if (onImageError) {
+      onImageError(e, pid);
+    } else {
+      const party = PARTIES[pid as PartyID];
+      const partyName = party?.name || pid;
+      const cleanColor = (party?.color || '#3b82f6').replace('#', '');
+      (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(partyName)}&background=${cleanColor}&color=fff&bold=true&size=128&font-size=0.4`;
+    }
+  };
+
   return (
     <div className="bg-white rounded-[1.5rem] md:rounded-[2rem] shadow-sm border border-slate-200 overflow-hidden">
       <div className="p-5 md:p-8 border-b border-slate-100 flex items-center justify-between">
@@ -41,11 +52,11 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ points, activePartyId
                           src={party?.logo} 
                           alt={party?.name} 
                           className="w-full h-full object-contain transition-transform hover:scale-110" 
-                          onError={(e) => onImageError ? onImageError(e, pid) : null}
+                          onError={(e) => defaultImageError(e, pid)}
                         />
                       </div>
                       <span className="text-[8px] md:text-[10px] font-black text-slate-800 uppercase tracking-widest leading-tight text-center">
-                        {party?.name.split(' ').slice(-1)}
+                        {party?.id}
                       </span>
                     </div>
                   </th>
