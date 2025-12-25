@@ -21,7 +21,7 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             Si funksionon <span className="text-blue-600">zotimi.com</span>?
           </h2>
           <p className="text-lg text-slate-500 font-medium leading-relaxed">
-            Platforma jonë është ndërtuar për të ofruar një pasqyrë të paanshme, teknike dhe të shpejtë të premtimeve elektorale, duke përdorur teknologjinë më të fundit të inteligjencës artificiale.
+            Platforma jonë është ndërtuar për të ofruar një pasqyrë të paanshme, teknike dhe të shpejtë të premtimeve elektorale, duke përdorur indeksimin e detajuar të dokumenteve zyrtare.
           </p>
         </header>
 
@@ -38,11 +38,11 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
 
           <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-slate-100 shadow-sm space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-600 text-xl">
-              <i className="fa-solid fa-brain-circuit"></i>
+              <i className="fa-solid fa-list-check"></i>
             </div>
-            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Analiza përmes AI</h4>
+            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Indeksimi Sektorial</h4>
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Përdorim modelin <strong>Google Gemini 3 Flash</strong>. Kur bëni një pyetje, AI skanon të gjithë tekstin e programeve (RAG - Retrieval Augmented Generation) për të gjetur pikat ku partitë përputhen ose dallojnë.
+              Çdo zotim është nxjerrë manualisht nga dokumentet PDF dhe është etiketuar me fjalë kyçe. Kur bëni një kërkim, sistemi gjen përputhshmërinë më të lartë mes kërkesës suaj dhe zotimeve zyrtare të partive.
             </p>
           </div>
 
@@ -52,17 +52,17 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             </div>
             <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Sistemi i Pikëzimit</h4>
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Notat 0-10 nuk janë subjektive. AI vlerëson <strong>specifitetin</strong> e premtimeve. Një parti që premton "rritje të pagave" pa shifra merr notë më të ulët se një parti që premton "koeficient 150" me plan buxhetor.
+              Pikët (0-10) llogariten në bazë të <strong>përmbushjes së kritereve</strong> teknike dhe sasisë së zotimeve specifike. Sa më shumë detaje dhe shifra të ofrojë një parti në një kategori, aq më i lartë është pikëzimi në atë sektor.
             </p>
           </div>
 
           <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-slate-100 shadow-sm space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-pink-50 flex items-center justify-center text-pink-600 text-xl">
-              <i className="fa-solid fa-scale-balanced"></i>
+               <i className="fa-solid fa-scale-balanced"></i>
             </div>
-            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Neutraliteti Gjenetik</h4>
+            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Neutraliteti i Procesimit</h4>
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Instruksionet e sistemit tonë (System Instructions) e detyrojnë AI-n të jetë "non-partisan". Ajo nuk lejohet të favorizojë asnjë ideologji, por vetëm të nxjerrë fakte dhe shifra krahasuese.
+              Algoritmi ynë i kërkimit është 100% neutral. Ai vetëm nxjerr të dhënat që ekzistojnë në dokumentet zyrtare pa shtuar asnjë interpretim apo koment subjektiv mbi vlerën e premtimeve.
             </p>
           </div>
         </div>
@@ -70,7 +70,7 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
         <section className="bg-blue-600 rounded-[2.5rem] p-8 md:p-12 text-white space-y-6 shadow-2xl shadow-blue-500/20">
           <h3 className="text-2xl font-black uppercase tracking-tight">Vërejtje e rëndësishme</h3>
           <p className="text-blue-100 font-medium leading-relaxed opacity-90">
-            zotimi.com është një mjet informues dhe jo këshillues. Edhe pse AI bën punë të shkëlqyer në analizë, ne ju inkurajojmë të klikoni mbi "Burimet e Verifikuara" në çdo analizë për të lexuar tekstin origjinal të planprogrameve politike.
+            zotimi.com është një mjet informues dhe jo këshillues. Sistemi ynë bën vetëm krahasimin teknik të të dhënave të indeksuara. Ju inkurajojmë të lexoni tekstin origjinal të planprogrameve politike për detaje shtesë.
           </p>
           <button 
             onClick={onBack}

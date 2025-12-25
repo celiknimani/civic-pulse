@@ -7,32 +7,32 @@ export const PARTIES: Record<PartyID, PartyInfo> = {
     name: 'Lëvizja Vetëvendosje',
     leader: 'Albin Kurti',
     color: '#E30613',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Logo_of_Vet%C3%ABvendosje.svg/512px-Logo_of_Vet%C3%ABvendosje.svg.png',
-    description: 'Fokusohet në sovranitetin shtetëror, transferet sociale (dyfishimi i shtesave për fëmijë) dhe rritjen industriale përmes Bankës Zhvillimore.'
+    logo: '/logos/lvv.png',
+    description: 'Programi "Siguri dhe Begati" (2025-2029). Synon investimin prej 1 miliard euro në ushtri, pagën minimale mbi 500€, dhe hapjen e 500,000 vendeve të reja të punës.'
   },
   [PartyID.PDK]: {
     id: PartyID.PDK,
     name: 'Partia Demokratike e Kosovës',
-    leader: 'Memli Krasniqi',
+    leader: 'Bedri Hamza',
     color: '#00ADEF',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Partia_Demokratike_e_Kosov%C3%ABs_Logo.svg/512px-Partia_Demokratike_e_Kosov%C3%ABs_Logo.svg.png',
-    description: 'Platformë e qendrës së djathtë që thekson liberalizimin ekonomik dhe forcimin e shtetit të së drejtës.'
+    logo: '/logos/pdk.jpg',
+    description: 'Programi "Ardhmëria". Premton rritje 50% të pagave në sektorin publik, lirim nga tatimi për pagat deri në 400€, dhe ndërtimin e termocentralit "Kosova e Re".'
   },
   [PartyID.LDK]: {
     id: PartyID.LDK,
     name: 'Lidhja Demokratike e Kosovës',
     leader: 'Lumir Abdixhiku',
     color: '#003399',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Lidhja_Demokratike_e_Kosov%C3%ABs.svg/512px-Lidhja_Demokratike_e_Kosov%C3%ABs.svg.png',
-    description: 'Programi "Rruga e Re" me fokus në buxhetin 5 miliardë euro, gazifikimin dhe koeficientin e pagave 150.'
+    logo: '/logos/ldk.jpg',
+    description: 'Vizioni "Rruga e Re". Fokusohet në investimet kapitale prej 5 miliardë eurove, ngritjen e koeficientit të pagave në 150, dhe gazifikimin e plotë të Kosovës.'
   },
   [PartyID.AAK]: {
     id: PartyID.AAK,
     name: 'Aleanca për Ardhmërinë e Kosovës',
     leader: 'Ramush Haradinaj',
     color: '#FFCC00',
-    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Alliance_for_the_Future_of_Kosovo_logo.svg/512px-Alliance_for_the_Future_of_Kosovo_logo.svg.png',
-    description: 'Udhëheq koalicionin me objektiv rritjen 7% të BPV-së dhe qasje të sigurisë për anëtarësim direkt në NATO.'
+    logo: '/logos/aak.jpg',
+    description: 'Koalicioni AAK-Nisma-Konservatorët. Prioritet kryesor anëtarësimin direkt në NATO, rritjen ekonomike 7% dhe pagën mesatare 1000€.'
   },
   [PartyID.LISTA_GUXO]: {
     id: PartyID.LISTA_GUXO,
