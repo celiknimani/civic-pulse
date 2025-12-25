@@ -13,6 +13,8 @@ interface PromiseItem {
 
 const PROGRAM_DATA: PromiseItem[] = [
   // LVV
+  { partyId: PartyID.LVV, category: 'security', text: 'Anëtarësimi në NATO', details: 'Aplikimi për Partneritet për Paqe dhe anëtarësim të plotë në aleancën veri-atlantike.' },
+  { partyId: PartyID.LVV, category: 'security', text: 'Dronë "Made in Kosova"', details: 'Zhvillimi i industrisë ushtarake vendore për prodhimin e dronëve.' },
   { partyId: PartyID.LVV, category: 'security', text: '1 Miliard Euro investime në ushtri', details: 'Blerje e armatimit modern, ndërtimi i fabrikave të municionit dhe dronëve.' },
   { partyId: PartyID.LVV, category: 'economy', text: '500,000 të punësuar deri në fund të mandatit', details: 'Fokus në punësimin e rinisë dhe grave përmes masave mbështetëse.' },
   { partyId: PartyID.LVV, category: 'social', text: 'Shtesat për fëmijë deri në 90€', details: 'Dyfishimi i shtesave aktuale nga 45€ në 90€ për muaj.' },
@@ -45,6 +47,9 @@ const PROGRAM_DATA: PromiseItem[] = [
   { partyId: PartyID.PDK, category: 'health', text: 'Barna Falas për Kronikët', details: 'Garancia që asnjë pacient kronik mos të blejë barna esenciale nga xhepi.' },
   { partyId: PartyID.PDK, category: 'health', text: 'Qendra Kombëtare e Urgjencës (QKUM)', details: 'Sistem unik kombëtar i dispeçerimit dhe koordinimit të shërbimeve emergjente.' },
   { partyId: PartyID.PDK, category: 'health', text: 'Spitali Rajonal i Prishtinës', details: 'Ndërtimi i spitalit të ri për t\'u shërbyer banorëve të kryeqytetit.' },
+  { partyId: PartyID.PDK, category: 'economy', text: 'Bursa e Kosovës', details: 'Themelimi i bursës për tregtim të letrave me vlerë dhe kapital.' },
+  { partyId: PartyID.PDK, category: 'social', text: 'Fondi i Papunësisë', details: 'Pagesa tranzitore dhe rikualifikim për personat që humbin punën.' },
+  { partyId: PartyID.PDK, category: 'economy', text: '0% TVSH produkte bazë', details: 'Heqja e TVSH-së për shportën esenciale të konsumit.' },
 
   // LDK
   { partyId: PartyID.LDK, category: 'economy', text: 'Buxhet 4.5 Miliardë Euro', details: 'Arritja e këtij buxheti përmes rritjes ekonomike prej 5%.' },
@@ -81,9 +86,21 @@ const PROGRAM_DATA: PromiseItem[] = [
   { partyId: PartyID.AAK, category: 'agri', text: 'Diga e Lepencit (Firajë)', details: 'Zgjidhje për ujë për 150,000 banorë në Jug (Gjilan, Ferizaj, Viti).' },
   { partyId: PartyID.AAK, category: 'health', text: 'Mjeku i Familjes për çdo shtëpi', details: 'Reforma që garanton kujdes parësor për secilën familje.' },
   { partyId: PartyID.AAK, category: 'edu', text: 'Kampusi Madhështor për IT', details: 'Qendra më e madhe në Ballkan me zyra falas për startup-et.' },
-  { partyId: PartyID.AAK, category: 'env', text: 'Policia Mjedisore', details: 'Themelimi i departamentit të specializuar për mbrojtjen e natyrës.' },
+  { partyId: PartyID.AAK, category: 'culture', text: 'Turizmi Kulturor', details: 'Program nacional për promovimin e trashëgimisë dhe monumenteve historike.' },
+  { partyId: PartyID.AAK, category: 'culture', text: 'Qendra e Skijimit Brezovicë', details: 'Investim strategjik për turizmin dimëror dhe malor.' },
+
+  // Culture Specifics
+  { partyId: PartyID.PDK, category: 'culture', text: 'Diplomacia Kulturore', details: 'Përdorimi i artit dhe kulturës për afirmimin ndërkombëtar të shtetit.' },
+  { partyId: PartyID.PDK, category: 'culture', text: 'Mbështetje për Artistët', details: 'Financim transparent dhe konkurrues për projekte artistike.' },
+  
+  { partyId: PartyID.LDK, category: 'culture', text: 'Teatri i Operës (25M€)', details: 'Ndërtimi i Teatrit të Operës dhe Baletit "Dr. Ibrahim Rugova".' },
+  { partyId: PartyID.LDK, category: 'culture', text: 'Qendra e Artit Bashkëkohor', details: 'Hapësirë e re për artistët vizualë dhe ekspozita ndërkombëtare.' },
   { partyId: PartyID.AAK, category: 'economy', text: 'Investime 1.5 Miliardë', details: 'Rritja e investimeve publike vjetore deri në fund të mandatit.' },
   { partyId: PartyID.AAK, category: 'env', text: 'Domeni .kos', details: 'Pavarsimi i identitetit digjital përmes domenit kombëtar.' },
+  { partyId: PartyID.AAK, category: 'env', text: 'Autostrada e Dukagjinit', details: 'Përfundimi i autostradës strategjike Pejë-Gjakovë-Prizren.' },
+  { partyId: PartyID.AAK, category: 'economy', text: 'Zhdoganim i Veturave 15 vjet', details: 'Lejimi i importit të veturave deri në 15 vjet vjetërsi.' },
+  { partyId: PartyID.AAK, category: 'economy', text: 'TVSH e Ulët në Turizëm', details: 'Stimulim për sektorin e hotelerisë dhe operatorët turistikë.' },
+  { partyId: PartyID.AAK, category: 'env', text: 'Hekurudha e Aeroportit', details: 'Lidhja hekurudhore Prishtinë - Aeroporti Adem Jashari.' },
 ];
 
 const CATEGORIES = [

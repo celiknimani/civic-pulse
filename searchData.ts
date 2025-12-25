@@ -137,6 +137,22 @@ export const ZOTIMET: Zotim[] = [
   {
     partyId: PartyID.LVV,
     category: 'Siguria',
+    text: 'Anëtarësimi në NATO',
+    detail: 'Aplikimi për Partneritet për Paqe dhe anëtarësim të plotë në aleancën veri-atlantike.',
+    keywords: ['nato', 'anëtarësim', 'siguria', 'ushtria', 'aleanca'],
+    scoreContribution: { securityAndNATO: 10 }
+  },
+  {
+    partyId: PartyID.LVV,
+    category: 'Siguria',
+    text: 'Dronë "Made in Kosova"',
+    detail: 'Zhvillimi i industrisë ushtarake vendore për prodhimin e dronëve.',
+    keywords: ['drone', 'fabrika', 'prodhimi', 'ushtria', 'armatim', 'industria'],
+    scoreContribution: { securityAndNATO: 9 }
+  },
+  {
+    partyId: PartyID.LVV,
+    category: 'Siguria',
     text: '1 miliard euro për armatim modern',
     detail: 'Fuqizimi i FSK-së me teknologjinë më të fundit luftarake.',
     keywords: ['ushtria', 'armatim', 'fsk', 'siguria', 'nato', 'mbrojtja'],
@@ -296,6 +312,30 @@ export const ZOTIMET: Zotim[] = [
     keywords: ['urgjenca', 'ndihma e shpejtë', 'ambulanca', 'shëndetësia', 'qkum'],
     scoreContribution: { socialAndFamily: 8 }
   },
+  {
+    partyId: PartyID.PDK,
+    category: 'Ekonomia',
+    text: 'Bursa e Kosovës',
+    detail: 'Themelimi i bursës për të rritur transparencën dhe për të siguruar kapital për bizneset.',
+    keywords: ['bursa', 'financat', 'kapitali', 'ekonomia', 'biznesi'],
+    scoreContribution: { growthAndWages: 8 }
+  },
+  {
+    partyId: PartyID.PDK,
+    category: 'Sociale',
+    text: 'Fondi i Papunësisë',
+    detail: 'Mbështetje financiare e përkohshme dhe programe rikualifikimi për qytetarët që mbesin pa punë.',
+    keywords: ['papunësia', 'fondi', 'sociale', 'puna', 'siguria'],
+    scoreContribution: { socialAndFamily: 9 }
+  },
+  {
+    partyId: PartyID.PDK,
+    category: 'Ekonomia',
+    text: '0% TVSH për Produktet Esenciale',
+    detail: 'Heqja e TVSH-së për produktet bazë të shportës së konsumatorit.',
+    keywords: ['tvsh', 'shporta', 'ushqimi', 'ekonomia', 'çmimet'],
+    scoreContribution: { socialAndFamily: 8 }
+  },
 
   // AAK
   {
@@ -393,5 +433,37 @@ export const ZOTIMET: Zotim[] = [
     detail: 'Rritja e investimeve publike deri në 1.5 miliardë euro në vit deri në fund të mandatit.',
     keywords: ['buxheti', 'investimi', 'kapitale', 'miliard', 'ekonomia'],
     scoreContribution: { growthAndWages: 8 }
+  },
+  {
+    partyId: PartyID.AAK,
+    category: 'Infrastruktura',
+    text: 'Autostrada e Dukagjinit',
+    detail: 'Përfundimi i autostradës që lidh Pejën, Gjakovën dhe Prizrenin.',
+    keywords: ['autostrada', 'dukagjini', 'peja', 'gjakova', 'prizreni', 'rruga'],
+    scoreContribution: { infrastructureAndEnergy: 9 }
+  },
+  {
+    partyId: PartyID.AAK,
+    category: 'Ekonomia',
+    text: 'Zhdoganim i Veturave 15 vjet',
+    detail: 'Zgjatja e afatit për importin e veturave nga 10 në 15 vjet.',
+    keywords: ['vetura', 'dogana', 'importi', 'makina', 'vjetërsia'],
+    scoreContribution: { growthAndWages: 7 }
+  },
+  {
+    partyId: PartyID.AAK,
+    category: 'Ekonomia',
+    text: 'TVSH e Ulët në Turizëm',
+    detail: 'Reduktimi i TVSH-së për operatorët turistikë për të nxitur vizitorët.',
+    keywords: ['turizmi', 'tvsh', 'hotelet', 'vizitorë', 'operatorë'],
+    scoreContribution: { growthAndWages: 7 }
+  },
+  {
+    partyId: PartyID.AAK,
+    category: 'Infrastruktura',
+    text: 'Hekurudha e Aeroportit',
+    detail: 'Lidhja e re hekurudhore Prishtinë - Aeroporti Adem Jashari.',
+    keywords: ['aeroporti', 'trena', 'hekurudha', 'prishtina', 'transporti'],
+    scoreContribution: { infrastructureAndEnergy: 8 }
   }
 ];
