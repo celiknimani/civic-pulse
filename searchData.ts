@@ -36,10 +36,10 @@ export const ZOTIMET: Zotim[] = [
   },
   {
     partyId: PartyID.LDK,
-    category: 'Pagat',
+    category: 'Ekonomia',
     text: 'Koeficienti i pagave 125-135',
     detail: 'Ngritja e menjëhershme e vlerës së koeficientit në vitin e parë.',
-    keywords: ['paga', 'koeficienti', 'sektori publik', 'rroga'],
+    keywords: ['paga', 'koeficienti', 'sektori publik', 'rroga', 'ekonomia'],
     scoreContribution: { growthAndWages: 9 }
   },
   {
@@ -94,11 +94,10 @@ export const ZOTIMET: Zotim[] = [
   },
   {
     partyId: PartyID.LDK,
-    category: 'Ekonomia',
-    subCategory: 'Transporti',
+    category: 'Infrastruktura',
     text: 'Aviokompani Kombëtare',
     detail: 'Themelimi i kompanisë ajrore kombëtare me flotë prej 4-8 avionësh.',
-    keywords: ['aeroplani', 'fluturimi', 'aeroporti', 'diaspora', 'transporti'],
+    keywords: ['aeroplani', 'fluturimi', 'aeroporti', 'diaspora', 'transporti', 'infrastruktura'],
     scoreContribution: { infrastructureAndEnergy: 7 }
   },
   {
@@ -108,6 +107,30 @@ export const ZOTIMET: Zotim[] = [
     detail: 'Kthimi i 2% të TVSH-së qytetarëve për çdo blerje përmes kodit QR.',
     keywords: ['tvsh', 'rimbursimi', 'qr', 'paraja', 'fiskal'],
     scoreContribution: { growthAndWages: 7 }
+  },
+  {
+    partyId: PartyID.LDK,
+    category: 'Shëndetësia',
+    text: 'Qendra e Re Spitalore (250M€)',
+    detail: 'Ndërtimi i spitalit modern në Prishtinë për të zëvendësuar objektet e vjetra brenda 4 viteve.',
+    keywords: ['spitali', 'qkuk', 'mjekësia', 'investimi', 'shëndeti', 'ndërtimi'],
+    scoreContribution: { socialAndFamily: 9 }
+  },
+  {
+    partyId: PartyID.LDK,
+    category: 'Shëndetësia',
+    text: 'Heqja e Listave të Pritjes',
+    detail: 'Ofrimi i shërbimeve mjekësore brenda 1 jave përmes kontratave me sektorin privat.',
+    keywords: ['operacioni', 'kontrolli', 'privat', 'shërbimi', 'shpejtë', 'mjeku'],
+    scoreContribution: { socialAndFamily: 8 }
+  },
+  {
+    partyId: PartyID.LDK,
+    category: 'Sociale',
+    text: 'Banim për Familjet e Reja',
+    detail: 'Subvencione prej 15M Euro për të ndihmuar familjet e reja të blejnë shtëpinë apo banesën e parë.',
+    keywords: ['banesa', 'shtëpi', 'kredit', 'interesi', 'familjet', 'rinia'],
+    scoreContribution: { socialAndFamily: 8 }
   },
 
   // LVV
@@ -159,14 +182,30 @@ export const ZOTIMET: Zotim[] = [
     keywords: ['vetingu', 'drejtësia', 'gjykatat', 'prokuroria'],
     scoreContribution: { securityAndNATO: 8 }
   },
+  {
+    partyId: PartyID.LVV,
+    category: 'Ekonomia',
+    text: 'Fondi Sovran',
+    detail: 'Kthimi i ndërmarrjeve publike në asete ekonomike përmes Fondit Sovran të investimeve.',
+    keywords: ['akp', 'ndërmarrjet', 'investimi', 'sovran', 'trepça', 'kek'],
+    scoreContribution: { growthAndWages: 9 }
+  },
+  {
+    partyId: PartyID.LVV,
+    category: 'Shëndetësia',
+    text: 'Decentralizimi i Spitaleve',
+    detail: 'Fuqizimi i spitaleve rajonale për të ofruar shërbime që aktualisht kryhen vetëm në QKUK.',
+    keywords: ['rajonal', 'spitali', 'mjekësia', 'decentralizimi', 'shërbimi'],
+    scoreContribution: { socialAndFamily: 7 }
+  },
 
   // PDK
   {
     partyId: PartyID.PDK,
-    category: 'Pagat',
+    category: 'Ekonomia',
     text: 'Rritje 50% e pagave në sektorin publik',
     detail: 'Rritje për mësuesit, mjekët, policët dhe administratën.',
-    keywords: ['paga', 'rritje', 'rroga', 'sektori publik', 'mësuesit', 'mjekët'],
+    keywords: ['paga', 'rritje', 'rroga', 'sektori publik', 'mësuesit', 'mjekët', 'ekonomia'],
     scoreContribution: { growthAndWages: 10 }
   },
   {
@@ -241,6 +280,22 @@ export const ZOTIMET: Zotim[] = [
     keywords: ['garda', 'ushtria', 'kriza', 'emergjenca', 'mbrojtja'],
     scoreContribution: { securityAndNATO: 9 }
   },
+  {
+    partyId: PartyID.PDK,
+    category: 'Shëndetësia',
+    text: 'Barnat Falas për Kronikët',
+    detail: 'Mbulimi i plotë i kostos së barnave esenciale për të gjithë qytetarët me sëmundje kronike.',
+    keywords: ['barnat', 'ilaçet', 'farmacia', 'recepti', 'falas', 'shëndeti', 'kronike'],
+    scoreContribution: { socialAndFamily: 9 }
+  },
+  {
+    partyId: PartyID.PDK,
+    category: 'Shëndetësia',
+    text: 'Qendra Kombëtare e Urgjencës',
+    detail: 'Sistemi unik i koordinimit (QKUM) për përgjigje të shpejtë mjekësore në gjithë vendin.',
+    keywords: ['urgjenca', 'ndihma e shpejtë', 'ambulanca', 'shëndetësia', 'qkum'],
+    scoreContribution: { socialAndFamily: 8 }
+  },
 
   // AAK
   {
@@ -253,18 +308,18 @@ export const ZOTIMET: Zotim[] = [
   },
   {
     partyId: PartyID.AAK,
-    category: 'Pagat',
+    category: 'Ekonomia',
     text: 'Paga Minimale 500€',
     detail: 'Caktimi i pagës minimale në nivelin 500€ në të gjithë sektorët.',
-    keywords: ['paga', 'minimale', '500', 'rroga'],
+    keywords: ['paga', 'minimale', '500', 'rroga', 'ekonomia'],
     scoreContribution: { growthAndWages: 9 }
   },
   {
     partyId: PartyID.AAK,
-    category: 'Pagat',
+    category: 'Ekonomia',
     text: 'Paga mesatare 1000 euro',
     detail: 'Arritja e nivelit të pagës mesatare prej 1000 euro brenda mandatit.',
-    keywords: ['paga', 'mesatare', 'euro', '1000', 'rroga'],
+    keywords: ['paga', 'mesatare', 'euro', '1000', 'rroga', 'ekonomia'],
     scoreContribution: { growthAndWages: 9 }
   },
   {
@@ -321,6 +376,22 @@ export const ZOTIMET: Zotim[] = [
     text: 'Kampusi Madhështor për IT',
     detail: 'Qendra më e madhe në Ballkan për inovacion dhe edukim TIK.',
     keywords: ['tik', 'it', 'studentët', 'kampusi', 'teknologjia'],
+    scoreContribution: { growthAndWages: 8 }
+  },
+  {
+    partyId: PartyID.AAK,
+    category: 'Infrastruktura',
+    text: 'Policia Mjedisore',
+    detail: 'Krijimi i një departamenti të specializuar policor për mbrojtjen e lumenjve dhe pyjeve.',
+    keywords: ['pyjet', 'lumenjtë', 'ambienti', 'policia', 'mbrojtja', 'inspektimi'],
+    scoreContribution: { infrastructureAndEnergy: 7 }
+  },
+  {
+    partyId: PartyID.AAK,
+    category: 'Ekonomia',
+    text: 'Investime 1.5 Miliardë Euro',
+    detail: 'Rritja e investimeve publike deri në 1.5 miliardë euro në vit deri në fund të mandatit.',
+    keywords: ['buxheti', 'investimi', 'kapitale', 'miliard', 'ekonomia'],
     scoreContribution: { growthAndWages: 8 }
   }
 ];

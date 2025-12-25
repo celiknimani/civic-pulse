@@ -24,6 +24,8 @@ const PROGRAM_DATA: PromiseItem[] = [
   { partyId: PartyID.LVV, category: 'env', text: 'Hekurudha Prishtinë-Durrës', details: 'Projekti strategjik për lidhjen hekurudhore me Shqipërinë.' },
   { partyId: PartyID.LVV, category: 'diaspora', text: 'Zotimi për Mërgatën', details: 'Lehtësimi i votimit dhe dritarja për investime nga diaspora.' },
   { partyId: PartyID.LVV, category: 'economy', text: 'Porti i Thatë në Prishtinë', details: 'Transformimi i Kosovës në një qendër logjistike rajonale.' },
+  { partyId: PartyID.LVV, category: 'economy', text: 'Fondi Sovran', details: 'Transformimi i AKP në Fond Sovran për investime strategjike në ndërmarrje publike.' },
+  { partyId: PartyID.LVV, category: 'health', text: 'Spitalet Rajonale', details: 'Investim në infrastrukturë dhe pajisje për të decentralizuar shërbimet nga QKUK.' },
 
   // PDK
   { partyId: PartyID.PDK, category: 'economy', text: 'Rritje 50% e pagave në sektorin publik', details: 'Përfshin mësuesit, mjekët, policët dhe administratën.' },
@@ -40,6 +42,9 @@ const PROGRAM_DATA: PromiseItem[] = [
   { partyId: PartyID.PDK, category: 'env', text: 'Stadiumi Olimpik Kombëtar', details: 'Ndërtimi i stadiumit modern si projekt strategjik kombëtar.' },
   { partyId: PartyID.PDK, category: 'security', text: 'Njësia e Helikopterëve', details: 'Krijimi i njësisë për emergjenca, shpëtim dhe mbështetje policore.' },
   { partyId: PartyID.PDK, category: 'security', text: 'Garda Kombëtare e Kosovës', details: 'Strukturë e re reaguese për situata emergjente dhe kriza.' },
+  { partyId: PartyID.PDK, category: 'health', text: 'Barna Falas për Kronikët', details: 'Garancia që asnjë pacient kronik mos të blejë barna esenciale nga xhepi.' },
+  { partyId: PartyID.PDK, category: 'health', text: 'Qendra Kombëtare e Urgjencës (QKUM)', details: 'Sistem unik kombëtar i dispeçerimit dhe koordinimit të shërbimeve emergjente.' },
+  { partyId: PartyID.PDK, category: 'health', text: 'Spitali Rajonal i Prishtinës', details: 'Ndërtimi i spitalit të ri për t\'u shërbyer banorëve të kryeqytetit.' },
 
   // LDK
   { partyId: PartyID.LDK, category: 'economy', text: 'Buxhet 4.5 Miliardë Euro', details: 'Arritja e këtij buxheti përmes rritjes ekonomike prej 5%.' },
@@ -56,6 +61,10 @@ const PROGRAM_DATA: PromiseItem[] = [
   { partyId: PartyID.LDK, category: 'edu', text: 'Trajnimi i 40,000 të rinjve në TIK', details: 'Investim 80M Euro për aftësimin e rinisë në teknologji.' },
   { partyId: PartyID.LDK, category: 'economy', text: 'Tech Fondi 120 Milion Euro', details: 'Mbështetje kapitale për startup-et dhe SME-të teknologjike.' },
   { partyId: PartyID.LDK, category: 'energy', text: 'Gazifikimi i 7 Qendrave', details: 'Shtrirja e rrjetit të gazit nga Hani i Elezit deri në Mitrovicë.' },
+  { partyId: PartyID.LDK, category: 'health', text: 'Qendra e Re Spitalore (250M€)', details: 'Ndërtimi i objektit të ri spitalor modern brenda 4 viteve në Prishtinë.' },
+  { partyId: PartyID.LDK, category: 'health', text: 'Heqja e Listave të Pritjes', details: 'Reduktimi i pritjes nga 12 muaj në më pak se 1 javë përmes sektorit privat.' },
+  { partyId: PartyID.LDK, category: 'social', text: 'Banim për Familjet e Reja (15M€)', details: 'Subvencione dhe kredi të buta për të siguruar shtëpinë/banesën e parë.' },
+  { partyId: PartyID.LDK, category: 'env', text: '200 Vendndalesa Rajonale', details: 'Ndërtimi i stacioneve për autobusë dhe vetura (10M€) përgjatë rrugëve rajonale.' },
 
   // AAK
   { partyId: PartyID.AAK, category: 'economy', text: 'Paga Minimale 500€', details: 'Nuk do të ketë pagë nën 500 euro në asnjë sektor.' },
@@ -69,9 +78,12 @@ const PROGRAM_DATA: PromiseItem[] = [
   { partyId: PartyID.AAK, category: 'youth', text: '20 Fshatra Turistike', details: 'Investime në infrastrukturën e fshatrave me potencial turistik.' },
   { partyId: PartyID.AAK, category: 'security', text: 'Fabrika e Municionit', details: 'Zhvillimi i industrisë vendore të mbrojtjes dhe sigurisë.' },
   { partyId: PartyID.AAK, category: 'env', text: 'Hekurudha Kosovë-Shqipëri', details: 'Lidhja strategjike hekurudhore për qasje në portet shqiptare.' },
-  { partyId: PartyID.AAK, category: 'agri', text: 'Diga e Lepencit (Firajë)', details: 'Zgjidhje afatgjatë për ujë për 150,000 banorë në Jug.' },
+  { partyId: PartyID.AAK, category: 'agri', text: 'Diga e Lepencit (Firajë)', details: 'Zgjidhje për ujë për 150,000 banorë në Jug (Gjilan, Ferizaj, Viti).' },
   { partyId: PartyID.AAK, category: 'health', text: 'Mjeku i Familjes për çdo shtëpi', details: 'Reforma që garanton kujdes parësor për secilën familje.' },
-  { partyId: PartyID.AAK, category: 'edu', text: 'Kampusi Madhështor për IT', details: 'Qendra më e madhe në Ballkan për inovacion dhe edukim TIK.' },
+  { partyId: PartyID.AAK, category: 'edu', text: 'Kampusi Madhështor për IT', details: 'Qendra më e madhe në Ballkan me zyra falas për startup-et.' },
+  { partyId: PartyID.AAK, category: 'env', text: 'Policia Mjedisore', details: 'Themelimi i departamentit të specializuar për mbrojtjen e natyrës.' },
+  { partyId: PartyID.AAK, category: 'economy', text: 'Investime 1.5 Miliardë', details: 'Rritja e investimeve publike vjetore deri në fund të mandatit.' },
+  { partyId: PartyID.AAK, category: 'env', text: 'Domeni .kos', details: 'Pavarsimi i identitetit digjital përmes domenit kombëtar.' },
 ];
 
 const CATEGORIES = [
