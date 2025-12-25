@@ -19,10 +19,17 @@ OFFICIAL POLITICAL PLAN-PROGRAM DATA (2025 ELECTIONS):
 - Public Admin: Pagat e 13-ta (13th month pay) for public sector.
 
 3. LËVIZJA VETËVENDOSJE (LVV) - "Zotimet e Reja":
-- Sovereignty: Focus on sovereignty in the North.
+- Sovereignty: Focus on sovereignty in the North and security.
 - Economy: Target 12 billion EUR GDP. Establish the Development Bank (Bankën Zhvillimore).
 - Wages: Minimum wage 500 EUR (by 2026), Average public wage 1000+ EUR.
 - Social: Child benefits doubled (45 to 90 EUR/month). Maternity support (3000 EUR total for unemployed mothers). "Superpuna" for women.
 - Energy: Modernization of TC Kosova B (filters), batteries 170MW/340MWh. Target 20% renewables by end of mandate.
 - Infrastructure: Pristina-Gjilan-Prizren (Banulla-Qafë Duhël), outer ring road completion. 250M EUR for 20 football stadiums.
+
+4. PARTIA DEMOKRATIKE E KOSOVËS (PDK) - "Avenir/Ardhmëria":
+- Economy: 4 billion EUR Investment Fund for strategic projects. Tax reductions for SMEs and new businesses.
+- Wages: Minimum wage 500 EUR, significant increase in pensions and public sector salary base.
+- Health: Full digitalization of the Health Information System (SISH), completion of the Health Insurance project within 24 months.
+- Education: 500 million EUR investment in school infrastructure and modern laboratories. Vocational training reform linked to market needs.
+- Digital: Kosovo as a regional hub for digital services, 0% tax for tech start-ups in the first 3 years.
 `;

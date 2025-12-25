@@ -25,12 +25,12 @@ const CATEGORIES = [
 ];
 
 const FEATURED_PROMISES = [
-  { partyId: PartyID.LDK, category: 'Energji', text: 'Ndërtimi i Termocentralit me Gaz 500MW dhe Gazifikimi i plotë i Kosovës.', icon: 'fa-bolt' },
+  { partyId: PartyID.PDK, category: 'Shëndetësi', text: 'Digjitalizimi i plotë i sistemit shëndetësor dhe sigurimet brenda 24 muajve.', icon: 'fa-hospital' },
   { partyId: PartyID.LVV, category: 'Sociale', text: 'Dyfishimi i shtesave për fëmijë (deri në 90€) dhe mbështetje për lehonat.', icon: 'fa-child' },
+  { partyId: PartyID.LDK, category: 'Energji', text: 'Ndërtimi i Termocentralit me Gaz 500MW dhe Gazifikimi i plotë i Kosovës.', icon: 'fa-bolt' },
   { partyId: PartyID.AAK, category: 'Siguri', text: 'Buxhet prej 1 miliard euro për ushtrinë dhe anëtarësim direkt në NATO.', icon: 'fa-shield-check' },
+  { partyId: PartyID.PDK, category: 'Ekonomi', text: 'Fondi i Investimeve prej 4 miliardë euro për projekte strategjike kombëtare.', icon: 'fa-vault' },
   { partyId: PartyID.LDK, category: 'Ekonomi', text: 'Rritja e koeficientit të pagave në 150 dhe buxhet shtetëror 5 miliardë €.', icon: 'fa-chart-line' },
-  { partyId: PartyID.LVV, category: 'Sport', text: 'Ndërtimi i 20 stadiumeve të futbollit dhe investime masive në infrastrukturë.', icon: 'fa-futbol' },
-  { partyId: PartyID.AAK, category: 'Bujqësi', text: 'Investim 100M € në ujitje dhe ndërtimi i 5 pendëve të reja ujëmbledhëse.', icon: 'fa-droplet' },
 ];
 
 const App: React.FC = () => {
