@@ -40,10 +40,39 @@ export interface ChatMessage {
   comparisonPoints?: ComparisonPoint[];
 }
 
+
 export interface ElectionAnalysisResult {
   analysis: string;
   scores: ScoreData[];
   comparisonPoints: ComparisonPoint[];
   groundingLinks?: Array<{ title: string; uri: string }>;
   detectedCategory: string; // New field for analytics
+}
+
+export type PromiseStatus = 'Completed' | 'In Progress' | 'Delayed' | 'Pending';
+
+export interface TimelineEvent {
+  date: string;
+  title: string;
+  description: string;
+}
+
+export interface PromiseUpdate {
+  date: string;
+  status: PromiseStatus;
+  description: string;
+  source?: string;
+  sourceUrl?: string;
+}
+
+export interface PartyPromise {
+  id: string;
+  category: string;
+  title: string;
+  description: string;
+  status: PromiseStatus;
+  progress: number; // 0 to 100
+  startDate: string;
+  dueDate: string;
+  updates?: PromiseUpdate[];
 }

@@ -6,7 +6,7 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20 animate-in fade-in slide-in-from-bottom-8 duration-700">
       <button 
         onClick={onBack}
-        className="group mb-12 flex items-center text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-blue-600 transition-colors"
+        className="group mb-12 flex items-center text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-blue-700 transition-colors"
       >
         <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
         Kthehu mbrapa
@@ -14,14 +14,14 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
 
       <div className="space-y-16">
         <header className="space-y-6 text-center md:text-left">
-          <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-[10px] font-black uppercase tracking-widest">
-            Transparenca & Teknologjia
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-amber-50 text-amber-600 text-[10px] font-black uppercase tracking-widest">
+            Transparenca & Llogaridhënia
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            Si funksionon <span className="text-blue-600">zotimi.com</span>?
+            Si funksionon <span className="text-blue-700">ZOTIMI</span>?
           </h2>
           <p className="text-lg text-slate-500 font-medium leading-relaxed">
-            Platforma jonë është ndërtuar për të ofruar një pasqyrë të paanshme, teknike dhe të shpejtë të premtimeve elektorale, duke përdorur indeksimin e detajuar të dokumenteve zyrtare.
+            Platforma jonë ofron një pasqyrë të paanshme të progresit të qeverisë, duke monitoruar në kohë reale përmbushjen e zotimeve zyrtare elektorale dhe qeveritare.
           </p>
         </header>
 
@@ -32,27 +32,27 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             </div>
             <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Burimi i të Dhënave</h4>
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Ne nuk përdorim lajme, opinione apo statuse në rrjete sociale. Sistemi ynë bazohet ekskluzivisht në <strong>planprogramet politike zyrtare</strong> të partive politike për vitin 2025 (LDK, LVV, PDK, AAK-Nisma).
+              Ne bazohemi ekskluzivisht në <strong>Programin Qeverisës 2021-2025</strong> dhe <strong>Planin për 2026-2030</strong>. Nuk përdorim lajme të paverifikuara apo opinione, por vetëm dokumente zyrtare dhe vendime qeveritare.
             </p>
           </div>
 
           <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-slate-100 shadow-sm space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-600 text-xl">
-              <i className="fa-solid fa-list-check"></i>
+              <i className="fa-solid fa-magnifying-glass-chart"></i>
             </div>
-            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Indeksimi Sektorial</h4>
+            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Monitorimi i Progresit</h4>
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Çdo zotim është nxjerrë manualisht nga dokumentet PDF dhe është etiketuar me fjalë kyçe. Kur bëni një kërkim, sistemi gjen përputhshmërinë më të lartë mes kërkesës suaj dhe zotimeve zyrtare të partive.
+              Çdo zotim monitorohet periodikisht. Statusi (E Përfunduar, Në Proces, E Vonuar, etj.) përditësohet manualisht bazuar në raporte të audituara, ligje të miratuara në Kuvend dhe projekte infrastrukturore të përfunduara.
             </p>
           </div>
 
           <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-slate-100 shadow-sm space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-600 text-xl">
-              <i className="fa-solid fa-chart-simple"></i>
+              <i className="fa-solid fa-list-check"></i>
             </div>
-            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Sistemi i Pikëzimit</h4>
+            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Metodologjia e Vlerësimit</h4>
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Pikët (0-10) llogariten në bazë të <strong>përmbushjes së kritereve</strong> teknike dhe sasisë së zotimeve specifike. Sa më shumë detaje dhe shifra të ofrojë një parti në një kategori, aq më i lartë është pikëzimi në atë sektor.
+              Një zotim quhet <strong>"I Përfunduar"</strong> vetëm kur është realizuar 100%. Zotimet <strong>"Në Proces"</strong> vlerësohen në bazë të hapave konkretë (p.sh., ndarja e buxhetit, fillimi i punimeve).
             </p>
           </div>
 
@@ -60,37 +60,35 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             <div className="w-12 h-12 rounded-2xl bg-pink-50 flex items-center justify-center text-pink-600 text-xl">
                <i className="fa-solid fa-scale-balanced"></i>
             </div>
-            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Neutraliteti i Procesimit</h4>
+            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Neutraliteti & Transparenca</h4>
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Algoritmi ynë i kërkimit është 100% neutral. Ai vetëm nxjerr të dhënat që ekzistojnë në dokumentet zyrtare pa shtuar asnjë interpretim apo koment subjektiv mbi vlerën e premtimeve.
+              Platforma është plotësisht e pavarur. Ne vizualizojmë të dhënat ashtu siç janë, pa shtuar komente subjektive. Qëllimi është transparenca radikale për qytetarët.
             </p>
           </div>
         </div>
 
         <div className="space-y-8">
           <div className="flex items-center space-x-6">
-            <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 whitespace-nowrap">BURIMET ZYRTARE TË PROGRAMEVE</h3>
+            <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 whitespace-nowrap">DOKUMENTET ZYRTARE</h3>
             <div className="h-px w-full bg-slate-100"></div>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
             {[
-              { name: 'PDK', url: 'https://pdk.info/', color: 'border-blue-100', text: 'Partia Demokratike' },
-              { name: 'LDK', url: 'https://lidhjademokratike.org/', color: 'border-blue-100', text: 'Lidhja Demokratike' },
-              { name: 'Vetëvendosje!', url: 'https://www.vetevendosje.org/', color: 'border-red-100', text: 'Lëvizja Vetëvendosje' },
-              { name: 'AAK', url: 'https://www.aak-ks.com/', color: 'border-slate-800', text: 'Aleanca për Ardhmërinë' }
-            ].map(party => (
+              { name: 'Programi Qeverisës 2021-2025', url: 'https://kryeministri.rks-gov.net/wp-content/uploads/2021/05/Programi-i-Qeverise-se-Republikes-se-Kosoves-2021-2025.pdf', color: 'border-blue-100', text: 'Dokument Zyrtar - PDF' },
+                { name: 'Lëvizja VETËVENDOSJE!', url: 'https://www.vetevendosje.org/', color: 'border-blue-100', text: 'Faqja Zyrtare' },
+            ].map(source => (
               <a 
-                key={party.name}
-                href={party.url}
+                key={source.name}
+                href={source.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-white p-6 rounded-[2rem] border border-slate-100 hover:border-blue-600/20 hover:shadow-xl transition-all duration-500 text-center space-y-3"
               >
-                <div className="text-xs font-black text-slate-900 group-hover:text-blue-600 transition-colors uppercase tracking-widest">{party.name}</div>
-                <div className="text-[9px] font-medium text-slate-400">{party.text}</div>
-                <div className="pt-2 flex items-center justify-center text-blue-500">
-                  <span className="text-[9px] font-black uppercase tracking-widest">Vizito Faqen</span>
+                <div className="text-xs font-black text-slate-900 group-hover:text-blue-700 transition-colors uppercase tracking-widest">{source.name}</div>
+                <div className="text-[9px] font-medium text-slate-400">{source.text}</div>
+                <div className="pt-2 flex items-center justify-center text-amber-500">
+                  <span className="text-[9px] font-black uppercase tracking-widest">Shiko Dokumentin</span>
                   <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[8px]"></i>
                 </div>
               </a>
@@ -98,16 +96,16 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
           </div>
         </div>
 
-        <section className="bg-blue-600 rounded-[2.5rem] p-8 md:p-12 text-white space-y-6 shadow-2xl shadow-blue-500/20">
+        <section className="bg-blue-700 rounded-[2.5rem] p-8 md:p-12 text-white space-y-6 shadow-2xl shadow-blue-500/20">
           <h3 className="text-2xl font-black uppercase tracking-tight">Vërejtje e rëndësishme</h3>
           <p className="text-blue-100 font-medium leading-relaxed opacity-90">
-            zotimi.com është një mjet informues dhe jo këshillues. Sistemi ynë bën vetëm krahasimin teknik të të dhënave të indeksuara. Ju inkurajojmë të lexoni tekstin origjinal të planprogrameve politike për detaje shtesë.
+            ZOTIMI është një mjet i pavarur monitorimi. Të dhënat përditësohen vazhdimisht bazuar në zhvillimet e reja. Ju inkurajojmë të konsultoni burimet zyrtare qeveritare për detaje teknike të plota.
           </p>
           <button 
             onClick={onBack}
-            className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-blue-50 transition-all active:scale-95 shadow-lg"
+            className="bg-white text-blue-700 px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-blue-50 transition-all active:scale-95 shadow-lg"
           >
-            Filloni Krahasimin
+            Kthehu te Monitorimi
           </button>
         </section>
       </div>
