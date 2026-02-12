@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { PartyPromise, PromiseStatus } from '../types';
-import { Route, Link } from 'wouter';
+import { Link } from 'wouter';
 import { CATEGORIES } from '../data';
 
 interface PromiseDetailProps {
