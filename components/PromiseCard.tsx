@@ -28,11 +28,9 @@ const statusLabels: Record<PromiseStatus, string> = {
 };
 
 const PromiseCard: React.FC<PromiseCardProps> = ({ promise }) => {
-  const trackingStartDate = '2026-02-01';
-  const updatesEnabled = false;
-  const lastUpdate = (updatesEnabled ? [...(promise.updates || [])] : [])
-    .filter((update) => update.date >= trackingStartDate)
-    .at(-1);
+  const lastUpdate = [...(promise.updates || [])]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .at(0);
 
   return (
     <Link href={`/promise/${promise.id}`}>

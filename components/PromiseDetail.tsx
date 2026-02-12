@@ -44,13 +44,8 @@ const statusBarClasses: Record<PromiseStatus, string> = {
 
 export const PromiseDetail: React.FC<PromiseDetailProps> = ({ promise }) => {
   const categoryInfo = CATEGORIES.find((c) => c.id === promise.category);
-  const trackingStartDate = '2026-02-01';
-  const timelineDate = '2030-02-12';
-  const updates = [...(promise.updates || [])]
-    .filter((update) => update.date >= trackingStartDate)
-    .reverse();
-  const updatesEnabled = false;
-  const visibleUpdates = updatesEnabled ? updates : [];
+  const timelineDate = '2026-02-01';
+  const visibleUpdates = [...(promise.updates || [])].sort((a, b) => b.date.localeCompare(a.date));
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10 md:py-14">

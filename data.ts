@@ -573,11 +573,19 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Arsimi',
     title: 'Arsimi Profesional Dual',
     description: 'Zgjerimi i sistemit dual të arsimit dhe aftësimit profesional në bashkëpunim me sektorin privat për punësim të garantuar.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 15,
     startDate: '2022-09-01',
     dueDate: '2026-09-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-01-27',
+        status: 'In Progress',
+        description: 'MASHTI zhvilloi trajnimin e trajnuesve per instruktoret e mesimit dual, si hap per zbatimin praktik te arsimit profesional dual.',
+        source: 'MASHTI',
+        sourceUrl: 'https://masht.rks-gov.net/en/trajnimi-i-trajnuesve-per-instruktoret-e-mesimit-dual'
+      }
+    ]
   },
   {
     id: '51',
@@ -914,11 +922,26 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Energjia',
     title: '150 Milion Euro për Izolim',
     description: 'Fond prej 150 milionë euro për mbështetjen e familjeve në nevojë për izolimin e shtëpive dhe rritjen e efiçiencës energjetike.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 20,
     startDate: '2025-01-01',
     dueDate: '2028-01-01',
-    updates: []
+    updates: [
+      {
+        date: '2025-12-16',
+        status: 'In Progress',
+        description: 'Nis perzgjedhja e perfituesve finale per skemen e mbeshtetjes per eficience te energjise per shtepi familjare.',
+        source: 'Ministria e Ekonomise',
+        sourceUrl: 'https://me.rks-gov.net/lajmet/dec16-selection-of-final-beneficiaries-of-the-energy-efficiency-support-scheme-for-family-houses-begins/'
+      },
+      {
+        date: '2026-01-31',
+        status: 'In Progress',
+        description: 'Ministria e Ekonomise hapi thirrjen publike per skemen mbeshtetese per pajisje me eficience te energjise ne kuader te Kosovo Compact.',
+        source: 'Ministria e Ekonomise',
+        sourceUrl: 'https://me.rks-gov.net/lajmet/jan31-public-call-for-the-energy-efficient-appliances-support-scheme-through-the-kosovo-compact/'
+      }
+    ]
   },
   {
     id: '72',
@@ -936,22 +959,38 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Energjia',
     title: 'Rinovimi i Banesave Shumëkatëshe',
     description: 'Projekt për rinovimin e banesave shumëkatëshe me masa të efiçiencës energjetike (fasada, dritare, kulme).',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2024-06-01',
     dueDate: '2027-06-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-01-24',
+        status: 'In Progress',
+        description: 'U mbajt sesioni final informues per skemen e granteve per energji te paster ne Prishtine.',
+        source: 'Ministria e Ekonomise',
+        sourceUrl: 'https://me.rks-gov.net/en/blog/first-final-information-session-on-clean-energy-grant-scheme-held-in-prishtina/'
+      }
+    ]
   },
   {
     id: '74',
     category: 'Energjia',
     title: '50 Milion Euro për Burime Natyrore',
     description: 'Investim prej 50 milionë euro për skanimin dhe identifikimin e burimeve të reja natyrore dhe energjetike.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2025-09-01',
     dueDate: '2027-09-01',
-    updates: []
+    updates: [
+      {
+        date: '2025-12-16',
+        status: 'In Progress',
+        description: 'U lansua kerkesa per propozime per ankandin e pare te energjise se eres ne Kosove deri ne 100 MW.',
+        source: 'Ministria e Ekonomise',
+        sourceUrl: 'https://me.rks-gov.net/en/blog/request-for-proposals-launched-for-kosovos-first-wind-energy-auction-up-to-100-mw/'
+      }
+    ]
   },
   {
     id: '75',
