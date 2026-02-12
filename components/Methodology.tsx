@@ -1,114 +1,138 @@
-
 import React from 'react';
+
+const COPY = {
+  back: 'Kthehu mbrapa',
+  eyebrow: 'Transparenc\u00eb dhe llogaridh\u00ebnie',
+  title: 'Si Funksionon Metodologjia ZOTIMI',
+  intro:
+    'Platforma ofron monitorim t\u00eb paansh\u00ebm t\u00eb premtimeve qeveritare, me kritere t\u00eb qarta dhe burime t\u00eb verifikueshme.',
+  sectionMethod: 'Metodologjia',
+  sectionDocs: 'Dokumentet Zyrtare',
+  sectionNote: 'V\u00ebrejtje e R\u00ebnd\u00ebsishme',
+  sourceLine:
+    'Ne bazohemi ekskluzivisht n\u00eb Programin Qeveris\u00ebs 2021-2025 dhe planin p\u00ebr 2026-2030, pa lajme t\u00eb paverifikuara dhe pa opinione.',
+  progressLine:
+    '\u00c7do zotim monitorohet periodikisht dhe statusi p\u00ebrdit\u00ebsohet vet\u00ebm mbi baz\u00eb raportesh zyrtare dhe zhvillimesh t\u00eb dokumentuara.',
+  evaluationLine:
+    'Nj\u00eb zotim konsiderohet i p\u00ebrfunduar vet\u00ebm me realizim t\u00eb plot\u00eb. Deri at\u00ebher\u00eb vler\u00ebsohet sipas hapave konkrete t\u00eb implementimit.',
+  neutralityLine:
+    'Platforma mbetet neutrale dhe paraqet faktet ashtu si jan\u00eb, pa interpretim subjektiv.',
+  note:
+    'ZOTIMI \u00ebsht\u00eb mjet i pavarur monitorimi. T\u00eb dh\u00ebnat rifreskohen sipas evidenc\u00ebs s\u00eb re zyrtare p\u00ebr sakt\u00ebsi dhe transparenc\u00eb maksimale.',
+  backToMonitoring: 'Kthehu te monitorimi',
+};
+
+const SOURCES = [
+  {
+    name: 'Programi Qeveris\u00ebs 2021-2025',
+    url: 'https://kryeministri.rks-gov.net/wp-content/uploads/2021/05/Programi-i-Qeverise-se-Republikes-se-Kosoves-2021-2025.pdf',
+    type: 'Dokument zyrtar - PDF',
+  },
+  {
+    name: 'L\u00ebvizja VET\u00cbVENDOSJE!',
+    url: 'https://www.vetevendosje.org/zotimet-siguri-dhe-begati.pdf',
+    type: 'Dokument zyrtar - PDF',
+  },
+];
+
+const STEPS = [
+  {
+    index: '01',
+    title: 'Burimi i t\u00eb Dh\u00ebnave',
+    text: COPY.sourceLine,
+  },
+  {
+    index: '02',
+    title: 'Monitorimi i Progresit',
+    text: COPY.progressLine,
+  },
+  {
+    index: '03',
+    title: 'Metodologjia e Vler\u00ebsimit',
+    text: COPY.evaluationLine,
+  },
+  {
+    index: '04',
+    title: 'Neutraliteti dhe Transparenca',
+    text: COPY.neutralityLine,
+  },
+];
 
 const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12 md:py-20 animate-in fade-in slide-in-from-bottom-8 duration-700">
-      <button 
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <button
         onClick={onBack}
-        className="group mb-12 flex items-center text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-blue-700 transition-colors"
+        className="mb-10 inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#6f5f3f]"
       >
-        <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
-        Kthehu mbrapa
+        <i className="fa-solid fa-arrow-left" />
+        {COPY.back}
       </button>
 
-      <div className="space-y-16">
-        <header className="space-y-6 text-center md:text-left">
-          <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-amber-50 text-amber-600 text-[10px] font-black uppercase tracking-widest">
-            Transparenca & Llogaridhënia
-          </div>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            Si funksionon <span className="text-blue-700">ZOTIMI</span>?
-          </h2>
-          <p className="text-lg text-slate-500 font-medium leading-relaxed">
-            Platforma jonë ofron një pasqyrë të paanshme të progresit të qeverisë, duke monitoruar në kohë reale përmbushjen e zotimeve zyrtare elektorale dhe qeveritare.
-          </p>
-        </header>
+      <header className="pb-12 border-b border-[#d8cdb8]">
+        <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#8a7345]">{COPY.eyebrow}</p>
+        <h1
+          className="mt-4 text-5xl sm:text-6xl md:text-7xl font-black leading-[0.92] text-[#102949]"
+          style={{ fontFamily: '"Bodoni Moda", serif' }}
+        >
+          {COPY.title}
+        </h1>
+        <p className="mt-8 max-w-3xl text-lg md:text-xl leading-relaxed font-medium text-[#465772]">{COPY.intro}</p>
+      </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-slate-100 shadow-sm space-y-4">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-xl">
-              <i className="fa-solid fa-file-shield"></i>
-            </div>
-            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Burimi i të Dhënave</h4>
-            <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Ne bazohemi ekskluzivisht në <strong>Programin Qeverisës 2021-2025</strong> dhe <strong>Planin për 2026-2030</strong>. Nuk përdorim lajme të paverifikuara apo opinione, por vetëm dokumente zyrtare dhe vendime qeveritare.
-            </p>
-          </div>
+      <section className="pt-14">
+        <h2 className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#8a7345]">{COPY.sectionMethod}</h2>
 
-          <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-slate-100 shadow-sm space-y-4">
-            <div className="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-600 text-xl">
-              <i className="fa-solid fa-magnifying-glass-chart"></i>
-            </div>
-            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Monitorimi i Progresit</h4>
-            <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Çdo zotim monitorohet periodikisht. Statusi (E Përfunduar, Në Proces, E Vonuar, etj.) përditësohet manualisht bazuar në raporte të audituara, ligje të miratuara në Kuvend dhe projekte infrastrukturore të përfunduara.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-slate-100 shadow-sm space-y-4">
-            <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-600 text-xl">
-              <i className="fa-solid fa-list-check"></i>
-            </div>
-            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Metodologjia e Vlerësimit</h4>
-            <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Një zotim quhet <strong>"I Përfunduar"</strong> vetëm kur është realizuar 100%. Zotimet <strong>"Në Proces"</strong> vlerësohen në bazë të hapave konkretë (p.sh., ndarja e buxhetit, fillimi i punimeve).
-            </p>
-          </div>
-
-          <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-slate-100 shadow-sm space-y-4">
-            <div className="w-12 h-12 rounded-2xl bg-pink-50 flex items-center justify-center text-pink-600 text-xl">
-               <i className="fa-solid fa-scale-balanced"></i>
-            </div>
-            <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Neutraliteti & Transparenca</h4>
-            <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Platforma është plotësisht e pavarur. Ne vizualizojmë të dhënat ashtu siç janë, pa shtuar komente subjektive. Qëllimi është transparenca radikale për qytetarët.
-            </p>
-          </div>
+        <div className="mt-8 space-y-10">
+          {STEPS.map((step) => (
+            <article key={step.index} className="grid grid-cols-[auto_1fr] gap-6 border-t border-[#e1d7c4] pt-8 first:border-t-0 first:pt-0">
+              <span className="text-3xl md:text-4xl font-black text-[#b0822e]" style={{ fontFamily: '"Bodoni Moda", serif' }}>
+                {step.index}
+              </span>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-black text-[#1c314d]">{step.title}</h3>
+                <p className="mt-3 text-base md:text-lg leading-relaxed text-[#5b6b82]">{step.text}</p>
+              </div>
+            </article>
+          ))}
         </div>
+      </section>
 
-        <div className="space-y-8">
-          <div className="flex items-center space-x-6">
-            <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 whitespace-nowrap">DOKUMENTET ZYRTARE</h3>
-            <div className="h-px w-full bg-slate-100"></div>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-            {[
-              { name: 'Programi Qeverisës 2021-2025', url: 'https://kryeministri.rks-gov.net/wp-content/uploads/2021/05/Programi-i-Qeverise-se-Republikes-se-Kosoves-2021-2025.pdf', color: 'border-blue-100', text: 'Dokument Zyrtar - PDF' },
-                { name: 'Lëvizja VETËVENDOSJE!', url: 'https://www.vetevendosje.org/', color: 'border-blue-100', text: 'Faqja Zyrtare' },
-            ].map(source => (
-              <a 
-                key={source.name}
+      <section className="pt-16">
+        <h2 className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#8a7345]">{COPY.sectionDocs}</h2>
+        <ul className="mt-6 divide-y divide-[#e1d7c4] border-y border-[#e1d7c4]">
+          {SOURCES.map((source) => (
+            <li key={source.name} className="py-5">
+              <a
                 href={source.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-white p-6 rounded-[2rem] border border-slate-100 hover:border-blue-600/20 hover:shadow-xl transition-all duration-500 text-center space-y-3"
+                className="flex items-start justify-between gap-6"
               >
-                <div className="text-xs font-black text-slate-900 group-hover:text-blue-700 transition-colors uppercase tracking-widest">{source.name}</div>
-                <div className="text-[9px] font-medium text-slate-400">{source.text}</div>
-                <div className="pt-2 flex items-center justify-center text-amber-500">
-                  <span className="text-[9px] font-black uppercase tracking-widest">Shiko Dokumentin</span>
-                  <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[8px]"></i>
-                </div>
+                <span>
+                  <span className="block text-lg md:text-xl font-black text-[#1f3148]">{source.name}</span>
+                  <span className="block mt-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#7b8798]">{source.type}</span>
+                </span>
+                <span className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-[0.14em] text-[#8b6b34]">
+                  Shiko dokumentin
+                  <i className="fa-solid fa-arrow-up-right-from-square text-[10px]" />
+                </span>
               </a>
-            ))}
-          </div>
-        </div>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-        <section className="bg-blue-700 rounded-[2.5rem] p-8 md:p-12 text-white space-y-6 shadow-2xl shadow-blue-500/20">
-          <h3 className="text-2xl font-black uppercase tracking-tight">Vërejtje e rëndësishme</h3>
-          <p className="text-blue-100 font-medium leading-relaxed opacity-90">
-            ZOTIMI është një mjet i pavarur monitorimi. Të dhënat përditësohen vazhdimisht bazuar në zhvillimet e reja. Ju inkurajojmë të konsultoni burimet zyrtare qeveritare për detaje teknike të plota.
-          </p>
-          <button 
-            onClick={onBack}
-            className="bg-white text-blue-700 px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-blue-50 transition-all active:scale-95 shadow-lg"
-          >
-            Kthehu te Monitorimi
-          </button>
-        </section>
-      </div>
+      <section className="pt-16 pb-2">
+        <h2 className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#8a7345]">{COPY.sectionNote}</h2>
+        <p className="mt-4 max-w-4xl text-base md:text-lg leading-relaxed text-[#4f5f77]">{COPY.note}</p>
+        <button
+          onClick={onBack}
+          className="mt-8 inline-flex rounded-full border border-[#cdbd9a] px-6 py-3 text-[11px] font-extrabold uppercase tracking-[0.16em] text-[#735f38]"
+        >
+          {COPY.backToMonitoring}
+        </button>
+      </section>
     </div>
   );
 };

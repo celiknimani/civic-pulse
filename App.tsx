@@ -1,11 +1,10 @@
-
-import React, { useState, useEffect } from 'react';
-import { Switch, Route, useLocation } from 'wouter';
-import { LVV_PROMISES, CATEGORIES } from './data';
-import PromiseCard from './components/PromiseCard';
+import React, { useEffect, useState } from 'react';
+import { Route, Switch, useLocation } from 'wouter';
 import DashboardStats from './components/DashboardStats';
-import { PromiseDetail } from './components/PromiseDetail';
 import Methodology from './components/Methodology';
+import { PromiseDetail } from './components/PromiseDetail';
+import PromiseCard from './components/PromiseCard';
+import { CATEGORIES, LVV_PROMISES } from './data';
 import { PromiseStatus } from './types';
 
 const Home: React.FC = () => {
@@ -14,12 +13,13 @@ const Home: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState<PromiseStatus | 'All'>('All');
   const [visibleCount, setVisibleCount] = useState(15);
 
-  const filteredPromises = LVV_PROMISES.filter(promise => {
+  const filteredPromises = LVV_PROMISES.filter((promise) => {
     const matchesCategory = selectedCategory === 'all' || promise.category === selectedCategory;
-    const matchesSearch = promise.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                          promise.description.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesSearch =
+      promise.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      promise.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesStatus = statusFilter === 'All' || promise.status === statusFilter;
-    
+
     return matchesCategory && matchesSearch && matchesStatus;
   });
 
@@ -30,147 +30,210 @@ const Home: React.FC = () => {
   }, [selectedCategory, searchTerm, statusFilter]);
 
   return (
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
-          
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm text-[10px] font-black uppercase tracking-widest text-slate-500 mb-4">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>
-              Përditësimi i fundit: Janar 2026
-            </div>
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900">
-              Transparencë për <br/> <span className="text-blue-700">Programin Qeverisës</span>
-            </h2>
-            <p className="text-slate-500 text-lg md:text-xl font-medium leading-relaxed">
-              Një pasqyrë e detajuar e zotimeve të Lëvizjes Vetëvendosje. Çfarë u premtua, çfarë u realizua dhe çfarë mbeti në gjysmë.
-            </p>
+    <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+      <section className="relative overflow-hidden border-b border-[#d9ccb4] pb-12 md:pb-16 mb-10">
+        <div className="pointer-events-none absolute inset-0 opacity-55">
+          <div className="absolute -top-32 right-0 h-80 w-80 rounded-full bg-[#163255]/10 blur-3xl" />
+          <div className="absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-[#b88a3a]/15 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-5xl space-y-8">
+          <div className="inline-flex items-center border border-[#cdbf9f] bg-[#f5efdf] px-4 py-2 text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#6f5c36]">
+            <span className="mr-2 inline-block h-2 w-2 rounded-full bg-emerald-600" />
+            {'P\u00ebrdit\u00ebsimi i fundit: Janar 2026'}
           </div>
 
-          <DashboardStats promises={LVV_PROMISES} />
+          <h2
+            className="text-5xl sm:text-6xl md:text-7xl font-black leading-[0.9] text-[#102949]"
+            style={{ fontFamily: '"Bodoni Moda", serif' }}
+          >
+            {'Transparenc\u00eb p\u00ebr'}
+            <span className="block text-[#b0822e]">{'\u00c7do Zotim Publik'}</span>
+          </h2>
 
-          <div className="mb-12 flex flex-col items-center space-y-6">
-            <div className="flex flex-wrap justify-center gap-2 max-w-5xl mx-auto">
-                {CATEGORIES.map(cat => (
-                  <button
-                    key={cat.id}
-                    onClick={() => setSelectedCategory(cat.id)}
-                    className={`px-5 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest transition-all border ${
-                      selectedCategory === cat.id 
-                      ? 'bg-blue-700 text-white border-blue-700 shadow-lg shadow-blue-600/20 transform scale-105' 
-                      : 'bg-white text-slate-500 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
-                    }`}
-                  >
-                    <i className={`fa-solid ${cat.icon} mr-2`}></i>
-                    {cat.label}
-                  </button>
-                ))}
+          <p className="max-w-3xl text-lg md:text-xl leading-relaxed font-medium text-[#42536a]">
+            {'Monitorim i pavarur i premtimeve t\u00eb L\u00ebvizjes Vet\u00ebvendosje: \u00e7far\u00eb \u00ebsht\u00eb premtuar, \u00e7far\u00eb ka avancuar dhe ku progresi mbetet i ndalur.'}
+          </p>
+
+          <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-6 text-[#1f3148]">
+            <div>
+              <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#8a7345]">Mandati</p>
+              <p className="mt-2 text-lg font-black">2026-2030</p>
             </div>
-
-            <div className="w-full max-w-2xl">
-              <div className="relative">
-                <i className="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
-                <input
-                  type="text"
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  placeholder="Kërko sipas titullit ose përshkrimit..."
-                  className="w-full bg-white border border-slate-200 rounded-2xl py-3 pl-11 pr-10 text-sm font-medium text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
-                />
-                {searchTerm && (
-                  <button
-                    type="button"
-                    onClick={() => setSearchTerm('')}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 text-xs transition-colors"
-                    aria-label="Pastro kërkimin"
-                  >
-                    <i className="fa-solid fa-xmark"></i>
-                  </button>
-                )}
-              </div>
+            <div>
+              <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#8a7345]">Teknologjia</p>
+              <p className="mt-2 text-lg font-black">Intelgjence Artificiale</p>
             </div>
+            <div>
+              <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#8a7345]">Statusi</p>
+              <p className="mt-2 text-lg font-black">Monitorim aktiv</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="inline-flex items-center gap-3 bg-white p-1.5 pr-4 rounded-full border border-slate-200 shadow-sm">
-                <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-4">Statusi:</span>
-                <select 
-                  value={statusFilter}
-                  onChange={(e) => setStatusFilter(e.target.value as PromiseStatus | 'All')}
-                  className="bg-transparent border-none outline-none font-bold text-xs text-slate-700 uppercase tracking-wide cursor-pointer py-1"
+      <DashboardStats promises={LVV_PROMISES} />
+
+      <section className="relative mt-8 mb-12 overflow-hidden rounded-[2rem] border border-[#d6cab4] bg-gradient-to-b from-[#f8f4ea] to-[#f2ecdf] p-6 md:p-8 shadow-[0_24px_55px_-40px_rgba(10,30,58,0.85)]">
+        <div className="pointer-events-none absolute inset-0 opacity-40">
+          <div className="absolute -top-20 right-12 h-56 w-56 rounded-full bg-[#1d3f67]/10 blur-3xl" />
+          <div className="absolute -bottom-24 left-16 h-48 w-48 rounded-full bg-[#b0833b]/15 blur-3xl" />
+        </div>
+
+        <div className="relative flex flex-col gap-7">
+          <div className="flex flex-wrap gap-2.5">
+            {CATEGORIES.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.id)}
+                className={`group rounded-full border px-4 py-2.5 text-[10px] font-extrabold uppercase tracking-[0.16em] transition-all duration-300 ${
+                  selectedCategory === cat.id
+                    ? 'border-[#0e2744] bg-[#102949] text-[#f4ddab] shadow-[0_12px_25px_-16px_rgba(16,41,73,1)]'
+                    : 'border-[#d8ccb5] bg-[#f9f6ef] text-[#5c6778] hover:border-[#bfa77c] hover:text-[#8f6e33]'
+                }`}
+              >
+                <i className={`fa-solid ${cat.icon} mr-2 transition-transform duration-300 group-hover:scale-110`} />
+                {cat.label}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-[1fr_auto] items-center">
+            <div className="relative">
+              <i className="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-[#8a919c] text-sm" />
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Kerko sipas titullit ose pershkrimit..."
+                className="h-14 w-full rounded-2xl border border-[#d7cbb4] bg-[#fcf8ef] pl-11 pr-10 text-sm font-semibold text-[#2f3c4d] placeholder:text-[#9aa1ab] outline-none transition-all focus:border-[#8d6b34] focus:ring-2 focus:ring-[#dcc89f]/45"
+              />
+              {searchTerm && (
+                <button
+                  type="button"
+                  onClick={() => setSearchTerm('')}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-[#ece5d8] hover:bg-[#dfd4bf] text-[#5d5446] text-xs transition-colors"
+                  aria-label="Pastro kerkimin"
                 >
-                  <option value="All">Të gjitha</option>
-                  <option value="Completed">Të Përfunduara</option>
-                  <option value="In Progress">Në Proces</option>
-                  <option value="Delayed">Të Vonuara</option>
-                </select>
+                  <i className="fa-solid fa-xmark" />
+                </button>
+              )}
+            </div>
+
+            <div className="inline-flex h-14 items-center gap-2 rounded-full border border-[#d5c8b0] bg-[#f6f1e6] p-1.5 pr-3">
+              <span className="pl-3 text-[10px] font-black uppercase tracking-[0.18em] text-[#8c7852]">Statusi</span>
+              <select
+                value={statusFilter}
+                onChange={(e) => setStatusFilter(e.target.value as PromiseStatus | 'All')}
+                className="rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-wide text-[#29394f] outline-none"
+              >
+                <option value="All">Te gjitha</option>
+                <option value="Completed">Te Perfunduara</option>
+                <option value="In Progress">Ne Proces</option>
+                <option value="Delayed">Te Vonuara</option>
+              </select>
             </div>
           </div>
+        </div>
+      </section>
 
-          {filteredPromises.length > 0 ? (
-            <>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {displayedPromises.map(promise => (
-                    <PromiseCard key={promise.id} promise={promise} />
-                  ))}
-                </div>
+      {filteredPromises.length > 0 ? (
+        <>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {displayedPromises.map((promise) => (
+              <PromiseCard key={promise.id} promise={promise} />
+            ))}
+          </div>
 
-                {visibleCount < filteredPromises.length && (
-                    <div className="mt-16 text-center">
-                        <button 
-                            onClick={() => setVisibleCount(prev => prev + 15)}
-                            className="bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 px-8 py-4 rounded-full font-black uppercase tracking-widest text-xs transition-all shadow-sm hover:shadow-md hover:-translate-y-1"
-                        >
-                            <i className="fa-solid fa-plus mr-3 text-amber-500"></i>
-                            Shiko më shumë
-                        </button>
-                    </div>
-                )}
-            </>
-          ) : (
-            <div className="text-center py-20 bg-white rounded-3xl border border-dashed border-slate-300">
-              <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4 text-slate-300">
-                <i className="fa-solid fa-search text-2xl"></i>
-              </div>
-              <h3 className="text-lg font-bold text-slate-900">Nuk u gjetën zotime</h3>
-              <p className="text-slate-500">Provoni të ndryshoni kriteret e kërkimit.</p>
+          {visibleCount < filteredPromises.length && (
+            <div className="mt-14 text-center">
+              <button
+                onClick={() => setVisibleCount((prev) => prev + 15)}
+                className="group inline-flex items-center gap-3 rounded-full border border-[#bea878] bg-[#f7ecd5] px-8 py-4 text-xs font-black uppercase tracking-[0.16em] text-[#6f5728] transition-all hover:-translate-y-1 hover:bg-[#f2e1bc]"
+              >
+                <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#9c7840] text-white">
+                  <i className="fa-solid fa-plus text-[10px]" />
+                </span>
+                Shiko me shume
+              </button>
             </div>
           )}
-
-        </main>
+        </>
+      ) : (
+        <div className="rounded-3xl border border-dashed border-[#cebea0] bg-[#fcf8ee] py-20 text-center">
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#f0e6d2] text-[#a0895f]">
+            <i className="fa-solid fa-search text-2xl" />
+          </div>
+          <h3 className="text-lg font-black text-[#1f3148]">Nuk u gjeten zotime</h3>
+          <p className="text-[#5f6c7d]">Provo te ndryshosh kriteret e kerkimit.</p>
+        </div>
+      )}
+    </main>
   );
 };
 
 const App: React.FC = () => {
-  const [location, setLocation] = useLocation();
+  const [, setLocation] = useLocation();
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-amber-100">
-      {/* Background Ambience */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute top-0 right-[-10%] w-[50%] h-[50%] bg-gradient-to-b from-blue-500/5 to-transparent rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-0 left-[-10%] w-[40%] h-[40%] bg-gradient-to-t from-amber-500/5 to-transparent rounded-full blur-[100px]"></div>
-      </div>
+    <div className="relative min-h-screen overflow-x-hidden bg-[#f4efe4] text-[#1f2f43] selection:bg-[#f2d7a1]">
+      <style>
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700;6..96,800&family=Manrope:wght@400;500;600;700;800&display=swap');
+          .font-body-luxury { font-family: "Manrope", sans-serif; }
+          .premium-bg {
+            background-image:
+              radial-gradient(circle at 10% 10%, rgba(16, 41, 73, 0.18), transparent 45%),
+              radial-gradient(circle at 88% 18%, rgba(164, 126, 56, 0.25), transparent 43%),
+              radial-gradient(circle at 50% 88%, rgba(16, 41, 73, 0.12), transparent 48%);
+          }
+        `}
+      </style>
 
-      <header className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => setLocation('/')}>
-             <div className="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-                <i className="fa-solid fa-flag text-white text-lg"></i>
-             </div>
-             <div>
-               <h1 className="text-xl font-black tracking-tight text-slate-900">ZOTIMI</h1>
-               <p className="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] leading-none">Monitorimi i progresit të zotimeve 2026 - 2030</p>
-             </div>
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-6 text-[11px] font-black uppercase tracking-widest text-slate-500">
-             <a href="#" className="hover:text-blue-700 transition-colors" onClick={(e) => { e.preventDefault(); setLocation('/'); }}>Kreu</a>
-             <a href="/methodology" className="hover:text-blue-700 transition-colors" onClick={(e) => { e.preventDefault(); setLocation('/methodology'); }}>Si funksionon?</a>
-             <div className="bg-amber-50 text-amber-600 px-4 py-2 rounded-full border border-amber-100">
-                Mandati 2026-2030
-             </div>
-          </div>
+      <div className="premium-bg pointer-events-none fixed inset-0 z-0" />
+      <div className="pointer-events-none fixed inset-0 z-0 opacity-30 mix-blend-multiply" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22240%22 height=%22240%22 viewBox=%220 0 240 240%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22240%22 height=%22240%22 filter=%22url(%23n)%22 opacity=%220.16%22/%3E%3C/svg%3E")' }} />
+
+      <header className="sticky top-0 z-50 border-b border-[#d7ccb7] bg-[#f9f5eb]/90 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between font-body-luxury">
+          <button className="flex items-center gap-3 text-left" onClick={() => setLocation('/')}>
+            <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#102949] text-[#f3deaf] shadow-[0_12px_28px_-18px_rgba(16,41,73,1)]">
+              <i className="fa-solid fa-landmark-flag text-lg" />
+            </span>
+            <span>
+              <span className="block text-xl font-extrabold tracking-tight text-[#102949]">ZOTIMI</span>
+              <span className="block text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#7d6b47] leading-none">
+                Monitorimi i progresit 2026-2030
+              </span>
+            </span>
+          </button>
+
+          <nav className="hidden md:flex items-center gap-6 text-[11px] font-extrabold uppercase tracking-[0.15em] text-[#5f6e84]">
+            <a
+              href="#"
+              className="transition-colors hover:text-[#102949]"
+              onClick={(e) => {
+                e.preventDefault();
+                setLocation('/');
+              }}
+            >
+              Kreu
+            </a>
+            <a
+              href="/methodology"
+              className="transition-colors hover:text-[#102949]"
+              onClick={(e) => {
+                e.preventDefault();
+                setLocation('/methodology');
+              }}
+            >
+              Si funksionon
+            </a>
+            <span className="rounded-full border border-[#cdbb96] bg-[#f8ebcf] px-4 py-2 text-[#8b6730]">Mandati 2026-2030</span>
+          </nav>
         </div>
       </header>
 
-      <div className="relative z-10">
+      <div className="relative z-10 font-body-luxury">
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/methodology">
@@ -178,26 +241,24 @@ const App: React.FC = () => {
           </Route>
           <Route path="/promise/:id">
             {(params) => {
-               const promise = LVV_PROMISES.find(p => p.id === params.id);
-               if (!promise) return <div className="text-center py-20">Premtimi nuk u gjet!</div>;
-               return <PromiseDetail promise={promise} />;
+              const promise = LVV_PROMISES.find((p) => p.id === params.id);
+              if (!promise) return <div className="py-20 text-center">Premtimi nuk u gjet.</div>;
+              return <PromiseDetail promise={promise} />;
             }}
           </Route>
           <Route>
-            <div className="text-center py-20 font-bold text-slate-500">404 - Faqja nuk u gjet</div>
+            <div className="py-20 text-center font-bold text-[#7e8795]">404 - Faqja nuk u gjet</div>
           </Route>
         </Switch>
       </div>
 
-      <footer className="bg-white border-t border-slate-200 py-12 mt-auto relative z-10">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-4">
-             Ndërtuar për transparencë radikale
-           </p>
-             <i className="fa-solid fa-envelope hover:text-amber-500 transition-colors cursor-pointer"></i>
-           <p className="mt-8 text-xs text-slate-400 max-w-lg mx-auto leading-relaxed">
-             Kjo platformë është e pavarur dhe ka për qëllim vizualizimin e progresit qeveritar bazuar në programin zyrtar të Lëvizjes Vetëvendosje dhe raporteve publike.
-           </p>
+      <footer className="relative z-10 mt-16 border-t border-[#d5ccb9] bg-[#f8f4eb] py-12">
+        <div className="max-w-7xl mx-auto px-4 text-center font-body-luxury">
+          <p className="mb-4 text-[10px] font-black uppercase tracking-[0.22em] text-[#7f6d49]">Ndertuar per transparence radikale</p>
+          <i className="fa-solid fa-envelope cursor-pointer text-[#8b6f3c] transition-colors hover:text-[#102949]" />
+          <p className="mx-auto mt-8 max-w-2xl text-xs leading-relaxed text-[#5f6e83]">
+            Platforma eshte e pavarur dhe vizualizon progresin qeveritar bazuar ne programin zyrtar te Levizjes Vetevendosje dhe raportimet publike.
+          </p>
         </div>
       </footer>
     </div>
@@ -205,3 +266,6 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+
+
