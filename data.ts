@@ -72,17 +72,18 @@ export const LVV_PROMISES: PartyPromise[] = [
         { date: '2022-09-01', status: 'In Progress', description: 'Pilot projekti në 50 shkolla.' },
     ]
   },
-    {
+  {
     id: '6',
     category: 'Shëndetësia',
     title: 'Sigurimet Shëndetësore',
     description: 'Funksionalizimi i plotë i Fondit të Sigurimeve Shëndetësore.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 25,
     startDate: '2021-03-22',
     dueDate: '2024-12-31',
     updates: [
-        { date: '2023-01-01', status: 'Delayed', description: 'Rishikimi i sistemit të informimit shëndetësor.' }
+        { date: '2023-01-01', status: 'Delayed', description: 'Rishikimi i sistemit të informimit shëndetësor.' },
+        { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes së kredisë për projektin KOMPAS për forcimin e sistemit të shëndetësisë (18.6 milionë euro).', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
     ]
   },
   {
@@ -177,33 +178,39 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Ekonomia',
     title: 'Arkat Fiskale Digjitale',
     description: 'Kalimi në sistemin e arkave fiskale digjitale (software-based) për raportim në kohë reale dhe ulje të kostos për biznese.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 20,
     startDate: '2023-01-01',
     dueDate: '2025-12-31',
-    updates: []
+    updates: [
+      { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes së financimit me fokus në efektivitetin fiskal, konkurrueshmëri dhe rritje të gjelbër (program me Bankën Botërore).', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
+    ]
   },
   {
     id: '15',
     category: 'Ekonomia',
     title: 'Fatura Elektronike Biznes-Biznes',
     description: 'Implementimi i sistemit të faturimit elektronik (e-Fatura) për transaksionet B2B për të luftuar informalitetin.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 15,
     startDate: '2025-06-01',
     dueDate: '2027-01-01',
-    updates: []
+    updates: [
+      { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi marrëveshje financimi për politikat zhvillimore me komponentë të efektivitetit fiskal dhe formalizimit ekonomik, relevante për avancimin e e-Faturës B2B.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
+    ]
   },
   {
     id: '16',
     category: 'Ekonomia',
     title: 'Mbledhja e TVSH-së në Brendësi',
     description: 'Ndryshimi i mbledhjes së TVSH-së nga kufiri në brendësi dhe pagesa e TVSH-së në muajin pasues për të ndihmuar likuiditetin e bizneseve.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 15,
     startDate: '2022-01-01',
     dueDate: '2025-01-01',
-    updates: []
+    updates: [
+      { date: '2026-02-12', status: 'In Progress', description: 'Miratimi i programit të financimit për efektivitet fiskal sinjalizon hapa drejt reformave të administrimit tatimor, përfshirë masat që lidhen me mbledhjen e TVSH-së në brendësi.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
+    ]
   },
   {
     id: '17',
@@ -518,11 +525,13 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Arsimi',
     title: 'Bono për Kopshte (Publike/Jopublike)',
     description: 'Implementimi i sistemit të bonove (vouchers) për prindërit për të subvencionuar kostot e kopshteve, të vlefshme në sektorin publik dhe atë privat.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 30,
     startDate: '2026-01-01',
     dueDate: '2028-01-01',
-    updates: []
+    updates: [
+      { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes së kredisë për projektin “Edukimi në Fëmijërinë e Hershme dhe Kujdesi për Kapitalin Njerëzor të Kosovës”, që mbështet qasjen në shërbimet e hershme edukative.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
+    ]
   },
   {
     id: '46',
@@ -1291,23 +1300,26 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Politika e Jashtme',
     title: 'Statusi Vend Kandidat i BE-së',
     description: 'Angazhim diplomatik për marrjen e statusit të vendit kandidat për anëtarësim në Bashkimin Evropian.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 35,
     startDate: '2023-01-01',
     dueDate: '2026-12-31',
-    updates: []
+    updates: [
+      { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes me BE-në për zbatimin e përkrahjes në kuadër të Instrumentit për Reforma dhe Rritje (882.6 milionë euro), si dhe marrëveshje kredie të ndërlidhur për afrimin me legjislacionin e BE-së.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
+    ]
   },
   {
     id: '113',
     category: 'Politika e Jashtme',
     title: 'Aplikimi për Anëtarësim në BE',
     description: 'Dorëzimi zyrtar i aplikimit për anëtarësi në Bashkimin Evropian, duke shënuar hapin e parë drejt integrimit.',
-    status: 'Pending',
-    progress: 0,
+    status: 'Completed',
+    progress: 100,
     startDate: '2022-01-01',
     dueDate: '2022-12-15',
     updates: [
-        { date: '2022-12-15', status: 'Completed', description: 'Dorëzimi i aplikacionit në Pragë.' }
+        { date: '2022-12-15', status: 'Completed', description: 'Dorëzimi i aplikacionit në Pragë.' },
+        { date: '2026-02-12', status: 'Completed', description: 'Qeveria miratoi marrëveshje të reja financimi dhe kredie me BE-në në kuadër të Instrumentit për Reforma dhe Rritje, si vazhdim i procesit të integrimit pas dorëzimit të aplikimit.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
     ]
   },
   {
