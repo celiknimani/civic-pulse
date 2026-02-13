@@ -31,6 +31,10 @@ const PromiseCard: React.FC<PromiseCardProps> = ({ promise }) => {
   const lastUpdate = [...(promise.updates || [])]
     .sort((a, b) => b.date.localeCompare(a.date))
     .at(0);
+  const lastUpdatePreview =
+    lastUpdate?.description && lastUpdate.description.length > 100
+      ? `${lastUpdate.description.slice(0, 100).trim()}...`
+      : lastUpdate?.description;
 
   return (
     <Link href={`/promise/${promise.id}`}>
@@ -75,7 +79,7 @@ const PromiseCard: React.FC<PromiseCardProps> = ({ promise }) => {
                 <span>{lastUpdate.date}</span>
               </div>
               <p className="line-clamp-2 rounded-xl border border-[#dcd1be] bg-white/85 px-3 py-2 text-xs italic leading-relaxed text-[#4f5c70]">
-                "{lastUpdate.description}"
+                {lastUpdatePreview}
               </p>
             </div>
           )}

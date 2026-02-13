@@ -178,11 +178,12 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Ekonomia',
     title: 'Arkat Fiskale Digjitale',
     description: 'Kalimi në sistemin e arkave fiskale digjitale (software-based) për raportim në kohë reale dhe ulje të kostos për biznese.',
-    status: 'In Progress',
-    progress: 20,
+    status: 'Delayed',
+    progress: 10,
     startDate: '2023-01-01',
     dueDate: '2025-12-31',
     updates: [
+      { date: '2025-07-14', status: 'In Progress', description: 'Publikohet Udhëzuesi Nr. 01/2025 për procedurat dhe formën e fiskalizimit të bllokave tatimorë.', source: 'Administrata Tatimore e Kosovës', sourceUrl: 'https://www.atk-ks.org/portfolio/legjislacioni-perkates/' },
       { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes së financimit me fokus në efektivitetin fiskal, konkurrueshmëri dhe rritje të gjelbër (program me Bankën Botërore).', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
     ]
   },
