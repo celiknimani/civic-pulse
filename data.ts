@@ -118,12 +118,12 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Siguria',
     title: 'Fabrika e Municionit dhe Dronëve',
     description: 'Ndërtimi i fabrikës së parë shtetërore për prodhimin e municionit dhe dronëve ushtarakë.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2025-03-01',
     dueDate: '2027-06-01',
     updates: [
-        { date: '2025-01-20', status: 'Pending', description: 'Finalizimi i studimit të fizibilitetit.', source: 'Kryeministria', sourceUrl: '#' }
+        { date: '2025-11-03', status: 'In Progress', description: 'Ministria e Mbrojtjes e ka konfirmuar se kompania gjigante turke e prodhimit të municionit “MKE”, pritet që gjatë vitit 2026 ta funksionalizojë fabrikën për prodhimin e plumbave “Made in Kosova” në territorin e Kosovës. Kapaciteti i saj pritet të jetë rreth 20 milionë fishekë në vit, dhe do të prodhojë plumba të kalibrit 5.56 mm e 7.62 mm, një herë për nevoja të brendshme e pastaj edhe për shitje dhe eksport.', source: 'Dukagjini', sourceUrl: 'https://www.dukagjini.com/me-2026-pritet-ndertimi-i-fabrikes-turke-te-municionit-rreth-20-milione-fisheke-ne-vit/' }
     ]
   },
   {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Route, Switch, useLocation } from 'wouter';
 import DashboardStats from './components/DashboardStats';
 import Methodology from './components/Methodology';
@@ -13,17 +13,33 @@ const Home: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState<PromiseStatus | 'All'>('All');
   const [visibleCount, setVisibleCount] = useState(15);
 
-  const filteredPromises = LVV_PROMISES.filter((promise) => {
-    const matchesCategory = selectedCategory === 'all' || promise.category === selectedCategory;
-    const matchesSearch =
-      promise.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      promise.description.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesStatus = statusFilter === 'All' || promise.status === statusFilter;
+  const filteredPromises = useMemo(() => {
+    const getLatestUpdateTimestamp = (promise: (typeof LVV_PROMISES)[number]) => {
+      if (!promise.updates?.length) return 0;
 
-    return matchesCategory && matchesSearch && matchesStatus;
-  });
+      return promise.updates.reduce((latest, update) => {
+        const timestamp = Date.parse(update.date);
+        if (Number.isNaN(timestamp)) return latest;
+        return Math.max(latest, timestamp);
+      }, 0);
+    };
 
-  const displayedPromises = filteredPromises.slice(0, visibleCount);
+    return LVV_PROMISES.filter((promise) => {
+      const matchesCategory = selectedCategory === 'all' || promise.category === selectedCategory;
+      const matchesSearch =
+        promise.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        promise.description.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesStatus = statusFilter === 'All' || promise.status === statusFilter;
+
+      return matchesCategory && matchesSearch && matchesStatus;
+    }).sort((a, b) => {
+      const latestA = getLatestUpdateTimestamp(a);
+      const latestB = getLatestUpdateTimestamp(b);
+      return latestB - latestA;
+    });
+  }, [selectedCategory, searchTerm, statusFilter]);
+
+  const displayedPromises = useMemo(() => filteredPromises.slice(0, visibleCount), [filteredPromises, visibleCount]);
 
   useEffect(() => {
     setVisibleCount(15);
@@ -62,7 +78,7 @@ const Home: React.FC = () => {
             </div>
             <div>
               <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#8a7345]">Teknologjia</p>
-              <p className="mt-2 text-lg font-black">Intelgjence Artificiale</p>
+              <p className="mt-2 text-lg font-black">Codex 5.3 & Gemini</p>
             </div>
             <div>
               <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#8a7345]">Statusi</p>
