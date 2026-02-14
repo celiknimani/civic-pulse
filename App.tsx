@@ -68,21 +68,13 @@ const Home: React.FC = () => {
           </h2>
 
           <p className="max-w-3xl text-lg md:text-xl leading-relaxed font-medium text-[#42536a]">
-            {'Monitorim i pavarur i premtimeve t\u00eb L\u00ebvizjes Vet\u00ebvendosje: \u00e7far\u00eb \u00ebsht\u00eb premtuar, \u00e7far\u00eb ka avancuar dhe ku progresi mbetet i ndalur.'}
+            {'Monitorim i pavarur me intelegjence artificiale i premtimeve t\u00eb L\u00ebvizjes Vet\u00ebvendosje: \u00e7far\u00eb \u00ebsht\u00eb premtuar, \u00e7far\u00eb ka avancuar dhe ku progresi mbetet i ndalur.'}
           </p>
 
-          <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-6 text-[#1f3148]">
+          <div className="pt-4 grid grid-cols-1 gap-6 text-[#1f3148]">
             <div>
               <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#8a7345]">Mandati</p>
               <p className="mt-2 text-lg font-black">2026-2030</p>
-            </div>
-            <div>
-              <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#8a7345]">Teknologjia</p>
-              <p className="mt-2 text-lg font-black">Codex 5.3 & Gemini</p>
-            </div>
-            <div>
-              <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#8a7345]">Statusi</p>
-              <p className="mt-2 text-lg font-black">Monitorim aktiv</p>
             </div>
           </div>
         </div>
