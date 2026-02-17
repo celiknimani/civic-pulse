@@ -106,12 +106,13 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Siguria',
     title: '1 Miliard Euro në armatim',
     description: 'Investimi prej 1 miliard euro në armatim dhe pajisje moderne ushtarake për Forcën e Sigurisë së Kosovës.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 45,
     startDate: '2025-01-01',
     dueDate: '2029-01-01',
     updates: [
-        { date: '2025-01-15', status: 'In Progress', description: 'Prezantimi i planit strategjik të mbrojtjes 2025-2029.', source: 'Ministria e Mbrojtjes', sourceUrl: '#' }
+        { date: '2025-01-15', status: 'In Progress', description: 'Prezantimi i planit strategjik të mbrojtjes 2025-2029.', source: 'Ministria e Mbrojtjes', sourceUrl: '#' },
+        { date: '2026-02-17', status: 'In Progress', description: 'Në ceremoninë e parakalimit për 18-vjetorin e Pavarësisë, Kryeministri deklaroi se investimi në pajisje ushtarake ka kaluar 450 milionë euro.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/fjala-e-plote-e-kryeministri-kurti-ne-ceremonine-e-parakalimit-te-trupave-te-forces-se-sigurise-se-kosoves-dhe-njesive-te-policise-se-kosoves-per-nder-te-18-vjetorit-te-pavaresise/' }
     ]
   },
   {
@@ -120,11 +121,12 @@ export const LVV_PROMISES: PartyPromise[] = [
     title: 'Fabrika e Municionit dhe Dronëve',
     description: 'Ndërtimi i fabrikës së parë shtetërore për prodhimin e municionit dhe dronëve ushtarakë.',
     status: 'In Progress',
-    progress: 10,
+    progress: 20,
     startDate: '2025-03-01',
     dueDate: '2027-06-01',
     updates: [
-        { date: '2025-11-03', status: 'In Progress', description: 'Ministria e Mbrojtjes e ka konfirmuar se kompania gjigante turke e prodhimit të municionit “MKE”, pritet që gjatë vitit 2026 ta funksionalizojë fabrikën për prodhimin e plumbave “Made in Kosova” në territorin e Kosovës. Kapaciteti i saj pritet të jetë rreth 20 milionë fishekë në vit, dhe do të prodhojë plumba të kalibrit 5.56 mm e 7.62 mm, një herë për nevoja të brendshme e pastaj edhe për shitje dhe eksport.', source: 'Dukagjini', sourceUrl: 'https://www.dukagjini.com/me-2026-pritet-ndertimi-i-fabrikes-turke-te-municionit-rreth-20-milione-fisheke-ne-vit/' }
+        { date: '2025-11-03', status: 'In Progress', description: 'Ministria e Mbrojtjes e ka konfirmuar se kompania gjigante turke e prodhimit të municionit “MKE”, pritet që gjatë vitit 2026 ta funksionalizojë fabrikën për prodhimin e plumbave “Made in Kosova” në territorin e Kosovës. Kapaciteti i saj pritet të jetë rreth 20 milionë fishekë në vit, dhe do të prodhojë plumba të kalibrit 5.56 mm e 7.62 mm, një herë për nevoja të brendshme e pastaj edhe për shitje dhe eksport.', source: 'Dukagjini', sourceUrl: 'https://www.dukagjini.com/me-2026-pritet-ndertimi-i-fabrikes-turke-te-municionit-rreth-20-milione-fisheke-ne-vit/' },
+        { date: '2026-02-17', status: 'In Progress', description: 'Në fjalën zyrtare për 18-vjetorin e Pavarësisë u konfirmua se ka nisur zhvillimi i industrisë së mbrojtjes me fabrikën e municioneve.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/fjala-e-plote-e-kryeministri-kurti-ne-ceremonine-e-parakalimit-te-trupave-te-forces-se-sigurise-se-kosoves-dhe-njesive-te-policise-se-kosoves-per-nder-te-18-vjetorit-te-pavaresise/' }
     ]
   },
   {
@@ -1235,11 +1237,13 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Siguria',
     title: '1 Miliard Euro për Ushtrinë',
     description: 'Buxheti kumulativ për mbrojtjen do të arrijë vlerën prej 1 miliard euro gjatë mandatit për të siguruar kapacitete të plota mbrojtëse.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 45,
     startDate: '2025-01-01',
     dueDate: '2029-01-01',
-    updates: []
+    updates: [
+      { date: '2026-02-17', status: 'In Progress', description: 'Në ceremoninë e parakalimit për 18-vjetorin e Pavarësisë, Kryeministri deklaroi se investimi në pajisje ushtarake ka kaluar 450 milionë euro.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/fjala-e-plote-e-kryeministri-kurti-ne-ceremonine-e-parakalimit-te-trupave-te-forces-se-sigurise-se-kosoves-dhe-njesive-te-policise-se-kosoves-per-nder-te-18-vjetorit-te-pavaresise/' }
+    ]
   },
   {
     id: '107',
@@ -1290,11 +1294,13 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Siguria',
     title: 'Programet me Shqipërinë',
     description: 'Unifikimi i programeve stërvitore dhe operacionale me Forcat e Armatosura të Republikës së Shqipërisë.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 20,
     startDate: '2022-01-01',
     dueDate: '2026-01-01',
-    updates: []
+    updates: [
+      { date: '2026-02-16', status: 'In Progress', description: 'Në takimin bilateral Kurti-Rama u ritheksuan marrëveshjet ndërqeveritare dhe bashkëpunimi në siguri, infrastrukturë, energji dhe transport.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/kryeministri-kurti-mirepriti-kryeministrin-e-shqiperise-edi-rama/' }
+    ]
   },
   {
     id: '112',
