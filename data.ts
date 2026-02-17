@@ -1233,19 +1233,6 @@ export const LVV_PROMISES: PartyPromise[] = [
     dueDate: '2026-01-01',
   },
   {
-    id: '106',
-    category: 'Siguria',
-    title: '1 Miliard Euro për Ushtrinë',
-    description: 'Buxheti kumulativ për mbrojtjen do të arrijë vlerën prej 1 miliard euro gjatë mandatit për të siguruar kapacitete të plota mbrojtëse.',
-    status: 'In Progress',
-    progress: 45,
-    startDate: '2025-01-01',
-    dueDate: '2029-01-01',
-    updates: [
-      { date: '2026-02-17', status: 'In Progress', description: 'Në ceremoninë e parakalimit për 18-vjetorin e Pavarësisë, Kryeministri deklaroi se investimi në pajisje ushtarake ka kaluar 450 milionë euro.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/fjala-e-plote-e-kryeministri-kurti-ne-ceremonine-e-parakalimit-te-trupave-te-forces-se-sigurise-se-kosoves-dhe-njesive-te-policise-se-kosoves-per-nder-te-18-vjetorit-te-pavaresise/' }
-    ]
-  },
-  {
     id: '107',
     category: 'Siguria',
     title: 'Kosova në NATO',
@@ -1418,4 +1405,3 @@ export const CATEGORIES = [
   { id: 'Arti', label: 'Arti', icon: 'fa-palette' },
   { id: 'Politika e Jashtme', label: 'Politika e Jashtme', icon: 'fa-globe' }
 ];
-
