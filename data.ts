@@ -1376,11 +1376,18 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Energjia',
     title: '170 MW Bateri Akumuluese',
     description: 'Ndërtimi i sistemeve të ruajtjes së energjisë me kapacitet prej 170 MW (dy lote: 45 MW dhe 125 MW) për stabilizimin e rrjetit, në bashkëpunim me MCC.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 25,
     startDate: '2024-01-01',
     dueDate: '2028-12-31',
     updates: [
+      {
+        date: '2026-01-20',
+        status: 'In Progress',
+        description: 'KOSTT nënshkroi marrëveshje me Ministrinë e Ekonomisë dhe Komunën e Ferizajt për marrjen e 2.3 hektarëve tokë për sistemin baterik 45 MW, hap konkret drejt zbatimit të projektit 170 MW BESS.',
+        source: 'Balkan Green Energy News',
+        sourceUrl: 'https://balkangreenenergynews.com/kostt-takes-over-land-in-kosovo-for-battery-system-in-us-funded-project/'
+      },
       { date: '2024-12-10', status: 'In Progress', description: 'Hapet thirrja për parakualifikim për ndërtimin e sistemeve të baterive 170 MW (BESS). Afati deri më 14 Shkurt 2025.' }
     ]
   }
