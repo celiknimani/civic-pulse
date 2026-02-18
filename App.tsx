@@ -7,7 +7,14 @@ import PromiseCard from './components/PromiseCard';
 import DeputiesDirectory from './components/DeputiesDirectory';
 import DeputyProfile from './components/DeputyProfile';
 import { CATEGORIES, LVV_PROMISES } from './data';
-import { parseDeputyDataset, rankDeputiesByActivity, SEED_DEPUTY_DATASET } from './deputiesData';
+import {
+  EMPTY_DEPUTY_DATASET,
+  getTopicIdForPromiseCategory,
+  getTopDeputiesForTopic,
+  getTopicLabelById,
+  parseDeputyDataset,
+  rankDeputiesByActivity,
+} from './deputiesData';
 import { DeputyDataset, PromiseStatus } from './types';
 
 const Home: React.FC = () => {
@@ -185,7 +192,7 @@ const Home: React.FC = () => {
 
 const App: React.FC = () => {
   const [location, setLocation] = useLocation();
-  const [deputyDataset, setDeputyDataset] = useState<DeputyDataset>(SEED_DEPUTY_DATASET);
+  const [deputyDataset, setDeputyDataset] = useState<DeputyDataset>(EMPTY_DEPUTY_DATASET);
 
   useEffect(() => {
     let active = true;
@@ -200,7 +207,7 @@ const App: React.FC = () => {
           setDeputyDataset(parsed);
         }
       } catch (error) {
-        console.warn('Deputy dataset fallback to seed data:', error);
+        console.warn('Deputy dataset could not be loaded:', error);
       }
     };
 
@@ -317,7 +324,11 @@ const App: React.FC = () => {
             {(params) => {
               const promise = LVV_PROMISES.find((p) => p.id === params.id);
               if (!promise) return <div className="py-20 text-center">Premtimi nuk u gjet.</div>;
-              return <PromiseDetail promise={promise} />;
+              const topicId = getTopicIdForPromiseCategory(promise.category);
+              const deputyTopicLabel = topicId ? getTopicLabelById(topicId) : null;
+              const topTopicDeputies = topicId ? getTopDeputiesForTopic(deputyDataset.deputies, topicId, 3) : [];
+
+              return <PromiseDetail promise={promise} deputyTopicLabel={deputyTopicLabel} topTopicDeputies={topTopicDeputies} />;
             }}
           </Route>
           <Route>

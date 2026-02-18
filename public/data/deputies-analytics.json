@@ -1,0 +1,4766 @@
+{
+  "generatedAt": "2026-02-18T21:44:11.214Z",
+  "source": "transcripts",
+  "deputies": [
+    {
+      "id": "egzon-azemi",
+      "name": "Egzon Azemi",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "farush-rexhepi",
+      "name": "Farush Rexhepi",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "bajram-mavriqi",
+      "name": "Bajram Mavriqi",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "luan-aliu",
+      "name": "Luan Aliu",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "driton-hyseni",
+      "name": "Driton Hyseni",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "enver-dugolli",
+      "name": "Enver Dugolli",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "arijeta-rexhepi",
+      "name": "Arijeta Rexhepi",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "shqipe-isufi",
+      "name": "Shqipe Isufi",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "aferdita-hajrizi",
+      "name": "Afërdita Hajrizi",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "ejup-ahmeti",
+      "name": "Ejup Ahmeti",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "abdullah-klinaku",
+      "name": "Abdullah Klinaku",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "mytaher-haskukaj",
+      "name": "Mytaher Haskukaj",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "bylbyl-sokoli",
+      "name": "Bylbyl Sokoli",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "ilir-qeriqi",
+      "name": "Ilir Qeriqi",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "ilir-kerceli",
+      "name": "Ilir Kërçeli",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "mimoza-shala",
+      "name": "Mimoza Shala",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "arberie-nagavci",
+      "name": "Arbërie Nagavci",
+      "party": "Lëvizja Vetëvendosje",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 5,
+        "wordCount": 787,
+        "sessionCount": 1
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 8,
+          "score": 36.36
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 2,
+          "score": 9.09
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 1,
+          "score": 4.55
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 1,
+          "score": 4.55
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 2,
+          "score": 9.09
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 1,
+          "score": 4.55
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 2,
+          "score": 9.09
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 5,
+          "score": 22.73
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti ka intervenime te regjistruara ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "fridon-lala",
+      "name": "Fridon Lala",
+      "party": "Iniciativa e Re Demokratike e Kosovës",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "lazar-raduloviq",
+      "name": "Lazar Raduloviq",
+      "party": "Za Slobodu, Pravdu i Opstanak",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "bahrim-shabani",
+      "name": "Bahrim Shabani",
+      "party": "Koalicija Vakat",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "perparim-gruda",
+      "name": "Përparim Gruda",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 3,
+        "wordCount": 1201,
+        "sessionCount": 1
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 3,
+          "score": 7.14
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 16,
+          "score": 38.1
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 15,
+          "score": 35.71
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 8,
+          "score": 19.05
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti ka intervenime te regjistruara ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "arian-tahiri",
+      "name": "Arian Tahiri",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 5,
+        "wordCount": 298,
+        "sessionCount": 1
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 2,
+          "score": 14.29
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 1,
+          "score": 7.14
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 1,
+          "score": 7.14
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 1,
+          "score": 7.14
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 2,
+          "score": 14.29
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 2,
+          "score": 14.29
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 2,
+          "score": 14.29
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 3,
+          "score": 21.43
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti ka intervenime te regjistruara ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "kujtim-gashi",
+      "name": "Kujtim Gashi",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "mergim-lushtaku",
+      "name": "Mërgim Lushtaku",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "vlora-citaku",
+      "name": "Vlora Çitaku",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "blerta-deliu-kodra",
+      "name": "Blerta Deliu-Kodra",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "ariana-musliu-shoshi",
+      "name": "Ariana Musliu-Shoshi",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "enver-hoxhaj",
+      "name": "Enver Hoxhaj",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "elmi-recica",
+      "name": "Elmi Reçica",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "uran-ismaili",
+      "name": "Uran Ismaili",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "ferat-shala",
+      "name": "Ferat Shala",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "artan-behrami",
+      "name": "Artan Behrami",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "rrahman-rama",
+      "name": "Rrahman Rama",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "ganimete-musliu",
+      "name": "Ganimete Musliu",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "arben-mustafa",
+      "name": "Arben Mustafa",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "eman-rahmani",
+      "name": "Eman Rahmani",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "besa-kabashi-rama",
+      "name": "Besa Kabashi-Rama",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "arbnore-salihu",
+      "name": "Arbnore Salihu",
+      "party": "Partia Demokratike e Kosovës (PDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "jehona-lushaku-sadriu",
+      "name": "Jehona Lushaku-Sadriu",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 7,
+        "wordCount": 468,
+        "sessionCount": 1
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 4,
+          "score": 23.53
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 1,
+          "score": 5.88
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 1,
+          "score": 5.88
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 3,
+          "score": 17.65
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 1,
+          "score": 5.88
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 2,
+          "score": 11.76
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 2,
+          "score": 11.76
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 3,
+          "score": 17.65
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti ka intervenime te regjistruara ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "armend-zemaj",
+      "name": "Armend Zemaj",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 1,
+        "wordCount": 407,
+        "sessionCount": 1
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 2,
+          "score": 28.57
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 1,
+          "score": 14.29
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 1,
+          "score": 14.29
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 1,
+          "score": 14.29
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 2,
+          "score": 28.57
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti ka intervenime te regjistruara ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "kujtim-shala",
+      "name": "Kujtim Shala",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "doarsa-kica-xhelili",
+      "name": "Doarsa Kica-Xhelili",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "hykmete-bajrami",
+      "name": "Hykmete Bajrami",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "lutfi-haziri",
+      "name": "Lutfi Haziri",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "janina-ymeri",
+      "name": "Janina Ymeri",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "uke-rugova",
+      "name": "Ukë Rugova",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "ermal-sadiku",
+      "name": "Ermal Sadiku",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "fadil-hadergjonaj",
+      "name": "Fadil Hadërgjonaj",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "abdullah-hoti",
+      "name": "Abdullah Hoti",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "anton-cuni",
+      "name": "Anton Çuni",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "adelina-thaci-meta",
+      "name": "Adelina Thaçi-Meta",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "besian-mustafa",
+      "name": "Besian Mustafa",
+      "party": "Lidhja Demokratike e Kosovës (LDK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "besnik-tahiri",
+      "name": "Besnik Tahiri",
+      "party": "Aleanca për Ardhmërinë e Kosovës (AAK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 2,
+        "wordCount": 75,
+        "sessionCount": 1
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti ka intervenime te regjistruara ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "time-kadrijaj",
+      "name": "Time Kadrijaj",
+      "party": "Aleanca për Ardhmërinë e Kosovës (AAK)",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 1,
+        "wordCount": 25,
+        "sessionCount": 1
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti ka intervenime te regjistruara ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "igor-simic",
+      "name": "Igor Simić",
+      "party": "Lista Serbe",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 2,
+        "wordCount": 200,
+        "sessionCount": 1
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 1,
+          "score": 25
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 2,
+          "score": 50
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 1,
+          "score": 25
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti ka intervenime te regjistruara ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "verica-ceranic",
+      "name": "Verica Čeranić",
+      "party": "Lista Serbe",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "miljana-nikolic",
+      "name": "Miljana Nikolić",
+      "party": "Lista Serbe",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "slavko-simic",
+      "name": "Slavko Simić",
+      "party": "Lista Serbe",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "sr-an-popovic",
+      "name": "Srđan Popović",
+      "party": "Lista Serbe",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "ljiljana-stefanovic",
+      "name": "Ljiljana Stefanović",
+      "party": "Lista Serbe",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "zlatan-elek",
+      "name": "Zlatan Elek",
+      "party": "Lista Serbe",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "milan-kostic",
+      "name": "Milan Kostić",
+      "party": "Lista Serbe",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "nemanja-bisevac",
+      "name": "Nemanja Biševac",
+      "party": "Lista Serbe",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "artan-asllani",
+      "name": "Artan Asllani",
+      "party": "Grupi Parlamentar Multietnik",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 3,
+        "wordCount": 263,
+        "sessionCount": 1
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 3,
+          "score": 21.43
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 1,
+          "score": 7.14
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 1,
+          "score": 7.14
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 2,
+          "score": 14.29
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 2,
+          "score": 14.29
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 2,
+          "score": 14.29
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 3,
+          "score": 21.43
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti ka intervenime te regjistruara ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "emilija-rexhepi",
+      "name": "Emilija Rexhepi",
+      "party": "Grupi Parlamentar Multietnik",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "fatma-taci",
+      "name": "Fatma Taçi",
+      "party": "Grupi Parlamentar Multietnik",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "erxhan-galushi",
+      "name": "Erxhan Galushi",
+      "party": "Grupi Parlamentar Multietnik",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    },
+    {
+      "id": "ergyl-mazdrek",
+      "name": "Ergyl Mazdrek",
+      "party": "Grupi Parlamentar Multietnik",
+      "profileUrl": "https://www.kuvendikosoves.org/shq/deputetet/",
+      "activity": {
+        "speechCount": 0,
+        "wordCount": 0,
+        "sessionCount": 0
+      },
+      "topics": [
+        {
+          "topicId": "ekonomia",
+          "label": "Ekonomia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "arsimi",
+          "label": "Arsimi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "shendetesia",
+          "label": "Shendetesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "drejtesia",
+          "label": "Drejtesia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "integrimi-evropian",
+          "label": "Integrimi Evropian",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "mireqenia-sociale",
+          "label": "Mireqenia Sociale",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "2026-02-12-seanca-plenare",
+          "title": "Seance Plenare - 12 Shkurt 2026",
+          "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+          "date": "2026-02-12",
+          "note": "Deputeti eshte identifikuar/permendur ne kete transkript."
+        }
+      ]
+    }
+  ]
+}

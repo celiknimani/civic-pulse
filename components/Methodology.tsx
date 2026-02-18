@@ -2,31 +2,35 @@ import React from 'react';
 
 const COPY = {
   back: 'Kthehu mbrapa',
-  eyebrow: 'Transparenc\u00eb dhe llogaridh\u00ebnie',
-  title: 'Si Funksionon Metodologjia ZOTIMI',
+  title: 'Metodologjia ',
   intro:
-    'Platforma ofron monitorim t\u00eb paansh\u00ebm t\u00eb premtimeve qeveritare, me kritere t\u00eb qarta dhe burime t\u00eb verifikueshme.',
-  sectionMethod: 'Metodologjia',
+    'Platforma monitoron premtimet dhe aktivitetin e deputeteve me logjike te dokumentuar, burime zyrtare dhe metrika te riprodhueshme.',
+  sectionMethod: 'Si funksionon sistemi',
+  sectionMetrics: 'Si matet performanca e deputetit',
+  sectionAi: 'Roli i GPT-Codex-5.3',
   sectionDocs: 'Dokumentet Zyrtare',
   sectionNote: 'V\u00ebrejtje e R\u00ebnd\u00ebsishme',
   sourceLine:
-    'Ne bazohemi ekskluzivisht n\u00eb Programin Qeveris\u00ebs 2021-2025 dhe planin p\u00ebr 2026-2030, pa lajme t\u00eb paverifikuara dhe pa opinione.',
+    'Premtimet merren nga dokumente zyrtare politike/qeveritare, ndersa aktiviteti i deputeteve merret nga transkriptet zyrtare te Kuvendit (PDF).',
   progressLine:
-    '\u00c7do zotim monitorohet periodikisht dhe statusi p\u00ebrdit\u00ebsohet vet\u00ebm mbi baz\u00eb raportesh zyrtare dhe zhvillimesh t\u00eb dokumentuara.',
+    'Transkriptet strukturohen ne format te lexueshem nga sistemi (speaker, text, sessionId, date, source) dhe lidhen me listen e deputeteve permes emrit te normalizuar.',
   evaluationLine:
-    'Nj\u00eb zotim konsiderohet i p\u00ebrfunduar vet\u00ebm me realizim t\u00eb plot\u00eb. Deri at\u00ebher\u00eb vler\u00ebsohet sipas hapave konkrete t\u00eb implementimit.',
+    'Per secilin deputet llogariten automatikisht: fjalime, fjale, seanca dhe permendje tematike (taxonomy me 8 tema). Spider map paraqet peshen relative te temave.',
   neutralityLine:
-    'Platforma mbetet neutrale dhe paraqet faktet ashtu si jan\u00eb, pa interpretim subjektiv.',
+    'Cdo premtim lidhet me nje teme kryesore. Ne detail view shfaqen Top 3 deputetet per ate teme sipas: mentions > score > speechCount > wordCount.',
+  gptLine:
+    'GPT-Codex-5.3 perdoret si shtrese inxhinierike per ndertimin/rifreskimin e pipeline-it, rregullave dhe validimeve. Nuk perdoret per te shpikur fakte apo per te zevendesuar burimin zyrtar.',
+  gptLine2:
+    'Rezultatet numerike dalin nga skriptet deterministe mbi transkriptet dhe dataset-et lokale; cdo profil deputeti ruan edhe burimin zyrtar te transkriptit.',
   note:
     'ZOTIMI \u00ebsht\u00eb mjet i pavarur monitorimi. T\u00eb dh\u00ebnat rifreskohen sipas evidenc\u00ebs s\u00eb re zyrtare p\u00ebr sakt\u00ebsi dhe transparenc\u00eb maksimale.',
-  backToMonitoring: 'Kthehu te monitorimi',
 };
 
 const SOURCES = [
   {
-    name: 'Programi Qeveris\u00ebs 2021-2025',
-    url: 'https://kryeministri.rks-gov.net/wp-content/uploads/2021/05/Programi-i-Qeverise-se-Republikes-se-Kosoves-2021-2025.pdf',
-    type: 'Dokument zyrtar - PDF',
+    name: 'Transkripti zyrtar i seances plenare (12 Shkurt 2026)',
+    url: 'https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf',
+    type: 'Kuvendi i Kosoves - PDF zyrtar',
   },
   {
     name: 'L\u00ebvizja VET\u00cbVENDOSJE!',
@@ -53,8 +57,27 @@ const STEPS = [
   },
   {
     index: '04',
-    title: 'Neutraliteti dhe Transparenca',
+    title: 'Lidhja me premtimet dhe renditja Top 3',
     text: COPY.neutralityLine,
+  },
+];
+
+const METRICS = [
+  {
+    title: 'Fjalime',
+    text: 'Numeri i nderhyrjeve ku deputeti shfaqet si speaker ne transkript.',
+  },
+  {
+    title: 'Fjale te folura',
+    text: 'Shuma e fjaleve ne te gjitha nderhyrjet e deputetit (pas normalizimit te tekstit).',
+  },
+  {
+    title: 'Seanca',
+    text: 'Numri i seancave unike ku deputeti ka te pakten nje nderhyrje.',
+  },
+  {
+    title: 'Tema me te diskutuara (Spider Map)',
+    text: 'Per cdo teme numrohen permendjet nga fjalet kyce; score (%) = permendjet e temes / permendjet totale * 100.',
   },
 ];
 
@@ -70,7 +93,6 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
       </button>
 
       <header className="pb-12 border-b border-[#d8cdb8]">
-        <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#8a7345]">{COPY.eyebrow}</p>
         <h1
           className="mt-4 text-5xl sm:text-6xl md:text-7xl font-black leading-[0.92] text-[#102949]"
           style={{ fontFamily: '"Bodoni Moda", serif' }}
@@ -95,6 +117,26 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="pt-16">
+        <h2 className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#8a7345]">{COPY.sectionMetrics}</h2>
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          {METRICS.map((metric) => (
+            <article key={metric.title} className="rounded-2xl border border-[#ddd2bf] bg-[#faf6ee] p-5">
+              <h3 className="text-lg font-black text-[#1c314d]">{metric.title}</h3>
+              <p className="mt-2 text-sm md:text-base leading-relaxed text-[#5b6b82]">{metric.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="pt-16">
+        <h2 className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#8a7345]">{COPY.sectionAi}</h2>
+        <div className="mt-6 rounded-2xl border border-[#ddd2bf] bg-[#faf6ee] p-6">
+          <p className="text-base md:text-lg leading-relaxed text-[#4f5f77]">{COPY.gptLine}</p>
+          <p className="mt-4 text-sm md:text-base leading-relaxed text-[#5b6b82]">{COPY.gptLine2}</p>
         </div>
       </section>
 
@@ -126,12 +168,6 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
       <section className="pt-16 pb-2">
         <h2 className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#8a7345]">{COPY.sectionNote}</h2>
         <p className="mt-4 max-w-4xl text-base md:text-lg leading-relaxed text-[#4f5f77]">{COPY.note}</p>
-        <button
-          onClick={onBack}
-          className="mt-8 inline-flex rounded-full border border-[#cdbd9a] px-6 py-3 text-[11px] font-extrabold uppercase tracking-[0.16em] text-[#735f38]"
-        >
-          {COPY.backToMonitoring}
-        </button>
       </section>
     </div>
   );

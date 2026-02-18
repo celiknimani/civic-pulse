@@ -7,37 +7,35 @@ interface DeputiesDirectoryProps {
   dataset: DeputyDataset;
 }
 
+const ALL_PARTIES = 'Te gjitha';
 const formatNumber = (value: number): string => new Intl.NumberFormat('sq-AL').format(value);
 
 const DeputiesDirectory: React.FC<DeputiesDirectoryProps> = ({ dataset }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [partyFilter, setPartyFilter] = useState('Të gjitha');
+  const [partyFilter, setPartyFilter] = useState(ALL_PARTIES);
 
   const rankedDeputies = useMemo(() => rankDeputiesByActivity(dataset.deputies), [dataset.deputies]);
-  const topTenDeputies = useMemo(() => rankedDeputies.slice(0, 10), [rankedDeputies]);
+
+  const rankedActiveDeputies = useMemo(
+    () => rankedDeputies.filter((deputy) => deputy.activity.speechCount > 0),
+    [rankedDeputies]
+  );
+
+  const topTenDeputies = useMemo(() => rankedActiveDeputies.slice(0, 10), [rankedActiveDeputies]);
 
   const parties = useMemo(() => {
     const values = Array.from(new Set(rankedDeputies.map((deputy) => deputy.party))).sort((a, b) => a.localeCompare(b));
-    return ['Të gjitha', ...values];
+    return [ALL_PARTIES, ...values];
   }, [rankedDeputies]);
 
   const filteredDeputies = useMemo(
     () =>
       rankedDeputies.filter((deputy) => {
         const matchesSearch = deputy.name.toLowerCase().includes(searchTerm.toLowerCase());
-        const matchesParty = partyFilter === 'Të gjitha' || deputy.party === partyFilter;
+        const matchesParty = partyFilter === ALL_PARTIES || deputy.party === partyFilter;
         return matchesSearch && matchesParty;
       }),
     [rankedDeputies, searchTerm, partyFilter]
-  );
-
-  const totalWords = useMemo(
-    () => rankedDeputies.reduce((sum, deputy) => sum + deputy.activity.wordCount, 0),
-    [rankedDeputies]
-  );
-  const totalSpeeches = useMemo(
-    () => rankedDeputies.reduce((sum, deputy) => sum + deputy.activity.speechCount, 0),
-    [rankedDeputies]
   );
 
   return (
@@ -52,38 +50,26 @@ const DeputiesDirectory: React.FC<DeputiesDirectoryProps> = ({ dataset }) => {
           <div className="flex flex-wrap items-center gap-3">
             <span className="inline-flex items-center rounded-full border border-[#c9b896] bg-[#f7ecd6] px-4 py-2 text-[10px] font-black uppercase tracking-[0.18em] text-[#70552a]">
               <i className="fa-solid fa-users-line mr-2" />
-              120 Deputete
+              {formatNumber(rankedDeputies.length)} Deputete
             </span>
-            <span
-              className={`inline-flex items-center rounded-full border px-4 py-2 text-[10px] font-black uppercase tracking-[0.18em] ${
-                dataset.source === 'transcripts'
-                  ? 'border-emerald-200 bg-emerald-50 text-emerald-700'
-                  : 'border-amber-200 bg-amber-50 text-amber-700'
-              }`}
-            >
-              {dataset.source === 'transcripts' ? 'Burimi: Transkripte Zyrtare' : 'Burimi: Dataset Seed'}
+            <span className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-[10px] font-black uppercase tracking-[0.18em] text-emerald-700">
+              Burimi: Transkripte Zyrtare
             </span>
           </div>
 
           <h1 className="text-4xl font-black leading-[0.92] text-[#122d4b] sm:text-5xl md:text-6xl" style={{ fontFamily: '"Bodoni Moda", serif' }}>
-            Harta e Aktivitetit të Deputetëve
+            Harta e Aktivitetit te Deputeteve
           </h1>
           <p className="max-w-3xl text-base font-semibold leading-relaxed text-[#4b5d74] md:text-lg">
-            Katalog i plotë i 120 deputetëve, me profil individual, temat që i trajtojnë më së shumti dhe një renditje të deputetëve më aktivë.
+            Katalog fillestar i deputeteve me profil individual, temat me te diskutuara dhe renditje sipas aktivitetit real ne seanca.
           </p>
 
-          <div className="grid gap-4 sm:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-1">
             <div className="rounded-2xl border border-[#d7cab2] bg-[#faf6ee] p-4">
-              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#8a7550]">Totali i fjalimeve</p>
-              <p className="mt-2 text-2xl font-black text-[#183556]">{formatNumber(totalSpeeches)}</p>
-            </div>
-            <div className="rounded-2xl border border-[#d7cab2] bg-[#faf6ee] p-4">
-              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#8a7550]">Totali i fjalëve</p>
-              <p className="mt-2 text-2xl font-black text-[#183556]">{formatNumber(totalWords)}</p>
-            </div>
-            <div className="rounded-2xl border border-[#d7cab2] bg-[#faf6ee] p-4">
-              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#8a7550]">Përditësuar</p>
-              <p className="mt-2 text-sm font-black text-[#183556]">{new Date(dataset.generatedAt).toLocaleString('sq-AL')}</p>
+              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#8a7550]">Perditesuar</p>
+              <p className="mt-2 text-sm font-black text-[#183556]">
+                {dataset.generatedAt ? new Date(dataset.generatedAt).toLocaleString('sq-AL') : '-'}
+              </p>
             </div>
           </div>
         </div>
@@ -93,46 +79,35 @@ const DeputiesDirectory: React.FC<DeputiesDirectoryProps> = ({ dataset }) => {
         <div className="mb-6 flex items-center justify-between gap-4">
           <div>
             <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#8f7340]">Renditja</p>
-            <h2 className="text-2xl font-black text-[#112f50]">Top 10 Deputetët Më Aktivë</h2>
+            <h2 className="text-2xl font-black text-[#112f50]">Deputetët më aktiv</h2>
           </div>
-          <span className="rounded-full border border-[#c9b795] bg-[#f8ecd4] px-4 py-2 text-[10px] font-black uppercase tracking-[0.17em] text-[#7b602f]">
-            Speech + Word + Session
-          </span>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2">
-          {topTenDeputies.map((deputy, index) => (
-            <Link
-              key={deputy.id}
-              href={`/deputet/${deputy.id}`}
-              className="group block h-full rounded-2xl border border-[#d9ccb5] bg-[#fbf7ef] p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#b49560] hover:shadow-[0_18px_36px_-26px_rgba(17,44,76,0.95)]"
-            >
-              <div className="mb-3 flex items-center justify-between">
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#102949] text-xs font-black text-[#f5dfb1]">
-                  #{index + 1}
-                </span>
-                <span className="rounded-full border border-[#d0c1a1] bg-[#f5ebd7] px-3 py-1 text-[10px] font-black uppercase tracking-[0.15em] text-[#6f5528]">
-                  {deputy.party}
-                </span>
-              </div>
-              <p className="text-lg font-black text-[#1a3556]">{deputy.name}</p>
-              <div className="mt-3 grid grid-cols-3 gap-2 text-center">
-                <div className="rounded-xl bg-[#f4eee1] p-2">
-                  <p className="text-[9px] font-black uppercase tracking-[0.14em] text-[#8d7651]">Fjalime</p>
-                  <p className="mt-1 text-sm font-black text-[#1a3556]">{formatNumber(deputy.activity.speechCount)}</p>
+        {topTenDeputies.length > 0 ? (
+          <div className="grid gap-4 md:grid-cols-2">
+            {topTenDeputies.map((deputy, index) => (
+              <Link
+                key={deputy.id}
+                href={`/deputet/${deputy.id}`}
+                className="group block h-full rounded-2xl border border-[#d9ccb5] bg-[#fbf7ef] p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#b49560] hover:shadow-[0_18px_36px_-26px_rgba(17,44,76,0.95)]"
+              >
+                <div className="mb-3 flex items-center justify-between">
+                  <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#102949] text-xs font-black text-[#f5dfb1]">
+                    #{index + 1}
+                  </span>
+                  <span className="rounded-full border border-[#d0c1a1] bg-[#f5ebd7] px-3 py-1 text-[10px] font-black uppercase tracking-[0.15em] text-[#6f5528]">
+                    {deputy.party}
+                  </span>
                 </div>
-                <div className="rounded-xl bg-[#f4eee1] p-2">
-                  <p className="text-[9px] font-black uppercase tracking-[0.14em] text-[#8d7651]">Fjalë</p>
-                  <p className="mt-1 text-sm font-black text-[#1a3556]">{formatNumber(deputy.activity.wordCount)}</p>
-                </div>
-                <div className="rounded-xl bg-[#f4eee1] p-2">
-                  <p className="text-[9px] font-black uppercase tracking-[0.14em] text-[#8d7651]">Seanca</p>
-                  <p className="mt-1 text-sm font-black text-[#1a3556]">{formatNumber(deputy.activity.sessionCount)}</p>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+                <p className="text-lg font-black text-[#1a3556]">{deputy.name}</p>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-2xl border border-dashed border-[#d0bf9f] bg-[#fbf6ea] px-5 py-8 text-sm font-semibold text-[#627289]">
+            Ende nuk ka intervenime te mjaftueshme ne dataset per renditje.
+          </div>
+        )}
       </section>
 
       <section className="mb-6 rounded-[2rem] border border-[#d5c8b2] bg-[#f8f3ea] p-5 md:p-6">
@@ -143,7 +118,7 @@ const DeputiesDirectory: React.FC<DeputiesDirectoryProps> = ({ dataset }) => {
               type="text"
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
-              placeholder="Kërko deputetin sipas emrit..."
+              placeholder="Kerko deputetin sipas emrit..."
               className="h-14 w-full rounded-2xl border border-[#d7cab5] bg-[#fefcf8] pl-11 pr-4 text-sm font-semibold text-[#2f3f55] outline-none transition-colors focus:border-[#9b7537]"
             />
           </div>
@@ -180,9 +155,6 @@ const DeputiesDirectory: React.FC<DeputiesDirectoryProps> = ({ dataset }) => {
                 </span>
               </div>
               <h3 className="text-lg font-black text-[#193454]">{deputy.name}</h3>
-              <p className="mt-2 text-xs font-semibold uppercase tracking-[0.13em] text-[#738196]">
-                {formatNumber(deputy.activity.speechCount)} fjalime • {formatNumber(deputy.activity.wordCount)} fjalë
-              </p>
               <div className="mt-4 flex items-center justify-between text-xs font-black uppercase tracking-[0.13em] text-[#8e7446]">
                 <span>Shiko profilin</span>
                 <i className="fa-solid fa-arrow-right-long transition-transform group-hover:translate-x-1" />
@@ -195,8 +167,8 @@ const DeputiesDirectory: React.FC<DeputiesDirectoryProps> = ({ dataset }) => {
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#f0e3c8] text-[#9d8357]">
             <i className="fa-solid fa-filter-circle-xmark text-xl" />
           </div>
-          <h3 className="text-lg font-black text-[#203652]">Nuk ka deputetë me këto filtra</h3>
-          <p className="mt-2 text-sm font-semibold text-[#627289]">Ndrysho kriteret e kërkimit për ta parë listën e plotë.</p>
+          <h3 className="text-lg font-black text-[#203652]">Nuk ka deputete me keto filtra</h3>
+          <p className="mt-2 text-sm font-semibold text-[#627289]">Ndrysho kriteret e kerkimit per ta pare listen e plote.</p>
         </div>
       )}
     </main>
@@ -204,3 +176,4 @@ const DeputiesDirectory: React.FC<DeputiesDirectoryProps> = ({ dataset }) => {
 };
 
 export default DeputiesDirectory;
+

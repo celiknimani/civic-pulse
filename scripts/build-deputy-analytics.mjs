@@ -6,14 +6,23 @@ import { fileURLToPath } from 'node:url';
 
 const TOPIC_TAXONOMY = [
   { id: 'ekonomia', label: 'Ekonomia', keywords: ['ekonomi', 'biznes', 'investim', 'treg', 'buxhet', 'tatim'] },
-  { id: 'arsimi', label: 'Arsimi', keywords: ['arsim', 'shkoll', 'universitet', 'student', 'mësim', 'profesor'] },
-  { id: 'shendetesia', label: 'Shendetesia', keywords: ['shëndet', 'spital', 'mjek', 'pacient', 'klinik', 'barn'] },
-  { id: 'drejtesia', label: 'Drejtesia', keywords: ['drejtësi', 'gjykat', 'prokurori', 'ligj', 'korrupsion', 'sundim'] },
-  { id: 'infrastruktura', label: 'Infrastruktura', keywords: ['rrug', 'infrastruktur', 'ndërtim', 'transport', 'hekurudh', 'energji'] },
+  { id: 'arsimi', label: 'Arsimi', keywords: ['arsim', 'shkoll', 'universitet', 'student', 'mesim', 'profesor'] },
+  { id: 'shendetesia', label: 'Shendetesia', keywords: ['shendet', 'spital', 'mjek', 'pacient', 'klinik', 'barn'] },
+  { id: 'drejtesia', label: 'Drejtesia', keywords: ['drejtesi', 'gjykat', 'prokurori', 'ligj', 'korrupsion', 'sundim'] },
+  { id: 'infrastruktura', label: 'Infrastruktura', keywords: ['rrug', 'infrastruktur', 'ndertim', 'transport', 'hekurudh', 'energji'] },
   { id: 'siguria', label: 'Siguria', keywords: ['siguri', 'polici', 'forc', 'mbrojt', 'ushtri', 'kufi'] },
-  { id: 'integrimi-evropian', label: 'Integrimi Evropian', keywords: ['evrop', 'integrim', 'bashkimi', 'anëtarësim', 'partneritet'] },
-  { id: 'mireqenia-sociale', label: 'Mireqenia Sociale', keywords: ['social', 'mirëqenie', 'pension', 'ndihm', 'punësim', 'familj'] },
+  { id: 'integrimi-evropian', label: 'Integrimi Evropian', keywords: ['evrop', 'integrim', 'bashkimi', 'anetaresim', 'partneritet'] },
+  { id: 'mireqenia-sociale', label: 'Mireqenia Sociale', keywords: ['social', 'mireqenie', 'pension', 'ndihm', 'punesim', 'familj'] },
 ];
+
+const OFFICIAL_SESSION_SOURCE_INDEX = {
+  '2026-02-12-seanca': {
+    id: '2026-02-12-seanca-plenare',
+    title: 'Seance Plenare - 12 Shkurt 2026',
+    url: 'https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf',
+    date: '2026-02-12',
+  },
+};
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -131,6 +140,8 @@ const loadTranscriptEntries = async () => {
           text: String(row.text),
           sessionId: String(row.sessionId || path.parse(fileName).name),
           date: String(row.date || ''),
+          sourceTitle: String(row.sourceTitle || ''),
+          sourceUrl: String(row.sourceUrl || ''),
           row: `${fileName}:${index + 1}`,
         });
       });
@@ -152,6 +163,8 @@ const loadTranscriptEntries = async () => {
           text,
           sessionId: path.parse(fileName).name,
           date: '',
+          sourceTitle: '',
+          sourceUrl: '',
           row: `${fileName}:${index + 1}`,
         });
       });
@@ -185,12 +198,28 @@ const build = async () => {
   const transcriptEntries = await loadTranscriptEntries();
   const deputyByName = new Map(deputies.map((deputy) => [deputy.normalizedName, deputy]));
   const statsById = new Map();
+  const sourceBySession = new Map();
+
+  transcriptEntries.forEach((entry) => {
+    const sessionId = entry.sessionId || '';
+    if (!sessionId || sourceBySession.has(sessionId)) return;
+
+    const predefined = OFFICIAL_SESSION_SOURCE_INDEX[sessionId];
+
+    sourceBySession.set(sessionId, {
+      id: predefined?.id || normalize(sessionId).replace(/\s+/g, '-') || `source-${sourceBySession.size + 1}`,
+      title: entry.sourceTitle || predefined?.title || sessionId,
+      url: entry.sourceUrl || predefined?.url || '',
+      date: entry.date || predefined?.date || '',
+    });
+  });
 
   deputies.forEach((deputy) => {
     statsById.set(deputy.id, {
       speechCount: 0,
       wordCount: 0,
       sessions: new Set(),
+      sourceIds: new Set(),
       topics: TOPIC_TAXONOMY.map((topic) => ({
         topicId: topic.id,
         label: topic.label,
@@ -208,6 +237,7 @@ const build = async () => {
     stats.speechCount += 1;
     stats.wordCount += getWordCount(entry.text);
     stats.sessions.add(entry.sessionId || entry.row);
+    if (entry.sessionId) stats.sourceIds.add(entry.sessionId);
 
     const topicMentions = classifyTopics(entry.text);
     topicMentions.forEach((topicMention, index) => {
@@ -226,6 +256,27 @@ const build = async () => {
         score: totalMentions > 0 ? Number(((topic.mentions / totalMentions) * 100).toFixed(2)) : 0,
       }));
 
+      const sources = [...stats.sourceIds]
+        .map((sourceId) => sourceBySession.get(sourceId))
+        .filter((source) => source && source.url)
+        .map((source) => ({
+          ...source,
+          note:
+            stats.speechCount > 0
+              ? 'Deputeti ka intervenime te regjistruara ne kete transkript.'
+              : 'Deputeti eshte identifikuar/permendur ne kete transkript.',
+        }));
+
+      // If a deputy has no direct speech entries yet, still attach the official session source
+      // to make provenance explicit for the seeded roster extracted from this transcript.
+      if (sources.length === 0 && sourceBySession.has('2026-02-12-seanca')) {
+        const fallback = sourceBySession.get('2026-02-12-seanca');
+        sources.push({
+          ...fallback,
+          note: 'Deputeti eshte identifikuar/permendur ne kete transkript.',
+        });
+      }
+
       return {
         id: deputy.id,
         name: deputy.name,
@@ -237,6 +288,7 @@ const build = async () => {
           sessionCount: stats.sessions.size,
         },
         topics,
+        sources,
       };
     }),
   };

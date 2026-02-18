@@ -34,6 +34,14 @@ export interface DeputyActivityMetrics {
   sessionCount: number;
 }
 
+export interface DeputySource {
+  id: string;
+  title: string;
+  url: string;
+  date?: string;
+  note?: string;
+}
+
 export interface DeputyProfile {
   id: string;
   name: string;
@@ -41,6 +49,7 @@ export interface DeputyProfile {
   profileUrl?: string;
   activity: DeputyActivityMetrics;
   topics: DeputyTopicMetric[];
+  sources?: DeputySource[];
 }
 
 export interface DeputyDataset {
