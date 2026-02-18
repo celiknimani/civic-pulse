@@ -17,3 +17,16 @@ View your app in AI Studio: https://ai.studio/apps/drive/1kL97vQ5_b6k-T_JXhV8PO2
    `npm install`
 2. Run the app:
    `npm run dev`
+
+## Deputetet Analytics (Transkripte)
+
+UI tani ka:
+- `/deputetet` per listen e 120 deputeteve dhe Top 10 me aktivet
+- `/deputet/:id` per profil individual me grafik spiderweb te temave
+
+Per ta ushqyer me data reale nga transkriptet:
+
+1. Pergatit `datasets/deputies.csv` dhe dosjen `datasets/transcripts/` sipas udhezimeve te `datasets/README.md`
+2. Gjenero dataset-in:
+   `npm run build:deputies`
+3. Rifillo aplikacionin; UI ngarkon automatikisht `public/data/deputies-analytics.json`

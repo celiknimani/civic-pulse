@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:deputies": "node scripts/build-deputy-analytics.mjs"
   },
   "dependencies": {
     "react": "^19.2.3",

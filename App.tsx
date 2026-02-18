@@ -4,8 +4,11 @@ import DashboardStats from './components/DashboardStats';
 import Methodology from './components/Methodology';
 import { PromiseDetail } from './components/PromiseDetail';
 import PromiseCard from './components/PromiseCard';
+import DeputiesDirectory from './components/DeputiesDirectory';
+import DeputyProfile from './components/DeputyProfile';
 import { CATEGORIES, LVV_PROMISES } from './data';
-import { PromiseStatus } from './types';
+import { parseDeputyDataset, rankDeputiesByActivity, SEED_DEPUTY_DATASET } from './deputiesData';
+import { DeputyDataset, PromiseStatus } from './types';
 
 const Home: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -181,7 +184,37 @@ const Home: React.FC = () => {
 };
 
 const App: React.FC = () => {
-  const [, setLocation] = useLocation();
+  const [location, setLocation] = useLocation();
+  const [deputyDataset, setDeputyDataset] = useState<DeputyDataset>(SEED_DEPUTY_DATASET);
+
+  useEffect(() => {
+    let active = true;
+
+    const loadDeputyDataset = async () => {
+      try {
+        const response = await fetch('/data/deputies-analytics.json', { cache: 'no-store' });
+        if (!response.ok) return;
+        const payload = await response.json();
+        const parsed = parseDeputyDataset(payload);
+        if (active && parsed) {
+          setDeputyDataset(parsed);
+        }
+      } catch (error) {
+        console.warn('Deputy dataset fallback to seed data:', error);
+      }
+    };
+
+    loadDeputyDataset();
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const rankedDeputies = useMemo(() => rankDeputiesByActivity(deputyDataset.deputies), [deputyDataset.deputies]);
+
+  const isActiveRoute = (path: string): boolean =>
+    path === '/' ? location === '/' : location === path || location.startsWith(`${path}/`);
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#f4efe4] text-[#1f2f43] selection:bg-[#f2d7a1]">
@@ -218,7 +251,7 @@ const App: React.FC = () => {
           <nav className="hidden md:flex items-center gap-6 text-[11px] font-extrabold uppercase tracking-[0.15em] text-[#5f6e84]">
             <a
               href="#"
-              className="transition-colors hover:text-[#102949]"
+              className={`transition-colors hover:text-[#102949] ${isActiveRoute('/') ? 'text-[#102949]' : ''}`}
               onClick={(e) => {
                 e.preventDefault();
                 setLocation('/');
@@ -228,13 +261,23 @@ const App: React.FC = () => {
             </a>
             <a
               href="/methodology"
-              className="transition-colors hover:text-[#102949]"
+              className={`transition-colors hover:text-[#102949] ${isActiveRoute('/methodology') ? 'text-[#102949]' : ''}`}
               onClick={(e) => {
                 e.preventDefault();
                 setLocation('/methodology');
               }}
             >
               Si funksionon
+            </a>
+            <a
+              href="/deputetet"
+              className={`transition-colors hover:text-[#102949] ${isActiveRoute('/deputetet') || isActiveRoute('/deputet') ? 'text-[#102949]' : ''}`}
+              onClick={(e) => {
+                e.preventDefault();
+                setLocation('/deputetet');
+              }}
+            >
+              Deputetët
             </a>
             <span className="rounded-full border border-[#cdbb96] bg-[#f8ebcf] px-4 py-2 text-[#8b6730]">Mandati 2026-2030</span>
           </nav>
@@ -244,6 +287,29 @@ const App: React.FC = () => {
       <div className="relative z-10 font-body-luxury">
         <Switch>
           <Route path="/" component={Home} />
+          <Route path="/deputetet">
+            <DeputiesDirectory dataset={deputyDataset} />
+          </Route>
+          <Route path="/deputet/:id">
+            {(params) => {
+              const deputyIndex = rankedDeputies.findIndex((deputy) => deputy.id === params.id);
+              const deputy = deputyIndex >= 0 ? rankedDeputies[deputyIndex] : null;
+
+              if (!deputy) {
+                return <div className="py-20 text-center font-bold text-[#7e8795]">Deputeti nuk u gjet.</div>;
+              }
+
+              return (
+                <DeputyProfile
+                  deputy={deputy}
+                  rank={deputyIndex + 1}
+                  totalDeputies={rankedDeputies.length}
+                  datasetSource={deputyDataset.source}
+                  generatedAt={deputyDataset.generatedAt}
+                />
+              );
+            }}
+          </Route>
           <Route path="/methodology">
             <Methodology onBack={() => setLocation('/')} />
           </Route>
@@ -274,6 +340,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
-
-
