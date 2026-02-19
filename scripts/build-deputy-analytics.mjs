@@ -49,6 +49,101 @@ const normalize = (value) =>
     .replace(/\s+/g, ' ')
     .trim();
 
+const CHAIR_ROLE_PATTERN = /\b(KRYETARJA|KRYETARI|KRYESUESJA|KRYESUESI)\b\s*:?\s*/gu;
+const INLINE_NAME_WITH_COLON_PATTERN = /([A-ZÇË][\p{L}'’-]+(?:\s+[A-ZÇË][\p{L}'’-]+){1,3})\s*:/gu;
+
+const collectInlineSpeakerMarkers = (text, deputyNameIndex, unknownNameMarkers) => {
+  const markers = [];
+  let match = null;
+
+  INLINE_NAME_WITH_COLON_PATTERN.lastIndex = 0;
+  while ((match = INLINE_NAME_WITH_COLON_PATTERN.exec(text))) {
+    const rawName = String(match[1] || '').trim();
+    const normalizedName = normalize(rawName);
+    const canonicalName = deputyNameIndex.get(normalizedName);
+
+    if (canonicalName) {
+      markers.push({
+        start: match.index,
+        end: INLINE_NAME_WITH_COLON_PATTERN.lastIndex,
+        speaker: canonicalName,
+      });
+    } else if (normalizedName) {
+      unknownNameMarkers.set(rawName, (unknownNameMarkers.get(rawName) || 0) + 1);
+    }
+  }
+
+  CHAIR_ROLE_PATTERN.lastIndex = 0;
+  while ((match = CHAIR_ROLE_PATTERN.exec(text))) {
+    const role = String(match[1] || '').trim();
+    markers.push({
+      start: match.index,
+      end: CHAIR_ROLE_PATTERN.lastIndex,
+      speaker: role,
+    });
+  }
+
+  markers.sort((a, b) => {
+    if (a.start !== b.start) return a.start - b.start;
+    return b.end - a.end;
+  });
+
+  const compact = [];
+  markers.forEach((marker) => {
+    if (compact.length === 0) {
+      compact.push(marker);
+      return;
+    }
+
+    const previous = compact[compact.length - 1];
+    if (marker.start < previous.end) return;
+    compact.push(marker);
+  });
+
+  return compact;
+};
+
+const splitEntryBySpeakerMarkers = (entry, deputyNameIndex, unknownNameMarkers) => {
+  const text = String(entry.text || '');
+  const markers = collectInlineSpeakerMarkers(text, deputyNameIndex, unknownNameMarkers);
+
+  if (markers.length === 0) {
+    return [{ ...entry, text: text.replace(/\s+/g, ' ').trim() }];
+  }
+
+  const segments = [];
+  let cursor = 0;
+  let currentSpeaker = entry.speaker;
+
+  const pushSegment = (speaker, content) => {
+    const cleaned = String(content || '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    if (!cleaned) return;
+    segments.push({
+      ...entry,
+      speaker,
+      text: cleaned,
+    });
+  };
+
+  markers.forEach((marker) => {
+    if (marker.start > cursor) {
+      pushSegment(currentSpeaker, text.slice(cursor, marker.start));
+    }
+
+    currentSpeaker = marker.speaker;
+    cursor = marker.end;
+  });
+
+  if (cursor < text.length) {
+    pushSegment(currentSpeaker, text.slice(cursor));
+  }
+
+  return segments.length > 0 ? segments : [{ ...entry, text: text.replace(/\s+/g, ' ').trim() }];
+};
+
 const safeSplitCsvLine = (line) => {
   const cells = [];
   let current = '';
@@ -118,9 +213,11 @@ const loadDeputies = async () => {
   });
 };
 
-const loadTranscriptEntries = async () => {
+const loadTranscriptEntries = async (deputyNameIndex) => {
   const files = await fs.readdir(transcriptsDir);
   const entries = [];
+  let inlineSpeakerTransitions = 0;
+  const unknownNameMarkers = new Map();
 
   for (const fileName of files) {
     const absolutePath = path.join(transcriptsDir, fileName);
@@ -135,7 +232,7 @@ const loadTranscriptEntries = async () => {
         if (!row || typeof row !== 'object') return;
         if (!row.speaker || !row.text) return;
 
-        entries.push({
+        const baseEntry = {
           speaker: String(row.speaker),
           text: String(row.text),
           sessionId: String(row.sessionId || path.parse(fileName).name),
@@ -143,7 +240,11 @@ const loadTranscriptEntries = async () => {
           sourceTitle: String(row.sourceTitle || ''),
           sourceUrl: String(row.sourceUrl || ''),
           row: `${fileName}:${index + 1}`,
-        });
+        };
+
+        const splitEntries = splitEntryBySpeakerMarkers(baseEntry, deputyNameIndex, unknownNameMarkers);
+        inlineSpeakerTransitions += Math.max(0, splitEntries.length - 1);
+        entries.push(...splitEntries);
       });
       continue;
     }
@@ -158,7 +259,7 @@ const loadTranscriptEntries = async () => {
         const text = line.slice(divider + 1).trim();
         if (!speaker || !text) return;
 
-        entries.push({
+        const baseEntry = {
           speaker,
           text,
           sessionId: path.parse(fileName).name,
@@ -166,12 +267,22 @@ const loadTranscriptEntries = async () => {
           sourceTitle: '',
           sourceUrl: '',
           row: `${fileName}:${index + 1}`,
-        });
+        };
+
+        const splitEntries = splitEntryBySpeakerMarkers(baseEntry, deputyNameIndex, unknownNameMarkers);
+        inlineSpeakerTransitions += Math.max(0, splitEntries.length - 1);
+        entries.push(...splitEntries);
       });
     }
   }
 
-  return entries;
+  return {
+    entries,
+    inlineSpeakerTransitions,
+    unknownNameMarkers: [...unknownNameMarkers.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 25),
+  };
 };
 
 const countWord = (text, keyword) => {
@@ -195,7 +306,9 @@ const getWordCount = (text) => normalize(text).split(' ').filter(Boolean).length
 
 const build = async () => {
   const deputies = await loadDeputies();
-  const transcriptEntries = await loadTranscriptEntries();
+  const deputyNameIndex = new Map(deputies.map((deputy) => [deputy.normalizedName, deputy.name]));
+  const transcriptLoad = await loadTranscriptEntries(deputyNameIndex);
+  const transcriptEntries = transcriptLoad.entries;
   const deputyByName = new Map(deputies.map((deputy) => [deputy.normalizedName, deputy]));
   const statsById = new Map();
   const sourceBySession = new Map();
@@ -300,6 +413,11 @@ const build = async () => {
   console.log(`Done. Saved ${dataset.deputies.length} deputies to ${outputPath}`);
   console.log(`Deputies with at least one intervention: ${activeDeputies}`);
   console.log(`Processed transcript entries: ${transcriptEntries.length}`);
+  console.log(`Inline speaker transitions resolved: ${transcriptLoad.inlineSpeakerTransitions}`);
+  if (transcriptLoad.unknownNameMarkers.length > 0) {
+    const preview = transcriptLoad.unknownNameMarkers.map(([name, count]) => `${name} (${count})`).join(', ');
+    console.log(`Unmatched inline speaker markers: ${preview}`);
+  }
 };
 
 build().catch((error) => {
