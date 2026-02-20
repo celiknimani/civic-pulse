@@ -232,11 +232,21 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Ekonomia',
     title: 'Çmimet Tavan',
     description: 'Vendosja e çmimeve tavan për produktet esenciale dhe naftën gjatë periudhave të krizave inflacioniste.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 20,
     startDate: '2022-03-01',
     dueDate: '2023-03-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-02-20',
+        status: 'In Progress',
+        description:
+          'Në mbledhjen e dytë të Qeverisë u miratua Programi i Projektligjeve 2026-2028, ku përfshihet Projektligji i ri për Çmimet Tavan si zotim i planifikuar për procedim.',
+        source: 'Prime Minister - Albin Kurti on Facebook',
+        sourceUrl:
+          'https://www.facebook.com/albini2017/posts/pfbid0mmY2U5aGz12SrCkyawdispZrfnACtPuw3KqyQtrdJhekFisftLzvhYs8oyEYUba6l'
+      }
+    ]
   },
   {
     id: '19',
@@ -1296,12 +1306,21 @@ export const LVV_PROMISES: PartyPromise[] = [
     title: 'Statusi Vend Kandidat i BE-së',
     description: 'Angazhim diplomatik për marrjen e statusit të vendit kandidat për anëtarësim në Bashkimin Evropian.',
     status: 'In Progress',
-    progress: 35,
+    progress: 40,
     startDate: '2023-01-01',
     dueDate: '2026-12-31',
     updates: [
       { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes me BE-në për zbatimin e përkrahjes në kuadër të Instrumentit për Reforma dhe Rritje (882.6 milionë euro), si dhe marrëveshje kredie të ndërlidhur për afrimin me legjislacionin e BE-së.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' },
-      { date: '2026-02-20', status: 'In Progress', description: 'Pas miratimit të marrëveshjeve në Kuvend për Planin e Rritjes, Komisioni Evropian konfirmoi se Kosova ka të drejtë në parafinancim deri në 7% të instrumentit (mbi 60 milionë euro), me lirimin e fondeve pas shpalljes/komunikimit zyrtar dhe përmbushjes së kushteve të përgjithshme.', source: 'Telegrafi / RTK', sourceUrl: 'https://telegrafi.com/kosova-fiton-te-drejten-per-parafinancim-mbi-60-ml-eur-nga-plani-i-rritjes/' }
+      { date: '2026-02-20', status: 'In Progress', description: 'Pas miratimit të marrëveshjeve në Kuvend për Planin e Rritjes, Komisioni Evropian konfirmoi se Kosova ka të drejtë në parafinancim deri në 7% të instrumentit (mbi 60 milionë euro), me lirimin e fondeve pas shpalljes/komunikimit zyrtar dhe përmbushjes së kushteve të përgjithshme.', source: 'Telegrafi / RTK', sourceUrl: 'https://telegrafi.com/kosova-fiton-te-drejten-per-parafinancim-mbi-60-ml-eur-nga-plani-i-rritjes/' },
+      {
+        date: '2026-02-20',
+        status: 'In Progress',
+        description:
+          'Qeveria miratoi pakon e 19-të të sanksioneve të BE-së ndaj Federatës Ruse dhe Bjellorusisë, si hap i përafrimit me politikën e jashtme dhe të sigurisë të Bashkimit Evropian.',
+        source: 'Prime Minister - Albin Kurti on Facebook',
+        sourceUrl:
+          'https://www.facebook.com/albini2017/posts/pfbid0mmY2U5aGz12SrCkyawdispZrfnACtPuw3KqyQtrdJhekFisftLzvhYs8oyEYUba6l'
+      }
     ]
   },
   {
@@ -1347,11 +1366,21 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Politika e Jashtme',
     title: 'Drejtues të Nismave Rajonale',
     description: 'Marrja e kryesimit dhe rolit udhëheqës në nisma të rëndësishme rajonale për të forcuar pozicionin e Kosovës.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2022-01-01',
     dueDate: '2026-01-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-02-20',
+        status: 'In Progress',
+        description:
+          'U miratua Projektligji për Ratifikimin e Marrëveshjes për Qasje në Arsimin e Lartë dhe Pranim për Studime në Ballkanin Perëndimor, në kuadër të Procesit të Berlinit.',
+        source: 'Prime Minister - Albin Kurti on Facebook',
+        sourceUrl:
+          'https://www.facebook.com/albini2017/posts/pfbid0mmY2U5aGz12SrCkyawdispZrfnACtPuw3KqyQtrdJhekFisftLzvhYs8oyEYUba6l'
+      }
+    ]
   },
   {
     id: '117',
