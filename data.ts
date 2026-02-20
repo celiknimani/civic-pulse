@@ -1300,7 +1300,8 @@ export const LVV_PROMISES: PartyPromise[] = [
     startDate: '2023-01-01',
     dueDate: '2026-12-31',
     updates: [
-      { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes me BE-në për zbatimin e përkrahjes në kuadër të Instrumentit për Reforma dhe Rritje (882.6 milionë euro), si dhe marrëveshje kredie të ndërlidhur për afrimin me legjislacionin e BE-së.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
+      { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes me BE-në për zbatimin e përkrahjes në kuadër të Instrumentit për Reforma dhe Rritje (882.6 milionë euro), si dhe marrëveshje kredie të ndërlidhur për afrimin me legjislacionin e BE-së.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' },
+      { date: '2026-02-20', status: 'In Progress', description: 'Pas miratimit të marrëveshjeve në Kuvend për Planin e Rritjes, Komisioni Evropian konfirmoi se Kosova ka të drejtë në parafinancim deri në 7% të instrumentit (mbi 60 milionë euro), me lirimin e fondeve pas shpalljes/komunikimit zyrtar dhe përmbushjes së kushteve të përgjithshme.', source: 'Telegrafi / RTK', sourceUrl: 'https://telegrafi.com/kosova-fiton-te-drejten-per-parafinancim-mbi-60-ml-eur-nga-plani-i-rritjes/' }
     ]
   },
   {
