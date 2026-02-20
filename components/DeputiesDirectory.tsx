@@ -53,6 +53,33 @@ const DeputiesDirectory: React.FC<DeputiesDirectoryProps> = ({ dataset }) => {
     () => rankedDeputies.reduce((sum, deputy) => sum + deputy.activity.speechCount, 0),
     [rankedDeputies]
   );
+  const topThreeTopics = useMemo(() => {
+    const topicTotals = new Map<string, { label: string; mentions: number }>();
+    let totalMentions = 0;
+
+    activeRankedDeputies.forEach((deputy) => {
+      deputy.topics.forEach((topic) => {
+        if (topic.mentions <= 0) return;
+        totalMentions += topic.mentions;
+        const current = topicTotals.get(topic.topicId);
+        if (current) {
+          current.mentions += topic.mentions;
+          return;
+        }
+        topicTotals.set(topic.topicId, { label: topic.label, mentions: topic.mentions });
+      });
+    });
+
+    return Array.from(topicTotals.entries())
+      .map(([topicId, topic]) => ({
+        topicId,
+        label: topic.label,
+        mentions: topic.mentions,
+        share: totalMentions > 0 ? (topic.mentions / totalMentions) * 100 : 0,
+      }))
+      .sort((a, b) => b.mentions - a.mentions)
+      .slice(0, 3);
+  }, [activeRankedDeputies]);
 
   return (
     <main className="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 md:py-16">
@@ -99,6 +126,31 @@ const DeputiesDirectory: React.FC<DeputiesDirectoryProps> = ({ dataset }) => {
               <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#8a7550]">Përditësuar</p>
               <p className="mt-2 text-sm font-black text-[#183556]">{new Date(dataset.generatedAt).toLocaleString('sq-AL')}</p>
             </div>
+          </div>
+
+          <div className="rounded-2xl border border-[#d7cab2] bg-[#faf6ee] p-4">
+            <div className="mb-3 flex items-center justify-between gap-3">
+              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#8a7550]">Top 3 temat kryesore</p>
+              <span className="rounded-full border border-[#d0c0a3] bg-[#f5ecd8] px-3 py-1 text-[10px] font-black uppercase tracking-[0.13em] text-[#6d5427]">
+                Nga deputetët aktivë
+              </span>
+            </div>
+
+            {topThreeTopics.length > 0 ? (
+              <div className="grid gap-3 sm:grid-cols-3">
+                {topThreeTopics.map((topic, index) => (
+                  <article key={topic.topicId} className="rounded-xl border border-[#d9ccb5] bg-[#fdf9f1] p-3">
+                    <p className="text-[10px] font-black uppercase tracking-[0.16em] text-[#8b7040]">#{index + 1}</p>
+                    <p className="mt-1 text-sm font-black leading-tight text-[#1a3556]">{topic.label}</p>
+                    <p className="mt-2 text-[11px] font-bold text-[#5f7088]">
+                      {formatNumber(topic.mentions)} përmendje • {topic.share.toFixed(1)}%
+                    </p>
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <p className="text-sm font-semibold text-[#5d6f86]">Nuk ka ende përmendje tematike në dataset-in aktual.</p>
+            )}
           </div>
         </div>
       </section>

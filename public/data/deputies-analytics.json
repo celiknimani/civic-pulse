@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-20T12:28:37.968Z",
+  "generatedAt": "2026-02-20T21:20:48.691Z",
   "source": "transcripts",
   "deputies": [
     {
@@ -104,9 +104,9 @@
       "name": "ADELINA THAQI META",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 539,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -118,8 +118,8 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 11,
+          "score": 36.67
         },
         {
           "topicId": "Siguria",
@@ -136,20 +136,20 @@
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 3.33
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 3.33
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 3.33
         },
         {
           "topicId": "Inovacioni",
@@ -166,14 +166,14 @@
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 3.33
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 6.67
         },
         {
           "topicId": "Sporti",
@@ -184,8 +184,8 @@
         {
           "topicId": "Arti",
           "label": "Arti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 13,
+          "score": 43.33
         },
         {
           "topicId": "Politika e Jashtme",
@@ -194,7 +194,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:145",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:145",
+          "excerpt": "I nderuar kryeministër Kurti, Të nderuar ju pak ministra që jeni këtu në sallë, Të nderuar kolegë deputetë, Të dashur qytetarë, Si artiste, soliste me përvojë shumëvjeçare në skenën artistike dhe tani nga perspektiva e deputetes së Kuvendit..."
+        }
+      ]
     },
     {
       "id": "adem-hodza",
@@ -783,34 +793,34 @@
       "name": "ALBANA BYTYQI",
       "party": "ALEANCA PËR ARDHMËRINË E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 889,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 9.43
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 32,
+          "score": 60.38
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 3.77
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 3.77
         },
         {
           "topicId": "Shëndetësia",
@@ -827,8 +837,8 @@
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 7,
+          "score": 13.21
         },
         {
           "topicId": "Inovacioni",
@@ -839,8 +849,8 @@
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.89
         },
         {
           "topicId": "Diaspora",
@@ -857,14 +867,14 @@
         {
           "topicId": "Sporti",
           "label": "Sporti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.89
         },
         {
           "topicId": "Arti",
           "label": "Arti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 5.66
         },
         {
           "topicId": "Politika e Jashtme",
@@ -873,7 +883,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:123",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:123",
+          "excerpt": "I nderuar nënkryetar, Të nderuar kolegë deputetë, Të dashur qytetarë, Qëndrimi i Aleancës për Ardhmërinë e Kosovës për buxhetin është i qartë dhe i pandryshueshëm. Kosova duhet të ketë buxhet, por jemi kundër një buxheti që sillet me proced..."
+        }
+      ]
     },
     {
       "id": "albena-reshitaj",
@@ -1074,9 +1094,9 @@
       "name": "ANTON QUNI",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 521,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -1088,32 +1108,32 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 6.98
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 21,
+          "score": 48.84
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 4.65
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 11.63
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 18.6
         },
         {
           "topicId": "Infrastruktura",
@@ -1124,8 +1144,8 @@
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 4.65
         },
         {
           "topicId": "Turizmi",
@@ -1148,8 +1168,8 @@
         {
           "topicId": "Sporti",
           "label": "Sporti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 4.65
         },
         {
           "topicId": "Arti",
@@ -1164,65 +1184,75 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:113",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:113",
+          "excerpt": "Të nderuar anëtarë të Kabinetit qeveritar, Kolegë deputetë dhe Qytetarë të Republikës! Sot po diskutojmë ndër të tjera për shifrat e buxhetit të mbrojtjes dhe sigurisë. Shpeshherë në këto debate ne humbim pas tabelave të Excel-it, duke numë..."
+        }
+      ]
     },
     {
       "id": "arben-mustafa",
       "name": "ARBEN MUSTAFA",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 2,
+        "wordCount": 1301,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.28
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 56,
+          "score": 71.79
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 2.56
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 6,
+          "score": 7.69
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 2.56
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.28
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 6,
+          "score": 7.69
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.28
         },
         {
           "topicId": "Turizmi",
@@ -1233,14 +1263,14 @@
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.28
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.28
         },
         {
           "topicId": "Sporti",
@@ -1257,11 +1287,30 @@
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.28
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:117",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:117",
+          "excerpt": "I nderuar Kabinet qeveritar, Të nderuar deputetë, Sot po diskutojmë për buxhetin e vitit 2026, por edhe për drejtimin ekonomik të vendit. Prandaj, fillimisht do ndalem te ekspozeja e kryeministrit, te pjesa për ekonominë. Kryeministri në va..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:119",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:119",
+          "excerpt": "kryesues! Sot, vendi ka nevojë për investime të mëdha kapitale, për fuqizim të prodhuesve vendorë dhe për një kapërcim më të madh në standardin e jetës së qytetarëve. Dhe, për fund, duke pasur parasysh rëndësinë që e ka menaxhimi i përgjegj..."
+        }
+      ]
     },
     {
       "id": "arber-rexhaj",
@@ -1462,64 +1511,64 @@
       "name": "ARBËRIE NAGAVCI",
       "party": "Lëvizja VETËVENDOSJE!",
       "activity": {
-        "speechCount": 5,
-        "wordCount": 787,
-        "sessionCount": 1
+        "speechCount": 18,
+        "wordCount": 2416,
+        "sessionCount": 3
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 1,
-          "score": 3.03
+          "mentions": 5,
+          "score": 5.49
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 11,
-          "score": 33.33
+          "mentions": 28,
+          "score": 30.77
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 4,
-          "score": 12.12
+          "mentions": 19,
+          "score": 20.88
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 6,
-          "score": 18.18
+          "mentions": 19,
+          "score": 20.88
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 1,
-          "score": 3.03
+          "mentions": 2,
+          "score": 2.2
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
           "mentions": 2,
-          "score": 6.06
+          "score": 2.2
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 2,
-          "score": 6.06
+          "mentions": 7,
+          "score": 7.69
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 1,
-          "score": 3.03
+          "mentions": 4,
+          "score": 4.4
         },
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
           "mentions": 1,
-          "score": 3.03
+          "score": 1.1
         },
         {
           "topicId": "Diaspora",
@@ -1537,13 +1586,13 @@
           "topicId": "Sporti",
           "label": "Sporti",
           "mentions": 1,
-          "score": 3.03
+          "score": 1.1
         },
         {
           "topicId": "Arti",
           "label": "Arti",
           "mentions": 3,
-          "score": 9.09
+          "score": 3.3
         },
         {
           "topicId": "Politika e Jashtme",
@@ -1553,6 +1602,123 @@
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-02-17-seanca:2026-02-17-seanca.json:6",
+          "date": "2026-02-17",
+          "sessionId": "2026-02-17-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_17_ts_Seanca_kDekSwtEen.pdf",
+          "reference": "2026-02-17-seanca.json:6",
+          "excerpt": "Vjosa OsmaniSadriu! I nderuar president i Republikës së Shqipërisë, z. Bajram Begaj, E nderuar kryetare e Kuvendit të Republikës së Kosovës, znj. Albulena Haxhiu, I nderuar kryeministër i Republikës së Kosovës, z. Albin Kurti, Të nderuar de..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:107",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:107",
+          "excerpt": "Me gjithë respektin ndaj kolegëve, unë konsideroj që meqenëse ministri i Financave është i pranishëm, deputetët mund të shterojnë diskutimin e tyre edhe natyrisht që kryeministri bashkëngjitet ashtu siç edhe njoftoi shumë shpejt, ndoshta pë..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:189",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:189",
+          "excerpt": "Urime për votimin e projektligjit në lexim të parë! Në vijim të diskutimit që e kemi pasur edhe të premten, në emër të Grupit Parlamentar të Lëvizjes Vetëvendosje, propozoj që shqyrtimi i Projektligjit nr. 10-L001 mbi ndarjet buxhetore për..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:79",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:79",
+          "excerpt": "I nderuar nënkryetar, I nderuar kryeministër, Kabinet qeveritar, Të nderuar deputetë, Sot jemi më 16 shkurt dhe, sikurse e tha edhe ministri i Financave, ky debat do të duhej të ishte bërë para tetorit të vitit të kaluar. Duke pasur parasys..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:12",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:12",
+          "excerpt": "kryetare! Lëvizja Vetëvendosje natyrisht se e jep mbështetjen e plotë për këtë marrëveshje dhe njëkohësisht edhe nga ana jonë i falënderojmë të gjithë deputetët, edhe të komisioneve që u takuan sot, konstituuan komisionet dhe i miratuan të..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:2",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:2",
+          "excerpt": "Të nderuar të pranishëm, Lëvizja propozon që në Komisionin për Buxhet të ketë anëtare dhe deputeten Shqipe MetaJusufi. Një ndryshim, deputeti Arbër Rexhaj të jetë në Komisionin për Çështjet e Sigurisë dhe Mbrojtjes, ndërkohë që deputeti Ili..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:28",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:28",
+          "excerpt": "kryetare! Për të njëjtat arsye sikurse edhe për projektligjin paraprak, propozoj shmangie nga afatet procedurale të parapara me Rregulloren e Kuvendit."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:34",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:34",
+          "excerpt": "Në emër të Lëvizjes Vetëvendosje ftoj të gjithë deputetët që të votojnë për shmangie nga afatet procedurale, duke pasur parasysh rëndësinë e votimit të kësaj marrëveshjeje."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:40",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:40",
+          "excerpt": "Duke pasur parasysh rëndësinë e kësaj marrëveshjeje dhe po ashtu edhe ndikimin e jashtëzakonshëm që do të ketë në sistemin e shëndetësisë, ju ftoj për shmangie nga afatet procedurale, në mënyrë që të procedojmë tutje me implementimin e proj..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:46",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:46",
+          "excerpt": "Miratimi i këtij projektligji, i cili do të mundësojë ratifikimin e marrëveshjes, do të mundësojë po ashtu një ndikim dhe përmirësim të jashtëzakonshëm në fushën e edukimit në fëmijërinë e hershme, jo vetëm duke ofruar qasje për më shumë fë..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:52",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:52",
+          "excerpt": "Projektligji për buxhetin është natyrisht një ndër ligjet më të rëndësishme dhe do të duhej të ishte i votuar tashmë, duke pasur parasysh situatën dhe vonesat në konstituimin e Kuvendit dhe miratimin e Qeverisë, tash duhet që ta procedojmë..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:6",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:6",
+          "excerpt": "Pra, ashtu sikurse kemi dorëzuar edhe kërkesën zyrtare, kërkojmë shmangie nga procedurat e përcaktuara me Rregullore për shqyrtimin dhe miratimin e këtij projektligji, pasur parasysh rëndësinë e projektligjit edhe vonesat e shumta, të cilat..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:64",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:64",
+          "excerpt": "kryetare! Unë edhe një herë i falënderoj të gjithë kolegët deputetë për votimin edhe për miratimin e marrëveshjeve. Besoj që kjo votë e të gjithë ju deputetëve ka qenë për shkak të rëndësisë që ka për qytetarët secila prej këtyre marrëveshj..."
+        },
         {
           "id": "2026-02-12-seanca:2026-02-12-seanca.json:14",
           "date": "2026-02-12",
@@ -1605,40 +1771,40 @@
       "name": "ARBNORE SALIHU",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 4,
+        "wordCount": 1806,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 5.56
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 20,
+          "score": 37.04
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 9.26
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 4,
+          "score": 7.41
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 11,
+          "score": 20.37
         },
         {
           "topicId": "Arsimi",
@@ -1649,8 +1815,8 @@
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 9.26
         },
         {
           "topicId": "Inovacioni",
@@ -1661,8 +1827,8 @@
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.85
         },
         {
           "topicId": "Diaspora",
@@ -1679,14 +1845,14 @@
         {
           "topicId": "Sporti",
           "label": "Sporti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 5.56
         },
         {
           "topicId": "Arti",
           "label": "Arti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 3.7
         },
         {
           "topicId": "Politika e Jashtme",
@@ -1695,7 +1861,44 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:131",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:131",
+          "excerpt": "kryetare! Të nderuar qytetarë të Republikës së Kosovës, Të nderuar kolegë deputetë, Të gjithë ju të pranishëm. Sot po diskutojmë për dokumentin më të rëndësishëm financiar të shtetit, Buxhetin e Republikës së Kosovës për vitin 2026. Projekt..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:133",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:133",
+          "excerpt": "Ligji për menaxhimin e financave publike lejon mekanizmin e financimit të përkohshëm përmes ndarjes së 1/12 buxhetit të vitit paraprak edhe për muajin mars, deri në miratimin e buxhetit të ri. Institucionet mund të vazhdojnë funksionimin no..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:137",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:137",
+          "excerpt": "Po, po, patjetër që i përgjigjem kësaj replike, por unë nuk i përmenda emrin deputetes në fjalë, por kjo deputete e di shumë mirë që në Legjislaturën VIII të gjithë deputetët që kanë qenë të Lëvizjes Vetëvendosje prej Ferizajt nuk kanë kalu..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:185",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:185",
+          "excerpt": "kryetare! Ministër, a je këtu? Ti edhe ke mundur të ndash buxhet për Ferizajn, po për projektet jetike kryesore për Ferizajn, planifikimet dhe mjetet i ke ndarë për vitet 2028-2029. Po besoj je duke e kuptuar. Projektin jetik për Ferizajn,..."
+        }
+      ]
     },
     {
       "id": "ardian-gola",
@@ -1799,70 +2002,70 @@
       "name": "ARIAN TAHIRI",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 5,
-        "wordCount": 298,
-        "sessionCount": 1
+        "speechCount": 7,
+        "wordCount": 471,
+        "sessionCount": 2
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
           "mentions": 1,
-          "score": 4
+          "score": 3.33
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 5,
-          "score": 20
+          "mentions": 7,
+          "score": 23.33
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 3,
-          "score": 12
+          "mentions": 6,
+          "score": 20
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
           "mentions": 4,
-          "score": 16
+          "score": 13.33
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
           "mentions": 1,
-          "score": 4
+          "score": 3.33
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
           "mentions": 1,
-          "score": 4
+          "score": 3.33
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
           "mentions": 2,
-          "score": 8
+          "score": 6.67
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
           "mentions": 2,
-          "score": 8
+          "score": 6.67
         },
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
           "mentions": 1,
-          "score": 4
+          "score": 3.33
         },
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
           "mentions": 1,
-          "score": 4
+          "score": 3.33
         },
         {
           "topicId": "Energjia",
@@ -1874,13 +2077,13 @@
           "topicId": "Sporti",
           "label": "Sporti",
           "mentions": 1,
-          "score": 4
+          "score": 3.33
         },
         {
           "topicId": "Arti",
           "label": "Arti",
           "mentions": 3,
-          "score": 12
+          "score": 10
         },
         {
           "topicId": "Politika e Jashtme",
@@ -1890,6 +2093,24 @@
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:14",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:14",
+          "excerpt": "Të nderuar deputetë, Kabinet qeveritar, Gjithashtu, Partia Demokratike e Kosovës, duke pasur parasysh që është interes i vendit, interesi i shtetit, e jep mbështetjen për marrëveshjet ndërkombëtare. Faleminderit!"
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:54",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:54",
+          "excerpt": "kryetare! Të nderuar deputetë, Partia Demokratike e Kosovës nuk e mbështet këtë propozim. Ne e dimë dhe e kuptojmë rëndësinë e buxhetit, mirëpo ne dje e kemi argumentuar dhe dëshmuar vullnetin tonë dhe gatishmërinë për të kontribuar që shte..."
+        },
         {
           "id": "2026-02-12-seanca:2026-02-12-seanca.json:22",
           "date": "2026-02-12",
@@ -1942,34 +2163,34 @@
       "name": "ARIANA MUSLIU SHOSHI",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 583,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 3.7
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 15,
+          "score": 55.56
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 7.41
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 6,
+          "score": 22.22
         },
         {
           "topicId": "Shëndetësia",
@@ -1980,14 +2201,14 @@
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 3.7
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 7.41
         },
         {
           "topicId": "Inovacioni",
@@ -2032,7 +2253,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:161",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:161",
+          "excerpt": "Kabinet qeveritar, Kolegë deputetë, Shumë të dashur qytetarë, Kryeministër, edhe sot dëgjuam sërish një paraqitje optimiste nga ju, por ajo që mungon është më e rëndësishme se ajo që thuhet sot. E ajo që mungon është dokumenti kryesor që ne..."
+        }
+      ]
     },
     {
       "id": "arijeta-rexhepi",
@@ -2534,9 +2765,9 @@
       "name": "ARTAN ASLLANI",
       "party": "PSA",
       "activity": {
-        "speechCount": 3,
-        "wordCount": 263,
-        "sessionCount": 1
+        "speechCount": 5,
+        "wordCount": 768,
+        "sessionCount": 3
       },
       "topics": [
         {
@@ -2549,82 +2780,100 @@
           "topicId": "Ekonomia",
           "label": "Ekonomia",
           "mentions": 6,
-          "score": 22.22
+          "score": 16.22
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 3,
-          "score": 11.11
+          "mentions": 4,
+          "score": 10.81
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 4,
-          "score": 14.81
+          "mentions": 8,
+          "score": 21.62
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
           "mentions": 1,
-          "score": 3.7
+          "score": 2.7
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
           "mentions": 1,
-          "score": 3.7
+          "score": 2.7
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 3,
-          "score": 11.11
+          "mentions": 5,
+          "score": 13.51
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
           "mentions": 3,
-          "score": 11.11
+          "score": 8.11
         },
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
           "mentions": 1,
-          "score": 3.7
+          "score": 2.7
         },
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
           "mentions": 1,
-          "score": 3.7
+          "score": 2.7
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.7
         },
         {
           "topicId": "Sporti",
           "label": "Sporti",
           "mentions": 1,
-          "score": 3.7
+          "score": 2.7
         },
         {
           "topicId": "Arti",
           "label": "Arti",
           "mentions": 3,
-          "score": 11.11
+          "score": 8.11
         },
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 5.41
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-02-17-seanca:2026-02-17-seanca.json:12",
+          "date": "2026-02-17",
+          "sessionId": "2026-02-17-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_17_ts_Seanca_kDekSwtEen.pdf",
+          "reference": "2026-02-17-seanca.json:12",
+          "excerpt": "E nderuara presidente zonja Osmani-Sadriu I nderuar president, zoti Begaj, E nderuar kryetare e Kuvendit, zonja Haxhiu, I nderuar kryeministër Kurti, I nderuar Kabinet qeveritar, Të dashur kolegë deputetë, Të nderuara familje të dëshmorëve,..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:18",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:18",
+          "excerpt": "kryetare! Në emër të Grupit Multietnik, deputeti Fridon Lala ka qenë pjesë e Komisionit për Integrime Evropiane dhe energjia që ka qenë në këtë komision e ka sjellë edhe në grupin tonë. Kështu që Grupi i Multietnik i mbështet të gjitha marr..."
+        },
         {
           "id": "2026-02-12-seanca:2026-02-12-seanca.json:26",
           "date": "2026-02-12",
@@ -2659,34 +2908,34 @@
       "name": "ARTAN BEHRAMI",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 4,
+        "wordCount": 1330,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 13.11
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 17,
+          "score": 27.87
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 12,
+          "score": 19.67
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 4.92
         },
         {
           "topicId": "Shëndetësia",
@@ -2721,14 +2970,14 @@
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 4.92
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.64
         },
         {
           "topicId": "Sporti",
@@ -2745,20 +2994,57 @@
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
-          "mentions": 0,
-          "score": 0
+          "mentions": 17,
+          "score": 27.87
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:165",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:165",
+          "excerpt": "kryetare! Të nderuar deputetë, Të dashur përfaqësues të mediave që sot po e mbroni demokracinë më shumë se çdokush tjetër në Kosovë. Të dashur qytetarë, Meqë jemi në një ditë në prag të përvjetorit të 18-të të pavarësisë së Kosovës, dua t’i..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:167",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:167",
+          "excerpt": "Të dashur qytetarë, Ky përvjetor e gjen Kosovën me mungesë të parashikueshmërisë, në një moment ku vlerat tona si shtet çdo ditë po sfidohen, çdo ditë po testohen. Ky përvjetor e gjen Kosovën të përçarë, me urrejtje për njëri-tjetrin, me pa..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:169",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:169",
+          "excerpt": "kryetare! Unë jam duke folur për politikë të jashtme, për dështimet e politikës së jashtme dhe për atë se çfarë shkruan në buxhetin që e keni prezantuar këtu. Prandaj, unë do të vazhdoj, sepse pati fjalime këtu edhe më parë me të njëjtën fr..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:171",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:171",
+          "excerpt": "Ndonëse e pakuptueshme, po vazhdojmë. Sot po diskutojmë për buxhetin e Kosovës dhe këta numra që shtrihen në 723 faqe nuk janë vetëm një projektim buxhetor, por është një skicim i prioriteteve të kësaj Qeverie. Fatkeqësisht, bazuar në këtë..."
+        }
+      ]
     },
     {
       "id": "avdullah-hoti",
       "name": "AVDULLAH HOTI",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 1388,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -2770,38 +3056,38 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 58,
+          "score": 69.05
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 5.95
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 5.95
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 9,
+          "score": 10.71
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 4,
+          "score": 4.76
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.19
         },
         {
           "topicId": "Inovacioni",
@@ -2824,8 +3110,8 @@
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 2.38
         },
         {
           "topicId": "Sporti",
@@ -2846,7 +3132,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:155",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:155",
+          "excerpt": "kryetare e Kuvendit! Të nderuar anëtarë të Qeverisë, Të nderuar deputetë, Po e diskutojmë sigurisht dokumentin më të rëndësishëm në Kuvend dhe i kam parasysh argumentet që u thanë në fillim të seancës, megjithëse i gjej të paarsyeshme kompl..."
+        }
+      ]
     },
     {
       "id": "avdullah-klinaku",
@@ -3241,34 +3537,34 @@
       "name": "BEDRI HAMZA",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 6,
+        "wordCount": 3327,
+        "sessionCount": 2
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 9,
+          "score": 5.45
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 103,
+          "score": 62.42
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 19,
+          "score": 11.52
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 10,
+          "score": 6.06
         },
         {
           "topicId": "Shëndetësia",
@@ -3279,14 +3575,14 @@
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 1.21
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 11,
+          "score": 6.67
         },
         {
           "topicId": "Inovacioni",
@@ -3297,41 +3593,96 @@
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.61
         },
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.61
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 1.82
         },
         {
           "topicId": "Sporti",
           "label": "Sporti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.61
         },
         {
           "topicId": "Arti",
           "label": "Arti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 1.21
         },
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 1.82
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-17-seanca:2026-02-17-seanca.json:8",
+          "date": "2026-02-17",
+          "sessionId": "2026-02-17-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_17_ts_Seanca_kDekSwtEen.pdf",
+          "reference": "2026-02-17-seanca.json:8",
+          "excerpt": "E nderuar presidente e Republikës së Kosovës, zonja Osmani-Sadriu, I nderuar president i Republikës së Shqipërisë, zoti Begaj, E nderuar kryetare e Kuvendit të Republikës së Kosovës, zonja Haxhiu, Të nderuar deputetë, I nderuar kryeministër..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:173",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:173",
+          "excerpt": "zonja kryetare! I nderuar zoti kryeministër, Ministra, Deputetë, Me vëmendje i përcolla gjatë gjithë kohës diskutimet në Kuvend dhe nuk e shoh shumë të rëndësishme renditjen e hapave drejt këtij procesi. A është zgjedhja e Qeverisë, ekspoze..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:183",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:183",
+          "excerpt": "zonja kryetare! Unë kisha pasur dëshirë që të ketë hapësirë fiskale ku mund të akomodohen projektet me rëndësi për zhvillimin e Kosovës. Mirëpo, përtej, po e lëmë punën e digave. I gjetët paratë. Nuk janë 400 milionë, veç 14 milionë i keni...."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:81",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:81",
+          "excerpt": "E nderuar kryetare e Kuvendit, I nderuari zoti kryeministër, Të nderuar ministra, Të nderuar deputetë, Përfaqësues të mediave, Po e kuptoj rëndësinë që vendi të ketë buxhet dhe për asnjë arsye dhe në asnjë moment të mos ketë situata kur nuk..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:83",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:83",
+          "excerpt": "Nuk ka mundësi 80 milionë të jenë pjesë e buxhetit dhe të autorizohet një ministër, i cili t’i ndajë sipas rasteve. Në të kaluarën rezerva buxhetore ka qenë 10 milionë, dhe ka qenë pesë milionë shpenzime rrjedhëse, pesë milionë shpenzime ka..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:72",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:72",
+          "excerpt": "zonja kryetare! Të nderuar ministra, Të nderuar deputetë, Me vëmendje e përcolla këtë pjesë të debatit. Po besoj që është më se qartë që nuk është tema te bllokada dhe te rreziku që vendi të jetë pa buxhet. Për shkak se e thanë, por e ripër..."
+        }
+      ]
     },
     {
       "id": "beke-berisha",
@@ -3435,228 +3786,34 @@
       "name": "BESA KABASHI RAMAJ",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
-      },
-      "topics": [
-        {
-          "topicId": "Drejtësia",
-          "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Ekonomia",
-          "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Siguria",
-          "label": "Siguria",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Mirëqenia",
-          "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Shëndetësia",
-          "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Arsimi",
-          "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Infrastruktura",
-          "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Inovacioni",
-          "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Turizmi",
-          "label": "Turizmi",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Diaspora",
-          "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Energjia",
-          "label": "Energjia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Sporti",
-          "label": "Sporti",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Arti",
-          "label": "Arti",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Politika e Jashtme",
-          "label": "Politika e Jashtme",
-          "mentions": 0,
-          "score": 0
-        }
-      ],
-      "activityHistory": []
-    },
-    {
-      "id": "besian-mustafa",
-      "name": "BESIAN MUSTAFA",
-      "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
-      "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
-      },
-      "topics": [
-        {
-          "topicId": "Drejtësia",
-          "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Ekonomia",
-          "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Siguria",
-          "label": "Siguria",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Mirëqenia",
-          "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Shëndetësia",
-          "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Arsimi",
-          "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Infrastruktura",
-          "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Inovacioni",
-          "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Turizmi",
-          "label": "Turizmi",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Diaspora",
-          "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Energjia",
-          "label": "Energjia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Sporti",
-          "label": "Sporti",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Arti",
-          "label": "Arti",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Politika e Jashtme",
-          "label": "Politika e Jashtme",
-          "mentions": 0,
-          "score": 0
-        }
-      ],
-      "activityHistory": []
-    },
-    {
-      "id": "besnik-tahiri",
-      "name": "BESNIK TAHIRI",
-      "party": "ALEANCA PËR ARDHMËRINË E KOSOVËS",
-      "activity": {
-        "speechCount": 2,
-        "wordCount": 75,
+        "speechCount": 1,
+        "wordCount": 914,
         "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.39
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 27,
+          "score": 37.5
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 1,
-          "score": 100
+          "mentions": 32,
+          "score": 44.44
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.39
         },
         {
           "topicId": "Shëndetësia",
@@ -3673,14 +3830,14 @@
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 10,
+          "score": 13.89
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.39
         },
         {
           "topicId": "Turizmi",
@@ -3720,6 +3877,283 @@
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:111",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:111",
+          "excerpt": "Të nderuar deputetë, Të nderuar qytetarë të Republikës së Kosovës, Sot qëndroj para jush për herë të parë si deputete e Republikës së Kosovës në Legjislaturën X, plotësisht e vetëdijshme për përgjegjësinë që mbajmë para çdo familjeje që kër..."
+        }
+      ]
+    },
+    {
+      "id": "besian-mustafa",
+      "name": "BESIAN MUSTAFA",
+      "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
+      "activity": {
+        "speechCount": 1,
+        "wordCount": 653,
+        "sessionCount": 1
+      },
+      "topics": [
+        {
+          "topicId": "Drejtësia",
+          "label": "Drejtësia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Ekonomia",
+          "label": "Ekonomia",
+          "mentions": 17,
+          "score": 73.91
+        },
+        {
+          "topicId": "Siguria",
+          "label": "Siguria",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Mirëqenia",
+          "label": "Mirëqenia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Shëndetësia",
+          "label": "Shëndetësia",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Arsimi",
+          "label": "Arsimi",
+          "mentions": 4,
+          "score": 17.39
+        },
+        {
+          "topicId": "Infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Inovacioni",
+          "label": "Inovacioni",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Turizmi",
+          "label": "Turizmi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Diaspora",
+          "label": "Diaspora",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Energjia",
+          "label": "Energjia",
+          "mentions": 2,
+          "score": 8.7
+        },
+        {
+          "topicId": "Sporti",
+          "label": "Sporti",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Arti",
+          "label": "Arti",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Politika e Jashtme",
+          "label": "Politika e Jashtme",
+          "mentions": 0,
+          "score": 0
+        }
+      ],
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:127",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:127",
+          "excerpt": "kryetare! Të nderuar kolegë deputetë, I nderuar Kabinet qeveritar, Të nderuar qytetarë, Në javën e kaluar natyrisht e pamë kryeministrin Kurti duke e shpalosur vizionin e tij për katër vjetët e ardhshme. Në të foli dhe për rritjen ekonomike..."
+        }
+      ]
+    },
+    {
+      "id": "besnik-tahiri",
+      "name": "BESNIK TAHIRI",
+      "party": "ALEANCA PËR ARDHMËRINË E KOSOVËS",
+      "activity": {
+        "speechCount": 9,
+        "wordCount": 3672,
+        "sessionCount": 3
+      },
+      "topics": [
+        {
+          "topicId": "Drejtësia",
+          "label": "Drejtësia",
+          "mentions": 7,
+          "score": 4.61
+        },
+        {
+          "topicId": "Ekonomia",
+          "label": "Ekonomia",
+          "mentions": 75,
+          "score": 49.34
+        },
+        {
+          "topicId": "Siguria",
+          "label": "Siguria",
+          "mentions": 30,
+          "score": 19.74
+        },
+        {
+          "topicId": "Mirëqenia",
+          "label": "Mirëqenia",
+          "mentions": 10,
+          "score": 6.58
+        },
+        {
+          "topicId": "Shëndetësia",
+          "label": "Shëndetësia",
+          "mentions": 5,
+          "score": 3.29
+        },
+        {
+          "topicId": "Arsimi",
+          "label": "Arsimi",
+          "mentions": 4,
+          "score": 2.63
+        },
+        {
+          "topicId": "Infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 6,
+          "score": 3.95
+        },
+        {
+          "topicId": "Inovacioni",
+          "label": "Inovacioni",
+          "mentions": 5,
+          "score": 3.29
+        },
+        {
+          "topicId": "Turizmi",
+          "label": "Turizmi",
+          "mentions": 2,
+          "score": 1.32
+        },
+        {
+          "topicId": "Diaspora",
+          "label": "Diaspora",
+          "mentions": 2,
+          "score": 1.32
+        },
+        {
+          "topicId": "Energjia",
+          "label": "Energjia",
+          "mentions": 2,
+          "score": 1.32
+        },
+        {
+          "topicId": "Sporti",
+          "label": "Sporti",
+          "mentions": 1,
+          "score": 0.66
+        },
+        {
+          "topicId": "Arti",
+          "label": "Arti",
+          "mentions": 2,
+          "score": 1.32
+        },
+        {
+          "topicId": "Politika e Jashtme",
+          "label": "Politika e Jashtme",
+          "mentions": 1,
+          "score": 0.66
+        }
+      ],
+      "activityHistory": [
+        {
+          "id": "2026-02-17-seanca:2026-02-17-seanca.json:14",
+          "date": "2026-02-17",
+          "sessionId": "2026-02-17-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_17_ts_Seanca_kDekSwtEen.pdf",
+          "reference": "2026-02-17-seanca.json:14",
+          "excerpt": "kryetare! E nderuara presidente e Kosovës, Vjosa Osmani-Sadriu, I nderuar, shumë i dashur dhe i respektuar president, mirë se ke ardhur, faleminderit që na ke nderuar me praninë tuaj! Baca Rifat, faleminderit shumë që je me ne gjithmonë! I..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:175",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:175",
+          "excerpt": "kryetare! Vetëm tri çështje për ministrin Hekuran Murati. E para, u fol shumë për punën e buxhetit për Prishtinën. A ka mundësi të dalë ta shpjegojë para qytetarëve të Prishtinës të vërtetën? Më 6 shkurt është miratuar buxheti në Asamblenë..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:93",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:93",
+          "excerpt": "kryetare! Mbasi e nisëm me urime, edhe unë po e uroj komunitetin e ashkalive për ditën e tyre. Të nderuar deputetë dhe deputete, I nderuar kryeministër, Kabinet qeveritar, Të nderuar media, Qytetarë të Republikës së Kosovës, Në emër të Grup..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:20",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:20",
+          "excerpt": "kryetare! Të gjitha marrëveshjet ndërkombëtare, të cilat vijnë në Kuvend dhe të cilat janë në interes të Kosovës, grupi ynë parlamentar do t'i mbështesë. Ajo që duhet të dijë qytetari i Kosovës sot është se kjo është ajo marrëveshja, një nd..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:24",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:24",
+          "excerpt": "ministër, për sqarim! Arsyeja pse e ngrita këtë çështje lidhet drejtpërdrejt me diskrecionin që Qeveria e Republikës së Kosovës, respektivisht ministria që ju udhëhiqni e ka në dispozicion. Ky diskrecion mundet të përdoret pa ndonjë kriter..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:4",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:4",
+          "excerpt": "kryetare! Përshëndetje deputetë, Grupi Parlamentar i Aleancës për Ardhmërinë e Kosovës i propozon këta anëtarë të komisioneve: Në Komisionin për të Drejtat, Interesin e Komuniteteve dhe Kthim është deputeti Besnik Tahiri, jam unë. Anëtar i..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:58",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:58",
+          "excerpt": "kryetare! Të nderuar deputetë, I nderuar ministër i Financave, Janë katër argumente, të cilat pashmangshëm na detyrojnë si Kuvend i Republikës së Kosovës të mos e miratojmë këtë shmangie dhe të mos debatojmë sot Projektbuxhetin e vitit 2026..."
+        },
         {
           "id": "2026-02-12-seanca:2026-02-12-seanca.json:2",
           "date": "2026-02-12",
@@ -3842,34 +4276,34 @@
       "name": "BLERTA DELIU KODRA",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 1054,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 11.11
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 16,
+          "score": 35.56
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 6.67
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 12,
+          "score": 26.67
         },
         {
           "topicId": "Shëndetësia",
@@ -3880,8 +4314,8 @@
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 11.11
         },
         {
           "topicId": "Infrastruktura",
@@ -3904,14 +4338,14 @@
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.22
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 6.67
         },
         {
           "topicId": "Sporti",
@@ -3932,7 +4366,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:147",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:147",
+          "excerpt": "Të nderuar qytetarë të Republikës së Kosovës, Përfaqësues të mediave, Shumë të dashur kolegë deputetë, Në fakt, po e përsëris atë që e tha edhe z. Gruda, për dy ditë ka qenë e pamundur që ta lexojmë një buxhet kaq voluminoz, edhe unë këtu n..."
+        }
+      ]
     },
     {
       "id": "branislav-nikolic",
@@ -4133,9 +4577,9 @@
       "name": "DAUT HARADINAJ",
       "party": "ALEANCA PËR ARDHMËRINË E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 571,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -4147,26 +4591,26 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 23,
+          "score": 52.27
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 6,
+          "score": 13.64
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 6.82
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.27
         },
         {
           "topicId": "Arsimi",
@@ -4177,8 +4621,8 @@
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 18.18
         },
         {
           "topicId": "Inovacioni",
@@ -4189,8 +4633,8 @@
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 4.55
         },
         {
           "topicId": "Diaspora",
@@ -4207,8 +4651,8 @@
         {
           "topicId": "Sporti",
           "label": "Sporti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.27
         },
         {
           "topicId": "Arti",
@@ -4223,7 +4667,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:101",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:101",
+          "excerpt": "kryesues! Një herë mendova që do t'i drejtohem kryeministrit, meqenëse është ministri i Financave, besoj që do të na japë një shpjegim. Nuk po e kritikoj atë bazën e buxhetit, se mendoj që ka ekspertë këtu, por në prezantimin e Qeverisë par..."
+        }
+      ]
     },
     {
       "id": "doarsa-kica-xhelili",
@@ -4715,9 +5169,9 @@
       "name": "EGZON AZEMI",
       "party": "Lëvizja VETËVENDOSJE!",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 381,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -4729,14 +5183,14 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 88.89
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 11.11
         },
         {
           "topicId": "Mirëqenia",
@@ -4805,7 +5259,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:115",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:115",
+          "excerpt": "Atëherë, faleminderit! Meqenëse është edhe për mua hera e parë që flas nga ky Kuvend, i falënderoj të gjithë ata që e mbështetën Lëvizjen Vetëvendosje në zgjedhjet e fundit! Fjalimet e opozitës që u dëgjuan deri tash mund të them lirisht se..."
+        }
+      ]
     },
     {
       "id": "ejup-ahmeti",
@@ -5103,9 +5567,9 @@
       "name": "EMILIJA REDŽEPI",
       "party": "NOVA DEMOKRATSKA STRANKA",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 576,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -5117,8 +5581,8 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 22.22
         },
         {
           "topicId": "Siguria",
@@ -5147,8 +5611,8 @@
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 4,
+          "score": 44.44
         },
         {
           "topicId": "Inovacioni",
@@ -5159,8 +5623,8 @@
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 11.11
         },
         {
           "topicId": "Diaspora",
@@ -5183,8 +5647,8 @@
         {
           "topicId": "Arti",
           "label": "Arti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 22.22
         },
         {
           "topicId": "Politika e Jashtme",
@@ -5193,7 +5657,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:91",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:91",
+          "excerpt": "Zahvaljujem se uvažena predsednice parlamenta, gospođo Hadžiju! Uvaženi premijeru Vlade Republike Kosovo, gospodine Kurti, Poštovani ministri, Kolege narodni poslanici, Pred svega dozvolite mi da povodom Dana Aškalija uputimo iskrene čestit..."
+        }
+      ]
     },
     {
       "id": "enver-dugolli",
@@ -5297,40 +5771,40 @@
       "name": "ENVER HALITI",
       "party": "Lëvizja VETËVENDOSJE!",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 5,
+        "wordCount": 721,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 15
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 13,
+          "score": 65
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 5
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 5
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 5
         },
         {
           "topicId": "Arsimi",
@@ -5365,8 +5839,8 @@
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 5
         },
         {
           "topicId": "Sporti",
@@ -5387,7 +5861,53 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:77",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:77",
+          "excerpt": "kryetare! I nderuar nënkryetar, I nderuar kryeministër, Kabinet qeveritar, Të nderuar kolegë deputetë, Komisioni për Buxhet, Punë dhe Transfere në bazë të nenit 74 paragrafi 2 të Rregullores së Kuvendit në mbledhjen e mbajtur më 13 shkurt 2..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:32",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:32",
+          "excerpt": "kryetare! I nderuar kabinet qeveritar, Kolegë deputetë, Komisioni për Buxhet, Punë dhe Transfere, në bazë të nenit 83, paragrafi 3 të Rregullores së Kuvendit, në mbledhjen e mbajtur më 13 shkurt 2026 e shqyrtoi Projektligjin nr. 10/L-003 dh..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:38",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:38",
+          "excerpt": "kryetare! Komisioni për Buxhet, Punë dhe Transfere, në bazë të nenit 83, paragrafi 5 i Rregullores së Kuvendit, në mbledhjen e mbajtur në datë 13 shkurt 2026 e shqyrtoi Projektligjin nr. 10/L-004 dhe vendosi që Kuvendit t’ia paraqesë këtë:..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:44",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:44",
+          "excerpt": "kryetare! Komisioni për Buxhet, Punë dhe Transfere, në bazë të nenit 83, paragrafi 5 i Rregullores së Kuvendit, në mbledhjen e mbajtur më 13 shkurt 2026 e ka shqyrtuar Projektligjin nr. 10/L-005 dhe ka vendosur që Kuvendit t'ia paraqesë kët..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:50",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:50",
+          "excerpt": "kryetare! Komisioni për Buxhet, Punë e Transfere, në bazë të nenit 83, paragrafi 5 i Rregullores së Kuvendit, në mbledhjen e mbajtur më 13 shkurt 2026 e ka shqyrtuar projektligjin në fjalë dhe vendosi që Kuvendit t’ia paraqesë këtë: Rekoman..."
+        }
+      ]
     },
     {
       "id": "enver-hoxhaj",
@@ -5588,9 +6108,9 @@
       "name": "ERMAL SADIKU",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 888,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -5602,20 +6122,20 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 12,
+          "score": 27.91
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 7,
+          "score": 16.28
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.33
         },
         {
           "topicId": "Shëndetësia",
@@ -5626,20 +6146,20 @@
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 4.65
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 18.6
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
+          "mentions": 12,
+          "score": 27.91
         },
         {
           "topicId": "Turizmi",
@@ -5656,8 +6176,8 @@
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.33
         },
         {
           "topicId": "Sporti",
@@ -5678,7 +6198,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:159",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:159",
+          "excerpt": "kryetare! S'kisha dashur të flisja për këto temat e tjera e të koncentrohem në diçka që unë së paku e kuptoj dhe di ta analizoj, e që është digjitalizimi e teknologjia, po s'kam si të analizoj diçka që s'është, si e thanë edhe më herët, pa..."
+        }
+      ]
     },
     {
       "id": "erxhan-galushi",
@@ -5782,34 +6312,34 @@
       "name": "FADIL HADERGJONAJ",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 793,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 3.57
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 21,
+          "score": 37.5
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 26,
+          "score": 46.43
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 3.57
         },
         {
           "topicId": "Shëndetësia",
@@ -5820,20 +6350,20 @@
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.79
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 3.57
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.79
         },
         {
           "topicId": "Turizmi",
@@ -5850,8 +6380,8 @@
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.79
         },
         {
           "topicId": "Sporti",
@@ -5872,7 +6402,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:139",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:139",
+          "excerpt": "I nderuar kryeministër, Kabinet qeveritar, Të nderuar deputetë, Media, Të dashur qytetarë, Buxheti për siguri dhe mbrojtje, çfarë do të duhej të siguronte? Siguria dhe mbrojtja janë themelet mbi të cilat ndërtohet stabiliteti i shtetit. Pa..."
+        }
+      ]
     },
     {
       "id": "fahrush-rexhepi",
@@ -6267,28 +6807,28 @@
       "name": "FERAT SHALA",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 921,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 6,
+          "score": 16.67
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 14,
+          "score": 38.89
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 4,
+          "score": 11.11
         },
         {
           "topicId": "Mirëqenia",
@@ -6299,8 +6839,8 @@
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.78
         },
         {
           "topicId": "Arsimi",
@@ -6329,14 +6869,14 @@
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.78
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 4,
+          "score": 11.11
         },
         {
           "topicId": "Sporti",
@@ -6347,8 +6887,8 @@
         {
           "topicId": "Arti",
           "label": "Arti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 6,
+          "score": 16.67
         },
         {
           "topicId": "Politika e Jashtme",
@@ -6357,7 +6897,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:153",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:153",
+          "excerpt": "E nderuar kryetare e kuvendit, I nderuar kryeministër, Kabinet qeveritar, Të nderuar deputetë, Media, Po i ngreh disa shqetësime krejtësisht teknike, por që në esencë janë shumë përmbajtjesore dhe substanciale për politikat e Qeverisë të kr..."
+        }
+      ]
     },
     {
       "id": "fitim-haziri",
@@ -6655,9 +7205,9 @@
       "name": "GANIMETE MUSLIU",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 538,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -6669,44 +7219,44 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 11.11
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 9,
+          "score": 20
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 17.78
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 4.44
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 14,
+          "score": 31.11
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.22
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
+          "mentions": 4,
+          "score": 8.89
         },
         {
           "topicId": "Turizmi",
@@ -6723,8 +7273,8 @@
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 4.44
         },
         {
           "topicId": "Sporti",
@@ -6745,7 +7295,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:163",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:163",
+          "excerpt": "Të nderuar qytetarë të Republikës së Kosovës, Më lejoni që, meqë është hera e parë në këtë Legjislaturë që marr fjalën, t'i falënderoj qytetarët e Republikës së Kosovës që për të shtatën herë radhazi ma rikonfirmuan besimin për t'i përfaqës..."
+        }
+      ]
     },
     {
       "id": "haxhi-avdyli",
@@ -6849,34 +7409,34 @@
       "name": "HYKMETE BAJRAMI",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 6,
+        "wordCount": 2721,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 14,
+          "score": 13.21
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 64,
+          "score": 60.38
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 4.72
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 15,
+          "score": 14.15
         },
         {
           "topicId": "Shëndetësia",
@@ -6893,8 +7453,8 @@
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 4.72
         },
         {
           "topicId": "Inovacioni",
@@ -6917,8 +7477,8 @@
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 1.89
         },
         {
           "topicId": "Sporti",
@@ -6935,11 +7495,66 @@
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.94
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:181",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:181",
+          "excerpt": "kryetare! Ministër, 74 çerdhe nuk janë ndërtuar në mandatin tuaj. Nuk ka asnjë statistikë publike e cila e vërteton një gjë të tillë. I ke për tre vjet radhazi 7 çerdhe modulare, merre me mend, çerdhe modulare me qëllimin që kishe të bëhen..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:191",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:191",
+          "excerpt": "kryetare! Sinqerisht, s’po e kuptojmë çka është gjithë kjo nguti. Ju e dëgjuat Hekuran Muratin, tha ne jemi duke punuar ende me kontratat e 2020-tës. Ende janë duke punuar me kontratat e 2020-tës! Janë duke kërkuar që të shqyrtohet buxheti..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:99",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:99",
+          "excerpt": "kryetare! Të nderuar kolegë deputetë, Të nderuar qytetarë të Republikës së Kosovës, Unë para se të flas për shifrat në buxhetin e Projektligjit për vitin 2026, po kthehem pak te shpenzimi i parasë publike në pesë vjetët e kaluara. U fol kët..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:10",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:10",
+          "excerpt": "Në mbledhjen e Komisionit për Integrime Evropiane të mbajtur sot në orën 11:30, në cilësinë e Komisionit Funksional, ne shqyrtuam Projektligjin nr. 10/L-002 për ratifikimin e Marrëveshjes ndërmjet Republikës së Kosovës dhe Bashkimit Evropia..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:62",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:62",
+          "excerpt": "kryetare! Për të dhënë edhe një plotësim. Është e vërtetë që në pjesën tekstuale janë futur nene, të cilat i japin autorizime të veçanta ministrit që të reflektojmë andej strukturën e buxhetit, por ne të gjithë e dimë rëndësinë e pjesës tab..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:68",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:68",
+          "excerpt": "Ministër, nuk e shpjegove arsyen e urgjencës sot. Po të kërkohen tri ditë për ta analizuar deputetët Ligjin e buxhetit, ligjin që është më i rëndësishmi brenda një vitit kalendarik. Tri ditë po kërkojmë kohë. E vetmja arsye për të cilën nev..."
+        }
+      ]
     },
     {
       "id": "hysen-durmishi",
@@ -7043,9 +7658,9 @@
       "name": "IGOR SIMIĆ",
       "party": "SRPSKA LISTA",
       "activity": {
-        "speechCount": 2,
-        "wordCount": 200,
-        "sessionCount": 1
+        "speechCount": 4,
+        "wordCount": 506,
+        "sessionCount": 2
       },
       "topics": [
         {
@@ -7134,6 +7749,24 @@
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:89",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:89",
+          "excerpt": "Hvala presedavajuća! Poštovane kolege poslanici, Kao Poslanićka Grupa, mi smo detaljno analizirali ovaj nacrt buđeta koji je usvojila vlada i prosledila Skupštini. Hoću da kažem da postoji puno prostora za negativne komentare i kritike. Ono..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:60",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:60",
+          "excerpt": "Hvala predsjedavajući! Poštovani poslanici, Poštovani građani, Ono što smo mogli da čujemo danas kada je u pitanju Budžet za narednu godinu, svodi se na tri reči: lažno, potrebno je brzo, i odstupanje od pravila. To je neka praksa koja pred..."
+        },
         {
           "id": "2026-02-12-seanca:2026-02-12-seanca.json:37",
           "date": "2026-02-12",
@@ -7353,167 +7986,177 @@
       "name": "JANINA YMERI",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
-      },
-      "topics": [
-        {
-          "topicId": "Drejtësia",
-          "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Ekonomia",
-          "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Siguria",
-          "label": "Siguria",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Mirëqenia",
-          "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Shëndetësia",
-          "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Arsimi",
-          "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Infrastruktura",
-          "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Inovacioni",
-          "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Turizmi",
-          "label": "Turizmi",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Diaspora",
-          "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Energjia",
-          "label": "Energjia",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Sporti",
-          "label": "Sporti",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Arti",
-          "label": "Arti",
-          "mentions": 0,
-          "score": 0
-        },
-        {
-          "topicId": "Politika e Jashtme",
-          "label": "Politika e Jashtme",
-          "mentions": 0,
-          "score": 0
-        }
-      ],
-      "activityHistory": []
-    },
-    {
-      "id": "jehona-lushaku-sadriu",
-      "name": "JEHONA LUSHAKU SADRIU",
-      "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
-      "activity": {
-        "speechCount": 7,
-        "wordCount": 468,
+        "speechCount": 1,
+        "wordCount": 1506,
         "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 4,
-          "score": 12.5
+          "mentions": 1,
+          "score": 0.79
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 7,
-          "score": 21.88
+          "mentions": 69,
+          "score": 54.33
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 5,
-          "score": 15.63
+          "mentions": 8,
+          "score": 6.3
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
+          "mentions": 15,
+          "score": 11.81
+        },
+        {
+          "topicId": "Shëndetësia",
+          "label": "Shëndetësia",
+          "mentions": 13,
+          "score": 10.24
+        },
+        {
+          "topicId": "Arsimi",
+          "label": "Arsimi",
           "mentions": 5,
-          "score": 15.63
+          "score": 3.94
+        },
+        {
+          "topicId": "Infrastruktura",
+          "label": "Infrastruktura",
+          "mentions": 4,
+          "score": 3.15
+        },
+        {
+          "topicId": "Inovacioni",
+          "label": "Inovacioni",
+          "mentions": 1,
+          "score": 0.79
+        },
+        {
+          "topicId": "Turizmi",
+          "label": "Turizmi",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Diaspora",
+          "label": "Diaspora",
+          "mentions": 2,
+          "score": 1.57
+        },
+        {
+          "topicId": "Energjia",
+          "label": "Energjia",
+          "mentions": 8,
+          "score": 6.3
+        },
+        {
+          "topicId": "Sporti",
+          "label": "Sporti",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Arti",
+          "label": "Arti",
+          "mentions": 0,
+          "score": 0
+        },
+        {
+          "topicId": "Politika e Jashtme",
+          "label": "Politika e Jashtme",
+          "mentions": 1,
+          "score": 0.79
+        }
+      ],
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:121",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:121",
+          "excerpt": "nënkryetar për fjalën! Të nderuar kolegë deputetë, Përfaqësues të partive, Të mediave, Dhe të gjithë ata që po na ndjekin, Meqenëse është fjalimi im i parë në foltoren e Kuvendit, do shfrytëzoj rastin shpreh falënderimet për zgjedhjen si de..."
+        }
+      ]
+    },
+    {
+      "id": "jehona-lushaku-sadriu",
+      "name": "JEHONA LUSHAKU SADRIU",
+      "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
+      "activity": {
+        "speechCount": 11,
+        "wordCount": 2018,
+        "sessionCount": 2
+      },
+      "topics": [
+        {
+          "topicId": "Drejtësia",
+          "label": "Drejtësia",
+          "mentions": 21,
+          "score": 14
+        },
+        {
+          "topicId": "Ekonomia",
+          "label": "Ekonomia",
+          "mentions": 39,
+          "score": 26
+        },
+        {
+          "topicId": "Siguria",
+          "label": "Siguria",
+          "mentions": 13,
+          "score": 8.67
+        },
+        {
+          "topicId": "Mirëqenia",
+          "label": "Mirëqenia",
+          "mentions": 26,
+          "score": 17.33
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
           "mentions": 1,
-          "score": 3.13
+          "score": 0.67
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 1,
-          "score": 3.13
+          "mentions": 27,
+          "score": 18
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 2,
-          "score": 6.25
+          "mentions": 6,
+          "score": 4
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 2,
-          "score": 6.25
+          "mentions": 11,
+          "score": 7.33
         },
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
           "mentions": 1,
-          "score": 3.13
+          "score": 0.67
         },
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
           "mentions": 1,
-          "score": 3.13
+          "score": 0.67
         },
         {
           "topicId": "Energjia",
@@ -7525,22 +8168,58 @@
           "topicId": "Sporti",
           "label": "Sporti",
           "mentions": 1,
-          "score": 3.13
+          "score": 0.67
         },
         {
           "topicId": "Arti",
           "label": "Arti",
           "mentions": 1,
-          "score": 3.13
+          "score": 0.67
         },
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
-          "mentions": 1,
-          "score": 3.13
+          "mentions": 2,
+          "score": 1.33
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:105",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:105",
+          "excerpt": "Nënkryetar, vërtet është e pakuptimtë që ne sot po diskutojmë dokumentin më të rëndësishëm në mungesë të kryeministrit. Konsiderojmë po ashtu që është tepër e rëndësishme që ai të jetë këtu përgjatë gjithë kohës, meqë secila prej rekomandim..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:149",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:149",
+          "excerpt": "kryetare! Të nderuar kolegë deputetë, I nderuar kryeministër, Krejt në fillim të seancës kur ju e morët fjalën, na treguat rendin e gjërave dhe thënë të drejtën, në rendin e gjërave do të duhej që ta kishim Programin qeverisës menjëherë pas..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:151",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:151",
+          "excerpt": "Për shumëçka që keni premtuar për inovacion, e ka përkrahjen minimale dhe që pesë vjet, këto janë premtime që pesë vjet, ato aspak nuk ekzistojnë. Si parti nuk e besoj që do ta përkrahim për aq kohë sa buxheti i Prishtinës nuk përfshihet dh..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:16",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:16",
+          "excerpt": "Të nderuar kolegë deputetë, edhe Grupi Parlamentar i Lidhjes Demokratike të Kosovës mbështetë të gjitha marrëveshjet ndërkombëtare, edhe këtu që është marrëveshje në mes të Bashkimit Evropian dhe Kosovës, si njëra nga marrëveshjet më të rën..."
+        },
         {
           "id": "2026-02-12-seanca:2026-02-12-seanca.json:12",
           "date": "2026-02-12",
@@ -7805,9 +8484,9 @@
       "name": "KUJTIM GASHI",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 452,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -7819,38 +8498,38 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 10,
+          "score": 41.67
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 12.5
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 7,
+          "score": 29.17
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 4.17
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 4.17
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 4.17
         },
         {
           "topicId": "Inovacioni",
@@ -7873,8 +8552,8 @@
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 4.17
         },
         {
           "topicId": "Sporti",
@@ -7895,7 +8574,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:125",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:125",
+          "excerpt": "kryetare! Të nderuar kolegë deputetë, I nderuar Kabinet qeveritar, Sot po e trajtojmë një nga dokumentet më të rëndësishme të shtetit, buxhetin e Republikës së Kosovës, i cili duhet të ishte i qartë me prioritete politike, projekte kapitale..."
+        }
+      ]
     },
     {
       "id": "kujtim-shala",
@@ -8484,64 +9173,64 @@
       "name": "LUMIR ABDIXHIKU",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 4,
+        "wordCount": 3757,
+        "sessionCount": 2
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 13,
+          "score": 8.67
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 70,
+          "score": 46.67
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 27,
+          "score": 18
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 10,
+          "score": 6.67
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 3.33
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.67
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 11,
+          "score": 7.33
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 1.33
         },
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.67
         },
         {
           "topicId": "Diaspora",
@@ -8552,8 +9241,8 @@
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.67
         },
         {
           "topicId": "Sporti",
@@ -8564,17 +9253,54 @@
         {
           "topicId": "Arti",
           "label": "Arti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.67
         },
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 5.33
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-17-seanca:2026-02-17-seanca.json:10",
+          "date": "2026-02-17",
+          "sessionId": "2026-02-17-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_17_ts_Seanca_kDekSwtEen.pdf",
+          "reference": "2026-02-17-seanca.json:10",
+          "excerpt": "E nderuara presidente e Republikës së Kosovës, zonja Vjosa OsmaniSadriu, I nderuar president i Republikës së Shqipërisë, zoti Bajram Begaj, Baca Rifat, I nderuar kryeministër Kurti, Anëtarë të Kabinetit qeveritar, Kryetare e Kuvendit, Të nd..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:85",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:85",
+          "excerpt": "kryetare! Të nderuar deputetë, Përfaqësues të institucioneve, Të nderuar qytetarë, Të premten kërkuam dhe besoj u dakorduam që, në njërën anë, deputetëve të Kuvendit të Kosovës t’u jepet më tepër kohë për të trajtuar një dokument shumë të r..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:87",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:87",
+          "excerpt": "Ju faleminderit! Dhe kjo rritje sërish na paraqitet si sukses historik. Na thuhet vazhdimisht siç na është thënë edhe më parë se rritja jonë është rritja më e madhe në rajon. Sa për rikujtim, në 14 prej 16 vjetëve të fundit, Republika e Kos..."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:56",
+          "date": "2026-02-13",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:56",
+          "excerpt": "znj. kryetare! Të dashur kolegë deputetë, Në mirëkuptimin e madh për rëndësinë e Ligjit të buxhetit, pajtohemi se është ligj i rëndësishëm; me siguri, më i rëndësishmi që Qeveria mund ta ketë. Dhe, sepse është i rëndësishëm, nuk mund ta pra..."
+        }
+      ]
     },
     {
       "id": "lutfi-haziri",
@@ -8775,9 +9501,9 @@
       "name": "MERGIM LUSHTAKU",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 1172,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -8789,44 +9515,44 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 42,
+          "score": 51.22
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 10,
+          "score": 12.2
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 10,
+          "score": 12.2
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 9.76
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 3.66
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 3.66
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 2.44
         },
         {
           "topicId": "Turizmi",
@@ -8837,14 +9563,14 @@
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.22
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 3.66
         },
         {
           "topicId": "Sporti",
@@ -8865,7 +9591,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:97",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:97",
+          "excerpt": "kryetare! Të nderuar qytetarë, Të nderuar kolegë deputetë dhe anëtarë të Kabinetit qeveritar, Të gjithëve njëherë ju uroj punë e mbarë, dhe dashtë Zotit që të jemi sa më të dobishëm për vendin. Sot po diskutojmë në parim për buxhetin e shte..."
+        }
+      ]
     },
     {
       "id": "milan-kostic",
@@ -9648,34 +10384,34 @@
       "name": "PËRPARIM GRUDA",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 3,
-        "wordCount": 1194,
-        "sessionCount": 1
+        "speechCount": 5,
+        "wordCount": 2679,
+        "sessionCount": 2
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 37,
-          "score": 61.67
+          "mentions": 53,
+          "score": 37.59
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 1,
-          "score": 1.67
+          "mentions": 49,
+          "score": 34.75
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 17,
-          "score": 28.33
+          "mentions": 22,
+          "score": 15.6
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 1.42
         },
         {
           "topicId": "Shëndetësia",
@@ -9686,14 +10422,14 @@
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 3,
-          "score": 5
+          "mentions": 11,
+          "score": 7.8
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.71
         },
         {
           "topicId": "Inovacioni",
@@ -9722,8 +10458,8 @@
         {
           "topicId": "Sporti",
           "label": "Sporti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.71
         },
         {
           "topicId": "Arti",
@@ -9735,10 +10471,28 @@
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
           "mentions": 2,
-          "score": 3.33
+          "score": 1.42
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:141",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:141",
+          "excerpt": "kryetare! Përpara se të nis të diskutoj për buxhetin, kisha dashur një vërejtje teknike, nëse ka mundësi, zonja kryetare, mbledhjet të fillojnë me kohë. Kemi filluar sot dyzet minuta me vonesë. Çdo seancë në fakt shkon deri një orë vonesë...."
+        },
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:143",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:143",
+          "excerpt": "Unë nuk thashë se ka qenë veç faj juaj, është edhe i shefes së grupit më të madh parlamentar dhe të gjithë shefave të grupeve që të kujdesen që seancat të fillojnë me kohë. Tani, unë po i kthehem temës së buxhetit. E vërteta është që unë nu..."
+        },
         {
           "id": "2026-02-12-seanca:2026-02-12-seanca.json:10",
           "date": "2026-02-12",
@@ -10161,9 +10915,9 @@
       "name": "SALA JASHARI",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 689,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -10175,20 +10929,20 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 17.39
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 4.35
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 17.39
         },
         {
           "topicId": "Shëndetësia",
@@ -10199,20 +10953,20 @@
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 26,
+          "score": 56.52
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.17
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 2.17
         },
         {
           "topicId": "Turizmi",
@@ -10251,7 +11005,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:157",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:157",
+          "excerpt": "Të nderuar deputetë, Të nderuar përfaqësues politikë, Të dashur qytetarë, Është nder dhe kënaqësi që të jem këtu përpara jush që t'ju përfaqësoj në mënyrën më të mirë të mundshme. Meqenëse në këtë legjislaturë kam marrë besimin që të jem pj..."
+        }
+      ]
     },
     {
       "id": "salih-zyba",
@@ -10937,52 +11701,52 @@
       "name": "TIME KADRIJAJ",
       "party": "ALEANCA PËR ARDHMËRINË E KOSOVËS",
       "activity": {
-        "speechCount": 1,
-        "wordCount": 25,
-        "sessionCount": 1
+        "speechCount": 2,
+        "wordCount": 1162,
+        "sessionCount": 2
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 3.49
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 37,
+          "score": 43.02
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 14,
+          "score": 16.28
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 2.33
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 6,
+          "score": 6.98
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 5.81
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 10,
+          "score": 11.63
         },
         {
           "topicId": "Inovacioni",
@@ -10993,8 +11757,8 @@
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 3.49
         },
         {
           "topicId": "Diaspora",
@@ -11005,8 +11769,8 @@
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 6,
+          "score": 6.98
         },
         {
           "topicId": "Sporti",
@@ -11028,6 +11792,15 @@
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:109",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:109",
+          "excerpt": "nënkryetar i Kuvendit! Të nderuar deputetë, Të nderuar qytetarë të Kosovës, Sot kemi para vetes buxhetin për vitin 2026, një buxhet afro 4 miliardë euro. Në letër duket buxhet i madh, e në realitet është i vogël përballë nevojave të qytetar..."
+        },
         {
           "id": "2026-02-12-seanca:2026-02-12-seanca.json:41",
           "date": "2026-02-12",
@@ -11529,52 +12302,52 @@
       "name": "VETON BERISHA",
       "party": "PARTIA LIBERALE EGJIPTIANE",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 1169,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 1.47
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 24,
+          "score": 35.29
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 8,
+          "score": 11.76
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 10,
+          "score": 14.71
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 4.41
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 9,
+          "score": 13.24
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 0,
-          "score": 0
+          "mentions": 7,
+          "score": 10.29
         },
         {
           "topicId": "Inovacioni",
@@ -11603,14 +12376,14 @@
         {
           "topicId": "Sporti",
           "label": "Sporti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 4.41
         },
         {
           "topicId": "Arti",
           "label": "Arti",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 4.41
         },
         {
           "topicId": "Politika e Jashtme",
@@ -11619,7 +12392,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:129",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:129",
+          "excerpt": "I nderuar zoti kryeministër Kurti, Kabinet qeveritar, Të nderuar kolegë deputetë, Po ashtu dhe unë shfrytëzoj rastin që ta uroj komunitetin ashkali për ditën e tyre, veçantë përfaqësuesin, kolegun tim, përfaqësuesin e këtij komuniteti, zoti..."
+        }
+      ]
     },
     {
       "id": "vigan-qorrolli",
@@ -11723,9 +12506,9 @@
       "name": "VLORA ÇITAKU",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 46,
+        "sessionCount": 1
       },
       "topics": [
         {
@@ -11743,8 +12526,8 @@
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 100
         },
         {
           "topicId": "Mirëqenia",
@@ -11813,7 +12596,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:103",
+          "date": "2026-02-16",
+          "sessionId": "2026-02-13-16-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+          "reference": "2026-02-13-16-seanca.json:103",
+          "excerpt": "kryesues! Unë, në fakt, kam një kërkesë, jemi duke diskutuar dokumentin më të rëndësishëm për katër vjetët e ardhshme dhe kryeministri dhe qeveria nuk janë këtu. Kështu që propozoj që të shkojmë në pauzë derisa të sigurohemi që kryetari i Q..."
+        }
+      ]
     },
     {
       "id": "xhavit-haliti",
