@@ -6,6 +6,8 @@ import { PromiseDetail } from './components/PromiseDetail';
 import PromiseCard from './components/PromiseCard';
 import DeputiesDirectory from './components/DeputiesDirectory';
 import DeputyProfile from './components/DeputyProfile';
+import QeveriaOrgChart from './components/QeveriaOrgChart';
+import QeveriaMinisterDetail from './components/QeveriaMinisterDetail';
 import { CATEGORIES, LVV_PROMISES } from './data';
 import { alignDeputyTopicsToPlatformCategories, parseDeputyDataset, rankDeputiesByActivity, SEED_DEPUTY_DATASET } from './deputiesData';
 import { DeputyDataset, DeputyProfile as DeputyProfileModel, PromiseDeputySignal, PromiseStatus } from './types';
@@ -354,6 +356,16 @@ const App: React.FC = () => {
             >
               Deputetët
             </a>
+            <a
+              href="/qeveria"
+              className={`transition-colors hover:text-[#102949] ${isActiveRoute('/qeveria') ? 'text-[#102949]' : ''}`}
+              onClick={(e) => {
+                e.preventDefault();
+                setLocation('/qeveria');
+              }}
+            >
+              Qeveria
+            </a>
             <span className="rounded-full border border-[#cdbb96] bg-[#f8ebcf] px-4 py-2 text-[#8b6730]">Legjislatura e Dhjetë</span>
           </nav>
         </div>
@@ -386,6 +398,12 @@ const App: React.FC = () => {
                 />
               );
             }}
+          </Route>
+          <Route path="/qeveria/:id">
+            {(params) => <QeveriaMinisterDetail ministryId={params.id} promises={LVV_PROMISES} />}
+          </Route>
+          <Route path="/qeveria">
+            <QeveriaOrgChart promises={LVV_PROMISES} />
           </Route>
           <Route path="/methodology">
             <Methodology onBack={() => setLocation('/')} />
