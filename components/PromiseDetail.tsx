@@ -1,20 +1,11 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { CATEGORIES } from '../data';
-import { PartyPromise, PromiseStatus } from '../types';
-
-interface PromiseTopicDeputy {
-  id: string;
-  name: string;
-  party: string;
-  mentions: number;
-  score: number;
-}
+import { PartyPromise, PromiseDeputySignal, PromiseStatus } from '../types';
 
 interface PromiseDetailProps {
   promise: PartyPromise;
-  deputyTopicLabel?: string | null;
-  topTopicDeputies?: PromiseTopicDeputy[];
+  topDeputies: PromiseDeputySignal[];
 }
 
 const statusBadgeClasses: Record<PromiseStatus, string> = {
@@ -52,7 +43,7 @@ const statusBarClasses: Record<PromiseStatus, string> = {
   Pending: 'from-slate-500 to-slate-700',
 };
 
-export const PromiseDetail: React.FC<PromiseDetailProps> = ({ promise, deputyTopicLabel, topTopicDeputies = [] }) => {
+export const PromiseDetail: React.FC<PromiseDetailProps> = ({ promise, topDeputies }) => {
   const categoryInfo = CATEGORIES.find((c) => c.id === promise.category);
   const timelineDate = '2026-02-01';
   const visibleUpdates = [...(promise.updates || [])].sort((a, b) => b.date.localeCompare(a.date));
@@ -110,45 +101,34 @@ export const PromiseDetail: React.FC<PromiseDetailProps> = ({ promise, deputyTop
           </section>
 
           <section className="mt-10">
-            <h3 className="mb-6 flex items-center text-xl font-black text-[#1d314a] md:text-2xl">
-              <i className="fa-solid fa-users-viewfinder mr-3 text-[#9b7538]" />
-              Deputetet qe flasin me shume per kete teme
+            <h3 className="mb-4 flex items-center text-xl font-black text-[#1d314a] md:text-2xl">
+              <i className="fa-solid fa-users mr-3 text-[#9b7538]" />
+              Deputetët më aktivë për këtë temë
             </h3>
 
-            {deputyTopicLabel ? (
-              topTopicDeputies.length > 0 ? (
-                <div className="grid gap-4 md:grid-cols-3">
-                  {topTopicDeputies.map((deputy, index) => (
-                    <Link
-                      key={deputy.id}
-                      href={`/deputet/${deputy.id}`}
-                      className="group rounded-2xl border border-[#ddd2bf] bg-white/85 p-4 shadow-[0_12px_30px_-28px_rgba(16,41,73,0.9)] transition-all hover:-translate-y-0.5 hover:border-[#b99861]"
-                    >
-                      <p className="text-[10px] font-extrabold uppercase tracking-[0.15em] text-[#7a879a]">#{index + 1}</p>
-                      <p className="mt-2 text-lg font-black text-[#112f50]">{deputy.name}</p>
-                      <p className="mt-1 text-[10px] font-extrabold uppercase tracking-[0.13em] text-[#7d6840]">{deputy.party}</p>
-                      <div className="mt-3 rounded-xl border border-[#e1d6c3] bg-[#f8f2e6] px-3 py-2">
-                        <p className="text-[10px] font-black uppercase tracking-[0.14em] text-[#6f7d92]">{deputyTopicLabel}</p>
-                        <p className="mt-1 text-sm font-black text-[#183554]">
-                          {deputy.mentions} permendje <span className="text-[#7b8697]">({deputy.score.toFixed(1)}%)</span>
-                        </p>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              ) : (
-                <p className="rounded-2xl border border-dashed border-[#d2c4ab] bg-[#f8f1e3] px-5 py-6 text-sm italic text-[#6e7888]">
-                  Ende nuk ka mjaftueshem permendje tematike nga deputetet per temen "{deputyTopicLabel}".
-                </p>
-              )
+            {topDeputies.length > 0 ? (
+              <div className="mb-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {topDeputies.map((deputy, index) => (
+                  <Link
+                    key={deputy.deputyId}
+                    href={`/deputet/${deputy.deputyId}`}
+                    className="block rounded-2xl border border-[#ddd2bf] bg-white/85 p-4 shadow-[0_12px_30px_-28px_rgba(16,41,73,0.9)] transition-all hover:-translate-y-0.5 hover:border-[#b89a66]"
+                  >
+                    <p className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-[#8a7653]">#{index + 1}</p>
+                    <p className="mt-1 text-sm font-black text-[#193454]">{deputy.deputyName}</p>
+                    <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.13em] text-[#6f7a8f]">{deputy.party}</p>
+                    <p className="mt-2 text-[11px] font-semibold text-[#516278]">
+                      {deputy.topicMentions} përmendje tematike · {deputy.speechCount} fjalime
+                    </p>
+                  </Link>
+                ))}
+              </div>
             ) : (
-              <p className="rounded-2xl border border-dashed border-[#d2c4ab] bg-[#f8f1e3] px-5 py-6 text-sm italic text-[#6e7888]">
-                Kjo kategori premtimi ende nuk eshte mapuar me temat e diskutimeve te deputeteve.
+              <p className="mb-10 rounded-2xl border border-dashed border-[#d2c4ab] bg-[#f8f1e3] px-5 py-6 text-sm italic text-[#6e7888]">
+                Nuk ka aktivitet parlamentar të mjaftueshëm për këtë kategori.
               </p>
             )}
-          </section>
 
-          <section className="mt-10">
             <h3 className="mb-6 flex items-center text-xl font-black text-[#1d314a] md:text-2xl">
               <i className="fa-solid fa-timeline mr-3 text-[#9b7538]" />
               Historiku i zhvillimeve

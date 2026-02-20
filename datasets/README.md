@@ -44,3 +44,6 @@ npm run build:deputies
 
 Output krijohet te `public/data/deputies-analytics.json` dhe perdoret automatikisht nga UI.
 
+Shenim: temat e deputeteve tani klasifikohen sipas te njejtave kategori si filtrat kryesore te platformes
+(`Drejtësia`, `Ekonomia`, `Siguria`, `Mirëqenia`, `Shëndetësia`, `Arsimi`, `Infrastruktura`, `Inovacioni`,
+`Turizmi`, `Diaspora`, `Energjia`, `Sporti`, `Arti`, `Politika e Jashtme`).

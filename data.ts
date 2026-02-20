@@ -1,4 +1,5 @@
 
+import { CATEGORIES_WITH_ALL } from './categories';
 import { PartyPromise } from './types';
 
 export const LVV_PROMISES: PartyPromise[] = [
@@ -239,7 +240,7 @@ export const LVV_PROMISES: PartyPromise[] = [
   },
   {
     id: '19',
-    category: 'Inovacioni dhe Teknologjia',
+    category: 'Inovacioni',
     title: 'Valuta Digjitale e Kosovës',
     description: 'Hulumtimi dhe zhvillimi i mundësisë për krijimin e valutës digjitale kombëtare për të lehtësuar pagesat elektronike.',
     status: 'Pending',
@@ -250,7 +251,7 @@ export const LVV_PROMISES: PartyPromise[] = [
   },
   {
     id: '20',
-    category: 'Inovacioni dhe Teknologjia',
+    category: 'Inovacioni',
     title: 'ICT Tower',
     description: 'Ndërtimi i kullës së teknologjisë (ICT Tower) si qendër e ekselencës për kompanitë e teknologjisë dhe startup-et.',
     status: 'Pending',
@@ -261,7 +262,7 @@ export const LVV_PROMISES: PartyPromise[] = [
   },
   {
     id: '21',
-    category: 'Inovacioni dhe Teknologjia',
+    category: 'Inovacioni',
     title: 'Mbështetje për industrinë e IT-së',
     description: 'Grante dhe lehtësira fiskale për kompanitë e IT-së për të rritur eksportin e shërbimeve digjitale.',
     status: 'Pending',
@@ -272,7 +273,7 @@ export const LVV_PROMISES: PartyPromise[] = [
   },
   {
     id: '22',
-    category: 'Inovacioni dhe Teknologjia',
+    category: 'Inovacioni',
     title: 'Fondi i Inovacionit dhe Rinia',
     description: 'Krijimi i Fondit të Inovacionit me vlerë 10 milionë euro për të mbështetur idetë inovative të të rinjve.',
     status: 'Pending',
@@ -283,7 +284,7 @@ export const LVV_PROMISES: PartyPromise[] = [
   },
   {
     id: '23',
-    category: 'Inovacioni dhe Teknologjia',
+    category: 'Inovacioni',
     title: 'Parqet e Inovacionit',
     description: 'Themelimi i parqeve të inovacionit dhe teknologjisë në 7 qendrat kryesore të Kosovës.',
     status: 'Pending',
@@ -1395,22 +1396,4 @@ export const LVV_PROMISES: PartyPromise[] = [
   }
 ];
 
-export const CATEGORIES = [
-  { id: 'all', label: 'Të Gjitha', icon: 'fa-layer-group' },
-  { id: 'Drejtësia', label: 'Drejtësia', icon: 'fa-scale-unbalanced' },
-  { id: 'Ekonomia', label: 'Ekonomia', icon: 'fa-chart-line' },
-  { id: 'Siguria', label: 'Siguria', icon: 'fa-shield-halved' },
-  { id: 'Mirëqenia', label: 'Mirëqenia', icon: 'fa-hands-holding-child' },
-  { id: 'Shëndetësia', label: 'Shëndetësia', icon: 'fa-heart-pulse' },
-  { id: 'Arsimi', label: 'Arsimi', icon: 'fa-graduation-cap' },
-  { id: 'Infrastruktura', label: 'Infrastruktura', icon: 'fa-bridge-water' },
-
-  { id: 'Inovacioni dhe Teknologjia', label: 'Inovacioni', icon: 'fa-microchip' },
-  { id: 'Turizmi', label: 'Turizmi', icon: 'fa-mountain-sun' },
-  { id: 'Diaspora', label: 'Diaspora', icon: 'fa-earth-europe' },
-
-  { id: 'Energjia', label: 'Energjia', icon: 'fa-solar-panel' },
-  { id: 'Sporti', label: 'Sporti', icon: 'fa-futbol' },
-  { id: 'Arti', label: 'Arti', icon: 'fa-palette' },
-  { id: 'Politika e Jashtme', label: 'Politika e Jashtme', icon: 'fa-globe' }
-];
+export const CATEGORIES = CATEGORIES_WITH_ALL;

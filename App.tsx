@@ -7,17 +7,73 @@ import PromiseCard from './components/PromiseCard';
 import DeputiesDirectory from './components/DeputiesDirectory';
 import DeputyProfile from './components/DeputyProfile';
 import { CATEGORIES, LVV_PROMISES } from './data';
-import {
-  EMPTY_DEPUTY_DATASET,
-  getTopicIdForPromiseCategory,
-  getTopDeputiesForTopic,
-  getTopicLabelById,
-  parseDeputyDataset,
-  rankDeputiesByActivity,
-} from './deputiesData';
-import { DeputyDataset, PromiseStatus } from './types';
+import { alignDeputyTopicsToPlatformCategories, parseDeputyDataset, rankDeputiesByActivity, SEED_DEPUTY_DATASET } from './deputiesData';
+import { DeputyDataset, DeputyProfile as DeputyProfileModel, PromiseDeputySignal, PromiseStatus } from './types';
 
-const Home: React.FC = () => {
+const getTimestamp = (value: string): number => {
+  const timestamp = Date.parse(value);
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+};
+
+const getLatestPromiseUpdateTimestamp = (): number =>
+  LVV_PROMISES.reduce((latestPromiseTimestamp, promise) => {
+    if (!promise.updates?.length) return latestPromiseTimestamp;
+
+    const latestPromiseUpdateTimestamp = promise.updates.reduce((latestUpdateTimestamp, update) => {
+      const timestamp = getTimestamp(update.date);
+      return Math.max(latestUpdateTimestamp, timestamp);
+    }, 0);
+
+    return Math.max(latestPromiseTimestamp, latestPromiseUpdateTimestamp);
+  }, 0);
+
+const formatMonthYearSq = (timestamp: number): string => {
+  const value = new Intl.DateTimeFormat('sq-AL', { month: 'long', year: 'numeric' }).format(timestamp);
+  return value ? `${value.charAt(0).toUpperCase()}${value.slice(1)}` : '';
+};
+
+const getTopDeputiesForPromiseCategory = (
+  promiseCategory: string,
+  rankedDeputies: DeputyProfileModel[]
+): PromiseDeputySignal[] =>
+  rankedDeputies
+    .filter((deputy) => deputy.activity.speechCount > 0)
+    .map((deputy) => {
+      const alignedTopics = alignDeputyTopicsToPlatformCategories(deputy.topics);
+      const matchedTopic = alignedTopics.find((topic) => topic.topicId === promiseCategory || topic.label === promiseCategory);
+
+      return {
+        deputyId: deputy.id,
+        deputyName: deputy.name,
+        party: deputy.party,
+        speechCount: deputy.activity.speechCount,
+        wordCount: deputy.activity.wordCount,
+        sessionCount: deputy.activity.sessionCount,
+        topicMentions: matchedTopic?.mentions || 0,
+        topicScore: matchedTopic?.score || 0,
+      };
+    })
+    .filter((signal) => signal.topicMentions > 0)
+    .sort((a, b) => {
+      if (b.topicMentions !== a.topicMentions) return b.topicMentions - a.topicMentions;
+      if (b.speechCount !== a.speechCount) return b.speechCount - a.speechCount;
+      if (b.wordCount !== a.wordCount) return b.wordCount - a.wordCount;
+      if (b.sessionCount !== a.sessionCount) return b.sessionCount - a.sessionCount;
+      return a.deputyName.localeCompare(b.deputyName, 'sq-AL');
+    })
+    .slice(0, 3);
+
+const buildTopDeputiesByPromiseId = (rankedDeputies: DeputyProfileModel[]): Map<string, PromiseDeputySignal[]> =>
+  new Map(
+    LVV_PROMISES.map((promise) => [promise.id, getTopDeputiesForPromiseCategory(promise.category, rankedDeputies)])
+  );
+
+interface HomeProps {
+  lastUpdatedLabel: string;
+  topDeputiesByPromiseId: Map<string, PromiseDeputySignal[]>;
+}
+
+const Home: React.FC<HomeProps> = ({ lastUpdatedLabel, topDeputiesByPromiseId }) => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState<PromiseStatus | 'All'>('All');
@@ -66,7 +122,7 @@ const Home: React.FC = () => {
         <div className="relative max-w-5xl space-y-8">
           <div className="inline-flex items-center border border-[#cdbf9f] bg-[#f5efdf] px-4 py-2 text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#6f5c36]">
             <span className="mr-2 inline-block h-2 w-2 rounded-full bg-emerald-600" />
-            {'P\u00ebrdit\u00ebsimi i fundit: Janar 2026'}
+            {`P\u00ebrdit\u00ebsimi i fundit: ${lastUpdatedLabel}`}
           </div>
 
           <h2
@@ -83,8 +139,7 @@ const Home: React.FC = () => {
 
           <div className="pt-4 grid grid-cols-1 gap-6 text-[#1f3148]">
             <div>
-              <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#8a7345]">Mandati</p>
-              <p className="mt-2 text-lg font-black">2026-2030</p>
+              <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#8a7345]">Mandati: 2026-2030</p>
             </div>
           </div>
         </div>
@@ -192,7 +247,7 @@ const Home: React.FC = () => {
 
 const App: React.FC = () => {
   const [location, setLocation] = useLocation();
-  const [deputyDataset, setDeputyDataset] = useState<DeputyDataset>(EMPTY_DEPUTY_DATASET);
+  const [deputyDataset, setDeputyDataset] = useState<DeputyDataset>(SEED_DEPUTY_DATASET);
 
   useEffect(() => {
     let active = true;
@@ -207,7 +262,7 @@ const App: React.FC = () => {
           setDeputyDataset(parsed);
         }
       } catch (error) {
-        console.warn('Deputy dataset could not be loaded:', error);
+        console.warn('Deputy dataset fallback to seed data:', error);
       }
     };
 
@@ -219,6 +274,20 @@ const App: React.FC = () => {
   }, []);
 
   const rankedDeputies = useMemo(() => rankDeputiesByActivity(deputyDataset.deputies), [deputyDataset.deputies]);
+  const latestPromiseUpdateTimestamp = useMemo(() => getLatestPromiseUpdateTimestamp(), []);
+  const deputyDatasetTimestamp = useMemo(() => getTimestamp(deputyDataset.generatedAt), [deputyDataset.generatedAt]);
+  const lastUpdatedTimestamp = useMemo(() => {
+    const latestKnownTimestamp = Math.max(latestPromiseUpdateTimestamp, deputyDatasetTimestamp);
+    return latestKnownTimestamp > 0 ? latestKnownTimestamp : Date.now();
+  }, [latestPromiseUpdateTimestamp, deputyDatasetTimestamp]);
+  const lastUpdatedLabel = useMemo(
+    () => formatMonthYearSq(lastUpdatedTimestamp),
+    [lastUpdatedTimestamp]
+  );
+  const topDeputiesByPromiseId = useMemo(
+    () => buildTopDeputiesByPromiseId(rankedDeputies),
+    [rankedDeputies]
+  );
 
   const isActiveRoute = (path: string): boolean =>
     path === '/' ? location === '/' : location === path || location.startsWith(`${path}/`);
@@ -286,14 +355,16 @@ const App: React.FC = () => {
             >
               Deputetët
             </a>
-            <span className="rounded-full border border-[#cdbb96] bg-[#f8ebcf] px-4 py-2 text-[#8b6730]">Mandati 2026-2030</span>
+            <span className="rounded-full border border-[#cdbb96] bg-[#f8ebcf] px-4 py-2 text-[#8b6730]">Legjislatura e Dhjetë</span>
           </nav>
         </div>
       </header>
 
       <div className="relative z-10 font-body-luxury">
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path="/">
+            <Home lastUpdatedLabel={lastUpdatedLabel} topDeputiesByPromiseId={topDeputiesByPromiseId} />
+          </Route>
           <Route path="/deputetet">
             <DeputiesDirectory dataset={deputyDataset} />
           </Route>
@@ -324,11 +395,7 @@ const App: React.FC = () => {
             {(params) => {
               const promise = LVV_PROMISES.find((p) => p.id === params.id);
               if (!promise) return <div className="py-20 text-center">Premtimi nuk u gjet.</div>;
-              const topicId = getTopicIdForPromiseCategory(promise.category);
-              const deputyTopicLabel = topicId ? getTopicLabelById(topicId) : null;
-              const topTopicDeputies = topicId ? getTopDeputiesForTopic(deputyDataset.deputies, topicId, 3) : [];
-
-              return <PromiseDetail promise={promise} deputyTopicLabel={deputyTopicLabel} topTopicDeputies={topTopicDeputies} />;
+              return <PromiseDetail promise={promise} topDeputies={topDeputiesByPromiseId.get(promise.id) || []} />;
             }}
           </Route>
           <Route>

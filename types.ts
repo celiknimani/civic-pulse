@@ -34,12 +34,25 @@ export interface DeputyActivityMetrics {
   sessionCount: number;
 }
 
-export interface DeputySource {
+export interface DeputyActivityEntry {
   id: string;
-  title: string;
-  url: string;
-  date?: string;
-  note?: string;
+  date: string;
+  sessionId: string;
+  source: string;
+  sourceUrl?: string;
+  reference: string;
+  excerpt: string;
+}
+
+export interface PromiseDeputySignal {
+  deputyId: string;
+  deputyName: string;
+  party: string;
+  speechCount: number;
+  wordCount: number;
+  sessionCount: number;
+  topicMentions: number;
+  topicScore: number;
 }
 
 export interface DeputyProfile {
@@ -49,7 +62,7 @@ export interface DeputyProfile {
   profileUrl?: string;
   activity: DeputyActivityMetrics;
   topics: DeputyTopicMetric[];
-  sources?: DeputySource[];
+  activityHistory: DeputyActivityEntry[];
 }
 
 export interface DeputyDataset {

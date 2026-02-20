@@ -23,6 +23,7 @@ View your app in AI Studio: https://ai.studio/apps/drive/1kL97vQ5_b6k-T_JXhV8PO2
 UI tani ka:
 - `/deputetet` per listen e 120 deputeteve dhe Top 10 me aktivet
 - `/deputet/:id` per profil individual me grafik spiderweb te temave
+- kategorite e spiderweb-it jane te njejta me kategorite kryesore te premtimeve ne platforme
 
 Per ta ushqyer me data reale nga transkriptet:
 

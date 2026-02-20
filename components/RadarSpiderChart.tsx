@@ -11,8 +11,8 @@ interface Point {
   y: number;
 }
 
-const RadarSpiderChart: React.FC<RadarSpiderChartProps> = ({ topics, size = 420 }) => {
-  const preparedTopics = useMemo(() => topics.slice(0, 8), [topics]);
+const RadarSpiderChart: React.FC<RadarSpiderChartProps> = ({ topics, size = 500 }) => {
+  const preparedTopics = useMemo(() => topics, [topics]);
   const center = size / 2;
   const maxRadius = size * 0.31;
   const levels = [20, 40, 60, 80, 100];
@@ -116,4 +116,3 @@ const RadarSpiderChart: React.FC<RadarSpiderChartProps> = ({ topics, size = 420 
 };
 
 export default RadarSpiderChart;
-

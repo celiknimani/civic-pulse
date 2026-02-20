@@ -4,6 +4,7 @@ import { PartyPromise, PromiseStatus } from '../types';
 
 interface PromiseCardProps {
   promise: PartyPromise;
+  onClick?: () => void;
 }
 
 const statusBadgeClasses: Record<PromiseStatus, string> = {
@@ -27,7 +28,7 @@ const statusLabels: Record<PromiseStatus, string> = {
   Pending: 'Ne Pritje',
 };
 
-const PromiseCard: React.FC<PromiseCardProps> = ({ promise }) => {
+const PromiseCard: React.FC<PromiseCardProps> = ({ promise, onClick }) => {
   const lastUpdate = [...(promise.updates || [])]
     .sort((a, b) => b.date.localeCompare(a.date))
     .at(0);
@@ -38,7 +39,7 @@ const PromiseCard: React.FC<PromiseCardProps> = ({ promise }) => {
 
   return (
     <Link href={`/promise/${promise.id}`}>
-      <a className="group block h-full cursor-pointer">
+      <a className="group block h-full cursor-pointer" onClick={onClick}>
         <article className="relative h-full overflow-hidden rounded-[1.6rem] border border-[#d7ccba] bg-gradient-to-b from-[#fffcf4] to-[#f5efe3] p-6 shadow-[0_18px_38px_-28px_rgba(16,41,73,0.75)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_28px_55px_-30px_rgba(16,41,73,0.85)]">
           <div className="pointer-events-none absolute -top-14 -right-10 h-32 w-32 rounded-full bg-[#c59d57]/20 blur-2xl" />
 

@@ -3,26 +3,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-
-const TOPIC_TAXONOMY = [
-  { id: 'ekonomia', label: 'Ekonomia', keywords: ['ekonomi', 'biznes', 'investim', 'treg', 'buxhet', 'tatim'] },
-  { id: 'arsimi', label: 'Arsimi', keywords: ['arsim', 'shkoll', 'universitet', 'student', 'mesim', 'profesor'] },
-  { id: 'shendetesia', label: 'Shendetesia', keywords: ['shendet', 'spital', 'mjek', 'pacient', 'klinik', 'barn'] },
-  { id: 'drejtesia', label: 'Drejtesia', keywords: ['drejtesi', 'gjykat', 'prokurori', 'ligj', 'korrupsion', 'sundim'] },
-  { id: 'infrastruktura', label: 'Infrastruktura', keywords: ['rrug', 'infrastruktur', 'ndertim', 'transport', 'hekurudh', 'energji'] },
-  { id: 'siguria', label: 'Siguria', keywords: ['siguri', 'polici', 'forc', 'mbrojt', 'ushtri', 'kufi'] },
-  { id: 'integrimi-evropian', label: 'Integrimi Evropian', keywords: ['evrop', 'integrim', 'bashkimi', 'anetaresim', 'partneritet'] },
-  { id: 'mireqenia-sociale', label: 'Mireqenia Sociale', keywords: ['social', 'mireqenie', 'pension', 'ndihm', 'punesim', 'familj'] },
-];
-
-const OFFICIAL_SESSION_SOURCE_INDEX = {
-  '2026-02-12-seanca': {
-    id: '2026-02-12-seanca-plenare',
-    title: 'Seance Plenare - 12 Shkurt 2026',
-    url: 'https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf',
-    date: '2026-02-12',
-  },
-};
+import { DEPUTY_TOPIC_TAXONOMY } from '../categories.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -49,100 +30,11 @@ const normalize = (value) =>
     .replace(/\s+/g, ' ')
     .trim();
 
-const CHAIR_ROLE_PATTERN = /\b(KRYETARJA|KRYETARI|KRYESUESJA|KRYESUESI)\b\s*:?\s*/gu;
-const INLINE_NAME_WITH_COLON_PATTERN = /([A-ZÇË][\p{L}'’-]+(?:\s+[A-ZÇË][\p{L}'’-]+){1,3})\s*:/gu;
-
-const collectInlineSpeakerMarkers = (text, deputyNameIndex, unknownNameMarkers) => {
-  const markers = [];
-  let match = null;
-
-  INLINE_NAME_WITH_COLON_PATTERN.lastIndex = 0;
-  while ((match = INLINE_NAME_WITH_COLON_PATTERN.exec(text))) {
-    const rawName = String(match[1] || '').trim();
-    const normalizedName = normalize(rawName);
-    const canonicalName = deputyNameIndex.get(normalizedName);
-
-    if (canonicalName) {
-      markers.push({
-        start: match.index,
-        end: INLINE_NAME_WITH_COLON_PATTERN.lastIndex,
-        speaker: canonicalName,
-      });
-    } else if (normalizedName) {
-      unknownNameMarkers.set(rawName, (unknownNameMarkers.get(rawName) || 0) + 1);
-    }
-  }
-
-  CHAIR_ROLE_PATTERN.lastIndex = 0;
-  while ((match = CHAIR_ROLE_PATTERN.exec(text))) {
-    const role = String(match[1] || '').trim();
-    markers.push({
-      start: match.index,
-      end: CHAIR_ROLE_PATTERN.lastIndex,
-      speaker: role,
-    });
-  }
-
-  markers.sort((a, b) => {
-    if (a.start !== b.start) return a.start - b.start;
-    return b.end - a.end;
-  });
-
-  const compact = [];
-  markers.forEach((marker) => {
-    if (compact.length === 0) {
-      compact.push(marker);
-      return;
-    }
-
-    const previous = compact[compact.length - 1];
-    if (marker.start < previous.end) return;
-    compact.push(marker);
-  });
-
-  return compact;
-};
-
-const splitEntryBySpeakerMarkers = (entry, deputyNameIndex, unknownNameMarkers) => {
-  const text = String(entry.text || '');
-  const markers = collectInlineSpeakerMarkers(text, deputyNameIndex, unknownNameMarkers);
-
-  if (markers.length === 0) {
-    return [{ ...entry, text: text.replace(/\s+/g, ' ').trim() }];
-  }
-
-  const segments = [];
-  let cursor = 0;
-  let currentSpeaker = entry.speaker;
-
-  const pushSegment = (speaker, content) => {
-    const cleaned = String(content || '')
-      .replace(/\s+/g, ' ')
-      .trim();
-
-    if (!cleaned) return;
-    segments.push({
-      ...entry,
-      speaker,
-      text: cleaned,
-    });
-  };
-
-  markers.forEach((marker) => {
-    if (marker.start > cursor) {
-      pushSegment(currentSpeaker, text.slice(cursor, marker.start));
-    }
-
-    currentSpeaker = marker.speaker;
-    cursor = marker.end;
-  });
-
-  if (cursor < text.length) {
-    pushSegment(currentSpeaker, text.slice(cursor));
-  }
-
-  return segments.length > 0 ? segments : [{ ...entry, text: text.replace(/\s+/g, ' ').trim() }];
-};
+const TOPIC_TAXONOMY = DEPUTY_TOPIC_TAXONOMY.map((topic) => ({
+  id: topic.topicId,
+  label: topic.label,
+  keywords: topic.keywords.map((keyword) => normalize(keyword)).filter(Boolean),
+}));
 
 const safeSplitCsvLine = (line) => {
   const cells = [];
@@ -213,11 +105,9 @@ const loadDeputies = async () => {
   });
 };
 
-const loadTranscriptEntries = async (deputyNameIndex) => {
+const loadTranscriptEntries = async () => {
   const files = await fs.readdir(transcriptsDir);
   const entries = [];
-  let inlineSpeakerTransitions = 0;
-  const unknownNameMarkers = new Map();
 
   for (const fileName of files) {
     const absolutePath = path.join(transcriptsDir, fileName);
@@ -232,19 +122,15 @@ const loadTranscriptEntries = async (deputyNameIndex) => {
         if (!row || typeof row !== 'object') return;
         if (!row.speaker || !row.text) return;
 
-        const baseEntry = {
+        entries.push({
           speaker: String(row.speaker),
           text: String(row.text),
           sessionId: String(row.sessionId || path.parse(fileName).name),
           date: String(row.date || ''),
-          sourceTitle: String(row.sourceTitle || ''),
-          sourceUrl: String(row.sourceUrl || ''),
+          source: String(row.source || fileName),
+          sourceUrl: typeof row.sourceUrl === 'string' ? row.sourceUrl : '',
           row: `${fileName}:${index + 1}`,
-        };
-
-        const splitEntries = splitEntryBySpeakerMarkers(baseEntry, deputyNameIndex, unknownNameMarkers);
-        inlineSpeakerTransitions += Math.max(0, splitEntries.length - 1);
-        entries.push(...splitEntries);
+        });
       });
       continue;
     }
@@ -259,85 +145,156 @@ const loadTranscriptEntries = async (deputyNameIndex) => {
         const text = line.slice(divider + 1).trim();
         if (!speaker || !text) return;
 
-        const baseEntry = {
+        entries.push({
           speaker,
           text,
           sessionId: path.parse(fileName).name,
           date: '',
-          sourceTitle: '',
+          source: fileName,
           sourceUrl: '',
           row: `${fileName}:${index + 1}`,
-        };
-
-        const splitEntries = splitEntryBySpeakerMarkers(baseEntry, deputyNameIndex, unknownNameMarkers);
-        inlineSpeakerTransitions += Math.max(0, splitEntries.length - 1);
-        entries.push(...splitEntries);
+        });
       });
     }
   }
 
-  return {
-    entries,
-    inlineSpeakerTransitions,
-    unknownNameMarkers: [...unknownNameMarkers.entries()]
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 25),
-  };
+  return entries;
 };
 
-const countWord = (text, keyword) => {
-  const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const countWordInNormalizedText = (normalizedText, normalizedKeyword) => {
+  if (!normalizedKeyword) return 0;
+
+  const escaped = normalizedKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const pattern = new RegExp(`\\b${escaped}`, 'g');
-  const matches = normalize(text).match(pattern);
+  const matches = normalizedText.match(pattern);
   return matches ? matches.length : 0;
 };
 
-const classifyTopics = (text) =>
-  TOPIC_TAXONOMY.map((topic) => {
-    const mentions = topic.keywords.reduce((sum, keyword) => sum + countWord(text, keyword), 0);
+const classifyTopics = (text) => {
+  const normalizedText = normalize(text);
+
+  return TOPIC_TAXONOMY.map((topic) => {
+    const mentions = topic.keywords.reduce((sum, keyword) => sum + countWordInNormalizedText(normalizedText, keyword), 0);
     return {
       topicId: topic.id,
       label: topic.label,
       mentions,
     };
   });
+};
 
 const getWordCount = (text) => normalize(text).split(' ').filter(Boolean).length;
 
+const stripParliamentaryPreface = (text) => {
+  let value = String(text || '').replace(/\s+/g, ' ').trim();
+  if (!value) return value;
+
+  // Common formal opening that makes many entries look identical in previews.
+  value = value.replace(/^faleminderit[,!\.\s]*/i, '').trim();
+  value = value.replace(/^(e|i|te)\s+nderuar[^.!?]{0,140}[.!?]\s*/i, '').trim();
+
+  return value || String(text || '').replace(/\s+/g, ' ').trim();
+};
+
+const createExcerpt = (text, maxLength = 240) => {
+  const compact = stripParliamentaryPreface(text);
+  if (compact.length <= maxLength) return compact;
+  return `${compact.slice(0, maxLength).trim()}...`;
+};
+
+const sortHistoryNewestFirst = (a, b) => {
+  const aTimestamp = Date.parse(a.date || '');
+  const bTimestamp = Date.parse(b.date || '');
+  const safeA = Number.isNaN(aTimestamp) ? -1 : aTimestamp;
+  const safeB = Number.isNaN(bTimestamp) ? -1 : bTimestamp;
+
+  if (safeB !== safeA) return safeB - safeA;
+  return String(a.reference).localeCompare(String(b.reference));
+};
+
+const speakerMarkerRegex = /([\p{Lu}\p{M}][\p{Lu}\p{M}\s.'-]{2,}):\s*/gu;
+
+const splitEntryByEmbeddedSpeakerMarkers = (entry, isKnownDeputySpeaker) => {
+  const text = String(entry.text || '').replace(/\s+/g, ' ').trim();
+  if (!text) return [];
+
+  const markers = [];
+
+  for (const match of text.matchAll(speakerMarkerRegex)) {
+    const markerSpeaker = String(match[1] || '').replace(/\s+/g, ' ').trim();
+    const markerIndex = typeof match.index === 'number' ? match.index : -1;
+    if (!markerSpeaker || markerIndex < 0) continue;
+    if (!isKnownDeputySpeaker(markerSpeaker)) continue;
+
+    markers.push({
+      speaker: markerSpeaker,
+      index: markerIndex,
+      markerLength: match[0].length,
+    });
+  }
+
+  if (!markers.length) {
+    return [{ ...entry, text }];
+  }
+
+  const segments = [];
+  let currentSpeaker = String(entry.speaker || '').trim();
+  let cursor = 0;
+
+  markers.forEach((marker) => {
+    const before = text.slice(cursor, marker.index).trim();
+    if (before) {
+      segments.push({
+        speaker: currentSpeaker,
+        text: before,
+      });
+    }
+
+    currentSpeaker = marker.speaker;
+    cursor = marker.index + marker.markerLength;
+  });
+
+  const tail = text.slice(cursor).trim();
+  if (tail) {
+    segments.push({
+      speaker: currentSpeaker,
+      text: tail,
+    });
+  }
+
+  if (segments.length <= 1) {
+    return [{ ...entry, text }];
+  }
+
+  return segments.map((segment, index) => ({
+    ...entry,
+    speaker: segment.speaker,
+    text: segment.text,
+    row: `${entry.row}#${index + 1}`,
+  }));
+};
+
 const build = async () => {
   const deputies = await loadDeputies();
-  const deputyNameIndex = new Map(deputies.map((deputy) => [deputy.normalizedName, deputy.name]));
-  const transcriptLoad = await loadTranscriptEntries(deputyNameIndex);
-  const transcriptEntries = transcriptLoad.entries;
+  const transcriptEntriesRaw = await loadTranscriptEntries();
   const deputyByName = new Map(deputies.map((deputy) => [deputy.normalizedName, deputy]));
+  const isKnownDeputySpeaker = (speaker) => deputyByName.has(normalize(speaker));
+  const transcriptEntries = transcriptEntriesRaw.flatMap((entry) =>
+    splitEntryByEmbeddedSpeakerMarkers(entry, isKnownDeputySpeaker)
+  );
   const statsById = new Map();
-  const sourceBySession = new Map();
-
-  transcriptEntries.forEach((entry) => {
-    const sessionId = entry.sessionId || '';
-    if (!sessionId || sourceBySession.has(sessionId)) return;
-
-    const predefined = OFFICIAL_SESSION_SOURCE_INDEX[sessionId];
-
-    sourceBySession.set(sessionId, {
-      id: predefined?.id || normalize(sessionId).replace(/\s+/g, '-') || `source-${sourceBySession.size + 1}`,
-      title: entry.sourceTitle || predefined?.title || sessionId,
-      url: entry.sourceUrl || predefined?.url || '',
-      date: entry.date || predefined?.date || '',
-    });
-  });
 
   deputies.forEach((deputy) => {
     statsById.set(deputy.id, {
       speechCount: 0,
       wordCount: 0,
       sessions: new Set(),
-      sourceIds: new Set(),
       topics: TOPIC_TAXONOMY.map((topic) => ({
         topicId: topic.id,
         label: topic.label,
         mentions: 0,
       })),
+      history: [],
     });
   });
 
@@ -350,7 +307,15 @@ const build = async () => {
     stats.speechCount += 1;
     stats.wordCount += getWordCount(entry.text);
     stats.sessions.add(entry.sessionId || entry.row);
-    if (entry.sessionId) stats.sourceIds.add(entry.sessionId);
+    stats.history.push({
+      id: `${entry.sessionId || 'session'}:${entry.row}`,
+      date: entry.date || '',
+      sessionId: entry.sessionId || '',
+      source: entry.source || entry.row.split(':')[0] || 'transcript',
+      sourceUrl: entry.sourceUrl || undefined,
+      reference: entry.row,
+      excerpt: createExcerpt(entry.text),
+    });
 
     const topicMentions = classifyTopics(entry.text);
     topicMentions.forEach((topicMention, index) => {
@@ -369,27 +334,6 @@ const build = async () => {
         score: totalMentions > 0 ? Number(((topic.mentions / totalMentions) * 100).toFixed(2)) : 0,
       }));
 
-      const sources = [...stats.sourceIds]
-        .map((sourceId) => sourceBySession.get(sourceId))
-        .filter((source) => source && source.url)
-        .map((source) => ({
-          ...source,
-          note:
-            stats.speechCount > 0
-              ? 'Deputeti ka intervenime te regjistruara ne kete transkript.'
-              : 'Deputeti eshte identifikuar/permendur ne kete transkript.',
-        }));
-
-      // If a deputy has no direct speech entries yet, still attach the official session source
-      // to make provenance explicit for the seeded roster extracted from this transcript.
-      if (sources.length === 0 && sourceBySession.has('2026-02-12-seanca')) {
-        const fallback = sourceBySession.get('2026-02-12-seanca');
-        sources.push({
-          ...fallback,
-          note: 'Deputeti eshte identifikuar/permendur ne kete transkript.',
-        });
-      }
-
       return {
         id: deputy.id,
         name: deputy.name,
@@ -401,7 +345,7 @@ const build = async () => {
           sessionCount: stats.sessions.size,
         },
         topics,
-        sources,
+        activityHistory: [...stats.history].sort(sortHistoryNewestFirst),
       };
     }),
   };
@@ -413,15 +357,9 @@ const build = async () => {
   console.log(`Done. Saved ${dataset.deputies.length} deputies to ${outputPath}`);
   console.log(`Deputies with at least one intervention: ${activeDeputies}`);
   console.log(`Processed transcript entries: ${transcriptEntries.length}`);
-  console.log(`Inline speaker transitions resolved: ${transcriptLoad.inlineSpeakerTransitions}`);
-  if (transcriptLoad.unknownNameMarkers.length > 0) {
-    const preview = transcriptLoad.unknownNameMarkers.map(([name, count]) => `${name} (${count})`).join(', ');
-    console.log(`Unmatched inline speaker markers: ${preview}`);
-  }
 };
 
 build().catch((error) => {
   console.error(error.message || error);
   process.exit(1);
 });
-
