@@ -1321,11 +1321,13 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Politika e Jashtme',
     title: 'Marrëveshjet SOFA',
     description: 'Nënshkrimi dhe ratifikimi i marrëveshjeve për Statusin e Forcave (SOFA) me shtete partnere strategjike.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2021-03-22',
     dueDate: '2025-12-31',
-    updates: []
+    updates: [
+      { date: '2026-02-20', status: 'In Progress', description: 'Në adresimin e Kryeministrit në mbledhjen e 2-të të Qeverisë u paraqit si procedim një nismë e kornizës së bashkëpunimit në mbrojtje me SHBA-në, si sinjal paraprak drejt marrëveshjeve të tipit SOFA.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/adresimi-i-kryeministrit-kurti-ne-mbledhjen-e-2-te-te-qeverise/' }
+    ]
   },
   {
     id: '115',
