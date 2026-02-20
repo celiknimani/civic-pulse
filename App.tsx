@@ -70,10 +70,9 @@ const buildTopDeputiesByPromiseId = (rankedDeputies: DeputyProfileModel[]): Map<
 
 interface HomeProps {
   lastUpdatedLabel: string;
-  topDeputiesByPromiseId: Map<string, PromiseDeputySignal[]>;
 }
 
-const Home: React.FC<HomeProps> = ({ lastUpdatedLabel, topDeputiesByPromiseId }) => {
+const Home: React.FC<HomeProps> = ({ lastUpdatedLabel }) => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState<PromiseStatus | 'All'>('All');
@@ -363,7 +362,7 @@ const App: React.FC = () => {
       <div className="relative z-10 font-body-luxury">
         <Switch>
           <Route path="/">
-            <Home lastUpdatedLabel={lastUpdatedLabel} topDeputiesByPromiseId={topDeputiesByPromiseId} />
+            <Home lastUpdatedLabel={lastUpdatedLabel} />
           </Route>
           <Route path="/deputetet">
             <DeputiesDirectory dataset={deputyDataset} />

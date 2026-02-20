@@ -27,7 +27,9 @@ const DeputiesDirectory: React.FC<DeputiesDirectoryProps> = ({ dataset }) => {
   );
 
   const parties = useMemo(() => {
-    const values = Array.from(new Set(rankedDeputies.map((deputy) => deputy.party))).sort((a, b) => a.localeCompare(b));
+    const values = Array.from(new Set<string>(rankedDeputies.map((deputy) => deputy.party))).sort((a, b) =>
+      a.localeCompare(b)
+    );
     return ['Të gjitha', ...values];
   }, [rankedDeputies]);
 
