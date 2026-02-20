@@ -1,6 +1,6 @@
 {
-  "name": "Kosovo Election Pulse 2025 - zotimi.com",
-  "description": "An AI-powered platform to compare political party programs for the Kosovo national elections, featuring interactive chat analysis and real-time scoring comparisons.",
+  "name": "zotimi.com - Monitorimi i progresit te zotimeve per 2026 - 2030",
+  "description": "Platforma zotimi monitoron premtimet dhe aktivitetin e kryeministrit, ministrave dhe deputeteve me logjike te dokumentuar, burime zyrtare dhe metrika te riprodhueshme.",
   "requestFramePermissions": [
     "geolocation"
   ]
