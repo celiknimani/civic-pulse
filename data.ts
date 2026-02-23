@@ -286,11 +286,19 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Inovacioni',
     title: 'Fondi i Inovacionit dhe Rinia',
     description: 'Krijimi i Fondit të Inovacionit me vlerë 10 milionë euro për të mbështetur idetë inovative të të rinjve.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 15,
     startDate: '2022-06-01',
     dueDate: '2023-06-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-02-23',
+        status: 'In Progress',
+        description: 'Ministrja e Tregtisë dhe Industrisë njoftoi nënshkrimin e kërkesës për përshpejtimin e miratimit të Projektligjit për Inovacion dhe Ndërmarrësi, duke e lidhur atë me krijimin e Fondit për Inovacion.',
+        source: 'Ministrja e Tregtisë dhe Industrisë - Mimoza Kusari-Lila (Facebook)',
+        sourceUrl: 'https://www.facebook.com/mimozakusari/posts/pfbid027Sg4ZvzriSrwT3cKH8pQ1ww3ZmNwhb7UFgqHxDisSJ9Tchk6kzyHmGE5zCNUPwxsl'
+      }
+    ]
   },
   {
     id: '23',
@@ -1053,11 +1061,21 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Sporti',
     title: '250 Milion Euro për Stadiume',
     description: 'Investim madhor prej 250 milionë euro për ndërtimin dhe renovimin e stadiumeve, përfshirë ndërtimin e Stadiumit Kombëtar.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 12,
     startDate: '2025-01-01',
     dueDate: '2029-01-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-02-23',
+        status: 'In Progress',
+        description:
+          'Sipas postimit të Kryetarit të Drenasit, në projekt-buxhetin e Ministrisë së Sportit është planifikuar projekti “Stadiumi Nacional i Futbollit” (4M€ në 2026, 5M€ në 2027, 6M€ në 2028), ndërsa është ngritur shqetësimi për paqartësi rreth lokacionit të zbatimit.',
+        source: 'Ramiz Lladrovci on Facebook',
+        sourceUrl:
+          'https://www.facebook.com/story.php?story_fbid=10237740082955337&id=1653723698&mibextid=wwXIfr&rdid=tPW0XVqlHificCcv#'
+      }
+    ]
   },
   {
     id: '89',
