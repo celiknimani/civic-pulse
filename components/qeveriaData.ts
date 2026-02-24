@@ -135,7 +135,7 @@ export const MINISTRIES: MinistryConfig[] = [
     portfolio: 'Ministre e Mjedisit dhe Planifikimit Hapësinor',
     minister: 'Fitore Pacolli',
     focusCategories: ['Energjia', 'Infrastruktura'],
-    promiseIds: ['11', '69', '70', '71', '72', '73', '74', '75', '119'],
+    promiseIds: ['11', '69', '70', '71', '72', '73', '74', '75'],
     accent: '#3f7358',
   },
   {
@@ -167,7 +167,7 @@ export const MINISTRIES: MinistryConfig[] = [
     portfolio: 'Ministre e Ekonomisë',
     minister: 'Artane Rizvanolli',
     focusCategories: ['Ekonomia'],
-    promiseIds: ['4', '7', '12', '13', '37', '38', '85'],
+    promiseIds: ['4', '7', '12', '13', '37', '38', '85', '119'],
     accent: '#1f6463',
   },
   {
