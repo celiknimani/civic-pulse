@@ -37,13 +37,25 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Mirëqenia',
     title: 'Shtesat për Fëmijë',
     description: 'Implementimi i skemës për shtesat e fëmijëve dhe lehonave për të gjitha familjet në Kosovë.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 50,
     startDate: '2021-03-22',
     dueDate: '2021-12-31',
     updates: [
-      { date: '2021-07-01', status: 'In Progress', description: 'Fillimi i aplikimit për fëmijët e lindur në vitin 2021.', source: 'MFPT', sourceUrl: '#' },
-      { date: '2021-11-01', status: 'Completed', description: 'Zgjerimi i skemës për fëmijët e moshave të tjera.', source: 'Kallxo.com', sourceUrl: '#' }
+      {
+        date: '2025-11-24',
+        status: 'In Progress',
+        description: 'Kryeministri njoftoi se nga 25.11.2025 fillon ekzekutimi i shtesave për fëmijë me rritje prej 50%, me përfitim për rreth 400 mijë fëmijë.',
+        source: 'Kallxo.com',
+        sourceUrl: 'https://kallxo.com/lajm/kurti-nga-neser-fillon-ekzekutimi-i-shtesave-per-femijet-me-rritje-prej-50-per-qind/'
+      },
+      {
+        date: '2026-01-20',
+        status: 'In Progress',
+        description: 'Analiza verifikuese sqaroi se niveli 90 euro nuk vlen për secilin fëmijë; premtimi trajtohet si dyfishim i shtesave (30→60 dhe 45→90), që sinjalizon zbatim të pjesshëm.',
+        source: 'hibrid.info',
+        sourceUrl: 'https://hibrid.info/shtesat-prej-90-eurosh-ne-muaj-nuk-vlejne-per-secilin-femije/'
+      }
     ]
   },
   {
@@ -60,7 +72,7 @@ export const LVV_PROMISES: PartyPromise[] = [
         { date: '2024-01-15', status: 'Delayed', description: 'Mungesa e kornizës ligjore të nevojshme.' }
     ]
   },
-    {
+  {
     id: '5',
     category: 'Arsimi',
     title: 'Digjitalizimi i Shkollave',
@@ -69,9 +81,7 @@ export const LVV_PROMISES: PartyPromise[] = [
     progress: 0,
     startDate: '2021-09-01',
     dueDate: '2025-06-01',
-    updates: [
-        { date: '2022-09-01', status: 'In Progress', description: 'Pilot projekti në 50 shkolla.' },
-    ]
+    updates: []
   },
   {
     id: '6',
@@ -448,11 +458,19 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Ekonomia',
     title: 'Paga Minimale 500 Euro',
     description: 'Rritja e pagës minimale në 500 euro për të siguruar një standard më të lartë jetese për punëtorët.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 50,
     startDate: '2025-06-01',
     dueDate: '2026-01-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-02-06',
+        status: 'In Progress',
+        description: 'Inspektorati i Punës raportoi mbikëqyrje aktive të zbatimit të vendimit për pagën minimale; nga janari 2026 niveli bruto është 425 euro, ndërsa faza e dytë drejt 500 euro mbetet për t’u zbatuar.',
+        source: 'Kallxo.com',
+        sourceUrl: 'https://kallxo.com/gjate/zbatimi-i-vendimit-per-rritjen-e-pages-minimale-nen-llupen-e-inspektoratit-te-punes/'
+      }
+    ]
   },
   {
     id: '37',
