@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">zotimi.com - Monitorimi i progresit te zotimeve per 2026 - 2030</title>
+  <title id="title">Zotimi.com - Transparencë në Qeverisje dhe Llogaridhënie</title>
   <desc id="desc">Platforma zotimi monitoron premtimet dhe aktivitetin e kryeministrit, ministrave dhe deputeteve me logjike te dokumentuar, burime zyrtare dhe metrika te riprodhueshme.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -24,8 +24,8 @@
     <rect x="84" y="84" width="170" height="56" rx="28" fill="#102949"/>
     <text x="169" y="120" text-anchor="middle" fill="#f4ddab" font-size="24" font-weight="700">ZOTIMI</text>
 
-    <text x="84" y="230" fill="#102949" font-size="62" font-weight="800">Monitorimi i progresit</text>
-    <text x="84" y="306" fill="#b0822e" font-size="62" font-weight="800">te zotimeve 2026 - 2030</text>
+    <text x="84" y="230" fill="#102949" font-size="62" font-weight="800">Transparencë në Qeverisje</text>
+    <text x="84" y="306" fill="#b0822e" font-size="62" font-weight="800">dhe Llogaridhënie</text>
 
     <text x="84" y="390" fill="#43566f" font-size="28" font-weight="600">
       Kryeministri • Ministrat • Deputetet
@@ -34,6 +34,6 @@
       Burime zyrtare dhe metrika te riprodhueshme
     </text>
 
-    <text x="84" y="560" fill="#6f5c36" font-size="24" font-weight="700">zotimi.com</text>
+    <text x="84" y="560" fill="#6f5c36" font-size="24" font-weight="700">Zotimi.com</text>
   </g>
 </svg>

@@ -160,11 +160,10 @@ const Home: React.FC<HomeProps> = ({ lastUpdatedLabel }) => {
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`group rounded-full border px-4 py-2.5 text-[10px] font-extrabold uppercase tracking-[0.16em] transition-all duration-300 ${
-                  selectedCategory === cat.id
+                className={`group rounded-full border px-4 py-2.5 text-[10px] font-extrabold uppercase tracking-[0.16em] transition-all duration-300 ${selectedCategory === cat.id
                     ? 'border-[#0e2744] bg-[#102949] text-[#f4ddab] shadow-[0_12px_25px_-16px_rgba(16,41,73,1)]'
                     : 'border-[#d8ccb5] bg-[#f9f6ef] text-[#5c6778] hover:border-[#bfa77c] hover:text-[#8f6e33]'
-                }`}
+                  }`}
               >
                 <i className={`fa-solid ${cat.icon} mr-2 transition-transform duration-300 group-hover:scale-110`} />
                 {cat.label}
@@ -320,7 +319,7 @@ const App: React.FC = () => {
             <span>
               <span className="block text-xl font-extrabold tracking-tight text-[#102949]">ZOTIMI</span>
               <span className="block text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#7d6b47] leading-none">
-                Monitorimi i progresit 2026-2030
+                Transparencë në Qeverisje dhe Llogaridhënie
               </span>
             </span>
           </button>

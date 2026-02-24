@@ -10,7 +10,7 @@ const projectRoot = path.resolve(__dirname, '..');
 const distDir = path.resolve(projectRoot, 'dist');
 
 const SITE_URL = 'https://zotimi.com';
-const DEFAULT_TITLE = 'zotimi.com - Monitorimi i progresit te zotimeve per 2026 - 2030';
+const DEFAULT_TITLE = 'Zotimi.com - Transparencë në Qeverisje dhe Llogaridhënie';
 const DEFAULT_DESCRIPTION =
   'Platforma zotimi monitoron premtimet dhe aktivitetin e kryeministrit, ministrave dhe deputeteve me logjike te dokumentuar, burime zyrtare dhe metrika te riprodhueshme.';
 
@@ -192,17 +192,17 @@ const main = async () => {
     },
     {
       path: '/deputetet',
-      title: 'zotimi.com - Deputetet dhe aktiviteti parlamentar 2026 - 2030',
+      title: 'Zotimi.com - Deputetet dhe aktiviteti parlamentar',
       description: 'Lista e deputeteve me metrika te aktivitetit parlamentar, temat e diskutuara dhe historikun e nderhyrjeve me burime zyrtare.',
     },
     {
       path: '/qeveria',
-      title: 'zotimi.com - Qeveria dhe performanca e ministrive',
+      title: 'Zotimi.com - Qeveria dhe performanca e ministrive',
       description: 'Organogrami i qeverise dhe rezultati i ministrive sipas kartave te zotimeve te lidhura me secilin portofol.',
     },
     {
       path: '/methodology',
-      title: 'zotimi.com - Metodologjia e monitorimit',
+      title: 'Zotimi.com - Metodologjia e monitorimit',
       description: 'Metodologjia e platformes zotimi: burimet, logjika e vleresimit dhe metrikat e riprodhueshme per monitorimin e zotimeve.',
     },
   ];
@@ -210,7 +210,7 @@ const main = async () => {
   promises.forEach((promise) => {
     routes.push({
       path: `/promise/${promise.id}`,
-      title: `zotimi.com - Zotimi #${promise.id}: ${promise.title}`,
+      title: `Zotimi.com - Zotimi #${promise.id}: ${promise.title}`,
       description:
         promise.description && promise.description.length > 155
           ? `${promise.description.slice(0, 152).trim()}...`
@@ -221,7 +221,7 @@ const main = async () => {
   ministries.forEach((ministry) => {
     routes.push({
       path: `/qeveria/${ministry.id}`,
-      title: `zotimi.com - ${ministry.portfolio}: ${ministry.minister}`,
+      title: `Zotimi.com - ${ministry.portfolio}: ${ministry.minister}`,
       description: `Profili i ${ministry.portfolio.toLowerCase()} (${ministry.minister}) me kartat e zotimeve te lidhura, progresin dhe perditesimet e fundit.`,
     });
   });
@@ -229,7 +229,7 @@ const main = async () => {
   deputies.forEach((deputy) => {
     routes.push({
       path: `/deputet/${deputy.id}`,
-      title: `zotimi.com - Deputeti: ${deputy.name}`,
+      title: `Zotimi.com - Deputeti: ${deputy.name}`,
       description: `Profili i deputetit ${deputy.name}, temat e diskutuara dhe historiku i aktivitetit parlamentar me burime zyrtare.`,
     });
   });
