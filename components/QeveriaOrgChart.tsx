@@ -11,6 +11,16 @@ const formatNumber = (value: number): string => new Intl.NumberFormat('sq-AL').f
 
 const QeveriaOrgChart: React.FC<QeveriaOrgChartProps> = ({ promises }) => {
   const ministryScores = useMemo(() => buildAllMinistryAnalytics(promises), [promises]);
+  const rankedMinistryScores = useMemo(
+    () =>
+      [...ministryScores].sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        if (b.avgProgress !== a.avgProgress) return b.avgProgress - a.avgProgress;
+        if (b.activeCount !== a.activeCount) return b.activeCount - a.activeCount;
+        return a.config.minister.localeCompare(b.config.minister, 'sq');
+      }),
+    [ministryScores]
+  );
   const primeMinisterScore = useMemo(() => buildPrimeMinisterScore(promises), [promises]);
   const activePromisesTotal = useMemo(
     () => promises.filter((promise) => promise.status === 'In Progress' || promise.progress > 0).length,
@@ -18,9 +28,14 @@ const QeveriaOrgChart: React.FC<QeveriaOrgChartProps> = ({ promises }) => {
   );
 
   const topMinistry = useMemo(() => {
-    if (!ministryScores.length) return null;
-    return [...ministryScores].sort((a, b) => b.score - a.score)[0];
-  }, [ministryScores]);
+    if (!rankedMinistryScores.length) return null;
+    return rankedMinistryScores[0];
+  }, [rankedMinistryScores]);
+
+  const lowestMinistry = useMemo(() => {
+    if (!rankedMinistryScores.length) return null;
+    return rankedMinistryScores[rankedMinistryScores.length - 1];
+  }, [rankedMinistryScores]);
 
   return (
     <main className="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 md:py-16">
@@ -75,13 +90,14 @@ const QeveriaOrgChart: React.FC<QeveriaOrgChartProps> = ({ promises }) => {
         <div className="mx-auto hidden h-8 w-px bg-[#ccb98f] md:block" />
 
         <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {ministryScores.map((entry) => (
+          {rankedMinistryScores.map((entry, index) => (
             <Link
               key={entry.config.id}
               href={`/qeveria/${entry.config.id}`}
               className="group relative block rounded-2xl border border-[#d9ccb5] bg-[#fbf7ef] p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_36px_-26px_rgba(17,44,76,0.95)]"
             >
               <div className="absolute left-0 top-0 h-1.5 w-full rounded-t-2xl" style={{ background: entry.config.accent }} />
+              <p className="mt-2 text-[10px] font-black uppercase tracking-[0.15em] text-[#8d7040]">Renditja #{index + 1}</p>
               <p className="mt-2 text-[10px] font-black uppercase tracking-[0.14em] text-[#8d7040]">{entry.config.portfolio}</p>
               <h3 className="mt-1 text-xl font-black leading-tight text-[#1a3556]">{entry.config.minister}</h3>
 
@@ -124,6 +140,11 @@ const QeveriaOrgChart: React.FC<QeveriaOrgChartProps> = ({ promises }) => {
           <p className="mt-2 text-lg font-black text-[#163654]">
             Ministria me rezultatin më të lartë aktual: {topMinistry.config.portfolio} ({topMinistry.config.minister}) me score {topMinistry.score}/100.
           </p>
+          {lowestMinistry && (
+            <p className="mt-2 text-base font-bold text-[#3e4f62]">
+              Ministria me rezultatin më të ulët aktual: {lowestMinistry.config.portfolio} ({lowestMinistry.config.minister}) me score {lowestMinistry.score}/100.
+            </p>
+          )}
         </section>
       )}
     </main>
