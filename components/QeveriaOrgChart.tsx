@@ -98,7 +98,7 @@ const QeveriaOrgChart: React.FC<QeveriaOrgChartProps> = ({ promises }) => {
             <i className="fa-solid fa-trophy mr-2 text-[#a57a2f]" />
             Më performuesit
           </p>
-          <h3 className="mt-2 text-xl font-black text-[#193656]">Top 3 ministrat sipas score-it</h3>
+          <h3 className="mt-2 text-xl font-black text-[#193656]">Top 3 Ministrat sipas ritmit</h3>
           <div className="mt-4 space-y-3">
             {topPerformers.map((entry, index) => (
               <Link
