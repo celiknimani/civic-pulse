@@ -63,7 +63,7 @@ export const MINISTRIES: MinistryConfig[] = [
     portfolio: 'Ministër për Punë, Familje dhe vlerat e luftës çlirimtare',
     minister: 'Andin Hoti',
     focusCategories: ['Mirëqenia', 'Ekonomia'],
-    promiseIds: ['3', '32', '33', '34', '35', '36', '40'],
+    promiseIds: ['3', '32', '33', '34', '35', '40'],
     accent: '#5d4b8a',
   },
   {
@@ -166,8 +166,8 @@ export const MINISTRIES: MinistryConfig[] = [
     id: 'economy',
     portfolio: 'Ministre e Ekonomisë',
     minister: 'Artane Rizvanolli',
-    focusCategories: ['Ekonomia'],
-    promiseIds: ['4', '7', '12', '13', '37', '38', '85', '119'],
+    focusCategories: ['Ekonomia', 'Energjia'],
+    promiseIds: ['4', '7', '12', '13', '36', '37', '38', '85', '119'],
     accent: '#1f6463',
   },
   {
