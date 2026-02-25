@@ -8,6 +8,12 @@ interface QeveriaOrgChartProps {
 }
 
 const formatNumber = (value: number): string => new Intl.NumberFormat('sq-AL').format(value);
+const getPerformanceLabel = (score: number): string => {
+  if (score >= 70) return 'Performancë e lartë';
+  if (score >= 45) return 'Performancë solide';
+  if (score >= 25) return 'Në ndjekje';
+  return 'Kërkon përmirësim';
+};
 
 const QeveriaOrgChart: React.FC<QeveriaOrgChartProps> = ({ promises }) => {
   const ministryScores = useMemo(() => buildAllMinistryAnalytics(promises), [promises]);
@@ -36,6 +42,9 @@ const QeveriaOrgChart: React.FC<QeveriaOrgChartProps> = ({ promises }) => {
     if (!rankedMinistryScores.length) return null;
     return rankedMinistryScores[rankedMinistryScores.length - 1];
   }, [rankedMinistryScores]);
+
+  const topPerformers = useMemo(() => rankedMinistryScores.slice(0, 3), [rankedMinistryScores]);
+  const lowestPerformers = useMemo(() => rankedMinistryScores.slice(-3).reverse(), [rankedMinistryScores]);
 
   return (
     <main className="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 md:py-16">
@@ -75,6 +84,78 @@ const QeveriaOrgChart: React.FC<QeveriaOrgChartProps> = ({ promises }) => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="mt-6 grid gap-5 lg:grid-cols-2">
+        <div className="lg:col-span-2 rounded-2xl border border-[#d9ccb5] bg-[#faf4e8] px-5 py-4">
+          <p className="text-[10px] font-black uppercase tracking-[0.16em] text-[#8a7550]">Analizë Krahasuese</p>
+          <h2 className="mt-1 text-2xl font-black text-[#173453]">Renditja e Performancës së Ministrive</h2>
+        </div>
+
+        <article className="relative overflow-hidden rounded-3xl border border-[#cdbb96] bg-[#fbf5e8] p-5">
+          <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#1f6f54]/10 blur-3xl" />
+          <p className="text-[10px] font-black uppercase tracking-[0.16em] text-[#7f6a3d]">
+            <i className="fa-solid fa-trophy mr-2 text-[#a57a2f]" />
+            Më performuesit
+          </p>
+          <h3 className="mt-2 text-xl font-black text-[#193656]">Top 3 ministrat sipas score-it</h3>
+          <div className="mt-4 space-y-3">
+            {topPerformers.map((entry, index) => (
+              <Link
+                key={`top-${entry.config.id}`}
+                href={`/qeveria/${entry.config.id}`}
+                className="block rounded-2xl border border-[#dacdb6] bg-[#fffaf1] p-3 transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_30px_-26px_rgba(15,41,72,1)]"
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-[10px] font-black uppercase tracking-[0.14em] text-[#8a7348]">#{index + 1} {entry.config.portfolio}</p>
+                    <p className="truncate text-sm font-black text-[#153351]">{entry.config.minister}</p>
+                  </div>
+                  <p className={`text-2xl font-black ${scoreTone(entry.score)}`}>{entry.score}</p>
+                </div>
+                <div className="mt-2 h-2 overflow-hidden rounded-full bg-[#e7ddcb]">
+                  <div
+                    className="h-full rounded-full"
+                    style={{ width: `${Math.max(4, entry.score)}%`, background: `linear-gradient(90deg, ${entry.config.accent}, #2d8a63)` }}
+                  />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </article>
+
+        <article className="relative overflow-hidden rounded-3xl border border-[#cfbea2] bg-[#faf2e6] p-5">
+          <div className="pointer-events-none absolute -left-10 -bottom-10 h-40 w-40 rounded-full bg-[#b9853a]/12 blur-3xl" />
+          <p className="text-[10px] font-black uppercase tracking-[0.16em] text-[#7f6a3d]">
+            <i className="fa-solid fa-triangle-exclamation mr-2 text-[#9c6f2b]" />
+            Nën performancë
+          </p>
+          <h3 className="mt-2 text-xl font-black text-[#193656]">3 ministritë që kërkojnë ritëm më të lartë</h3>
+          <div className="mt-4 space-y-3">
+            {lowestPerformers.map((entry) => (
+              <Link
+                key={`low-${entry.config.id}`}
+                href={`/qeveria/${entry.config.id}`}
+                className="block rounded-2xl border border-[#dacdb6] bg-[#fffaf1] p-3 transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_30px_-26px_rgba(15,41,72,1)]"
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-[10px] font-black uppercase tracking-[0.14em] text-[#8a7348]">{entry.config.portfolio}</p>
+                    <p className="truncate text-sm font-black text-[#153351]">{entry.config.minister}</p>
+                  </div>
+                  <p className={`text-2xl font-black ${scoreTone(entry.score)}`}>{entry.score}</p>
+                </div>
+                <div className="mt-2 h-2 overflow-hidden rounded-full bg-[#eadfce]">
+                  <div
+                    className="h-full rounded-full"
+                    style={{ width: `${Math.max(4, entry.score)}%`, background: `linear-gradient(90deg, #b78136, ${entry.config.accent})` }}
+                  />
+                </div>
+                <p className="mt-2 text-[10px] font-bold uppercase tracking-[0.14em] text-[#7a6b54]">{getPerformanceLabel(entry.score)}</p>
+              </Link>
+            ))}
+          </div>
+        </article>
       </section>
 
       <section className="relative mt-10 rounded-[2rem] border border-[#d7c7a8] bg-gradient-to-b from-[#f8f2e5] to-[#f0e6d2] p-5 shadow-[0_28px_58px_-44px_rgba(16,36,64,0.95)] md:p-7">

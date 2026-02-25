@@ -248,6 +248,7 @@ const Home: React.FC<HomeProps> = ({ lastUpdatedLabel }) => {
 const App: React.FC = () => {
   const [location, setLocation] = useLocation();
   const [deputyDataset, setDeputyDataset] = useState<DeputyDataset>(SEED_DEPUTY_DATASET);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     let active = true;
@@ -292,6 +293,22 @@ const App: React.FC = () => {
   const isActiveRoute = (path: string): boolean =>
     path === '/' ? location === '/' : location === path || location.startsWith(`${path}/`);
 
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
+
+  const navigationItems: Array<{ label: string; path: string; isActive: boolean }> = [
+    { label: 'Kreu', path: '/', isActive: isActiveRoute('/') },
+    { label: 'Si funksionon', path: '/methodology', isActive: isActiveRoute('/methodology') },
+    { label: 'Deputetët', path: '/deputetet', isActive: isActiveRoute('/deputetet') || isActiveRoute('/deputet') },
+    { label: 'Qeveria', path: '/qeveria', isActive: isActiveRoute('/qeveria') },
+  ];
+
+  const navigateTo = (path: string): void => {
+    setLocation(path);
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#f4efe4] text-[#1f2f43] selection:bg-[#f2d7a1]">
       <style>
@@ -324,48 +341,64 @@ const App: React.FC = () => {
             </span>
           </button>
 
+          <button
+            type="button"
+            className="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-xl border border-[#d3c6ad] bg-[#fcf7ee] text-[#163458]"
+            aria-label={isMobileMenuOpen ? 'Mbyll menune' : 'Hap menune'}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-main-menu"
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          >
+            <i className={`fa-solid ${isMobileMenuOpen ? 'fa-xmark' : 'fa-bars'} text-base`} />
+          </button>
+
           <nav className="hidden md:flex items-center gap-6 text-[11px] font-extrabold uppercase tracking-[0.15em] text-[#5f6e84]">
-            <a
-              href="#"
-              className={`transition-colors hover:text-[#102949] ${isActiveRoute('/') ? 'text-[#102949]' : ''}`}
-              onClick={(e) => {
-                e.preventDefault();
-                setLocation('/');
-              }}
-            >
-              Kreu
-            </a>
-            <a
-              href="/methodology"
-              className={`transition-colors hover:text-[#102949] ${isActiveRoute('/methodology') ? 'text-[#102949]' : ''}`}
-              onClick={(e) => {
-                e.preventDefault();
-                setLocation('/methodology');
-              }}
-            >
-              Si funksionon
-            </a>
-            <a
-              href="/deputetet"
-              className={`transition-colors hover:text-[#102949] ${isActiveRoute('/deputetet') || isActiveRoute('/deputet') ? 'text-[#102949]' : ''}`}
-              onClick={(e) => {
-                e.preventDefault();
-                setLocation('/deputetet');
-              }}
-            >
-              Deputetët
-            </a>
-            <a
-              href="/qeveria"
-              className={`transition-colors hover:text-[#102949] ${isActiveRoute('/qeveria') ? 'text-[#102949]' : ''}`}
-              onClick={(e) => {
-                e.preventDefault();
-                setLocation('/qeveria');
-              }}
-            >
-              Qeveria
-            </a>
+            {navigationItems.map((item) => (
+              <a
+                key={item.path}
+                href={item.path}
+                className={`transition-colors hover:text-[#102949] ${item.isActive ? 'text-[#102949]' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateTo(item.path);
+                }}
+              >
+                {item.label}
+              </a>
+            ))}
             <span className="rounded-full border border-[#cdbb96] bg-[#f8ebcf] px-4 py-2 text-[#8b6730]">Legjislatura e Dhjetë</span>
+          </nav>
+        </div>
+
+        <div
+          id="mobile-main-menu"
+          className={`md:hidden overflow-hidden border-t border-[#dfd2bb] bg-[#f7f1e4] transition-all duration-300 ${
+            isMobileMenuOpen ? 'max-h-[360px] opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
+          <nav className="max-w-7xl mx-auto px-4 py-3 font-body-luxury">
+            <div className="flex flex-col gap-1">
+              {navigationItems.map((item) => (
+                <a
+                  key={`mobile-${item.path}`}
+                  href={item.path}
+                  className={`rounded-xl px-3 py-3 text-[11px] font-black uppercase tracking-[0.15em] transition-colors ${
+                    item.isActive
+                      ? 'bg-[#102949] text-[#f1d79f]'
+                      : 'text-[#2b3f59] hover:bg-[#ece1cc]'
+                  }`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigateTo(item.path);
+                  }}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+            <div className="mt-3 rounded-xl border border-[#ccb891] bg-[#f8ebcf] px-3 py-2.5 text-[10px] font-black uppercase tracking-[0.16em] text-[#7b5e2f]">
+              Legjislatura e Dhjetë
+            </div>
           </nav>
         </div>
       </header>
