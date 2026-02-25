@@ -762,22 +762,38 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Infrastruktura',
     title: 'Kanalizim Modern në Fshatra',
     description: 'Ndërtimi i impianteve biologjike dhe sistemeve moderne të kanalizimit në zonat rurale.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2025-06-01',
     dueDate: '2028-12-31',
-    updates: []
+    updates: [
+      {
+        date: '2026-02-25',
+        status: 'In Progress',
+        description: 'Ministrja Fitore Pacolli e renditi Projektligjin për Mbeturina ndër 6 projektligjet prioritare të mandatit, si bazë ligjore për menaxhim më të avancuar të mbetjeve.',
+        source: 'Fitore Pacolli (Facebook)',
+        sourceUrl: 'https://www.facebook.com/fitorepacollidalipi/posts/pfbid09fDV2vrrgEwdxw8GNNSiFfPiW2b7EgF7eWpoXR8tNULE1pgrWYpo1e2XvwPxffDul'
+      }
+    ]
   },
   {
     id: '69',
     category: 'Infrastruktura',
     title: 'Mbrojtja e Lumenjve',
     description: 'Investime në rregullimin e shtretërve të lumenjve dhe masa mbrojtëse kundër vërshimeve dhe ndotjes.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 15,
     startDate: '2024-01-01',
     dueDate: '2027-01-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-02-25',
+        status: 'In Progress',
+        description: 'Ministrja Fitore Pacolli paraqiti Projektligjin për Mbrojtjen e Mjedisit dhe Projektligjin për Inspektoratin e Mjedisit, Ujërave, Planifikimit Hapësinor dhe Ndërtimit si prioritete të mandatit, të lidhura drejtpërdrejt me forcimin e mbrojtjes së lumenjve dhe kontrollit të ndotjes.',
+        source: 'Fitore Pacolli (Facebook)',
+        sourceUrl: 'https://www.facebook.com/fitorepacollidalipi/posts/pfbid09fDV2vrrgEwdxw8GNNSiFfPiW2b7EgF7eWpoXR8tNULE1pgrWYpo1e2XvwPxffDul'
+      }
+    ]
   },
   {
     id: '76',
@@ -1038,6 +1054,13 @@ export const LVV_PROMISES: PartyPromise[] = [
         description: 'U lansua kerkesa per propozime per ankandin e pare te energjise se eres ne Kosove deri ne 100 MW.',
         source: 'Ministria e Ekonomise',
         sourceUrl: 'https://me.rks-gov.net/en/blog/request-for-proposals-launched-for-kosovos-first-wind-energy-auction-up-to-100-mw/'
+      },
+      {
+        date: '2026-02-25',
+        status: 'In Progress',
+        description: 'Projektligji për Mbrojtjen e Natyrës u paraqit nga Ministria e Mjedisit dhe Planifikimit Hapësinor si prioritet i mandatit, duke mbështetur kornizën për menaxhim të burimeve natyrore.',
+        source: 'Fitore Pacolli (Facebook)',
+        sourceUrl: 'https://www.facebook.com/fitorepacollidalipi/posts/pfbid09fDV2vrrgEwdxw8GNNSiFfPiW2b7EgF7eWpoXR8tNULE1pgrWYpo1e2XvwPxffDul'
       }
     ]
   },
