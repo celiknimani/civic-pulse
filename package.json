@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && node scripts/generate-prerender-pages.mjs",
+    "dev": "npm run build:transcript-sources && vite",
+    "build": "npm run build:transcript-sources && vite build && node scripts/generate-prerender-pages.mjs",
     "preview": "vite preview",
-    "build:deputies": "node scripts/build-deputy-analytics.mjs"
+    "build:deputies": "node scripts/build-deputy-analytics.mjs && npm run build:transcript-sources",
+    "build:transcript-sources": "node scripts/build-transcript-sources.mjs"
   },
   "dependencies": {
     "react": "^19.2.3",

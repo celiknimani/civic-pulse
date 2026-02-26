@@ -34,6 +34,19 @@ Vendos transkriptet te `datasets/transcripts/` ne nje nga formatet:
 Emri Mbiemri: Deklarata ne seance...
 ```
 
+### Workflow per burimet ne `/methodology`
+
+Sa here shtohet ose ndryshohet nje transkript parlamentar, duhet te rifreskohet lista e burimeve qe shfaqet te `/methodology`.
+Kjo behet automatikisht nga skripti:
+
+```bash
+npm run build:transcript-sources
+```
+
+Ky skript lexon te gjitha `datasets/transcripts/*.json` dhe gjeneron:
+
+`public/data/transcript-sources.json`
+
 ## 3) Gjenerimi
 
 Ekzekuto:
@@ -42,7 +55,11 @@ Ekzekuto:
 npm run build:deputies
 ```
 
-Output krijohet te `public/data/deputies-analytics.json` dhe perdoret automatikisht nga UI.
+Output krijohet te:
+- `public/data/deputies-analytics.json`
+- `public/data/transcript-sources.json`
+
+`npm run build:deputies` rifreskon te dyja automatikisht.
 
 Shenim: temat e deputeteve tani klasifikohen sipas te njejtave kategori si filtrat kryesore te platformes
 (`Drejtësia`, `Ekonomia`, `Siguria`, `Mirëqenia`, `Shëndetësia`, `Arsimi`, `Infrastruktura`, `Inovacioni`,

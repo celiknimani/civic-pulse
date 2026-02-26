@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 const COPY = {
   back: 'Kthehu mbrapa',
@@ -26,12 +26,27 @@ const COPY = {
     'ZOTIMI \u00ebsht\u00eb mjet i pavarur monitorimi. T\u00eb dh\u00ebnat rifreskohen sipas evidenc\u00ebs s\u00eb re zyrtare p\u00ebr sakt\u00ebsi dhe transparenc\u00eb maksimale.',
 };
 
-const SOURCES = [
+type MethodologySource = {
+  name: string;
+  url: string;
+  type: string;
+};
+
+const isMethodologySource = (value: unknown): value is MethodologySource => {
+  if (!value || typeof value !== 'object') return false;
+  const source = value as Partial<MethodologySource>;
+  return !!(source.name && source.url && source.type);
+};
+
+const FALLBACK_TRANSCRIPT_SOURCES: MethodologySource[] = [
   {
     name: 'Transkripti zyrtar i seances plenare (12 Shkurt 2026)',
     url: 'https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf',
     type: 'Kuvendi i Kosoves - PDF zyrtar',
   },
+];
+
+const POLICY_SOURCES: MethodologySource[] = [
   {
     name: 'L\u00ebvizja VET\u00cbVENDOSJE!',
     url: 'https://www.vetevendosje.org/zotimet-siguri-dhe-begati.pdf',
@@ -82,6 +97,42 @@ const METRICS = [
 ];
 
 const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
+  const [transcriptSources, setTranscriptSources] = useState<MethodologySource[]>(FALLBACK_TRANSCRIPT_SOURCES);
+
+  useEffect(() => {
+    let active = true;
+
+    const loadTranscriptSources = async () => {
+      try {
+        const response = await fetch('/data/transcript-sources.json', { cache: 'no-store' });
+        if (!response.ok) return;
+
+        const payload = await response.json();
+        const sources = Array.isArray(payload?.sources) ? payload.sources : [];
+        const normalizedSources = sources
+          .map((source) => ({
+            name: String(source.name || '').trim(),
+            url: String(source.url || '').trim(),
+            type: String(source.type || '').trim(),
+          }))
+          .filter(isMethodologySource);
+
+        if (!normalizedSources.length || !active) return;
+        setTranscriptSources(normalizedSources);
+      } catch {
+        // Keep fallback transcript source if generated manifest is missing.
+      }
+    };
+
+    loadTranscriptSources();
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const sources = useMemo(() => [...transcriptSources, ...POLICY_SOURCES], [transcriptSources]);
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       <button
@@ -143,8 +194,8 @@ const Methodology: React.FC<{ onBack: () => void }> = ({ onBack }) => {
       <section className="pt-16">
         <h2 className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#8a7345]">{COPY.sectionDocs}</h2>
         <ul className="mt-6 divide-y divide-[#e1d7c4] border-y border-[#e1d7c4]">
-          {SOURCES.map((source) => (
-            <li key={source.name} className="py-5">
+          {sources.map((source) => (
+            <li key={source.url} className="py-5">
               <a
                 href={source.url}
                 target="_blank"

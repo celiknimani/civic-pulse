@@ -30,4 +30,6 @@ Per ta ushqyer me data reale nga transkriptet:
 1. Pergatit `datasets/deputies.csv` dhe dosjen `datasets/transcripts/` sipas udhezimeve te `datasets/README.md`
 2. Gjenero dataset-in:
    `npm run build:deputies`
-3. Rifillo aplikacionin; UI ngarkon automatikisht `public/data/deputies-analytics.json`
+3. Rifillo aplikacionin; UI ngarkon automatikisht:
+   - `public/data/deputies-analytics.json`
+   - `public/data/transcript-sources.json` (burimet e transkripteve ne `/methodology`)

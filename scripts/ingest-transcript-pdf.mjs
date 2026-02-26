@@ -93,6 +93,31 @@ const runPdftotext = (pdfPath, textPath) =>
     });
   });
 
+const runNodeScript = (scriptPath, scriptArgs) =>
+  new Promise((resolve, reject) => {
+    const child = spawn(process.execPath, [scriptPath, ...scriptArgs], {
+      stdio: ['ignore', 'inherit', 'pipe'],
+      cwd: projectRoot,
+    });
+
+    let stderr = '';
+    child.stderr.on('data', (chunk) => {
+      stderr += String(chunk || '');
+    });
+
+    child.on('error', (error) => {
+      reject(error);
+    });
+
+    child.on('close', (code) => {
+      if (code === 0) {
+        resolve();
+        return;
+      }
+      reject(new Error(stderr.trim() || `Script failed with exit code ${code}`));
+    });
+  });
+
 const levenshteinDistance = (left, right) => {
   const a = String(left || '');
   const b = String(right || '');
@@ -252,7 +277,9 @@ node scripts/ingest-transcript-pdf.mjs \
   --source "Transkripti zyrtar i Kuvendit të Kosovës" \
   --source-url "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/....pdf" \
   [--deputies datasets/deputies.csv] \
-  [--switch-date "me 16. 2. 2026::2026-02-16"]`;
+  [--switch-date "me 16. 2. 2026::2026-02-16"]
+
+This command also refreshes public/data/transcript-sources.json for /methodology.`;
 
 const main = async () => {
   const pdfPathArg = readArg('--pdf');
@@ -355,6 +382,10 @@ const main = async () => {
 
   console.log(`Saved ${rows.length} interventions to ${outputPath}`);
   console.log(`Deputies recognized in transcript: ${deputiesSeen.size}`);
+
+  const transcriptSourceScript = path.resolve(projectRoot, 'scripts/build-transcript-sources.mjs');
+  await runNodeScript(transcriptSourceScript, []);
+  console.log('Methodology source list refreshed: public/data/transcript-sources.json');
 };
 
 main().catch((error) => {

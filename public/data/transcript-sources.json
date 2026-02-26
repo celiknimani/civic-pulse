@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-02-26T09:41:06.935Z",
+  "sourceCount": 3,
+  "sources": [
+    {
+      "name": "Transkripti zyrtar i Kuvendit të Kosovës (17 shkurt 2026)",
+      "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_17_ts_Seanca_kDekSwtEen.pdf",
+      "type": "Kuvendi i Kosoves - PDF zyrtar",
+      "dates": [
+        "2026-02-17"
+      ],
+      "sessionIds": [
+        "2026-02-17-seanca"
+      ],
+      "files": [
+        "2026-02-17-seanca.json"
+      ],
+      "latestDate": "2026-02-17"
+    },
+    {
+      "name": "Transkripti zyrtar i Kuvendit të Kosovës (13 shkurt 2026, 16 shkurt 2026)",
+      "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_13_ts_Seanca_KWvw3zRA6T.pdf",
+      "type": "Kuvendi i Kosoves - PDF zyrtar",
+      "dates": [
+        "2026-02-13",
+        "2026-02-16"
+      ],
+      "sessionIds": [
+        "2026-02-13-16-seanca"
+      ],
+      "files": [
+        "2026-02-13-16-seanca.json"
+      ],
+      "latestDate": "2026-02-16"
+    },
+    {
+      "name": "Transkripti zyrtar i Kuvendit të Kosovës (12 shkurt 2026)",
+      "url": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_02_12_ts_Seanca_kumVGhWGm5.pdf",
+      "type": "Kuvendi i Kosoves - PDF zyrtar",
+      "dates": [
+        "2026-02-12"
+      ],
+      "sessionIds": [
+        "2026-02-12-seanca"
+      ],
+      "files": [
+        "2026-02-12-seanca.json"
+      ],
+      "latestDate": "2026-02-12"
+    }
+  ]
+}
