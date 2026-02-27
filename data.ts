@@ -800,11 +800,19 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Infrastruktura',
     title: 'Hekurudha Gjakovë - Shkodër',
     description: 'Nisja e projektit të hekurudhës që lidh Gjakovën me Shkodrën dhe modernizimi i linjave Prizren-Ferizaj dhe Gjilan-Bujanoc.',
-    status: 'Pending',
+    status: 'In Progress',
     progress: 0,
     startDate: '2026-01-01',
     dueDate: '2030-01-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-02-25',
+        status: 'In Progress',
+        description: 'Në takimin Kurti-Hasani u përmend bashkëpunimi hekurudhor Prizren-Kukës-Shkodër/Durrës-Prishtinë në nivel politik, pa njoftim për nisje punimesh apo vendim zbatues konkret.',
+        source: 'Qeveria e Kosovës',
+        sourceUrl: 'https://kryeministri.rks-gov.net/news/kryeministri-kurti-mirepriti-ministrin-e-jashtem-te-shqiperise-igli-hasani/'
+      }
+    ]
   },
   {
     id: '77',
