@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'wouter';
 import { PartyPromise, PromiseStatus } from '../types';
 import { buildAllMinistryAnalytics, scoreTone } from './qeveriaData';
@@ -29,8 +29,29 @@ const formatDate = (value?: string): string => {
   return new Date(timestamp).toLocaleDateString('sq-AL');
 };
 
+const getInitials = (value: string): string =>
+  value
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase() ?? '')
+    .join('');
+
+const getDomainLabel = (value: string): string => {
+  try {
+    return new URL(value).hostname.replace(/^www\./, '');
+  } catch {
+    return value;
+  }
+};
+
 const QeveriaMinisterDetail: React.FC<QeveriaMinisterDetailProps> = ({ ministryId, promises }) => {
   const ministry = useMemo(() => buildAllMinistryAnalytics(promises).find((entry) => entry.config.id === ministryId), [promises, ministryId]);
+  const [photoFailed, setPhotoFailed] = useState(false);
+
+  useEffect(() => {
+    setPhotoFailed(false);
+  }, [ministryId]);
 
   if (!ministry) {
     return (
@@ -72,9 +93,62 @@ const QeveriaMinisterDetail: React.FC<QeveriaMinisterDetailProps> = ({ ministryI
           <h1 className="mt-2 text-4xl font-black text-[#122f50] sm:text-5xl md:text-6xl" style={{ fontFamily: '"Bodoni Moda", serif' }}>
             {ministry.config.minister}
           </h1>
+          <p className="mt-2 text-[10px] font-black uppercase tracking-[0.15em] text-[#6b7b92]">
+            Në detyrë nga {formatDate(ministry.config.tookOfficeDate)}
+          </p>
           <p className="mt-4 max-w-3xl text-base font-semibold leading-relaxed text-[#4a5f79] md:text-lg">
             Vlerësim i performancës sipas kartave të zotimeve të lidhura me këtë ministri.
           </p>
+
+          <div className="mt-6 grid gap-4 rounded-2xl border border-[#d6c9af] bg-[#faf6ed] p-4 md:grid-cols-[132px_1fr]">
+            <div className="h-32 w-32 overflow-hidden rounded-2xl border border-[#d6c9af] bg-[#f2e9d8] shadow-[0_12px_24px_-20px_rgba(18,42,72,0.95)]">
+              {ministry.config.profilePhotoUrl && !photoFailed ? (
+                <img
+                  src={ministry.config.profilePhotoUrl}
+                  alt={ministry.config.minister}
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                  onError={() => setPhotoFailed(true)}
+                />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#2f4d70] to-[#6c8aa8] text-3xl font-black text-white">
+                  {getInitials(ministry.config.minister)}
+                </div>
+              )}
+            </div>
+
+            <div className="flex flex-col justify-between gap-3">
+              <p className="text-sm font-semibold text-[#4a5f79]">
+                Fotoja dhe vegëzat janë lidhur me burime publike zyrtare për këtë ministër.
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {ministry.config.officialWebsiteUrl && (
+                  <a
+                    href={ministry.config.officialWebsiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#c9b896] bg-[#f7ecd6] px-4 py-2 text-[10px] font-black uppercase tracking-[0.15em] text-[#70552a] transition-colors hover:bg-[#f0dfbd]"
+                  >
+                    <i className="fa-solid fa-globe" />
+                    <span className="normal-case tracking-normal text-[#7d6843]">{getDomainLabel(ministry.config.officialWebsiteUrl)}</span>
+                  </a>
+                )}
+                {ministry.config.staffProfileUrl && (
+                  <a
+                    href={ministry.config.staffProfileUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#cfbea0] bg-[#f6efe1] px-4 py-2 text-[10px] font-black uppercase tracking-[0.15em] text-[#5f6f85] transition-colors hover:bg-[#eee4d2]"
+                  >
+                    <i className="fa-solid fa-user-tie" />
+                    <span className="normal-case tracking-normal">Profili Zyrtar</span>
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
 
           <div className="mt-6 grid gap-4 md:grid-cols-4">
             <div className="rounded-2xl border border-[#d6c9af] bg-[#faf6ed] p-4">

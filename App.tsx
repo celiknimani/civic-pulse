@@ -297,6 +297,10 @@ const App: React.FC = () => {
     setIsMobileMenuOpen(false);
   }, [location]);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [location]);
+
   const navigationItems: Array<{ label: string; path: string; isActive: boolean }> = [
     { label: 'Kreu', path: '/', isActive: isActiveRoute('/') },
     { label: 'Si funksionon', path: '/methodology', isActive: isActiveRoute('/methodology') },

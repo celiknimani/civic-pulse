@@ -4,6 +4,10 @@ export interface MinistryConfig {
   id: string;
   portfolio: string;
   minister: string;
+  tookOfficeDate: string;
+  profilePhotoUrl?: string;
+  officialWebsiteUrl?: string;
+  staffProfileUrl?: string;
   accent: string;
   focusCategories: PartyPromise['category'][];
   promiseIds: string[];
@@ -31,9 +35,118 @@ export interface MinistryAnalytics {
 export const PRIME_MINISTER = {
   role: 'Kryeministër',
   name: 'Albin Kurti',
+  tookOfficeDate: '2026-02-11',
 };
 
-export const MINISTRIES: MinistryConfig[] = [
+type MinistrySeedConfig = Omit<MinistryConfig, 'tookOfficeDate'> & {
+  tookOfficeDate?: string;
+};
+
+const DEFAULT_MINISTER_TOOK_OFFICE_DATE = '2026-02-11';
+
+type MinistryMeta = Pick<MinistryConfig, 'profilePhotoUrl' | 'officialWebsiteUrl' | 'staffProfileUrl'>;
+
+const MINISTRY_META: Record<string, MinistryMeta> = {
+  mfa: {
+    profilePhotoUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Glauk_Konjufca_portrait.jpg',
+    officialWebsiteUrl: 'https://mfa-ks.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/glauk-konjufca/',
+  },
+  justice: {
+    profilePhotoUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/The_Official_Portrait_of_Donika_G%C3%ABrvalla-Schwarz.jpg/960px-The_Official_Portrait_of_Donika_G%C3%ABrvalla-Schwarz.jpg',
+    officialWebsiteUrl: 'https://md.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/donika-gervalla-schwarz/',
+  },
+  finance: {
+    profilePhotoUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Hekuran_Murati_-_portret%2C_Kuvendi_i_Kosov%C3%ABs.jpg',
+    officialWebsiteUrl: 'https://mfpt.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/hekuran-murati/',
+  },
+  'work-family': {
+    profilePhotoUrl: 'https://telegrafi.com/media-library/2023-01-andin-hoti-jpg.jpg?id=58091711&width=1245&height=700&coordinates=38%2C0%2C38%2C0',
+    officialWebsiteUrl: 'https://kryeministri.rks-gov.net/staff/andin-hoti/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/andin-hoti/',
+  },
+  defense: {
+    profilePhotoUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/f2/Ejup-maqedonci.jpg',
+    officialWebsiteUrl: 'https://mod.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/ejup-maqedonci/',
+  },
+  interior: {
+    profilePhotoUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/bf/Xhelal_Sve%C3%A7la%2C_portret_zyrtar.jpg',
+    officialWebsiteUrl: 'https://mpb.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/xhelal-svecla/',
+  },
+  'digital-public-admin': {
+    profilePhotoUrl:
+      'https://media.licdn.com/dms/image/v2/D4D03AQGE80_5JUjXaA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1696201494559?e=2147483647&v=beta&t=A0OGAGA8c5jm2EOEh5QMAMnAF5snLz8RHZZ6VJdlN64',
+    officialWebsiteUrl: 'https://kryeministri.rks-gov.net/staff/lulezon-jagxhiu/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/lulezon-jagxhiu/',
+  },
+  health: {
+    profilePhotoUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/71/Arben_Vitia_-_portrait_2023.jpg',
+    officialWebsiteUrl: 'https://msh.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/arben-vitia/',
+  },
+  education: {
+    profilePhotoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Hc15_profili.jpg/1280px-Hc15_profili.jpg',
+    officialWebsiteUrl: 'https://masht.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/hajrulla-ceku/',
+  },
+  'culture-tourism': {
+    profilePhotoUrl: 'https://pace.coe.int/members/image/8446/2288',
+    officialWebsiteUrl: 'https://kryeministri.rks-gov.net/staff/saranda-bogujevci/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/saranda-bogujevci/',
+  },
+  'sport-youth': {
+    profilePhotoUrl: 'https://mpb.rks-gov.net/Uploads/EditorFiles/TextHtml/1106/Blerim%20Gashani.JPG',
+    officialWebsiteUrl: 'https://mkrs-ks.org/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/blerim-gashani/',
+  },
+  'local-government': {
+    profilePhotoUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Elbert_Krasniqi_-_portret_MAPL_%28cropped%29.jpg/960px-Elbert_Krasniqi_-_portret_MAPL_%28cropped%29.jpg',
+    officialWebsiteUrl: 'https://mapl.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/elbert-krasniqi/',
+  },
+  'environment-spatial': {
+    profilePhotoUrl: 'https://www.wfd.org/sites/default/files/styles/square_crop_440_440/public/2022-03/FP.jpg?h=4de69ae3&itok=p89vSGTI',
+    officialWebsiteUrl: 'https://mmphi.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/fitore-pacolli-dalipi/',
+  },
+  agriculture: {
+    profilePhotoUrl: 'https://upload.wikimedia.org/wikipedia/en/f/f8/Armend_Muja_%28Kosova_Assembly_2021%29.jpg',
+    officialWebsiteUrl: 'https://mbpzhr.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/armend-muja/',
+  },
+  infrastructure: {
+    profilePhotoUrl: 'https://image.thum.io/get/width/900/noanimate/https://kryeministri.rks-gov.net/staff/dimal-basha/',
+    officialWebsiteUrl: 'https://www.mit-ks.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/dimal-basha/',
+  },
+  trade: {
+    profilePhotoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/17/Mimoza_Kusari_Lila2017.jpg',
+    officialWebsiteUrl: 'https://mint.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/mimoza-kusari-lila/',
+  },
+  economy: {
+    profilePhotoUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/Artane_Rizvanolli_-_portret_2021.jpg',
+    officialWebsiteUrl: 'https://me.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/artane-rizvanolli/',
+  },
+  'communities-return': {
+    profilePhotoUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Ministar_Nenad_Ra%C5%A1i%C4%87_%28cropped%29.jpg',
+    officialWebsiteUrl: 'https://mkk.rks-gov.net/',
+  },
+  'regional-development': {
+    profilePhotoUrl: 'https://www.kuvendikosoves.org/Uploads/Data/Images/RasimDemiriVakat_qatR96C9aU.jpg',
+    officialWebsiteUrl: 'https://mzhr.rks-gov.net/',
+    staffProfileUrl: 'https://kryeministri.rks-gov.net/staff/rasim-demiri/',
+  },
+};
+
+const MINISTRY_SEEDS: MinistrySeedConfig[] = [
   {
     id: 'mfa',
     portfolio: 'Ministër i Jashtëm',
@@ -187,6 +300,12 @@ export const MINISTRIES: MinistryConfig[] = [
     accent: '#4a6e50',
   },
 ];
+
+export const MINISTRIES: MinistryConfig[] = MINISTRY_SEEDS.map((entry) => ({
+  ...entry,
+  tookOfficeDate: entry.tookOfficeDate ?? DEFAULT_MINISTER_TOOK_OFFICE_DATE,
+  ...MINISTRY_META[entry.id],
+}));
 
 const getStatusWeight = (status: PromiseStatus): number => {
   switch (status) {
