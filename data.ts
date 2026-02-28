@@ -63,13 +63,14 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Ekonomia',
     title: 'Banka Zhvillimore',
     description: 'Themelimi i Bankës Zhvillimore për të mbështetur bizneset dhe projektet strategjike.',
-    status: 'Pending',
+    status: 'Delayed',
     progress: 0,
     startDate: '2021-03-22',
     dueDate: '2025-02-01',
     updates: [
         { date: '2022-03-10', status: 'Pending', description: 'Diskutimet fillestare me partnerët ndërkombëtarë.' },
-        { date: '2024-01-15', status: 'Delayed', description: 'Mungesa e kornizës ligjore të nevojshme.' }
+        { date: '2024-01-15', status: 'Delayed', description: 'Mungesa e kornizës ligjore të nevojshme.' },
+        { date: '2026-02-27', status: 'Delayed', description: 'Sipas raportimit të KOHA-s, Ligji për Bankën Zhvillimore nuk është i planifikuar për vitin 2026 dhe synohet gjysma e dytë e vitit 2027, ndërsa marrëveshja e financimit me Bankën Botërore ende nuk është nënshkruar.', source: 'KOHA', sourceUrl: 'https://www.koha.net/ekonomi/banka-zhvillimore-synon-gjysmen-e-dyte-te-vitit-2027' }
     ]
   },
   {
