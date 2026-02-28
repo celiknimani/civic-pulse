@@ -95,7 +95,8 @@ export const LVV_PROMISES: PartyPromise[] = [
     dueDate: '2024-12-31',
     updates: [
         { date: '2023-01-01', status: 'Delayed', description: 'Rishikimi i sistemit të informimit shëndetësor.' },
-        { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes së kredisë për projektin KOMPAS për forcimin e sistemit të shëndetësisë (18.6 milionë euro).', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
+        { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes së kredisë për projektin KOMPAS për forcimin e sistemit të shëndetësisë (18.6 milionë euro).', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' },
+        { date: '2026-02-12', status: 'In Progress', description: 'Ministri i Shëndetësisë njoftoi se Ministria e Shëndetësisë ka përfituar 10,063,676 USD nga raundi i tretë i financimit të Pandemic Fund për forcimin e kapaciteteve të sistemit shëndetësor.', source: 'Arben Vitia (Facebook)', sourceUrl: 'https://www.facebook.com/arben.vitia.3/posts/pfbid02yjF1o2RkdTJ5Upw4EPv45Y6hki7WMSVi5hkPjdZSzzMpTZZQg38GQRn94ciNgjTil' }
     ]
   },
   {
