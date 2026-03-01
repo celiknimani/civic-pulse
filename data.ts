@@ -1335,17 +1335,6 @@ export const LVV_PROMISES: PartyPromise[] = [
     updates: []
   },
   {
-    id: '109',
-    category: 'Siguria',
-    title: 'Rezervistët Vullnetar - Mbrojtja Gjithëpërfshirëse',
-    description: 'Rekrutimi aktiv i rezervistëve vullnetarë si pjesë e konceptit të mbrojtjes gjithëpërfshirëse.',
-    status: 'Pending',
-    progress: 0,
-    startDate: '2024-01-01',
-    dueDate: '2027-01-01',
-    updates: []
-  },
-  {
     id: '110',
     category: 'Siguria',
     title: 'Ushtarakët nga Mërgata',

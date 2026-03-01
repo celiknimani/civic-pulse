@@ -184,7 +184,7 @@ const MINISTRY_SEEDS: MinistrySeedConfig[] = [
     portfolio: 'Ministër i Mbrojtjes',
     minister: 'Ejup Maqedonci',
     focusCategories: ['Siguria'],
-    promiseIds: ['2', '8', '9', '10', '104', '107', '108', '109', '110', '111'],
+    promiseIds: ['2', '8', '9', '10', '104', '107', '108', '110', '111'],
     accent: '#214d6b',
   },
   {
