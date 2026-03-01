@@ -147,12 +147,13 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Siguria',
     title: 'Programi i Rezervës Vullnetare',
     description: 'Krijimi dhe funksionalizimi i plotë i Programit të Rezervës Vullnetare për ushtrinë.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2024-06-01',
     dueDate: '2026-01-01',
     updates: [
-        { date: '2024-11-05', status: 'In Progress', description: 'Hapja e konkursit për rekrutët e parë vullnetarë.', source: 'Ministria e Mbrojtjes', sourceUrl: '#' }
+        { date: '2024-11-05', status: 'In Progress', description: 'Hapja e konkursit për rekrutët e parë vullnetarë.', source: 'Ministria e Mbrojtjes', sourceUrl: '#' },
+        { date: '2026-02-20', status: 'In Progress', description: 'Ministri i Mbrojtjes deklaroi se modeli i shërbimit ushtarak në Kosovë do të jetë vullnetar (jo i detyrueshëm), në kuadër të konceptit të mbrojtjes gjithëpërfshirëse dhe rezervës.', source: 'Telegrafi', sourceUrl: 'https://telegrafi.com/sherbimi-ushtarak-ne-kosove-vullnetar-apo-i-detyrueshem-flet-ministri-maqedonci/' }
     ]
   },
   {
