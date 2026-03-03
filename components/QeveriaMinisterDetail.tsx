@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import { Link } from 'wouter';
 import { PartyPromise, PromiseStatus } from '../types';
 import { buildAllMinistryAnalytics, scoreTone } from './qeveriaData';
@@ -47,11 +47,6 @@ const getDomainLabel = (value: string): string => {
 
 const QeveriaMinisterDetail: React.FC<QeveriaMinisterDetailProps> = ({ ministryId, promises }) => {
   const ministry = useMemo(() => buildAllMinistryAnalytics(promises).find((entry) => entry.config.id === ministryId), [promises, ministryId]);
-  const [photoFailed, setPhotoFailed] = useState(false);
-
-  useEffect(() => {
-    setPhotoFailed(false);
-  }, [ministryId]);
 
   if (!ministry) {
     return (
@@ -102,25 +97,14 @@ const QeveriaMinisterDetail: React.FC<QeveriaMinisterDetailProps> = ({ ministryI
 
           <div className="mt-6 grid gap-4 rounded-2xl border border-[#d6c9af] bg-[#faf6ed] p-4 md:grid-cols-[132px_1fr]">
             <div className="h-32 w-32 overflow-hidden rounded-2xl border border-[#d6c9af] bg-[#f2e9d8] shadow-[0_12px_24px_-20px_rgba(18,42,72,0.95)]">
-              {ministry.config.profilePhotoUrl && !photoFailed ? (
-                <img
-                  src={ministry.config.profilePhotoUrl}
-                  alt={ministry.config.minister}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                  onError={() => setPhotoFailed(true)}
-                />
-              ) : (
-                <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#2f4d70] to-[#6c8aa8] text-3xl font-black text-white">
-                  {getInitials(ministry.config.minister)}
-                </div>
-              )}
+              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#2f4d70] to-[#6c8aa8] text-3xl font-black text-white">
+                {getInitials(ministry.config.minister)}
+              </div>
             </div>
 
             <div className="flex flex-col justify-between gap-3">
               <p className="text-sm font-semibold text-[#4a5f79]">
-                Fotoja dhe vegëzat janë lidhur me burime publike zyrtare për këtë ministër.
+                Fotot e jashtme janë çaktivizuar; përdoren inicialet për të ulur ngarkesën dhe varësitë nga burime të treta.
               </p>
 
               <div className="flex flex-wrap gap-2">
@@ -133,17 +117,6 @@ const QeveriaMinisterDetail: React.FC<QeveriaMinisterDetailProps> = ({ ministryI
                   >
                     <i className="fa-solid fa-globe" />
                     <span className="normal-case tracking-normal text-[#7d6843]">{getDomainLabel(ministry.config.officialWebsiteUrl)}</span>
-                  </a>
-                )}
-                {ministry.config.staffProfileUrl && (
-                  <a
-                    href={ministry.config.staffProfileUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-[#cfbea0] bg-[#f6efe1] px-4 py-2 text-[10px] font-black uppercase tracking-[0.15em] text-[#5f6f85] transition-colors hover:bg-[#eee4d2]"
-                  >
-                    <i className="fa-solid fa-user-tie" />
-                    <span className="normal-case tracking-normal">Profili Zyrtar</span>
                   </a>
                 )}
               </div>

@@ -1,0 +1,1304 @@
+{
+  "generatedAt": "2026-03-03T20:13:54.705Z",
+  "sourceCount": 60,
+  "enabledSourceCount": 60,
+  "summary": {
+    "byType": {
+      "government_website": 20,
+      "minister_social": 36,
+      "trusted_news": 4
+    },
+    "byTrustTier": {
+      "1": 20,
+      "2": 36,
+      "3": 4
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "gov-pm",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "*"
+      ],
+      "tags": [
+        "kryeministri",
+        "qeveria",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://kryeministri.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-mfa",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "112",
+        "113",
+        "114",
+        "115",
+        "116",
+        "117",
+        "118"
+      ],
+      "tags": [
+        "ministry",
+        "foreign-affairs",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mfa-ks.net/"
+    },
+    {
+      "sourceId": "gov-justice",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "1",
+        "98",
+        "99",
+        "100",
+        "101"
+      ],
+      "tags": [
+        "ministry",
+        "justice",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://md.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-finance",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "14",
+        "15",
+        "16",
+        "39"
+      ],
+      "tags": [
+        "ministry",
+        "finance",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mfpt.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-work-family",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "3",
+        "32",
+        "33",
+        "34",
+        "35",
+        "40"
+      ],
+      "tags": [
+        "ministry",
+        "work-family",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://kryeministri.rks-gov.net/staff/andin-hoti/"
+    },
+    {
+      "sourceId": "gov-defense",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "2",
+        "8",
+        "9",
+        "10",
+        "104",
+        "107",
+        "108",
+        "110",
+        "111"
+      ],
+      "tags": [
+        "ministry",
+        "defense",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mod.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-interior",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "102",
+        "103",
+        "105"
+      ],
+      "tags": [
+        "ministry",
+        "interior",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mpb.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-digital-public-admin",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "30"
+      ],
+      "tags": [
+        "ministry",
+        "digitalization",
+        "public-admin",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://kryeministri.rks-gov.net/staff/lulezon-jagxhiu/"
+    },
+    {
+      "sourceId": "gov-health",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "6",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "tags": [
+        "ministry",
+        "health",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://msh.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-education",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "5",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53"
+      ],
+      "tags": [
+        "ministry",
+        "education",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://masht.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-culture-tourism",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "25",
+        "26",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97"
+      ],
+      "tags": [
+        "ministry",
+        "culture",
+        "tourism",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://kryeministri.rks-gov.net/staff/saranda-bogujevci/"
+    },
+    {
+      "sourceId": "gov-sport-youth",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "86",
+        "87",
+        "88",
+        "89",
+        "90"
+      ],
+      "tags": [
+        "ministry",
+        "sport",
+        "youth",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mkrs-ks.org/"
+    },
+    {
+      "sourceId": "gov-local-government",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "24",
+        "67",
+        "68",
+        "82"
+      ],
+      "tags": [
+        "ministry",
+        "local-government",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mapl.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-environment-spatial",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "11",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75"
+      ],
+      "tags": [
+        "ministry",
+        "environment",
+        "spatial",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mmphi.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-agriculture",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66"
+      ],
+      "tags": [
+        "ministry",
+        "agriculture",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mbpzhr.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-infrastructure",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "83",
+        "84"
+      ],
+      "tags": [
+        "ministry",
+        "infrastructure",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.mit-ks.net/"
+    },
+    {
+      "sourceId": "gov-trade",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "17",
+        "18",
+        "28"
+      ],
+      "tags": [
+        "ministry",
+        "trade",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mint.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-economy",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "4",
+        "7",
+        "12",
+        "13",
+        "36",
+        "37",
+        "38",
+        "85",
+        "119"
+      ],
+      "tags": [
+        "ministry",
+        "economy",
+        "energy",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://me.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-communities-return",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "31"
+      ],
+      "tags": [
+        "ministry",
+        "communities",
+        "return",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mkk.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-regional-development",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "27",
+        "29"
+      ],
+      "tags": [
+        "ministry",
+        "regional-development",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://mzhr.rks-gov.net/"
+    },
+    {
+      "sourceId": "social-albin-kurti-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "*"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "prime-minister",
+        "albin-kurti"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/albini2017"
+    },
+    {
+      "sourceId": "social-albin-kurti-x",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "*"
+      ],
+      "tags": [
+        "social",
+        "x",
+        "prime-minister",
+        "albin-kurti"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://x.com/albinkurti"
+    },
+    {
+      "sourceId": "social-glauk-konjufca-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "112",
+        "113",
+        "114",
+        "115",
+        "116",
+        "117",
+        "118"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "glauk-konjufca"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/GlaukKonjufca1981"
+    },
+    {
+      "sourceId": "social-mfa-kosovo-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "112",
+        "113",
+        "114",
+        "115",
+        "116",
+        "117",
+        "118"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "foreign-affairs"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/MFAKosovo"
+    },
+    {
+      "sourceId": "social-hekuran-murati-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "14",
+        "15",
+        "16",
+        "39"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "hekuran-murati"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/HekuranMurati"
+    },
+    {
+      "sourceId": "social-minfin-kosovo-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "14",
+        "15",
+        "16",
+        "39"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "finance"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/MinistriaeFinancave"
+    },
+    {
+      "sourceId": "social-ejup-maqedonci-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "2",
+        "8",
+        "9",
+        "10",
+        "104",
+        "107",
+        "108",
+        "110",
+        "111"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "ejup-maqedonci"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/ejup.maqedonci1"
+    },
+    {
+      "sourceId": "social-defense-ministry-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "2",
+        "8",
+        "9",
+        "10",
+        "104",
+        "107",
+        "108",
+        "110",
+        "111"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "defense"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/OfficialMFSRKS"
+    },
+    {
+      "sourceId": "social-fitore-pacolli-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "11",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "fitore-pacolli"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/fitore.pacolli"
+    },
+    {
+      "sourceId": "social-mmph-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "11",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "83",
+        "84"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "infrastructure",
+        "environment"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/mmph.rks"
+    },
+    {
+      "sourceId": "social-artane-rizvanolli-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "4",
+        "7",
+        "12",
+        "13",
+        "36",
+        "37",
+        "38",
+        "85",
+        "119"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "artane-rizvanolli"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/DrArtaneRizvanolli"
+    },
+    {
+      "sourceId": "social-economy-ministry-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "4",
+        "7",
+        "12",
+        "13",
+        "36",
+        "37",
+        "38",
+        "85",
+        "119"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "economy"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/MinistriaeEkonomise/"
+    },
+    {
+      "sourceId": "social-mimoza-kusari-lila-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "17",
+        "18",
+        "28"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "mimoza-kusari-lila"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/mimozakusari"
+    },
+    {
+      "sourceId": "social-mint-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "17",
+        "18",
+        "28"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "trade"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/MINT.RKS/"
+    },
+    {
+      "sourceId": "social-andin-hoti-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "3",
+        "32",
+        "33",
+        "34",
+        "35",
+        "40"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "andin-hoti"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/andin.hoti"
+    },
+    {
+      "sourceId": "social-elbert-krasniqi-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "24",
+        "67",
+        "68",
+        "82"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "elbert-krasniqi"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/elbert.krasniqi.5"
+    },
+    {
+      "sourceId": "social-mapl-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "24",
+        "67",
+        "68",
+        "82"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "local-government"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/maplks"
+    },
+    {
+      "sourceId": "social-lulezon-jagxhiu-linkedin",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "30"
+      ],
+      "tags": [
+        "social",
+        "linkedin",
+        "minister",
+        "lulezon-jagxhiu"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.linkedin.com/in/lulezon-jagxhiu-08669a4/"
+    },
+    {
+      "sourceId": "social-lulezon-jagxhiu-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "30"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "lulezon-jagxhiu"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/lulezon"
+    },
+    {
+      "sourceId": "social-blerim-gashani-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "86",
+        "87",
+        "88",
+        "89",
+        "90"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "blerim-gashani"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/blerim.gashani"
+    },
+    {
+      "sourceId": "social-mkrs-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "86",
+        "87",
+        "88",
+        "89",
+        "90"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "sport-youth"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/MKRS.MKOS.MCYS/"
+    },
+    {
+      "sourceId": "social-hajrullah-ceku-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "5",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "hajrullah-ceku"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/ceku.hajrulla"
+    },
+    {
+      "sourceId": "social-mashti-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "5",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "education"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/MASHTI.rks/"
+    },
+    {
+      "sourceId": "social-arben-vitia-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "6",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "arben-vitia"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/arben.vitia.3"
+    },
+    {
+      "sourceId": "social-health-ministry-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "6",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "health"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/Ministria.Shendetesise.RKS"
+    },
+    {
+      "sourceId": "social-dimal-basha-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "83",
+        "84"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "dimal-basha"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/dimalbasha1"
+    },
+    {
+      "sourceId": "social-armend-muja-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "armend-muja"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/armendmuja13"
+    },
+    {
+      "sourceId": "social-mbpzhr-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "agriculture"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/mbpzhr"
+    },
+    {
+      "sourceId": "social-donika-gervalla-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "1",
+        "98",
+        "99",
+        "100",
+        "101"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "donika-gervalla"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/donikagervallakosova"
+    },
+    {
+      "sourceId": "social-justice-ministry-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "1",
+        "98",
+        "99",
+        "100",
+        "101"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "justice"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/MinistriaeDrejtesise/"
+    },
+    {
+      "sourceId": "social-nenad-rashiq-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "31"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "nenad-rashiq"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/profile.php?id=100089805291177"
+    },
+    {
+      "sourceId": "social-rasim-demiri-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "27",
+        "29"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "rasim-demiri"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/rasim.demiri.3"
+    },
+    {
+      "sourceId": "social-mzhr-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "27",
+        "29"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "regional-development"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/mzhr.rks"
+    },
+    {
+      "sourceId": "social-saranda-bogujevci-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "25",
+        "26",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "saranda-bogujevci"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/saranda.bogujevci"
+    },
+    {
+      "sourceId": "social-xhelal-svecla-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "102",
+        "103",
+        "105"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "minister",
+        "xhelal-svecla"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/profile.php?id=100063788556625"
+    },
+    {
+      "sourceId": "social-mpb-facebook",
+      "type": "minister_social",
+      "trustTier": 2,
+      "promiseIds": [
+        "102",
+        "103",
+        "105"
+      ],
+      "tags": [
+        "social",
+        "facebook",
+        "ministry",
+        "interior"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.facebook.com/RKS.MPB/"
+    },
+    {
+      "sourceId": "media-koha",
+      "type": "trusted_news",
+      "trustTier": 3,
+      "promiseIds": [
+        "*"
+      ],
+      "tags": [
+        "media",
+        "news",
+        "corroboration"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.koha.net/"
+    },
+    {
+      "sourceId": "media-kallxo",
+      "type": "trusted_news",
+      "trustTier": 3,
+      "promiseIds": [
+        "*"
+      ],
+      "tags": [
+        "media",
+        "news",
+        "corroboration"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://kallxo.com/"
+    },
+    {
+      "sourceId": "media-telegrafi",
+      "type": "trusted_news",
+      "trustTier": 3,
+      "promiseIds": [
+        "*"
+      ],
+      "tags": [
+        "media",
+        "news",
+        "corroboration"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://telegrafi.com/"
+    },
+    {
+      "sourceId": "media-rtk",
+      "type": "trusted_news",
+      "trustTier": 3,
+      "promiseIds": [
+        "*"
+      ],
+      "tags": [
+        "media",
+        "news",
+        "corroboration"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://www.rtklive.com/"
+    }
+  ]
+}

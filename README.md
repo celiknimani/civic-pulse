@@ -18,6 +18,15 @@ View your app in AI Studio: https://ai.studio/apps/drive/1kL97vQ5_b6k-T_JXhV8PO2
 2. Run the app:
    `npm run dev`
 
+## Promise Sources Registry
+
+- Canonical registry file: `PROMISE_SOURCES.md`
+- Generated manifest: `public/data/promise-sources.json`
+- Manual build command:
+  `npm run build:promise-sources`
+
+`npm run dev` and `npm run build` now regenerate promise sources automatically.
+
 ## Deputetet Analytics (Transkripte)
 
 UI tani ka:
