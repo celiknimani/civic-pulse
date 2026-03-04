@@ -1082,6 +1082,13 @@ export const LVV_PROMISES: PartyPromise[] = [
         description: 'Projektligji për Mbrojtjen e Natyrës u paraqit nga Ministria e Mjedisit dhe Planifikimit Hapësinor si prioritet i mandatit, duke mbështetur kornizën për menaxhim të burimeve natyrore.',
         source: 'Fitore Pacolli (Facebook)',
         sourceUrl: 'https://www.facebook.com/fitorepacollidalipi/posts/pfbid09fDV2vrrgEwdxw8GNNSiFfPiW2b7EgF7eWpoXR8tNULE1pgrWYpo1e2XvwPxffDul'
+      },
+      {
+        date: '2026-03-04',
+        status: 'In Progress',
+        description: 'Ministrja Fitore Pacolli njoftoi vendim për ndalim të rreptë të aktiviteteve ndërtimore pa leje në Parqet Kombëtare “Bjeshkët e Nemuna” dhe “Sharri”, përfshirë ndalim qarkullimi të mjeteve që bartin material ndërtimor pa autorizim të posaçëm nga MMPH.',
+        source: 'Fitore Pacolli (Facebook)',
+        sourceUrl: 'https://www.facebook.com/fitore.pacolli/posts/pfbid0sNSdGn9QKJe22Hjapj4eQ6H8Nukj9FJEJDAPU8Dee8qx6NgYuwdkyRFJbaryCg63l'
       }
     ]
   },
