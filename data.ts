@@ -910,11 +910,21 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Ekonomia',
     title: 'Projekte Kapitale - 1 Miliard Euro',
     description: 'Investim masiv prej 1 miliard euro në projekte kapitale strategjike për zhvillim ekonomik dhe infrastrukturor.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2025-01-01',
     dueDate: '2029-01-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-02-20',
+        status: 'In Progress',
+        description:
+          'Kuvendi miratoi në lexim të dytë Buxhetin e vitit 2026, duke krijuar kornizë financiare për investimet kapitale të planifikuara gjatë mandatit.',
+        source: 'KOHA',
+        sourceUrl:
+          'https://www.koha.net/en/lajmet-e-mbremjes-ktv/pa-asnje-amendament-te-opozites-shumica-parlamentare-miraton-buxhetin-4-miliardesh'
+      }
+    ]
   },
   {
     id: '61',
