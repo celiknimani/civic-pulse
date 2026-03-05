@@ -776,6 +776,13 @@ export const LVV_PROMISES: PartyPromise[] = [
         description: 'Ministrja Fitore Pacolli e renditi Projektligjin për Mbeturina ndër 6 projektligjet prioritare të mandatit, si bazë ligjore për menaxhim më të avancuar të mbetjeve.',
         source: 'Fitore Pacolli (Facebook)',
         sourceUrl: 'https://www.facebook.com/fitorepacollidalipi/posts/pfbid09fDV2vrrgEwdxw8GNNSiFfPiW2b7EgF7eWpoXR8tNULE1pgrWYpo1e2XvwPxffDul'
+      },
+      {
+        date: '2026-03-05',
+        status: 'In Progress',
+        description: 'Qeveria aprovoi Projektligjin për ratifikimin e Marrëveshjes së Kredisë me BERZH për projektin “Impianti për Trajtimin e Ujërave të Zeza në Podujevë”.',
+        source: 'Qeveria e Kosovës',
+        sourceUrl: 'https://kryeministri.rks-gov.net/projektligjit-per-ratifikimin-e-marreveshjes-se-kredise-ne-mes-te-republikes-se-kosoves-dhe-bankes-evropiane-per-rindertim-dhe-zhvillim-per-projektin-impianti-per-trajtimin-e-ujerave-te-zeza/'
       }
     ]
   },
@@ -1034,11 +1041,19 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Energjia',
     title: 'Renovimi i 400 Ndërtesave Publike',
     description: 'Renovimi i 400 ndërtesave të administratës qendrore dhe komunale për të rritur efiçiencën energjetike.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2023-01-01',
     dueDate: '2026-12-31',
-    updates: []
+    updates: [
+      {
+        date: '2026-03-05',
+        status: 'In Progress',
+        description: 'Qeveria aprovoi Projektligjin për ratifikimin e Marrëveshjes së Kredisë me BERZH për Projektin e Efiçencës së Energjisë në Ndërtesa Publike.',
+        source: 'Qeveria e Kosovës',
+        sourceUrl: 'https://kryeministri.rks-gov.net/projektligji-per-ratifikimin-e-marreveshjes-se-kredise-ndermjet-republikes-se-kosoves-e-perfaqesuar-nga-ministria-e-financave-punes-dhe-transfereve-dhe-bankes-evropiane-per-rindertim-dhe-zhvillim-b/'
+      }
+    ]
   },
   {
     id: '73',
