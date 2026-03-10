@@ -809,6 +809,13 @@ export const LVV_PROMISES: PartyPromise[] = [
         description: 'Ministrja Fitore Pacolli paraqiti Projektligjin për Mbrojtjen e Mjedisit dhe Projektligjin për Inspektoratin e Mjedisit, Ujërave, Planifikimit Hapësinor dhe Ndërtimit si prioritete të mandatit, të lidhura drejtpërdrejt me forcimin e mbrojtjes së lumenjve dhe kontrollit të ndotjes.',
         source: 'Fitore Pacolli (Facebook)',
         sourceUrl: 'https://www.facebook.com/fitorepacollidalipi/posts/pfbid09fDV2vrrgEwdxw8GNNSiFfPiW2b7EgF7eWpoXR8tNULE1pgrWYpo1e2XvwPxffDul'
+      },
+      {
+        date: '2026-03-10',
+        status: 'In Progress',
+        description: 'Ministrja Fitore Pacolli njoftoi vendim për nisjen e procesit për rikthimin e rrjedhës së lirë natyrore të lumenjve në Kosovë, përmes identifikimit dhe largimit gradual të pengesave të vjetruara artificiale në shtretërit e lumenjve.',
+        source: 'Fitore Pacolli (Facebook)',
+        sourceUrl: 'https://www.facebook.com/fitore.pacolli/posts/pfbid02KnZ9Z85YyKcxdBaJdbjYpGAHme7eYYe8rDLCPWTgzrKA42s8EZu81J8pJHNPpfdPl'
       }
     ]
   },
