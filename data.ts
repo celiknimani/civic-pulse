@@ -147,7 +147,7 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Siguria',
     title: 'Programi i Rezervës Vullnetare',
     description: 'Krijimi dhe funksionalizimi i plotë i Programit të Rezervës Vullnetare për ushtrinë.',
-    status: 'In Progress',
+    status: 'Delayed',
     progress: 10,
     startDate: '2024-06-01',
     dueDate: '2026-01-01',
@@ -765,7 +765,7 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Infrastruktura',
     title: 'Kanalizim Modern në Fshatra',
     description: 'Ndërtimi i impianteve biologjike dhe sistemeve moderne të kanalizimit në zonat rurale.',
-    status: 'In Progress',
+    status: 'Delayed',
     progress: 10,
     startDate: '2025-06-01',
     dueDate: '2028-12-31',
@@ -783,6 +783,13 @@ export const LVV_PROMISES: PartyPromise[] = [
         description: 'Qeveria aprovoi Projektligjin për ratifikimin e Marrëveshjes së Kredisë me BERZH për projektin “Impianti për Trajtimin e Ujërave të Zeza në Podujevë”.',
         source: 'Qeveria e Kosovës',
         sourceUrl: 'https://kryeministri.rks-gov.net/projektligjit-per-ratifikimin-e-marreveshjes-se-kredise-ne-mes-te-republikes-se-kosoves-dhe-bankes-evropiane-per-rindertim-dhe-zhvillim-per-projektin-impianti-per-trajtimin-e-ujerave-te-zeza/'
+      },
+      {
+        date: '2026-03-06',
+        status: 'Delayed',
+        description: 'Kryeministri deklaroi se shpërndarja e Kuvendit pamundësoi ratifikimin e marrëveshjes 25 milionë euro me BERZH për impiantin e trajtimit të ujërave të zeza në Podujevë.',
+        source: 'KALLXO',
+        sourceUrl: 'https://kallxo.com/lajm/kurti-pas-shperndarjes-se-kuvendit-u-pamundesua-realizimi-i-marreveshjeve-nderkombetare-ne-vlere-121-milione-euro/'
       }
     ]
   },
@@ -1052,6 +1059,13 @@ export const LVV_PROMISES: PartyPromise[] = [
         description: 'Qeveria aprovoi Projektligjin për ratifikimin e Marrëveshjes së Kredisë me BERZH për Projektin e Efiçencës së Energjisë në Ndërtesa Publike.',
         source: 'Qeveria e Kosovës',
         sourceUrl: 'https://kryeministri.rks-gov.net/projektligji-per-ratifikimin-e-marreveshjes-se-kredise-ndermjet-republikes-se-kosoves-e-perfaqesuar-nga-ministria-e-financave-punes-dhe-transfereve-dhe-bankes-evropiane-per-rindertim-dhe-zhvillim-b/'
+      },
+      {
+        date: '2026-03-06',
+        status: 'Delayed',
+        description: 'Kryeministri deklaroi se shpërndarja e Kuvendit pamundësoi ratifikimin e marrëveshjes 50 milionë euro me BERZH për efiçiencën e energjisë dhe izolimin termik të ndërtesave.',
+        source: 'KALLXO',
+        sourceUrl: 'https://kallxo.com/lajm/kurti-pas-shperndarjes-se-kuvendit-u-pamundesua-realizimi-i-marreveshjeve-nderkombetare-ne-vlere-121-milione-euro/'
       }
     ]
   },
