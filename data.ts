@@ -310,6 +310,13 @@ export const LVV_PROMISES: PartyPromise[] = [
         description: 'Ministrja e Tregtisë dhe Industrisë njoftoi nënshkrimin e kërkesës për përshpejtimin e miratimit të Projektligjit për Inovacion dhe Ndërmarrësi, duke e lidhur atë me krijimin e Fondit për Inovacion.',
         source: 'Ministrja e Tregtisë dhe Industrisë - Mimoza Kusari-Lila (Facebook)',
         sourceUrl: 'https://www.facebook.com/mimozakusari/posts/pfbid027Sg4ZvzriSrwT3cKH8pQ1ww3ZmNwhb7UFgqHxDisSJ9Tchk6kzyHmGE5zCNUPwxsl'
+      },
+      {
+        date: '2026-03-12',
+        status: 'In Progress',
+        description: 'Mimoza Kusari-Lila njoftoi diskutim me STIKK për Projektligjin për Inovacion dhe Ndërmarrësi, duke theksuar se një komponent i rëndësishëm i tij është krijimi i Fondit të Inovacionit për mbështetje direkte të start-up-eve në Kosovë.',
+        source: 'Mimoza Kusari-Lila (Facebook)',
+        sourceUrl: 'https://www.facebook.com/mimozakusari/posts/pfbid0nRt21oPzMGRiequCYEBm7cFYJpjq6bJC1p9QBiYdg6ndMQ52vjrJBHmNDdK8LvXXl'
       }
     ]
   },
