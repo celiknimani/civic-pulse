@@ -77,6 +77,7 @@ When you ask for promise updates, we use this list to narrow searches.
 | media-koha | trusted_news | 3 | * | media,news,corroboration | true | html | https://www.koha.net/ |
 | media-kallxo | trusted_news | 3 | * | media,news,corroboration | true | html | https://kallxo.com/ |
 | media-telegrafi | trusted_news | 3 | * | media,news,corroboration | true | html | https://telegrafi.com/ |
+| media-indeksonline | trusted_news | 3 | * | media,news,corroboration | true | html | https://indeksonline.com/ |
 | media-rtk | trusted_news | 3 | * | media,news,corroboration | true | html | https://www.rtklive.com/ |
 
 ## Workflow

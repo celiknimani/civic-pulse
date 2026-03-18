@@ -29,9 +29,28 @@ const getLatestPromiseUpdateTimestamp = (): number =>
     return Math.max(latestPromiseTimestamp, latestPromiseUpdateTimestamp);
   }, 0);
 
+const ALBANIAN_MONTHS = [
+  'Janar',
+  'Shkurt',
+  'Mars',
+  'Prill',
+  'Maj',
+  'Qershor',
+  'Korrik',
+  'Gusht',
+  'Shtator',
+  'Tetor',
+  'Nëntor',
+  'Dhjetor',
+];
+
 const formatMonthYearSq = (timestamp: number): string => {
-  const value = new Intl.DateTimeFormat('sq-AL', { month: 'long', year: 'numeric' }).format(timestamp);
-  return value ? `${value.charAt(0).toUpperCase()}${value.slice(1)}` : '';
+  if (!timestamp) return '';
+
+  const date = new Date(timestamp);
+  if (Number.isNaN(date.getTime())) return '';
+
+  return `${ALBANIAN_MONTHS[date.getMonth()]} ${date.getFullYear()}`;
 };
 
 const getTopDeputiesForPromiseCategory = (

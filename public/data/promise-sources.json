@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-03-03T20:13:54.705Z",
-  "sourceCount": 60,
-  "enabledSourceCount": 60,
+  "generatedAt": "2026-03-18T20:02:46.032Z",
+  "sourceCount": 61,
+  "enabledSourceCount": 61,
   "summary": {
     "byType": {
       "government_website": 20,
       "minister_social": 36,
-      "trusted_news": 4
+      "trusted_news": 5
     },
     "byTrustTier": {
       "1": 20,
       "2": 36,
-      "3": 4
+      "3": 5
     }
   },
   "sources": [
@@ -1283,6 +1283,22 @@
       "enabled": true,
       "fetchMode": "html",
       "url": "https://telegrafi.com/"
+    },
+    {
+      "sourceId": "media-indeksonline",
+      "type": "trusted_news",
+      "trustTier": 3,
+      "promiseIds": [
+        "*"
+      ],
+      "tags": [
+        "media",
+        "news",
+        "corroboration"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://indeksonline.com/"
     },
     {
       "sourceId": "media-rtk",
