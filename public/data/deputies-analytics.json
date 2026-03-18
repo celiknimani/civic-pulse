@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-20T21:20:48.691Z",
+  "generatedAt": "2026-03-18T21:21:42.962Z",
   "source": "transcripts",
   "deputies": [
     {
@@ -1511,70 +1511,70 @@
       "name": "ARBËRIE NAGAVCI",
       "party": "Lëvizja VETËVENDOSJE!",
       "activity": {
-        "speechCount": 18,
-        "wordCount": 2416,
-        "sessionCount": 3
+        "speechCount": 21,
+        "wordCount": 3198,
+        "sessionCount": 4
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 5,
-          "score": 5.49
+          "mentions": 6,
+          "score": 5.66
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 28,
-          "score": 30.77
+          "mentions": 32,
+          "score": 30.19
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 19,
-          "score": 20.88
+          "mentions": 20,
+          "score": 18.87
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 19,
-          "score": 20.88
+          "mentions": 21,
+          "score": 19.81
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
           "mentions": 2,
-          "score": 2.2
+          "score": 1.89
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 2,
-          "score": 2.2
+          "mentions": 3,
+          "score": 2.83
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 7,
-          "score": 7.69
+          "mentions": 8,
+          "score": 7.55
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
           "mentions": 4,
-          "score": 4.4
+          "score": 3.77
         },
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
           "mentions": 1,
-          "score": 1.1
+          "score": 0.94
         },
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 1.89
         },
         {
           "topicId": "Energjia",
@@ -1586,22 +1586,49 @@
           "topicId": "Sporti",
           "label": "Sporti",
           "mentions": 1,
-          "score": 1.1
+          "score": 0.94
         },
         {
           "topicId": "Arti",
           "label": "Arti",
-          "mentions": 3,
-          "score": 3.3
+          "mentions": 5,
+          "score": 4.72
         },
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.94
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca-ora22.json:2",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora22.00_M2JJvSqVKD.pdf",
+          "reference": "2026-03-05-seanca-ora22.json:2",
+          "excerpt": "I nderuar kryeministër, Kabinet qeveritar, Të nderuar deputetë, Të dashur qytetarë. Kam nderin e veçantë që sot para jush të prezantoj kandidatin e Lëvizjes Vetëvendosje për President të Republikës së Kosovës, zotin Glauk Konjufca. Aktualis..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca-ora22.json:8",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora22.00_M2JJvSqVKD.pdf",
+          "reference": "2026-03-05-seanca-ora22.json:8",
+          "excerpt": "kryetare! E propozojmë deputetin Sali Zyba."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:4",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:4",
+          "excerpt": "I nderuar kryeministër Kurti, Të nderuar anëtarë të Kabinetit qeveritar, Të nderuar deputetë, Të gjithë ju të pranishëm, Të dashur qytetarë, Grupi Parlamentar i Lëvizjes Vetëvendosje mbështet amendamentet kushtetuese të propozuara nga Presi..."
+        },
         {
           "id": "2026-02-17-seanca:2026-02-17-seanca.json:6",
           "date": "2026-02-17",
@@ -2464,40 +2491,40 @@
       "name": "ARMEND ZEMAJ",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 1,
-        "wordCount": 407,
-        "sessionCount": 1
+        "speechCount": 2,
+        "wordCount": 1162,
+        "sessionCount": 2
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 12,
+          "score": 50
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 2,
-          "score": 28.57
+          "mentions": 4,
+          "score": 16.67
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 2,
-          "score": 28.57
+          "mentions": 4,
+          "score": 16.67
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 2,
-          "score": 28.57
+          "mentions": 3,
+          "score": 12.5
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
           "mentions": 1,
-          "score": 14.29
+          "score": 4.17
         },
         {
           "topicId": "Arsimi",
@@ -2555,6 +2582,15 @@
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:28",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:28",
+          "excerpt": "kryetare e Kuvendit! Të nderuar kolegë deputetë, Qytetarë të Republikës së Kosovës, Amendamentet e vitit 1912. Shikoni, është problem politik, pak për relaks, dorën në zemër, se po e di që jeni të ngarkuar të gjithë edhe në orët e vona të n..."
+        },
         {
           "id": "2026-02-12-seanca:2026-02-12-seanca.json:30",
           "date": "2026-02-12",
@@ -2668,46 +2704,46 @@
       "name": "ARTAN ABRASHI",
       "party": "Lëvizja VETËVENDOSJE!",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 328,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 10.53
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 5.26
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 10.53
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 7,
+          "score": 36.84
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 5,
+          "score": 26.32
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 5.26
         },
         {
           "topicId": "Infrastruktura",
@@ -2730,8 +2766,8 @@
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 5.26
         },
         {
           "topicId": "Energjia",
@@ -2758,16 +2794,26 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca-ora22.json:4",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora22.00_M2JJvSqVKD.pdf",
+          "reference": "2026-03-05-seanca-ora22.json:4",
+          "excerpt": "Të nderuar nënkryetarë, I nderuar kryeministër, Kabinet qeveritar, Të nderuar deputetë të Kuvendit të Kosovës, Konform rregullave kushtetuese dhe ligjore sot para jush prezantoj ekspozenë e kandidates së radhës, doktoreshës Fatmire Mullhaxh..."
+        }
+      ]
     },
     {
       "id": "artan-asllani",
       "name": "ARTAN ASLLANI",
       "party": "PSA",
       "activity": {
-        "speechCount": 5,
-        "wordCount": 768,
-        "sessionCount": 3
+        "speechCount": 7,
+        "wordCount": 1329,
+        "sessionCount": 4
       },
       "topics": [
         {
@@ -2780,82 +2826,100 @@
           "topicId": "Ekonomia",
           "label": "Ekonomia",
           "mentions": 6,
-          "score": 16.22
+          "score": 11.11
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 4,
-          "score": 10.81
+          "mentions": 9,
+          "score": 16.67
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 8,
-          "score": 21.62
+          "mentions": 19,
+          "score": 35.19
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
           "mentions": 1,
-          "score": 2.7
+          "score": 1.85
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
           "mentions": 1,
-          "score": 2.7
+          "score": 1.85
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
           "mentions": 5,
-          "score": 13.51
+          "score": 9.26
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
           "mentions": 3,
-          "score": 8.11
+          "score": 5.56
         },
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
           "mentions": 1,
-          "score": 2.7
+          "score": 1.85
         },
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 1,
-          "score": 2.7
+          "mentions": 2,
+          "score": 3.7
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
           "mentions": 1,
-          "score": 2.7
+          "score": 1.85
         },
         {
           "topicId": "Sporti",
           "label": "Sporti",
           "mentions": 1,
-          "score": 2.7
+          "score": 1.85
         },
         {
           "topicId": "Arti",
           "label": "Arti",
           "mentions": 3,
-          "score": 8.11
+          "score": 5.56
         },
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
           "mentions": 2,
-          "score": 5.41
+          "score": 3.7
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca-ora10.json:11",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora10.00_CHHcYgHqWd.pdf",
+          "reference": "2026-03-05-seanca-ora10.json:11",
+          "excerpt": "Shumë i respektuar Baca Rifat, E nderuara Familje Jashari, Të nderuara familje të dëshmorëve, E nderuara presidente, zonja Osmani-Sadriu, E nderuara kryetare e Kuvendit, zonja Haxhiu, I nderuar kryeministër i Kosovës, zoti Kurti, I nderuar..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca-ora22.json:10",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora22.00_M2JJvSqVKD.pdf",
+          "reference": "2026-03-05-seanca-ora22.json:10",
+          "excerpt": "kryetare! Në emër të Grupit Multietnik e propozojmë zonjën Emilija Rexhepi."
+        },
         {
           "id": "2026-02-17-seanca:2026-02-17-seanca.json:12",
           "date": "2026-02-17",
@@ -3537,34 +3601,34 @@
       "name": "BEDRI HAMZA",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 6,
-        "wordCount": 3327,
-        "sessionCount": 2
+        "speechCount": 9,
+        "wordCount": 4767,
+        "sessionCount": 3
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 9,
-          "score": 5.45
+          "mentions": 21,
+          "score": 9.68
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 103,
-          "score": 62.42
+          "mentions": 105,
+          "score": 48.39
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 19,
-          "score": 11.52
+          "mentions": 34,
+          "score": 15.67
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 10,
-          "score": 6.06
+          "mentions": 29,
+          "score": 13.36
         },
         {
           "topicId": "Shëndetësia",
@@ -3575,14 +3639,14 @@
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
-          "mentions": 2,
-          "score": 1.21
+          "mentions": 3,
+          "score": 1.38
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
           "mentions": 11,
-          "score": 6.67
+          "score": 5.07
         },
         {
           "topicId": "Inovacioni",
@@ -3594,40 +3658,67 @@
           "topicId": "Turizmi",
           "label": "Turizmi",
           "mentions": 1,
-          "score": 0.61
+          "score": 0.46
         },
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
           "mentions": 1,
-          "score": 0.61
+          "score": 0.46
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 3,
-          "score": 1.82
+          "mentions": 4,
+          "score": 1.84
         },
         {
           "topicId": "Sporti",
           "label": "Sporti",
           "mentions": 1,
-          "score": 0.61
+          "score": 0.46
         },
         {
           "topicId": "Arti",
           "label": "Arti",
           "mentions": 2,
-          "score": 1.21
+          "score": 0.92
         },
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
-          "mentions": 3,
-          "score": 1.82
+          "mentions": 5,
+          "score": 2.3
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca-ora10.json:7",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora10.00_CHHcYgHqWd.pdf",
+          "reference": "2026-03-05-seanca-ora10.json:7",
+          "excerpt": "I dashur Baca Rifat, E nderuar Familje Jashari, Shkëlqesia Juaj, zonja presidente Osmani, I nderuar zoti kryeministër, Të nderuar deputetë, Zëvendëskryeministra, Ministra, Kor diplomatik, Përfaqësues të mediave, Të dashur qytetarë të Republ..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:6",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:6",
+          "excerpt": "I nderuari zoti kryeministër, Të nderuar zëvendëskryeministra, Ministra, Të nderuar deputetë. Partia Demokratike e Kosovës vlerëson se çështja e zgjedhjes së presidentit nga populli është një temë shumë e rëndësishme kushtetuese, është një..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:8",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:8",
+          "excerpt": "zonja kryetare! Zonja kryetare, veç ta konstatojmë një fakt që seanca është thirrur për në orën 20:00, është ftuar në 19:45 minuta. Materialet deputetët i kanë marrë në orën 20:30 minuta, kjo është. Unë mendoj që materialet duhet t'i parapr..."
+        },
         {
           "id": "2026-02-17-seanca:2026-02-17-seanca.json:8",
           "date": "2026-02-17",
@@ -6215,16 +6306,16 @@
       "name": "ERXHAN GALUSHI",
       "party": "Lëvizja Përparimtare e Romëve të Kosovës",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 1,
+        "wordCount": 158,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 2,
+          "score": 40
         },
         {
           "topicId": "Ekonomia",
@@ -6235,8 +6326,8 @@
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 60
         },
         {
           "topicId": "Mirëqenia",
@@ -6305,7 +6396,17 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:12",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:12",
+          "excerpt": "E nderuar kryetare e Kuvendit, I nderuar kryeministër, Të nderuar deputetë, Të nderuar përfaqësues të mediave, Të nderuar qytetarë, Sonte jemi mbledhur këtu në një seancë të jashtëzakonshme për të trajtuar një çështje jashtëzakonisht të rën..."
+        }
+      ]
     },
     {
       "id": "fadil-hadergjonaj",
@@ -7205,9 +7306,9 @@
       "name": "GANIMETE MUSLIU",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 1,
-        "wordCount": 538,
-        "sessionCount": 1
+        "speechCount": 4,
+        "wordCount": 837,
+        "sessionCount": 2
       },
       "topics": [
         {
@@ -7219,44 +7320,44 @@
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 5,
-          "score": 11.11
+          "mentions": 8,
+          "score": 16.33
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 9,
-          "score": 20
+          "mentions": 10,
+          "score": 20.41
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
           "mentions": 8,
-          "score": 17.78
+          "score": 16.33
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
           "mentions": 2,
-          "score": 4.44
+          "score": 4.08
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
           "mentions": 14,
-          "score": 31.11
+          "score": 28.57
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
           "mentions": 1,
-          "score": 2.22
+          "score": 2.04
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
           "mentions": 4,
-          "score": 8.89
+          "score": 8.16
         },
         {
           "topicId": "Turizmi",
@@ -7274,7 +7375,7 @@
           "topicId": "Energjia",
           "label": "Energjia",
           "mentions": 2,
-          "score": 4.44
+          "score": 4.08
         },
         {
           "topicId": "Sporti",
@@ -7296,6 +7397,33 @@
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:34",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:34",
+          "excerpt": "Mirëmbrëma të gjithëve! Të dashur qytetarë të Republikës së Kosovës, E nderuara kryetare e Kuvendit të Republikës së Kosovës, Të nderuara kolege dhe ju kolegë deputetë, Media, Dhe të gjithë të pranishmit që jeni në sallë, Kisha pasur qejf n..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:36",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:36",
+          "excerpt": "Unë të falënderoj shumë për tërheqjen e vërejtjes, veç më trego ku gabova?"
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:38",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:38",
+          "excerpt": "Më trego ku gabova?! Cila fjalë e imja ishte fjalë joparlamentare dhe unë kërkoj falje, të lutem! Sa i përket çështjes së jashtëzakonshme, dua ta kthej edhe një herë në kujtesën e qytetarëve të Republikës së Kosovës. Kur në Skenderaj vërshi..."
+        },
         {
           "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:163",
           "date": "2026-02-16",
@@ -7409,40 +7537,40 @@
       "name": "HYKMETE BAJRAMI",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 6,
-        "wordCount": 2721,
-        "sessionCount": 1
+        "speechCount": 9,
+        "wordCount": 3060,
+        "sessionCount": 2
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 14,
-          "score": 13.21
+          "mentions": 17,
+          "score": 14.17
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 64,
-          "score": 60.38
+          "mentions": 66,
+          "score": 55
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 5,
-          "score": 4.72
+          "mentions": 10,
+          "score": 8.33
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
           "mentions": 15,
-          "score": 14.15
+          "score": 12.5
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 4,
+          "score": 3.33
         },
         {
           "topicId": "Arsimi",
@@ -7454,7 +7582,7 @@
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
           "mentions": 5,
-          "score": 4.72
+          "score": 4.17
         },
         {
           "topicId": "Inovacioni",
@@ -7478,7 +7606,7 @@
           "topicId": "Energjia",
           "label": "Energjia",
           "mentions": 2,
-          "score": 1.89
+          "score": 1.67
         },
         {
           "topicId": "Sporti",
@@ -7496,10 +7624,37 @@
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
           "mentions": 1,
-          "score": 0.94
+          "score": 0.83
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:22",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:22",
+          "excerpt": "kryetare! Të nderuar kolegë deputetë, Të nderuar qytetarë të Republikës së Kosovës, Jemi vetëm disa orë para se vendi të shkojë prapë në zgjedhje dhe po diskutojmë amendamente kushtetuese, siç u tha me 14 vjet vonesë. Qytetarë të nderuar, T..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:24",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:24",
+          "excerpt": "Jam pikërisht aty, kryetare! Dhe këta sot na sjellin amendamente kushtetuese. Këta sot i ofendojnë të gjithë pacientët, të cilët janë në spitale dhe dergjen pa barnat esenciale. Këta sot janë kundër qytetarëve, të cilët sytë i kanë nga Gjer..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:26",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:26",
+          "excerpt": "Në rend të ditës, sa herë flasim për interesat e qytetarëve jemi në rend të ditës dhe sot nuk ka rend të ditës më të rëndësishme që mos t’i çojmë qytetarët në zgjedhje prapë. Dhe kush po i çon në zgjedhje, po i çoni ju, të cilët i keni marr..."
+        },
         {
           "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:181",
           "date": "2026-02-16",
@@ -9173,64 +9328,64 @@
       "name": "LUMIR ABDIXHIKU",
       "party": "LIDHJA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 4,
-        "wordCount": 3757,
-        "sessionCount": 2
+        "speechCount": 6,
+        "wordCount": 5933,
+        "sessionCount": 3
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 13,
-          "score": 8.67
+          "mentions": 23,
+          "score": 12.04
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
           "mentions": 70,
-          "score": 46.67
+          "score": 36.65
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 27,
-          "score": 18
+          "mentions": 35,
+          "score": 18.32
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 10,
-          "score": 6.67
+          "mentions": 29,
+          "score": 15.18
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
           "mentions": 5,
-          "score": 3.33
+          "score": 2.62
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
           "mentions": 1,
-          "score": 0.67
+          "score": 0.52
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
-          "mentions": 11,
-          "score": 7.33
+          "mentions": 13,
+          "score": 6.81
         },
         {
           "topicId": "Inovacioni",
           "label": "Inovacioni",
           "mentions": 2,
-          "score": 1.33
+          "score": 1.05
         },
         {
           "topicId": "Turizmi",
           "label": "Turizmi",
           "mentions": 1,
-          "score": 0.67
+          "score": 0.52
         },
         {
           "topicId": "Diaspora",
@@ -9242,7 +9397,7 @@
           "topicId": "Energjia",
           "label": "Energjia",
           "mentions": 1,
-          "score": 0.67
+          "score": 0.52
         },
         {
           "topicId": "Sporti",
@@ -9254,16 +9409,34 @@
           "topicId": "Arti",
           "label": "Arti",
           "mentions": 1,
-          "score": 0.67
+          "score": 0.52
         },
         {
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
-          "mentions": 8,
-          "score": 5.33
+          "mentions": 10,
+          "score": 5.24
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca-ora10.json:9",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora10.00_CHHcYgHqWd.pdf",
+          "reference": "2026-03-05-seanca-ora10.json:9",
+          "excerpt": "Osmani, I nderuari Baca Rifat, E nderuar kryetare e Kuvendit, I nderuar kryeministër, Anëtarë të Kabinetit qeveritar, Të nderuar deputetë të Kuvendit të Kosovës, E nderuar Familje Jashari, Të nderuar familje të dëshmorëve, veteranë e invali..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:10",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:10",
+          "excerpt": "zonja kryetare! Tani të dashur qytetarë të Republikës, për të qenë shumë të qartë, LDK-ja i mbështet në parim amendamentet e tilla, sepse janë në frymë me bindjen tonë ideologjike. Presidenti i Kosovës duhet të zgjidhet nga qytetarët drejtp..."
+        },
         {
           "id": "2026-02-17-seanca:2026-02-17-seanca.json:10",
           "date": "2026-02-17",
@@ -10384,34 +10557,34 @@
       "name": "PËRPARIM GRUDA",
       "party": "PARTIA DEMOKRATIKE E KOSOVËS",
       "activity": {
-        "speechCount": 5,
-        "wordCount": 2679,
-        "sessionCount": 2
+        "speechCount": 11,
+        "wordCount": 3734,
+        "sessionCount": 3
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 53,
-          "score": 37.59
+          "mentions": 86,
+          "score": 48.04
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
-          "mentions": 49,
-          "score": 34.75
+          "mentions": 50,
+          "score": 27.93
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 22,
-          "score": 15.6
+          "mentions": 23,
+          "score": 12.85
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
           "mentions": 2,
-          "score": 1.42
+          "score": 1.12
         },
         {
           "topicId": "Shëndetësia",
@@ -10423,13 +10596,13 @@
           "topicId": "Arsimi",
           "label": "Arsimi",
           "mentions": 11,
-          "score": 7.8
+          "score": 6.15
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
           "mentions": 1,
-          "score": 0.71
+          "score": 0.56
         },
         {
           "topicId": "Inovacioni",
@@ -10452,14 +10625,14 @@
         {
           "topicId": "Energjia",
           "label": "Energjia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 3,
+          "score": 1.68
         },
         {
           "topicId": "Sporti",
           "label": "Sporti",
           "mentions": 1,
-          "score": 0.71
+          "score": 0.56
         },
         {
           "topicId": "Arti",
@@ -10471,10 +10644,64 @@
           "topicId": "Politika e Jashtme",
           "label": "Politika e Jashtme",
           "mentions": 2,
-          "score": 1.42
+          "score": 1.12
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:14",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:14",
+          "excerpt": "I nderuar kryeministër, Të nderuar anëtarë të Kabinetit qeveritar, Të nderuar deputetë, Të dashur qytetarë të Kosovës, Në çdo shoqëri normale debati për ndryshimet kushtetuese është debati më i gjerë mbi normat e një vendi. Nuk i përfshin v..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:16",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:16",
+          "excerpt": "Po dal te çështjet konkrete. Ky Kuvend funksionon sipas Rregullores së Punës të vet. Kryetare, ky Kuvend funksionon sipas Rregullores së Punës dhe më lejoni t’jua lexoj Rregulloren e Punës çfarë thotë për këtë rast. Thotë: S’e ke lexuar! Dë..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:18",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:18",
+          "excerpt": "Jo, unë po flas me juve se ju kujdeseni për Rregulloren në seancë."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:2",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:2",
+          "excerpt": "Kryetare, në Komisionin për Legjislacion janë shqyrtuar amendamentet dhe me shumicë votash i janë përcjellë seancës plenare. Pjesën tjetër të diskutimit tim do ta koncentroj si diskutimin si deputet. Faleminderit!"
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:20",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:20",
+          "excerpt": "Pse jo ty? Më fal, për këtë Rregullore, kryetare, kujdeseni ju apo jo? Ju jeni autoriteti final i këtij Kuvendi ta interpretoni Rregulloren? A është kështu? Nëse s’është kështu, thuama! Është kështu. Prandaj, po të drejtohem ty. Si kryetare..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:32",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:32",
+          "excerpt": "Vetëm ta sqarojmë se nuk duhet lënë në huti publikun, se zoti Qorolli dha informacione që s’ekzistojnë. Nuk është e vërtetë. Amendamenti numër 27 i Shteteve të Bashkuara të Amerikës nuk është iniciuar para 200 vjetëve, e miratuar prapa. Aty..."
+        },
         {
           "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:141",
           "date": "2026-02-16",
@@ -11701,52 +11928,52 @@
       "name": "TIME KADRIJAJ",
       "party": "ALEANCA PËR ARDHMËRINË E KOSOVËS",
       "activity": {
-        "speechCount": 2,
-        "wordCount": 1162,
-        "sessionCount": 2
+        "speechCount": 3,
+        "wordCount": 1710,
+        "sessionCount": 3
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 3,
-          "score": 3.49
+          "mentions": 5,
+          "score": 4.55
         },
         {
           "topicId": "Ekonomia",
           "label": "Ekonomia",
           "mentions": 37,
-          "score": 43.02
+          "score": 33.64
         },
         {
           "topicId": "Siguria",
           "label": "Siguria",
-          "mentions": 14,
-          "score": 16.28
+          "mentions": 22,
+          "score": 20
         },
         {
           "topicId": "Mirëqenia",
           "label": "Mirëqenia",
-          "mentions": 2,
-          "score": 2.33
+          "mentions": 15,
+          "score": 13.64
         },
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
           "mentions": 6,
-          "score": 6.98
+          "score": 5.45
         },
         {
           "topicId": "Arsimi",
           "label": "Arsimi",
           "mentions": 5,
-          "score": 5.81
+          "score": 4.55
         },
         {
           "topicId": "Infrastruktura",
           "label": "Infrastruktura",
           "mentions": 10,
-          "score": 11.63
+          "score": 9.09
         },
         {
           "topicId": "Inovacioni",
@@ -11758,19 +11985,19 @@
           "topicId": "Turizmi",
           "label": "Turizmi",
           "mentions": 3,
-          "score": 3.49
+          "score": 2.73
         },
         {
           "topicId": "Diaspora",
           "label": "Diaspora",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 0.91
         },
         {
           "topicId": "Energjia",
           "label": "Energjia",
           "mentions": 6,
-          "score": 6.98
+          "score": 5.45
         },
         {
           "topicId": "Sporti",
@@ -11792,6 +12019,15 @@
         }
       ],
       "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca-ora10.json:13",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora10.00_CHHcYgHqWd.pdf",
+          "reference": "2026-03-05-seanca-ora10.json:13",
+          "excerpt": "I nderuar Baca Rifat, E nderuar Familje Jashari, E nderuar Familje Haradinaj, Të nderuara familje të heronjve dhe të dëshmorëve të kombit, Të nderuar invalidë të luftës së Ushtrisë Çlirimtare të Kosovës, Veteranë, E nderuar presidente e ven..."
+        },
         {
           "id": "2026-02-13-16-seanca:2026-02-13-16-seanca.json:109",
           "date": "2026-02-16",
@@ -12409,16 +12645,16 @@
       "name": "VIGAN QORROLLI",
       "party": "Lëvizja VETËVENDOSJE!",
       "activity": {
-        "speechCount": 0,
-        "wordCount": 0,
-        "sessionCount": 0
+        "speechCount": 2,
+        "wordCount": 651,
+        "sessionCount": 1
       },
       "topics": [
         {
           "topicId": "Drejtësia",
           "label": "Drejtësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 16,
+          "score": 94.12
         },
         {
           "topicId": "Ekonomia",
@@ -12441,8 +12677,8 @@
         {
           "topicId": "Shëndetësia",
           "label": "Shëndetësia",
-          "mentions": 0,
-          "score": 0
+          "mentions": 1,
+          "score": 5.88
         },
         {
           "topicId": "Arsimi",
@@ -12499,7 +12735,26 @@
           "score": 0
         }
       ],
-      "activityHistory": []
+      "activityHistory": [
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca-ora22.json:6",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora22.00_M2JJvSqVKD.pdf",
+          "reference": "2026-03-05-seanca-ora22.json:6",
+          "excerpt": "zonja kryetare! Atëherë, Komisioni për Legjislacion, Mandate, Imunitete, Rregulloren e Kuvendit dhe Mbikëqyrjen e Agjencisë Kundër Korrupsionit ka kënaqësinë që këtij kuvendi t’i paraqesë raportin për verifikimin e kushteve të kandidatëve t..."
+        },
+        {
+          "id": "2026-03-05-seanca:2026-03-05-seanca.json:30",
+          "date": "2026-03-05",
+          "sessionId": "2026-03-05-seanca",
+          "source": "Transkripti zyrtar i Kuvendit të Kosovës",
+          "sourceUrl": "https://www.kuvendikosoves.org/Uploads/Data/SessionFiles/2026_03_05_ts_Seanca_ora20.00_qvnfTkpt6a.pdf",
+          "reference": "2026-03-05-seanca.json:30",
+          "excerpt": "zonja kryetare! Të nderuar kolegë deputetë, I nderuar zoti kryeministër, Kabinet qeveritar, Debati i përhershëm që bëhet për ndryshimet kushtetuese lidhur me zgjedhjen e presidentit drejtpërdrejt nga populli është shëndeti më i mirë i demok..."
+        }
+      ]
     },
     {
       "id": "vlora-citaku",
