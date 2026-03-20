@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { CATEGORIES } from '../data';
+import { compareDatedEntriesNewestFirst } from '../promiseDates';
 import { PartyPromise, PromiseDeputySignal, PromiseStatus } from '../types';
 
 interface PromiseDetailProps {
@@ -46,7 +47,7 @@ const statusBarClasses: Record<PromiseStatus, string> = {
 export const PromiseDetail: React.FC<PromiseDetailProps> = ({ promise, topDeputies }) => {
   const categoryInfo = CATEGORIES.find((c) => c.id === promise.category);
   const timelineDate = '2026-02-01';
-  const visibleUpdates = [...(promise.updates || [])].sort((a, b) => b.date.localeCompare(a.date));
+  const visibleUpdates = [...(promise.updates || [])].sort(compareDatedEntriesNewestFirst);
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10 md:py-14">

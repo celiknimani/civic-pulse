@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
+import { getLatestPromiseUpdate } from '../promiseDates';
 import { PartyPromise, PromiseStatus } from '../types';
 
 interface PromiseCardProps {
@@ -29,9 +30,7 @@ const statusLabels: Record<PromiseStatus, string> = {
 };
 
 const PromiseCard: React.FC<PromiseCardProps> = ({ promise, onClick }) => {
-  const lastUpdate = [...(promise.updates || [])]
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .at(0);
+  const lastUpdate = getLatestPromiseUpdate(promise);
   const lastUpdatePreview =
     lastUpdate?.description && lastUpdate.description.length > 100
       ? `${lastUpdate.description.slice(0, 100).trim()}...`

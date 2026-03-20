@@ -10,23 +10,12 @@ import QeveriaOrgChart from './components/QeveriaOrgChart';
 import QeveriaMinisterDetail from './components/QeveriaMinisterDetail';
 import { CATEGORIES, LVV_PROMISES } from './data';
 import { alignDeputyTopicsToPlatformCategories, parseDeputyDataset, rankDeputiesByActivity, SEED_DEPUTY_DATASET } from './deputiesData';
+import { getLatestPromiseUpdateTimestamp as getPromiseLatestUpdateTimestamp } from './promiseDates';
 import { DeputyDataset, DeputyProfile as DeputyProfileModel, PromiseDeputySignal, PromiseStatus } from './types';
-
-const getTimestamp = (value: string): number => {
-  const timestamp = Date.parse(value);
-  return Number.isNaN(timestamp) ? 0 : timestamp;
-};
 
 const getLatestPromiseUpdateTimestamp = (): number =>
   LVV_PROMISES.reduce((latestPromiseTimestamp, promise) => {
-    if (!promise.updates?.length) return latestPromiseTimestamp;
-
-    const latestPromiseUpdateTimestamp = promise.updates.reduce((latestUpdateTimestamp, update) => {
-      const timestamp = getTimestamp(update.date);
-      return Math.max(latestUpdateTimestamp, timestamp);
-    }, 0);
-
-    return Math.max(latestPromiseTimestamp, latestPromiseUpdateTimestamp);
+    return Math.max(latestPromiseTimestamp, getPromiseLatestUpdateTimestamp(promise));
   }, 0);
 
 const ALBANIAN_MONTHS = [
@@ -100,16 +89,6 @@ const Home: React.FC<HomeProps> = ({ lastUpdatedLabel }) => {
   const [visibleCount, setVisibleCount] = useState(15);
 
   const filteredPromises = useMemo(() => {
-    const getLatestUpdateTimestamp = (promise: (typeof LVV_PROMISES)[number]) => {
-      if (!promise.updates?.length) return 0;
-
-      return promise.updates.reduce((latest, update) => {
-        const timestamp = Date.parse(update.date);
-        if (Number.isNaN(timestamp)) return latest;
-        return Math.max(latest, timestamp);
-      }, 0);
-    };
-
     return LVV_PROMISES.filter((promise) => {
       const matchesCategory = selectedCategory === 'all' || promise.category === selectedCategory;
       const matchesSearch =
@@ -119,8 +98,8 @@ const Home: React.FC<HomeProps> = ({ lastUpdatedLabel }) => {
 
       return matchesCategory && matchesSearch && matchesStatus;
     }).sort((a, b) => {
-      const latestA = getLatestUpdateTimestamp(a);
-      const latestB = getLatestUpdateTimestamp(b);
+      const latestA = getPromiseLatestUpdateTimestamp(a);
+      const latestB = getPromiseLatestUpdateTimestamp(b);
       return latestB - latestA;
     });
   }, [selectedCategory, searchTerm, statusFilter]);

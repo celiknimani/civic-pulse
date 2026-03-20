@@ -1,3 +1,4 @@
+import { compareDatedEntriesNewestFirst, getDateTimestamp, getLatestPromiseUpdate } from '../promiseDates';
 import { PartyPromise, PromiseStatus, PromiseUpdate } from '../types';
 
 export interface MinistryConfig {
@@ -280,8 +281,8 @@ const getStatusWeight = (status: PromiseStatus): number => {
 
 const getFreshnessBonus = (date?: string): number => {
   if (!date) return 0;
-  const timestamp = Date.parse(date);
-  if (Number.isNaN(timestamp)) return 0;
+  const timestamp = getDateTimestamp(date);
+  if (!timestamp) return 0;
 
   const now = Date.now();
   const days = Math.floor((now - timestamp) / (1000 * 60 * 60 * 24));
@@ -292,17 +293,7 @@ const getFreshnessBonus = (date?: string): number => {
 };
 
 const getLatestUpdateDate = (promise: PartyPromise): string | undefined => {
-  if (!promise.updates?.length) return undefined;
-
-  const sorted = [...promise.updates].sort((a, b) => {
-    const aTs = Date.parse(a.date);
-    const bTs = Date.parse(b.date);
-    const safeA = Number.isNaN(aTs) ? -1 : aTs;
-    const safeB = Number.isNaN(bTs) ? -1 : bTs;
-    return safeB - safeA;
-  });
-
-  return sorted[0]?.date;
+  return getLatestPromiseUpdate(promise)?.date;
 };
 
 export const getPromisePerformanceScore = (promise: PartyPromise): number => {
@@ -355,13 +346,7 @@ const buildMinistryAnalytics = (config: MinistryConfig, promisesById: Map<string
     }))
   );
 
-  updates.sort((a, b) => {
-    const aTs = Date.parse(a.date);
-    const bTs = Date.parse(b.date);
-    const safeA = Number.isNaN(aTs) ? -1 : aTs;
-    const safeB = Number.isNaN(bTs) ? -1 : bTs;
-    return safeB - safeA;
-  });
+  updates.sort(compareDatedEntriesNewestFirst);
 
   const sumScores = promiseScores.reduce((sum, entry) => sum + entry.score, 0);
   const sumProgress = linkedPromises.reduce((sum, promise) => sum + promise.progress, 0);
