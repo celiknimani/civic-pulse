@@ -246,7 +246,7 @@ export const LVV_PROMISES: PartyPromise[] = [
     title: 'Çmimet Tavan',
     description: 'Vendosja e çmimeve tavan për produktet esenciale dhe naftën gjatë periudhave të krizave inflacioniste.',
     status: 'In Progress',
-    progress: 20,
+    progress: 25,
     startDate: '2022-03-01',
     dueDate: '2023-03-01',
     updates: [
@@ -254,10 +254,10 @@ export const LVV_PROMISES: PartyPromise[] = [
         date: '2026-02-20',
         status: 'In Progress',
         description:
-          'Në mbledhjen e dytë të Qeverisë u miratua Programi i Projektligjeve 2026-2028, ku përfshihet Projektligji i ri për Çmimet Tavan si zotim i planifikuar për procedim.',
-        source: 'Prime Minister - Albin Kurti on Facebook',
+          'Programi i Projektligjeve 2026-2028 e liston Projektligjin për Masat e Përkoshme të Produkteve Themelore në Rast të Krizave Ekonomike me afat 30.04.2026, duke e rikthyer në agjendë kornizën ligjore për çmimet tavan.',
+        source: 'Qeveria e Kosovës (Programi i Projektligjeve 2026-2028)',
         sourceUrl:
-          'https://www.facebook.com/albini2017/posts/pfbid0mmY2U5aGz12SrCkyawdispZrfnACtPuw3KqyQtrdJhekFisftLzvhYs8oyEYUba6l'
+          'https://kryeministri.rks-gov.net/wp-content/uploads/2026/02/Programi-i-Projekligjeve-per-vitet-2026-2028.pdf'
       }
     ]
   },
@@ -300,7 +300,7 @@ export const LVV_PROMISES: PartyPromise[] = [
     title: 'Fondi i Inovacionit dhe Rinia',
     description: 'Krijimi i Fondit të Inovacionit me vlerë 10 milionë euro për të mbështetur idetë inovative të të rinjve.',
     status: 'In Progress',
-    progress: 15,
+    progress: 20,
     startDate: '2022-06-01',
     dueDate: '2023-06-01',
     updates: [
@@ -310,6 +310,13 @@ export const LVV_PROMISES: PartyPromise[] = [
         description: 'Ministrja e Tregtisë dhe Industrisë njoftoi nënshkrimin e kërkesës për përshpejtimin e miratimit të Projektligjit për Inovacion dhe Ndërmarrësi, duke e lidhur atë me krijimin e Fondit për Inovacion.',
         source: 'Ministrja e Tregtisë dhe Industrisë - Mimoza Kusari-Lila (Facebook)',
         sourceUrl: 'https://www.facebook.com/mimozakusari/posts/pfbid027Sg4ZvzriSrwT3cKH8pQ1ww3ZmNwhb7UFgqHxDisSJ9Tchk6kzyHmGE5zCNUPwxsl'
+      },
+      {
+        date: '2026-02-23',
+        status: 'In Progress',
+        description: 'Programi i Projektligjeve 2026-2028 e mban në agjendë Projektligjin për Inovacion dhe Ndërmarrësi me afat 15.05.2026, si bazë ligjore e lidhur me krijimin e mekanizmave të mbështetjes për inovacionin.',
+        source: 'Qeveria e Kosovës (Programi i Projektligjeve 2026-2028)',
+        sourceUrl: 'https://kryeministri.rks-gov.net/wp-content/uploads/2026/02/Programi-i-Projekligjeve-per-vitet-2026-2028.pdf'
       },
       {
         date: '2026-03-12',
@@ -380,11 +387,33 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Ekonomia',
     title: 'Anëtarësimi në SEPA',
     description: 'Anëtarësimi në Zonën e Teke të Pagesave në Euro (SEPA) për të ulur kostot e remitencave dhe transaksioneve.',
-    status: 'Pending',
-    progress: 0,
+    status: 'Delayed',
+    progress: 35,
     startDate: '2023-01-01',
     dueDate: '2025-12-31',
-    updates: []
+    updates: [
+      {
+        date: '2024-01-31',
+        status: 'In Progress',
+        description: 'Këshilli Kombëtar i Pagesave e vendosi në fokus përgatitjen e Ligjit për Shërbimet e Pagesave dhe përmbushjen e kritereve për anëtarësim në SEPA, duke e formalizuar procesin si prioritet institucional.',
+        source: 'Banka Qendrore e Kosovës',
+        sourceUrl: 'https://bqk-kos.org/council/?lang=en'
+      },
+      {
+        date: '2024-12-23',
+        status: 'In Progress',
+        description: 'BQK dorëzoi paraaplikimin e përditësuar për SEPA në Komisionin Evropian, të shoqëruar me pakon ligjore dhe rregullative të miratuar së fundmi, si hap drejt aplikimit final.',
+        source: 'Banka Qendrore e Kosovës',
+        sourceUrl: 'https://bqk-kos.org/news/bqk-permbyll-paraaplikimin-per-sepa-te-komisionit-evropian-me-dorezimin-e-aplikacionit-te-perditesuar-shoqeruar-me-rregullativen-e-re-ligjore-te-miratuar-se-fundmi/?lang=en'
+      },
+      {
+        date: '2025-10-08',
+        status: 'Delayed',
+        description: 'KOHA raportoi se Kosova nuk arriti të anëtarësohet në SEPA gjatë vitit 2025 sepse ligjet parakusht, përfshirë Ligjin për Shërbimet e Pagesave, mbetën në shqyrtim në Gjykatën Kushtetuese.',
+        source: 'KOHA.net',
+        sourceUrl: 'https://www.koha.net/arberi/ligjet-qe-po-trajtohen-nga-kushtetuesja-pengojne-anetaresimin-e-kosoves-ne-sepa'
+      }
+    ]
   },
   {
     id: '29',
@@ -576,10 +605,24 @@ export const LVV_PROMISES: PartyPromise[] = [
     title: 'Bono për Kopshte (Publike/Jopublike)',
     description: 'Implementimi i sistemit të bonove (vouchers) për prindërit për të subvencionuar kostot e kopshteve, të vlefshme në sektorin publik dhe atë privat.',
     status: 'In Progress',
-    progress: 30,
+    progress: 35,
     startDate: '2026-01-01',
     dueDate: '2028-01-01',
     updates: [
+      {
+        date: '2024-12-23',
+        status: 'In Progress',
+        description: 'Qeveria nisi skemën pilot të bonove për kujdesin dhe edukimin parashkollor për fëmijët e familjeve në asistencë sociale, duke e kaluar premtimin nga faza programore në zbatim të kufizuar.',
+        source: 'Qeveria e Kosovës',
+        sourceUrl: 'https://kryeministri.rks-gov.net/en/blog/prime-minister-kurtis-address-at-the-plenary-session-of-the-kosovo-assembly-during-the-debate-on-a-nearly-four-year-governance/'
+      },
+      {
+        date: '2025-03-01',
+        status: 'In Progress',
+        description: 'KOHA raportoi se programi pilot i kuponëve për familjet në asistencë sociale ishte hapur dy herë për 100 përfituesit e parë, por deri atëherë kishte vetëm 23 aplikime, çka tregon zbatim real por ende shumë të kufizuar.',
+        source: 'KOHA.net',
+        sourceUrl: 'https://www.koha.net/arberi/23-aplikime-per-100-kuponet-qe-sigurojne-subvencion-per-cerdhe'
+      },
       { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes së kredisë për projektin “Edukimi në Fëmijërinë e Hershme dhe Kujdesi për Kapitalin Njerëzor të Kosovës”, që mbështet qasjen në shërbimet e hershme edukative.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
     ]
   },

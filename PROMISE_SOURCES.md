@@ -22,6 +22,7 @@ When you ask for promise updates, we use this list to narrow searches.
 | gov-mfa | government_website | 1 | 112,113,114,115,116,117,118 | ministry,foreign-affairs,official | true | html | https://mfa-ks.net/ |
 | gov-justice | government_website | 1 | 1,98,99,100,101 | ministry,justice,official | true | html | https://md.rks-gov.net/ |
 | gov-finance | government_website | 1 | 14,15,16,39 | ministry,finance,official | true | html | https://mfpt.rks-gov.net/ |
+| gov-cbk | government_website | 1 | 28 | central-bank,payments,sepa,official | true | html | https://bqk-kos.org/ |
 | gov-work-family | government_website | 1 | 3,32,33,34,35,40 | ministry,work-family,official | true | html | https://kryeministri.rks-gov.net/staff/andin-hoti/ |
 | gov-defense | government_website | 1 | 2,8,9,10,104,107,108,110,111 | ministry,defense,official | true | html | https://mod.rks-gov.net/ |
 | gov-interior | government_website | 1 | 102,103,105 | ministry,interior,official | true | html | https://mpb.rks-gov.net/ |

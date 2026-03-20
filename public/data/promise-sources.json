@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-18T20:02:46.032Z",
-  "sourceCount": 61,
-  "enabledSourceCount": 61,
+  "generatedAt": "2026-03-20T20:24:20.802Z",
+  "sourceCount": 62,
+  "enabledSourceCount": 62,
   "summary": {
     "byType": {
-      "government_website": 20,
+      "government_website": 21,
       "minister_social": 36,
       "trusted_news": 5
     },
     "byTrustTier": {
-      "1": 20,
+      "1": 21,
       "2": 36,
       "3": 5
     }
@@ -91,6 +91,23 @@
       "enabled": true,
       "fetchMode": "html",
       "url": "https://mfpt.rks-gov.net/"
+    },
+    {
+      "sourceId": "gov-cbk",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "28"
+      ],
+      "tags": [
+        "central-bank",
+        "payments",
+        "sepa",
+        "official"
+      ],
+      "enabled": true,
+      "fetchMode": "html",
+      "url": "https://bqk-kos.org/"
     },
     {
       "sourceId": "gov-work-family",
