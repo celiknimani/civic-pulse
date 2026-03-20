@@ -86,4 +86,5 @@ When you ask for promise updates, we use this list to narrow searches.
 1. Generate JSON: `npm run build:promise-sources`.
 2. Review `public/data/promise-sources.json`.
 3. Use filtered sources for update checks.
-4. Apply promise data updates only after review/approval.
+4. Always check for the latest available updates relative to today's date before recording a promise change; prefer the most recent source publication date over older matching coverage.
+5. Apply promise data updates only after review/approval.
