@@ -64,13 +64,20 @@ export const LVV_PROMISES: PartyPromise[] = [
     title: 'Banka Zhvillimore',
     description: 'Themelimi i Bankës Zhvillimore për të mbështetur bizneset dhe projektet strategjike.',
     status: 'Delayed',
-    progress: 0,
+    progress: 15,
     startDate: '2021-03-22',
     dueDate: '2025-02-01',
     updates: [
         { date: '2022-03-10', status: 'Pending', description: 'Diskutimet fillestare me partnerët ndërkombëtarë.' },
         { date: '2024-01-15', status: 'Delayed', description: 'Mungesa e kornizës ligjore të nevojshme.' },
-        { date: '2026-02-27', status: 'Delayed', description: 'Sipas raportimit të KOHA-s, Ligji për Bankën Zhvillimore nuk është i planifikuar për vitin 2026 dhe synohet gjysma e dytë e vitit 2027, ndërsa marrëveshja e financimit me Bankën Botërore ende nuk është nënshkruar.', source: 'KOHA', sourceUrl: 'https://www.koha.net/ekonomi/banka-zhvillimore-synon-gjysmen-e-dyte-te-vitit-2027' }
+        { date: '2026-02-27', status: 'Delayed', description: 'Sipas raportimit të KOHA-s, Ligji për Bankën Zhvillimore nuk është i planifikuar për vitin 2026 dhe synohet gjysma e dytë e vitit 2027, ndërsa marrëveshja e financimit me Bankën Botërore ende nuk është nënshkruar.', source: 'KOHA', sourceUrl: 'https://www.koha.net/ekonomi/banka-zhvillimore-synon-gjysmen-e-dyte-te-vitit-2027' },
+        {
+          date: '2026-03-23',
+          status: 'In Progress',
+          description: 'Ministria e Financave njoftoi nënshkrimin e dy marrëveshjeve me Bankën Botërore në vlerë totale prej 96 milionë eurosh, ku përfshihet edhe themelimi i Bankës Zhvillimore të Kosovës. Kjo shënon përparim konkret financiar, megjithëse realizimi i plotë mbetet i vonuar ndaj afatit fillestar.',
+          source: 'Telegrafi',
+          sourceUrl: 'https://telegrafi.com/ministria-e-financave-nenshkruan-marreveshje-ne-vlere-prej-96-milione-euro-me-banken-boterore/'
+        }
     ]
   },
   {
@@ -508,6 +515,13 @@ export const LVV_PROMISES: PartyPromise[] = [
         description: 'Inspektorati i Punës raportoi mbikëqyrje aktive të zbatimit të vendimit për pagën minimale; nga janari 2026 niveli bruto është 425 euro, ndërsa faza e dytë drejt 500 euro mbetet për t’u zbatuar.',
         source: 'Kallxo.com',
         sourceUrl: 'https://kallxo.com/gjate/zbatimi-i-vendimit-per-rritjen-e-pages-minimale-nen-llupen-e-inspektoratit-te-punes/'
+      },
+      {
+        date: '2026-03-10',
+        status: 'In Progress',
+        description: 'Ministria e Punës nisi inspektimin pas pretendimeve për moszbatim të pagës minimale për punëtorët teknikë dhe të sigurimit, duke treguar se zbatimi i fazës së parë po monitorohet ende në terren.',
+        source: 'KOHA.net',
+        sourceUrl: 'https://www.koha.net/arberi/fillon-inspektimi-per-zbatimin-e-pages-minimale-per-punetoret-e-sigurimit-fizike-dhe-teknike'
       }
     ]
   },
@@ -560,22 +574,38 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Arsimi',
     title: 'Bursa për studentët në STEM',
     description: 'Ndarja e bursave për të gjithë studentët e fushave STEM, përfshirë ata në universitete private, për të nxitur shkencën dhe teknologjinë.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2025-10-01',
     dueDate: '2028-06-01',
-    updates: []
+    updates: [
+      {
+        date: '2025-10-03',
+        status: 'In Progress',
+        description: 'MASHT shpalli njërën nga pesë skemat e bursave për vitin akademik 2025/2026 si bursë prej 1,000 eurosh për vajza dhe gra në programet STEM në universitetet publike, duke sinjalizuar zbatim të pjesshëm të zotimit.',
+        source: 'MASHT',
+        sourceUrl: 'https://mash.rks-gov.net/en/news/press-release/'
+      }
+    ]
   },
   {
     id: '42',
     category: 'Arsimi',
     title: 'Rishikimi i Teksteve Shkollore',
     description: 'Proces gjithëpërfshirës për rishikimin dhe përmirësimin e teksteve shkollore për të eliminuar gabimet dhe modernizuar përmbajtjen.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 15,
     startDate: '2024-01-01',
     dueDate: '2026-09-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-01-15',
+        status: 'In Progress',
+        description: 'MASHT themeloi Këshillin e Ekspertëve për Kurrikula dhe Tekste Shkollore, me mandat për analizimin e kurrikulave lëndore, rishikimin profesional të teksteve dhe materialeve mësimore dhe përgatitjen e katalogut të teksteve.',
+        source: 'MASHT',
+        sourceUrl: 'https://mash.rks-gov.net/en/news/council-of-experts-for-curricula-and-school-textbooks-established/'
+      }
+    ]
   },
   {
     id: '43',
@@ -605,7 +635,7 @@ export const LVV_PROMISES: PartyPromise[] = [
     title: 'Bono për Kopshte (Publike/Jopublike)',
     description: 'Implementimi i sistemit të bonove (vouchers) për prindërit për të subvencionuar kostot e kopshteve, të vlefshme në sektorin publik dhe atë privat.',
     status: 'In Progress',
-    progress: 35,
+    progress: 40,
     startDate: '2026-01-01',
     dueDate: '2028-01-01',
     updates: [
@@ -623,7 +653,14 @@ export const LVV_PROMISES: PartyPromise[] = [
         source: 'KOHA.net',
         sourceUrl: 'https://www.koha.net/arberi/23-aplikime-per-100-kuponet-qe-sigurojne-subvencion-per-cerdhe'
       },
-      { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes së kredisë për projektin “Edukimi në Fëmijërinë e Hershme dhe Kujdesi për Kapitalin Njerëzor të Kosovës”, që mbështet qasjen në shërbimet e hershme edukative.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' }
+      { date: '2026-02-12', status: 'In Progress', description: 'Qeveria miratoi projektligjin për ratifikimin e marrëveshjes së kredisë për projektin “Edukimi në Fëmijërinë e Hershme dhe Kujdesi për Kapitalin Njerëzor të Kosovës”, që mbështet qasjen në shërbimet e hershme edukative.', source: 'Qeveria e Kosovës', sourceUrl: 'https://kryeministri.rks-gov.net/news/mbledhja-peruruese-e-qeverise-se-re-te-kosoves/' },
+      {
+        date: '2026-03-19',
+        status: 'In Progress',
+        description: 'MASHT njoftoi nisjen e punimeve për adaptimin e shkollës së vjetër në Carralevë të Shtimes në çerdhe funksionale, si zgjerim konkret i kapaciteteve për edukim dhe kujdes në fëmijërinë e hershme.',
+        source: 'MASHT',
+        sourceUrl: 'https://mash.rks-gov.net/news/fillojne-punimet-per-adaptimin-e-shkolles-se-vjeter-ne-cerdhe-ne-carraleve-te-shtimes/'
+      }
     ]
   },
   {
@@ -1151,7 +1188,7 @@ export const LVV_PROMISES: PartyPromise[] = [
     title: '50 Milion Euro për Burime Natyrore',
     description: 'Investim prej 50 milionë euro për skanimin dhe identifikimin e burimeve të reja natyrore dhe energjetike.',
     status: 'In Progress',
-    progress: 10,
+    progress: 20,
     startDate: '2025-09-01',
     dueDate: '2027-09-01',
     updates: [
@@ -1175,6 +1212,20 @@ export const LVV_PROMISES: PartyPromise[] = [
         description: 'Ministrja Fitore Pacolli njoftoi vendim për ndalim të rreptë të aktiviteteve ndërtimore pa leje në Parqet Kombëtare “Bjeshkët e Nemuna” dhe “Sharri”, përfshirë ndalim qarkullimi të mjeteve që bartin material ndërtimor pa autorizim të posaçëm nga MMPH.',
         source: 'Fitore Pacolli (Facebook)',
         sourceUrl: 'https://www.facebook.com/fitore.pacolli/posts/pfbid0sNSdGn9QKJe22Hjapj4eQ6H8Nukj9FJEJDAPU8Dee8qx6NgYuwdkyRFJbaryCg63l'
+      },
+      {
+        date: '2026-01-15',
+        status: 'In Progress',
+        description: 'Ministrja Rizvanolli deklaroi në Future Minerals Forum në Riad investim prej 50 milionë eurosh në kërkime minerare, si dhe theksoi sektorin minerar si prioritet të qeverisë së ardhshme.',
+        source: 'Ministria e Ekonomisë',
+        sourceUrl: 'https://me.rks-gov.net/en/blog/minister-rizvanolli-represents-kosovo-for-the-first-time-at-the-international-conference-future-minerals-forum-in-riyadh/'
+      },
+      {
+        date: '2026-03-03',
+        status: 'In Progress',
+        description: 'Në konferencën PDAC, Ministria e Ekonomisë riafirmoi se do të intensifikojë mbledhjen sistematike të të dhënave gjeoshkencore për vlerësimin e potencialit minerar dhe planifikimin strategjik afatgjatë.',
+        source: 'Ministria e Ekonomisë',
+        sourceUrl: 'https://me.rks-gov.net/blog/ministrja-rizvanolli-prezanton-prioritetet-strategjike-te-ministrise-se-ekonomise-ne-sektorin-minerar-ne-kuader-te-pdac/'
       }
     ]
   },
@@ -1183,11 +1234,26 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Energjia',
     title: 'Bashkëinvestitor i Ri në Trepçë',
     description: 'Bërja e Trepçës me bashkëinvestitor të ri strategjik për të rritur prodhimin dhe përpunimin e mineraleve.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 15,
     startDate: '2025-04-01',
     dueDate: '2028-04-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-01-15',
+        status: 'In Progress',
+        description: 'Në Future Minerals Forum në Riad, Ministrja Rizvanolli njoftoi se po synohet investim strategjik në Trepçë në bashkëpunim me një korporatë me përvojë nga një shtet mik.',
+        source: 'Ministria e Ekonomisë',
+        sourceUrl: 'https://me.rks-gov.net/en/blog/minister-rizvanolli-represents-kosovo-for-the-first-time-at-the-international-conference-future-minerals-forum-in-riyadh/'
+      },
+      {
+        date: '2026-03-03',
+        status: 'In Progress',
+        description: 'Ministria e Ekonomisë bëri të ditur në PDAC se për Trepçën po shqyrtohet modeli i partneritetit publiko-privat për modernizimin dhe zhvillimin e saj, me investime në teknologji bashkëkohore dhe përpunim të mëtejmë.',
+        source: 'Ministria e Ekonomisë',
+        sourceUrl: 'https://me.rks-gov.net/blog/ministrja-rizvanolli-prezanton-prioritetet-strategjike-te-ministrise-se-ekonomise-ne-sektorin-minerar-ne-kuader-te-pdac/'
+      }
+    ]
   },
   {
     id: '86',
@@ -1303,11 +1369,19 @@ export const LVV_PROMISES: PartyPromise[] = [
     category: 'Arti',
     title: 'Muzeu i Artit Bashkëkohor',
     description: 'Themelimi dhe ndërtimi i Muzeut të Artit Bashkëkohor për ruajtjen dhe ekspozimin e veprave të artistëve vendorë dhe ndërkombëtarë.',
-    status: 'Pending',
-    progress: 0,
+    status: 'In Progress',
+    progress: 10,
     startDate: '2026-01-01',
     dueDate: '2029-01-01',
-    updates: []
+    updates: [
+      {
+        date: '2026-03-12',
+        status: 'In Progress',
+        description: 'KOHA raportoi se Muzeu i Artit Bashkëkohor, megjithëse i themeluar që në janar 2024, mbetet jofunksional dhe pa seli të vetën, por vazhdon zgjerimin e stafit dhe procedurat administrative.',
+        source: 'KOHA.net',
+        sourceUrl: 'https://www.koha.net/kulture/muzeu-i-artit-bashkekohor-vazhdon-me-punesime-duke-qene-jofunksional'
+      }
+    ]
   },
   {
     id: '96',
