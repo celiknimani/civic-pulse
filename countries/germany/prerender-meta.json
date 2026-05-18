@@ -1,0 +1,54 @@
+{
+  "brand": "civic-pulse Deutschland",
+  "defaultTitle": "civic-pulse Deutschland - Transparenz und Rechenschaft",
+  "defaultDescription": "civic-pulse Deutschland verfolgt Regierungsversprechen und parlamentarische Aktivität auf Basis offizieller Quellen.",
+  "fallbackLeadLabel": "civic-pulse Deutschland",
+  "fallbackNoticeText": "Der vollständige interaktive Inhalt wird nach der JavaScript-Ausführung geladen. Diese Seite enthält die wichtigsten Informationen für Suche und Indexierung.",
+  "fallbackNavAriaLabel": "Hauptnavigation",
+  "navLinks": [
+    { "href": "/", "label": "Startseite" },
+    { "href": "/deputetet/", "label": "Abgeordnete" },
+    { "href": "/qeveria/", "label": "Regierung" },
+    { "href": "/methodology/", "label": "Methodik" },
+    { "href": "/about/", "label": "Über uns" },
+    { "href": "/privacy/", "label": "Datenschutz" },
+    { "href": "/contact/", "label": "Kontakt" }
+  ],
+  "routes": {
+    "/": {
+      "title": "civic-pulse Deutschland - Transparenz und Rechenschaft",
+      "description": "civic-pulse Deutschland verfolgt Regierungsversprechen und parlamentarische Aktivität auf Basis offizieller Quellen."
+    },
+    "/deputetet": {
+      "title": "civic-pulse Deutschland - Abgeordnete und Bundestagsaktivität",
+      "description": "Übersicht der Bundestagsabgeordneten mit Aktivitätsmetriken, behandelten Themen und Interventionsverlauf aus offiziellen Quellen."
+    },
+    "/qeveria": {
+      "title": "civic-pulse Deutschland - Regierung und Ministerien",
+      "description": "Organigramm der Bundesregierung, Profile der Ministerien und Bewertung jedes Portfolios auf Basis verfolgter Versprechen."
+    },
+    "/methodology": {
+      "title": "civic-pulse Deutschland - Methodik",
+      "description": "Methodik der Plattform: Quellen, Bewertungslogik und reproduzierbare Metriken für die Versprechensverfolgung."
+    },
+    "/about": {
+      "title": "civic-pulse Deutschland - Über uns",
+      "description": "Über die Plattform: Mission, redaktionelle Standards und offizielle Quellen."
+    },
+    "/privacy": {
+      "title": "civic-pulse Deutschland - Datenschutz",
+      "description": "Datenschutzerklärung: Analyse, Cookies und Umgang mit technischen Mindestdaten."
+    },
+    "/contact": {
+      "title": "civic-pulse Deutschland - Kontakt",
+      "description": "Kontakt für Korrekturen, offizielle Quellen und Hinweise zur Datengenauigkeit."
+    }
+  },
+  "templates": {
+    "promiseTitle": "civic-pulse Deutschland - Versprechen #{id}: {title}",
+    "ministryTitle": "civic-pulse Deutschland - {portfolio}: {minister}",
+    "ministryDescription": "Profil des {portfolioLower} ({minister}) mit verknüpften Versprechen, Fortschritt und letzten Aktualisierungen.",
+    "deputyTitle": "civic-pulse Deutschland - {name}",
+    "deputyDescription": "Profil von {name}, behandelte Themen und Verlauf der parlamentarischen Aktivität aus offiziellen Quellen."
+  }
+}

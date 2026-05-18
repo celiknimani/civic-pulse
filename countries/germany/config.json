@@ -1,0 +1,38 @@
+{
+  "$schema": "../_schema/country-config.schema.json",
+  "code": "germany",
+  "name": "Federal Republic of Germany",
+  "nativeName": "Bundesrepublik Deutschland",
+  "locale": "de",
+  "dateLocale": "de-DE",
+  "siteUrl": "https://example.de",
+  "categoryAllLabel": "Alle",
+  "trackedParty": {
+    "code": "TBD",
+    "name": "TODO — fill in the party whose manifesto you are tracking",
+    "shortName": "TBD"
+  },
+  "governmentTerm": {
+    "label": "TODO — current cabinet name",
+    "startDate": "2025-01-01"
+  },
+  "parliament": {
+    "label": "Deutscher Bundestag",
+    "memberCount": 736,
+    "memberLabel": "Abgeordnete:r"
+  },
+  "transcriptLabels": {
+    "fallback": "Plenarprotokoll",
+    "officialPdf": "Offizielles Dokument - PDF"
+  },
+  "transcriptSourceMatchers": [
+    { "pattern": "bundestag\\.de", "label": "Deutscher Bundestag - Offizielles PDF" }
+  ],
+  "uiTerms": {
+    "promiseLabel": "Versprechen",
+    "promisesLabel": "Versprechen",
+    "depyutyLabel": "Abgeordnete:r",
+    "deputiesLabel": "Abgeordnete",
+    "governmentLabel": "Regierung"
+  }
+}

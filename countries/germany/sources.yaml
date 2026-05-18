@@ -1,0 +1,39 @@
+country: germany
+
+defaults:
+  trust_tier: 2
+  enabled: false
+
+sources:
+  - id: bundesregierung-news
+    label: Bundesregierung - Aktuelles
+    url: https://www.bundesregierung.de/breg-de/aktuelles
+    type: government_website
+    fetch_mode: html
+    trust_tier: 1
+    enabled: false
+    extract:
+      tracks: [promises, ministerStatements]
+      languageHint: de
+
+  - id: bundestag-protokolle
+    label: Deutscher Bundestag - Plenarprotokolle
+    url: https://www.bundestag.de/services/opendata
+    type: parliament_transcript
+    fetch_mode: pdf
+    trust_tier: 1
+    enabled: false
+    extract:
+      tracks: [deputyActivity]
+      languageHint: de
+
+  - id: bundesgesetzblatt
+    label: Bundesgesetzblatt
+    url: https://www.recht.bund.de/
+    type: official_gazette
+    fetch_mode: html
+    trust_tier: 1
+    enabled: false
+    extract:
+      tracks: [promises]
+      languageHint: de

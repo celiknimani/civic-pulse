@@ -1,0 +1,28 @@
+{
+  "eyebrow": "Contact and contributions",
+  "title": "Help improve civic-pulse",
+  "intro": "civic-pulse is open source. The fastest way to flag an error, suggest a source, or propose a feature is to open an issue or pull request on GitHub.",
+  "sections": [
+    {
+      "title": "Open an issue or pull request",
+      "paragraphs": [
+        "The project lives at https://github.com/celiknimani/civic-pulse. Use the GitHub issue tracker for bug reports, factual corrections, methodology questions, and feature requests.",
+        "Code, data, and documentation changes are welcome as pull requests. Small, focused PRs with a clear description are easiest to review and merge."
+      ]
+    },
+    {
+      "title": "What helps most in an issue or PR",
+      "paragraphs": [
+        "Include the page URL, the claim that should be reviewed, the official source that contradicts or completes it, and the specific change you propose.",
+        "Requests linked to official documents, decisions, communications, or transcripts are easier to review and update."
+      ]
+    },
+    {
+      "title": "Work with 38Shift",
+      "paragraphs": [
+        "For partnerships, custom deployments, or to build something similar for another country or institution, reach 38Shift at https://38shift.com or email hello@38shift.com."
+      ]
+    }
+  ],
+  "note": "For questions about privacy, analytics, or the use of cookies, see the privacy policy page."
+}

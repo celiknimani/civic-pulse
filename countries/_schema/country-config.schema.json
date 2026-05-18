@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Country configuration",
+  "description": "Per-country settings for a civic-pulse deployment.",
+  "type": "object",
+  "required": ["code", "name", "locale", "trackedParty"],
+  "properties": {
+    "code": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "Directory name under countries/. Lowercase, kebab-case."
+    },
+    "name": {
+      "type": "string",
+      "description": "Country name in English."
+    },
+    "nativeName": {
+      "type": "string",
+      "description": "Country name in its native language."
+    },
+    "locale": {
+      "type": "string",
+      "description": "BCP-47 language tag used for UI rendering (e.g. 'en', 'sq', 'de')."
+    },
+    "dateLocale": {
+      "type": "string",
+      "description": "BCP-47 tag for Intl date formatting. Falls back to `locale` when omitted."
+    },
+    "siteUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical site URL for sitemap, OG, structured data."
+    },
+    "categoryAllLabel": {
+      "type": "string",
+      "description": "Label shown for the 'all categories' filter chip."
+    },
+    "trackedParty": {
+      "type": "object",
+      "required": ["code", "name"],
+      "properties": {
+        "code": { "type": "string" },
+        "name": { "type": "string" },
+        "shortName": { "type": "string" }
+      }
+    },
+    "governmentTerm": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "startDate": { "type": "string", "format": "date" },
+        "endDate": { "type": "string", "format": "date" }
+      }
+    },
+    "parliament": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "memberCount": { "type": "integer", "minimum": 1 },
+        "memberLabel": { "type": "string" }
+      }
+    },
+    "transcriptLabels": {
+      "type": "object",
+      "properties": {
+        "fallback": { "type": "string" },
+        "officialPdf": { "type": "string" }
+      }
+    },
+    "transcriptSourceMatchers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pattern", "label"],
+        "properties": {
+          "pattern": { "type": "string" },
+          "label": { "type": "string" }
+        }
+      }
+    },
+    "uiTerms": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  }
+}

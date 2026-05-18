@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Justice",
+    "label": "Justice",
+    "icon": "fa-scale-unbalanced",
+    "keywords": ["justice", "court", "judge", "prosecutor", "constitution", "corruption", "rule of law"]
+  },
+  {
+    "id": "Economy",
+    "label": "Economy",
+    "icon": "fa-chart-line",
+    "keywords": ["economy", "business", "investment", "market", "tax", "budget", "inflation", "wage", "industry"]
+  },
+  {
+    "id": "Security",
+    "label": "Security",
+    "icon": "fa-shield-halved",
+    "keywords": ["security", "police", "defense", "military", "border", "crime", "terror"]
+  },
+  {
+    "id": "SocialWelfare",
+    "label": "Social welfare",
+    "icon": "fa-hands-holding-child",
+    "keywords": ["social", "pension", "family", "children", "equality", "poverty", "housing"]
+  },
+  {
+    "id": "Health",
+    "label": "Health",
+    "icon": "fa-heart-pulse",
+    "keywords": ["health", "hospital", "doctor", "patient", "clinic", "care", "insurance", "medicine"]
+  },
+  {
+    "id": "Education",
+    "label": "Education",
+    "icon": "fa-graduation-cap",
+    "keywords": ["education", "school", "university", "student", "teacher", "curriculum", "training"]
+  },
+  {
+    "id": "Infrastructure",
+    "label": "Infrastructure",
+    "icon": "fa-bridge-water",
+    "keywords": ["road", "infrastructure", "transport", "rail", "bridge", "water", "construction"]
+  },
+  {
+    "id": "Innovation",
+    "label": "Innovation",
+    "icon": "fa-microchip",
+    "keywords": ["innovation", "technology", "digital", "startup", "software", "platform", "ai", "research"]
+  },
+  {
+    "id": "Energy",
+    "label": "Energy",
+    "icon": "fa-solar-panel",
+    "keywords": ["energy", "electricity", "power plant", "solar", "wind", "gas", "heating", "efficiency"]
+  },
+  {
+    "id": "ForeignPolicy",
+    "label": "Foreign policy",
+    "icon": "fa-globe",
+    "keywords": ["foreign", "diplomacy", "united nations", "european union", "treaty", "international"]
+  }
+]

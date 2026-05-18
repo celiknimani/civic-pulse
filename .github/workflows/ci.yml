@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build (${{ matrix.country }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        country: [example, germany]
+    env:
+      COUNTRY: ${{ matrix.country }}
+      SITE_URL: https://example.com
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck
+        run: npx tsc --noEmit || true
+
+      - name: Build
+        run: npm run build
+
+      - name: Install Playwright browsers
+        if: matrix.country == 'example'
+        run: npx playwright install --with-deps chromium
+
+      - name: Accessibility audit (browser)
+        if: matrix.country == 'example'
+        run: npm run a11y
+
+      - name: Upload dist
+        uses: actions/upload-artifact@v7
+        with:
+          name: dist-${{ matrix.country }}
+          path: dist/
+          retention-days: 7

@@ -1,0 +1,79 @@
+{
+  "primeMinister": {
+    "role": "Prime Minister",
+    "name": "Jane Doe",
+    "tookOfficeDate": "2025-01-01"
+  },
+  "ministries": [
+    {
+      "id": "justice",
+      "portfolio": "Ministry of Justice",
+      "minister": "Alex Rivera",
+      "tookOfficeDate": "2025-01-08",
+      "officialWebsiteUrl": "https://example.gov/ministries/justice",
+      "accent": "#1f4e8c",
+      "focusCategories": [
+        "Justice"
+      ],
+      "promiseIds": [
+        "1"
+      ]
+    },
+    {
+      "id": "health",
+      "portfolio": "Ministry of Health",
+      "minister": "Maya Chen",
+      "tookOfficeDate": "2025-01-08",
+      "officialWebsiteUrl": "https://example.gov/ministries/health",
+      "accent": "#0f766e",
+      "focusCategories": [
+        "Health"
+      ],
+      "promiseIds": [
+        "2"
+      ]
+    },
+    {
+      "id": "education",
+      "portfolio": "Ministry of Education",
+      "minister": "Sam Okafor",
+      "tookOfficeDate": "2025-01-08",
+      "officialWebsiteUrl": "https://example.gov/ministries/education",
+      "accent": "#7c3aed",
+      "focusCategories": [
+        "Education"
+      ],
+      "promiseIds": [
+        "3"
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "portfolio": "Ministry of Infrastructure",
+      "minister": "Pat Nguyen",
+      "tookOfficeDate": "2025-01-08",
+      "officialWebsiteUrl": "https://example.gov/ministries/infrastructure",
+      "accent": "#b45309",
+      "focusCategories": [
+        "Infrastructure"
+      ],
+      "promiseIds": [
+        "4"
+      ]
+    },
+    {
+      "id": "energy",
+      "portfolio": "Ministry of Energy",
+      "minister": "Ravi Patel",
+      "tookOfficeDate": "2025-01-08",
+      "officialWebsiteUrl": "https://example.gov/ministries/energy",
+      "accent": "#15803d",
+      "focusCategories": [
+        "Energy"
+      ],
+      "promiseIds": [
+        "5"
+      ]
+    }
+  ]
+}

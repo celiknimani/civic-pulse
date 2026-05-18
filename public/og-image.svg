@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">civic-pulse — government accountability tracker</title>
+  <desc id="desc">civic-pulse tracks government promises, parliamentary activity, and ministerial performance from official sources, with documented logic and reproducible metrics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f1e4"/>
+      <stop offset="60%" stop-color="#efe5d1"/>
+      <stop offset="100%" stop-color="#e8dcc4"/>
+    </linearGradient>
+    <radialGradient id="haloA" cx="0.2" cy="0.15" r="0.6">
+      <stop offset="0%" stop-color="#1f4b7f" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#1f4b7f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haloB" cx="0.85" cy="0.9" r="0.55">
+      <stop offset="0%" stop-color="#b8893f" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#b8893f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#haloA)"/>
+  <rect width="1200" height="630" fill="url(#haloB)"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="84" y="84" width="240" height="56" rx="28" fill="#102949"/>
+    <text x="204" y="120" text-anchor="middle" fill="#f4ddab" font-size="22" font-weight="700">CIVIC-PULSE</text>
+
+    <text x="84" y="230" fill="#102949" font-size="62" font-weight="800">Government Accountability</text>
+    <text x="84" y="306" fill="#b0822e" font-size="62" font-weight="800">Tracker</text>
+
+    <text x="84" y="390" fill="#43566f" font-size="28" font-weight="600">
+      Promises • Parliament • Ministries
+    </text>
+    <text x="84" y="438" fill="#5c6f86" font-size="24" font-weight="500">
+      Official sources, reproducible metrics, open source
+    </text>
+
+    <text x="84" y="560" fill="#6f5c36" font-size="24" font-weight="700">civic-pulse</text>
+  </g>
+</svg>

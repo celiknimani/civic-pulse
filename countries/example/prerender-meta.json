@@ -1,0 +1,49 @@
+{
+  "brand": "civic-pulse",
+  "defaultTitle": "civic-pulse - government accountability tracker",
+  "defaultDescription": "civic-pulse tracks government promises, parliamentary activity, and ministerial performance from official sources. This is the open-source demo with illustrative data.",
+  "fallbackLeadLabel": "civic-pulse",
+  "fallbackNoticeText": "The full interactive content loads after JavaScript executes. This page preserves the key information for search indexing.",
+  "fallbackNavAriaLabel": "Primary navigation",
+  "navLinks": [
+    { "href": "/", "label": "Home" },
+    { "href": "/deputetet/", "label": "Members" },
+    { "href": "/qeveria/", "label": "Government" },
+    { "href": "/methodology/", "label": "Methodology" },
+    { "href": "/privacy/", "label": "Privacy" },
+    { "href": "/contact/", "label": "Contact" }
+  ],
+  "routes": {
+    "/": {
+      "title": "civic-pulse - government accountability tracker",
+      "description": "Open-source government accountability platform. Track promises, parliamentary activity, and ministerial performance from official sources."
+    },
+    "/deputetet": {
+      "title": "civic-pulse - parliamentary members and activity",
+      "description": "Roster of legislators with activity metrics, topic coverage, and intervention history sourced from official transcripts."
+    },
+    "/qeveria": {
+      "title": "civic-pulse - government and ministry performance",
+      "description": "Cabinet org chart, ministry profiles, and per-portfolio scores based on tracked promises, progress, and the most recent updates."
+    },
+    "/methodology": {
+      "title": "civic-pulse - methodology",
+      "description": "How the platform monitors promises: mission, editorial standards, sources, scoring logic, and reproducible metrics."
+    },
+    "/privacy": {
+      "title": "civic-pulse - privacy policy",
+      "description": "Privacy notice: analytics, cookies, and the handling of minimal technical data."
+    },
+    "/contact": {
+      "title": "civic-pulse - contact and corrections",
+      "description": "How to submit corrections, cite official sources, and report concerns about data accuracy."
+    }
+  },
+  "templates": {
+    "promiseTitle": "civic-pulse - Promise #{id}: {title}",
+    "ministryTitle": "civic-pulse - {portfolio}: {minister}",
+    "ministryDescription": "Profile of the {portfolioLower} ({minister}) with linked promises, progress, and recent updates.",
+    "deputyTitle": "civic-pulse - {name}",
+    "deputyDescription": "Profile of {name}: topics discussed and parliamentary activity history sourced from official records."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "eyebrow": "Über die Plattform",
+  "title": "So funktioniert civic-pulse Deutschland",
+  "intro": "civic-pulse Deutschland ist eine unabhängige Plattform, die öffentliche Versprechen, institutionelle Aktivität und parlamentarische Arbeit anhand offizieller Quellen mit dokumentierter Logik und reproduzierbaren Metriken verfolgt.",
+  "sections": [
+    {
+      "title": "Mission",
+      "paragraphs": [
+        "Ziel ist es, klarer zu machen, was versprochen wurde, was Fortschritte gemacht hat und wo dokumentierter Fortschritt fehlt.",
+        "civic-pulse Deutschland vertritt keine öffentlichen Institutionen, politischen Parteien oder kommerzielle Akteure. Die Plattform existiert für Transparenz, Vergleich und öffentliche Überprüfung."
+      ]
+    }
+  ],
+  "note": "Für die vollständige Erklärung der Pipeline, Quellen und Berechnungsweise siehe die Methodikseite."
+}

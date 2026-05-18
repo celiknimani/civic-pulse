@@ -1,0 +1,88 @@
+{
+  "back": "Back",
+  "title": "Methodology",
+  "intro": "The platform monitors promises and parliamentary activity using documented logic, official sources, and reproducible metrics.",
+  "sections": {
+    "mission": "Mission",
+    "editorial": "Editorial principles",
+    "method": "How the system works",
+    "metrics": "How member performance is measured",
+    "ai": "Role of automated agents",
+    "docs": "Official documents",
+    "note": "Important note",
+    "builtBy": "Built by 38Shift"
+  },
+  "mission": {
+    "paragraphs": [
+      "The goal is to make clearer what was promised, what has progressed, and where documented progress is missing.",
+      "civic-pulse does not represent public institutions, political parties, or commercial actors. The platform exists for transparency, comparison, and public verification."
+    ]
+  },
+  "editorial": {
+    "paragraphs": [
+      "The platform aims for neutrality in description, clarity in categorization, and careful distinction between political statements, official evidence, and editorial interpretation.",
+      "Every profile, card, or indicator is meant to be explainable and verifiable. When an official source is missing, the claim should not be treated as a verified fact.",
+      "Errors, ambiguities, and updates are handled on a document basis with priority on improving the accuracy of the public archive."
+    ]
+  },
+  "builtBy": {
+    "paragraphs": [
+      "civic-pulse is built by 38Shift, an AI-first engineering and technology consultancy that partners human expertise with machine intelligence to develop advanced digital products.",
+      "38Shift works with founders and growth leaders across AI strategy, agent development, product design, and MVP launches, helping organizations evolve into AI-native operations.",
+      "Learn more at https://38shift.com."
+    ]
+  },
+  "steps": [
+    {
+      "index": "01",
+      "title": "Data source",
+      "text": "Promises are taken from official policy and government documents. Parliamentary activity is taken from the official transcripts of the legislature."
+    },
+    {
+      "index": "02",
+      "title": "Progress monitoring",
+      "text": "Transcripts are structured into a machine-readable format (speaker, text, sessionId, date, source) and linked to the member roster via name normalization."
+    },
+    {
+      "index": "03",
+      "title": "Evaluation methodology",
+      "text": "For each member the system computes: speech count, words, sessions, and topical mentions across the platform's category taxonomy. The radar map shows the relative weight of topics."
+    },
+    {
+      "index": "04",
+      "title": "Linking promises to top members",
+      "text": "Each promise links to a primary topic. The detail view shows the top three members for that topic by: mentions > score > speechCount > wordCount."
+    }
+  ],
+  "metrics": [
+    {
+      "title": "Speeches",
+      "text": "Number of interventions where the member appears as speaker in a transcript."
+    },
+    {
+      "title": "Spoken words",
+      "text": "Sum of words across all interventions by the member (after text normalization)."
+    },
+    {
+      "title": "Sessions",
+      "text": "Number of unique sessions where the member made at least one intervention."
+    },
+    {
+      "title": "Most-discussed topics (radar)",
+      "text": "For each topic, keyword mentions are counted; score (%) = topic mentions / total mentions × 100."
+    }
+  ],
+  "ai": [
+    "Automated agents are used as an engineering layer for building and refreshing the pipeline, rules, and validations. They are not used to invent facts or to replace official sources.",
+    "Numeric results come from deterministic scripts over the transcripts and local datasets; each member profile preserves the official transcript source."
+  ],
+  "noteBody": "This is an independent monitoring tool. Data is refreshed as new official evidence becomes available, with accuracy and maximum transparency as the goal.",
+  "policySources": [
+    {
+      "name": "Example Party policy program",
+      "url": "https://example.gov/policy/program.pdf",
+      "type": "Official document — PDF"
+    }
+  ],
+  "fallbackTranscriptSources": []
+}

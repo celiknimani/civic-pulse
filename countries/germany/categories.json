@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Justice",
+    "label": "Justiz",
+    "icon": "fa-scale-unbalanced",
+    "keywords": ["gericht", "richter", "staatsanwalt", "verfassung", "korruption", "rechtsstaat", "strafrecht"]
+  },
+  {
+    "id": "Economy",
+    "label": "Wirtschaft",
+    "icon": "fa-chart-line",
+    "keywords": ["wirtschaft", "unternehmen", "investition", "markt", "steuer", "haushalt", "inflation", "lohn", "industrie"]
+  },
+  {
+    "id": "Security",
+    "label": "Sicherheit",
+    "icon": "fa-shield-halved",
+    "keywords": ["sicherheit", "polizei", "verteidigung", "bundeswehr", "grenze", "kriminalität", "terror"]
+  },
+  {
+    "id": "SocialWelfare",
+    "label": "Soziales",
+    "icon": "fa-hands-holding-child",
+    "keywords": ["sozial", "rente", "familie", "kinder", "gleichstellung", "armut", "wohngeld"]
+  },
+  {
+    "id": "Health",
+    "label": "Gesundheit",
+    "icon": "fa-heart-pulse",
+    "keywords": ["gesundheit", "krankenhaus", "arzt", "patient", "klinik", "pflege", "krankenkasse", "medizin"]
+  },
+  {
+    "id": "Education",
+    "label": "Bildung",
+    "icon": "fa-graduation-cap",
+    "keywords": ["bildung", "schule", "universität", "student", "lehrer", "unterricht", "ausbildung", "bafög"]
+  },
+  {
+    "id": "Infrastructure",
+    "label": "Infrastruktur",
+    "icon": "fa-bridge-water",
+    "keywords": ["straße", "infrastruktur", "verkehr", "bahn", "autobahn", "brücke", "wasser", "kanal"]
+  },
+  {
+    "id": "Innovation",
+    "label": "Innovation",
+    "icon": "fa-microchip",
+    "keywords": ["innovation", "technologie", "digital", "startup", "software", "plattform", "ki", "forschung"]
+  },
+  {
+    "id": "Energy",
+    "label": "Energie",
+    "icon": "fa-solar-panel",
+    "keywords": ["energie", "strom", "kraftwerk", "solar", "wind", "wasserkraft", "gas", "heizung", "effizienz"]
+  },
+  {
+    "id": "ForeignPolicy",
+    "label": "Außenpolitik",
+    "icon": "fa-globe",
+    "keywords": ["außenpolitik", "diplomatie", "vereinte nationen", "nato", "europäische union", "eu", "russland", "ukraine"]
+  }
+]

@@ -1,0 +1,49 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build + dependency artifacts
+node_modules
+dist
+dist-ssr
+*.local
+
+# OS junk
+.DS_Store
+
+# Editor directories
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+doc/
+Doc/
+
+# Claude Code: machine-local permission grants. Personal, never committed.
+.claude/settings.local.json
+
+# Tooling caches that occasionally leave artefacts in-repo.
+.claude-flow/
+.wrangler/
+
+# Agent fetch + verdict caches (machine-local; verdict-history is committed
+# from each agent run, but the agent's local cache is not).
+.agent/
+node_modules/.cache/
+
+# Generated data manifests — `npm run prebuild` writes these from
+# countries/<COUNTRY>/. Keep `.gitkeep` so the dir exists.
+public/data/promises.json
+public/data/promise-sources.json
+public/data/transcript-sources.json
+# `public/data/deputies-analytics.json` IS committed — it ships with the
+# deployed site and only changes via the agent's PRs.

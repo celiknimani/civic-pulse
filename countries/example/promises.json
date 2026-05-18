@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1",
+    "category": "Justice",
+    "title": "Independent judicial review board",
+    "description": "Establish an independent review board to evaluate judicial appointments based on transparent merit criteria.",
+    "status": "In Progress",
+    "progress": 40,
+    "startDate": "2025-01-15",
+    "dueDate": "2026-06-30",
+    "updates": [
+      {
+        "date": "2025-03-12",
+        "status": "In Progress",
+        "description": "Draft legislation submitted to parliament; committee review scheduled.",
+        "source": "Ministry of Justice press release",
+        "sourceUrl": "https://example.gov/ministries/justice/press/2025-03-12"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "category": "Health",
+    "title": "Universal primary care access",
+    "description": "Guarantee primary care access for every citizen by expanding rural clinic coverage and tele-medicine reach.",
+    "status": "In Progress",
+    "progress": 25,
+    "startDate": "2025-02-01",
+    "dueDate": "2027-12-31",
+    "updates": [
+      {
+        "date": "2025-04-05",
+        "status": "In Progress",
+        "description": "Twelve new rural clinics opened; tele-medicine rollout reaches 60% of target districts.",
+        "source": "Ministry of Health quarterly report",
+        "sourceUrl": "https://example.gov/ministries/health/reports/2025-q1"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "category": "Education",
+    "title": "Universal pre-school enrollment",
+    "description": "Ensure free pre-school enrollment is available to every child aged three to five by the end of the current term.",
+    "status": "Pending",
+    "progress": 10,
+    "startDate": "2025-03-01",
+    "dueDate": "2028-09-01",
+    "updates": []
+  },
+  {
+    "id": "4",
+    "category": "Infrastructure",
+    "title": "National broadband expansion",
+    "description": "Roll out gigabit fiber to 95% of households and full 5G coverage to every municipality.",
+    "status": "Delayed",
+    "progress": 30,
+    "startDate": "2024-09-01",
+    "dueDate": "2026-12-31",
+    "updates": [
+      {
+        "date": "2025-02-20",
+        "status": "Delayed",
+        "description": "Fiber rollout three months behind schedule; revised milestones published.",
+        "source": "National Infrastructure Agency",
+        "sourceUrl": "https://example.gov/infrastructure/broadband/2025-02-20"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "category": "Energy",
+    "title": "40% renewable generation by 2027",
+    "description": "Reach 40% of national electricity generation from renewable sources, with new solar and offshore wind capacity.",
+    "status": "Completed",
+    "progress": 100,
+    "startDate": "2024-01-01",
+    "dueDate": "2025-12-31",
+    "updates": [
+      {
+        "date": "2025-12-15",
+        "status": "Completed",
+        "description": "National grid passes 40% renewable threshold one quarter ahead of schedule.",
+        "source": "Ministry of Energy annual report",
+        "sourceUrl": "https://example.gov/ministries/energy/reports/2025-annual"
+      }
+    ]
+  }
+]

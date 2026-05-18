@@ -1,0 +1,61 @@
+name: Ingestion agent
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+    inputs:
+      country:
+        description: 'Country code (matches countries/<code>/)'
+        required: true
+        default: 'example'
+      dry_run:
+        description: 'Skip opening the PR'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  ingest:
+    name: Ingest (${{ matrix.country }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        country: ${{ github.event_name == 'workflow_dispatch' && fromJson(format('["{0}"]', github.event.inputs.country)) || fromJson('["example"]') }}
+    env:
+      COUNTRY: ${{ matrix.country }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      AGENT_DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install
+        run: npm ci
+
+      - name: Configure git
+        run: |
+          git config user.name "civic-pulse-agent[bot]"
+          git config user.email "civic-pulse-agent@users.noreply.github.com"
+
+      - name: Run agent
+        run: npm run agent:run
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "Agent run completed for ${{ matrix.country }}" >> $GITHUB_STEP_SUMMARY
+          echo "Dry run: $AGENT_DRY_RUN" >> $GITHUB_STEP_SUMMARY

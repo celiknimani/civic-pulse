@@ -1,0 +1,36 @@
+{
+  "$schema": "../_schema/country-config.schema.json",
+  "code": "example",
+  "name": "Republic of Example",
+  "nativeName": "Republic of Example",
+  "locale": "en",
+  "dateLocale": "en-US",
+  "siteUrl": "http://localhost:3000",
+  "categoryAllLabel": "All",
+  "trackedParty": {
+    "code": "EXP",
+    "name": "Example Party",
+    "shortName": "EXP"
+  },
+  "governmentTerm": {
+    "label": "Example Cabinet 2025–2029",
+    "startDate": "2025-01-01"
+  },
+  "parliament": {
+    "label": "Example National Assembly",
+    "memberCount": 100,
+    "memberLabel": "Member"
+  },
+  "transcriptLabels": {
+    "fallback": "Plenary session transcript",
+    "officialPdf": "Official PDF"
+  },
+  "transcriptSourceMatchers": [],
+  "uiTerms": {
+    "promiseLabel": "Promise",
+    "promisesLabel": "Promises",
+    "depyutyLabel": "Member",
+    "deputiesLabel": "Members",
+    "governmentLabel": "Government"
+  }
+}

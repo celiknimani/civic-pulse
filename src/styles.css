@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+@source "./App.tsx";
+@source "./components/**/*.{ts,tsx}";
+@source "../countries/**/*.{ts,tsx,json}";
+@source "../packages/**/*.{ts,tsx}";
+
+html.js:not(.show-prerender-fallback) .prerender-fallback,
+html.react-mounted .prerender-fallback {
+  display: none !important;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background:
+    linear-gradient(180deg, rgba(255, 251, 242, 0.94), rgba(244, 239, 228, 0.98)),
+    radial-gradient(circle at 50% 0%, rgba(16, 41, 73, 0.08), transparent 44%);
+  background-color: #fdfdff;
+  text-rendering: geometricPrecision;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #9c7840;
+  outline-offset: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.animate-in {
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  animation-fill-mode: forwards;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.slide-in-from-bottom-4 {
+  animation-name: slideInFromBottom;
+}
+
+.slide-in-from-right-4 {
+  animation-name: slideInFromRight;
+}
+
+.slide-in-from-bottom-8 {
+  animation-name: slideInFromBottom8;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(1rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom8 {
+  from {
+    transform: translateY(2rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(1rem);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.bg-ambient-kosovo {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #fdfdff;
+  overflow: hidden;
+}
+
+.bg-ambient-kosovo .blob-blue {
+  position: absolute;
+  top: -15%;
+  right: -10%;
+  width: 70vw;
+  height: 70vw;
+  background: radial-gradient(circle, rgba(36, 74, 165, 0.15) 0%, transparent 75%);
+  filter: blur(100px);
+  animation: float 15s infinite alternate;
+}
+
+.bg-ambient-kosovo .blob-gold {
+  position: absolute;
+  bottom: -15%;
+  left: -10%;
+  width: 65vw;
+  height: 65vw;
+  background: radial-gradient(circle, rgba(208, 166, 80, 0.12) 0%, transparent 75%);
+  filter: blur(100px);
+  animation: float 20s infinite alternate-reverse;
+}
+
+.bg-ambient-kosovo .grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#244aa5 0.5px, transparent 0.5px);
+  background-size: 40px 40px;
+  opacity: 0.15;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(-20px, 40px) scale(1.1);
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Datenschutz",
+  "title": "Datenschutzerklärung",
+  "intro": "civic-pulse Deutschland ist eine informative Website ohne Benutzerkonten und ohne private Anmeldebereiche. Personenbezogene Daten werden minimal und nur im für die Grundfunktion der Website erforderlichen Umfang verarbeitet.",
+  "sections": [
+    {
+      "title": "Was erfasst wird",
+      "paragraphs": [
+        "Die Website verwendet grundlegende Analytik, um Besuche und allgemeines Verhalten zu messen. Dies geschieht über Google Analytics, um zu verstehen, welche Bereiche am häufigsten genutzt werden und wo Inhalte verbessert werden sollten."
+      ]
+    }
+  ],
+  "note": "Diese Richtlinie kann jederzeit aktualisiert werden, wenn sich die Infrastruktur, Analytik oder Veröffentlichungsweise der Website ändert."
+}

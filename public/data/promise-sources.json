@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-05-18T21:44:46.797Z",
+  "country": "example",
+  "sourceCount": 2,
+  "enabledSourceCount": 0,
+  "summary": {
+    "byType": {
+      "government_website": 1,
+      "parliament_transcript": 1
+    },
+    "byTrustTier": {
+      "1": 2
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "government-press",
+      "type": "government_website",
+      "trustTier": 1,
+      "promiseIds": [
+        "*"
+      ],
+      "tags": [
+        "press",
+        "official"
+      ],
+      "enabled": false,
+      "fetchMode": "html",
+      "url": "https://example.gov/press"
+    },
+    {
+      "sourceId": "parliament-transcripts",
+      "type": "parliament_transcript",
+      "trustTier": 1,
+      "promiseIds": [
+        "*"
+      ],
+      "tags": [
+        "parliament",
+        "transcripts"
+      ],
+      "enabled": false,
+      "fetchMode": "pdf",
+      "url": "https://parliament.example.gov/transcripts"
+    }
+  ]
+}

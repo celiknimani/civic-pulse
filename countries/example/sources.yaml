@@ -1,0 +1,28 @@
+country: example
+
+defaults:
+  trust_tier: 2
+  enabled: false
+
+sources:
+  - id: government-press
+    label: Example Government - Press releases
+    url: https://example.gov/press
+    type: government_website
+    fetch_mode: html
+    trust_tier: 1
+    enabled: false
+    extract:
+      tracks: [promises, ministerStatements]
+      languageHint: en
+
+  - id: parliament-transcripts
+    label: Example National Assembly - Transcripts
+    url: https://parliament.example.gov/transcripts
+    type: parliament_transcript
+    fetch_mode: pdf
+    trust_tier: 1
+    enabled: false
+    extract:
+      tracks: [deputyActivity]
+      languageHint: en

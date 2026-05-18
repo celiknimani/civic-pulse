@@ -1,0 +1,29 @@
+{
+  "eyebrow": "Privacy",
+  "title": "Privacy policy",
+  "intro": "civic-pulse is an informational site with no user accounts or private login areas. Personal data is handled minimally and only to the extent needed for basic site functionality.",
+  "sections": [
+    {
+      "title": "What is collected",
+      "paragraphs": [
+        "The site uses basic analytics to measure visits and general site behavior. This is done via Google Analytics to understand which sections are used most often and where content should be improved.",
+        "The platform offers no registration, account login, online payment, or form fields for routine collection of personal data."
+      ]
+    },
+    {
+      "title": "How the data is used",
+      "paragraphs": [
+        "Analytics data is used for editorial and technical performance monitoring, not for personalized profiling or data resale.",
+        "When content is updated, the goal is to improve the accuracy, discoverability, and intelligibility of public information."
+      ]
+    },
+    {
+      "title": "Third-party resources and cookies",
+      "paragraphs": [
+        "The site loads several third-party resources such as Google Analytics, Google Fonts, and styling libraries. These services may set or read cookies according to their own policies.",
+        "If you prefer, you can restrict cookies from your browser or use the privacy tools your browser provides."
+      ]
+    }
+  ],
+  "note": "This policy may be updated whenever the site infrastructure, analytics, or publishing approach changes."
+}

@@ -1,0 +1,31 @@
+{
+  "back": "Zurück",
+  "title": "Methodik",
+  "intro": "Die Plattform verfolgt Versprechen und parlamentarische Aktivität mit dokumentierter Logik, offiziellen Quellen und reproduzierbaren Metriken.",
+  "sections": {
+    "method": "Wie das System funktioniert",
+    "metrics": "Wie die Leistung von Abgeordneten gemessen wird",
+    "ai": "Rolle automatisierter Agenten",
+    "docs": "Offizielle Dokumente",
+    "note": "Wichtiger Hinweis"
+  },
+  "steps": [
+    {
+      "index": "01",
+      "title": "Datenquelle",
+      "text": "Versprechen stammen aus offiziellen Regierungs- und Parteidokumenten. Parlamentarische Aktivität wird aus offiziellen Bundestagsprotokollen entnommen."
+    }
+  ],
+  "metrics": [
+    {
+      "title": "Wortbeiträge",
+      "text": "Anzahl der Beiträge, bei denen der Abgeordnete im Protokoll als Sprecher erscheint."
+    }
+  ],
+  "ai": [
+    "Automatisierte Agenten werden als Engineering-Schicht zur Pflege der Pipeline genutzt — nicht zur Erfindung von Fakten oder zur Ersetzung offizieller Quellen."
+  ],
+  "noteBody": "Dies ist ein unabhängiges Monitoring-Tool. Daten werden mit neuen offiziellen Belegen aktualisiert.",
+  "policySources": [],
+  "fallbackTranscriptSources": []
+}
