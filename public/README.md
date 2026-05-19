@@ -5,7 +5,8 @@ Files here are copied as-is by Vite into `dist/`. Defaults are deliberately fram
 | File                              | Purpose                                                 |
 |-----------------------------------|---------------------------------------------------------|
 | `favicon.svg`                     | Site favicon (overridable).                             |
-| `og-image.svg`                    | Open Graph / Twitter card image (overridable).          |
+| `og-image.png`                    | Open Graph / Twitter card image (1376×768 PNG, ~847 KB). Referenced from `index.html`. Most social platforms reject SVG OG images, so PNG is the default. |
+| `og-image.svg`                    | Editable vector source of the OG image. Not referenced from `index.html`; kept here so a fork can re-export a PNG after edits. |
 | `robots.txt`                      | Crawler directives. The default uses a relative sitemap path; deployments behind a public domain may override with absolute URLs. |
 | `_redirects`, `_headers`          | Netlify / Cloudflare Pages SPA routing + headers.       |
 | `data/`                           | **Generated** at build time by `scripts/build-*` (gitignored where appropriate). |
