@@ -138,6 +138,6 @@ The reference dataset is maintained by the [zotimi.com](https://zotimi.com) team
 
 ## Author
 
-Created by **[Çelik Nimani](https://celiknimani.com)** — a tech CEO, AI consultant, and GTM strategist based in Kosovo. He partners with founders and leadership teams to apply AI with discipline, sharpen go-to-market execution, and install operating systems that make delivery more dependable. Çelik is founder & CEO of [38Shift](https://38shift.com), an AI-first engineering and technology consultancy, and previously co-founded Frakton (acquired through Kin + Carta into Valtech) and Zombie Soup. He writes about applied AI and GTM in the [*Signal*](https://digjitale.beehiiv.com/) newsletter, and is on [LinkedIn](https://linkedin.com/in/celiknimani), [X](https://x.com/celiknimani), and [GitHub](https://github.com/celiknimani).
+Created by [Çelik Nimani](https://celiknimani.com), founder and CEO of [38Shift](https://38shift.com), an AI-first engineering consultancy. He earlier co-founded Frakton (acquired by Kin + Carta, later part of Valtech) and now spends most of his time on applied AI and engineering. He built [zotimi.com](https://zotimi.com) to track the political promises Kosovo's parties make at each election, giving citizens a concrete record to hold politicians to.
 
-If you fork civic-pulse to track another government, a note back is always welcome — happy to point to your deployment from this repo.
+If you fork civic-pulse to track another government, drop me a note. Happy to point to your deployment from this repo.
