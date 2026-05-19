@@ -1,5 +1,7 @@
 # civic-pulse
 
+![civic-pulse — open-source government accountability tracker](public/og-image.png)
+
 > Open-source government accountability tracker. Monitor promises, parliamentary activity, and ministerial performance — for any country — fed by a Claude-powered ingestion agent that scans official sources and opens reviewable pull requests.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
