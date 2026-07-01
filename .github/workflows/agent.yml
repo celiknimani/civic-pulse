@@ -33,7 +33,7 @@ jobs:
       GITHUB_REPOSITORY: ${{ github.repository }}
       AGENT_DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
