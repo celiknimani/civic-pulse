@@ -40,10 +40,10 @@
     "a11y": "node scripts/check-accessibility-browser.mjs"
   },
   "dependencies": {
-    "@anthropic-ai/claude-agent-sdk": "^0.3.220",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "wouter": "^3.10.0"
+    "@anthropic-ai/claude-agent-sdk": "^0.3.269",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "wouter": "^3.11.0"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.100.1",
